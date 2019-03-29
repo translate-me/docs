@@ -1,0 +1,47 @@
+site_name: Translate.me
+extra_css: [extra.css]
+pages:
+  - HOME: index.md
+  # - RASTREABILIDADE:
+  #   - Rastros: rastreabilidade.md
+  # - PRÉ-RASTREABILIDADE:
+  #   - Argumentação: argumentacao.md
+  #   - RichPicture: rich_picture.md
+  # - ELICITAÇÃO DE REQUISITOS:
+  #   - Análise de Discurso: analise_discurso.md
+  #   - Análise de Protocolo: analise_protocolo.md
+  #   - Entrevista: entrevista.md
+  #   - Introspecção: introspeccao.md
+  #   - Questionário: questionario.md
+  #   - Storytelling: storytelling.md
+  #   - Conclusão: conclusao_elicitacao.md
+  # - MODELAGEM:
+  #   - Cenários: cenarios.md
+  #   - Léxicos: lexicos.md
+  #   - Diagramas de Caso de Uso: diagramas_caso_uso.md
+  #   - Especificações de Caso de Uso: especificacoes_caso_uso.md
+  #   - Especificação Suplementar: especificacao_suplementar.md
+  #   - Especificação Suplementar 2.0: especificacao_suplementar_2.md
+  #   - Backlog do Produto: backlog.md
+  #   - NFR: nfr.md
+  #   - i*: iStar.md
+  # - ANÁLISE:
+  #   - NFR: analise_NFR.md
+  #   - Pré-rastreabilidade: pre_rastreabilidade_analise.md
+  #   - iStar: Istar_analise_inspecao.md
+  #   - Caso de Uso: inspecao_caso_uso.md
+  # - PÓS-RASTREABILIDADE:
+  #   - Backward-From: backward_from.md
+  #   - Forward-From: forward_from.md
+theme: 
+    name: material
+    language: 'pt'
+    logo:
+      icon: 'pin_drop'
+    palette:
+      primary: 'red'
+      accent: 'red'
+
+repo_name: 'Translate.me'
+repo_url: 'https://github.com/desenho2019-1/traducao/'
+edit_uri: ''
