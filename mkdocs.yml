@@ -37,10 +37,10 @@ theme:
     name: material
     language: 'pt'
     logo:
-      icon: 'pin_drop'
+      icon: 'translate'
     palette:
-      primary: 'red'
-      accent: 'red'
+      primary: 'cyan'
+      accent: 'cyan'
 
 repo_name: 'Translate.me'
 repo_url: 'https://github.com/desenho2019-1/traducao/'
