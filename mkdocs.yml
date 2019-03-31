@@ -2,6 +2,7 @@ site_name: Translate.me
 extra_css: [extra.css]
 pages:
   - HOME: index.md
+  - ARCHITECTURE: doc_architecture.md
   # - RASTREABILIDADE:
   #   - Rastros: rastreabilidade.md
   # - PRÉ-RASTREABILIDADE:
