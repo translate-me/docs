@@ -3,7 +3,7 @@ extra_css: [extra.css]
 pages:
   - HOME: index.md
   - Documento de Visão: doc_de_visao.md
-  - Documento de Arquitetura: doc_architecture.md
+  - Documento de Arquitetura: doc_de_arquitetura.md
   # - RASTREABILIDADE:
   #   - Rastros: rastreabilidade.md
   # - PRÉ-RASTREABILIDADE:
