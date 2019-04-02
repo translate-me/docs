@@ -12,6 +12,6 @@ script:
 after_success:
 - git config user.name "Luiz Guilherme Silva"
 - git config user.email "do.guilherme@hotmail.com"
-- git remote add gh-token "https://${github_token}@github.com/sivaprasadreddy/cheatsheets.git";
+- git remote add gh-token "https://${github_token}@github.com/desenho2019-1/docs.git";
 - git fetch gh-token && git fetch gh-token gh-pages:gh-pages;
 - mkdocs gh-deploy -v --clean --remote-name gh-token;
