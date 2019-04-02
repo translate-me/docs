@@ -9,6 +9,7 @@ install:
 
 before_deploy:
     - mkdocs build --verbose --clean --strict
+    - mkdocs gh-deploy
 
 deploy:
     provider: pages
