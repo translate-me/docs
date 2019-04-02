@@ -1,17 +1,17 @@
-# Welcome to MkDocs
+# Translate.me
+Este repositório contém o desenvolvimento do projeto Translate.me que integra-se com a disciplina ofertada pela Universidade de Brasília - Faculdade do Gama (UnB/FGA) nomeada como Arquitetura e Desenho de Software, no semestre 2019/2, ministrada pela da docente Milene Serrano.
 
-For full documentation visit [mkdocs.org](http://mkdocs.org).
+## Equipe
 
-## Commands
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs help` - Print this help message.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+| Nome | Email | GitHub|
+|--|--|--|
+| Alexandre Miguel | aleronupe@gmail.com | [@aleronupe](https://github.com/aleronupe) |
+| Davi |  |  |
+| Gabriela Guedes |  |  |
+| Helena Goulart | helenabretasg@gmail.com | [@helenagoulart](https://github.com/helenagoulart) |
+| João Robson | |  |
+| Letícia Meneses| lmbs.geo@gmail.com | [@mbslet](https://github.com/mbslet)|
+| Luiz Guilherme Silva | do.guilherme@hotmail.com | [@luizguilherme5](https://github.com/luizguilherme5) |
+| Renan |  |  |
+| Rômulo|  | |
+| Victor |  | | |
