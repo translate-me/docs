@@ -4,6 +4,7 @@ pages:
   - Início: index.md
   - Documento de Visão: doc_de_visao.md
   - Documento de Arquitetura: doc_de_arquitetura.md
+  - Benchmarking: benchmarking.md
   # - RASTREABILIDADE:
   #   - Rastros: rastreabilidade.md
   # - PRÉ-RASTREABILIDADE:
