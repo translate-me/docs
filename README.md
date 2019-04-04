@@ -1,22 +1,22 @@
 # Translate.me | Documentação
-Documentação referente ao projeto do Tradutor, na disciplina de Desenho de Software
 
-## Primeiros passos
-Para editar a documentação, utilizando o [MKDocs](https://www.mkdocs.org/) e o template [Material Design](https://squidfunk.github.io/mkdocs-material/) e para utilizá-lo será necessário um ambiente com Python instalado e o gerenciador de dependências Pip.
+Este repositório contém a documentação do projeto Translate.me que integra-se
+com a disciplina ofertada pela Universidade de Brasília - Faculdade do Gama
+(UnB/FGA) nomeada como Arquitetura e Desenho de Software, no semestre 2019/2,
+ministrada pela da docente Milene Serrano. Para conferir a documentação completa
+da equipe, [clique aqui](https://desenho2019-1.github.io/docs/).
 
-## Editar a documentação
-Para criar o site disponível em https://desenho2019-1.github.io/docs/ você deve realizar os seguintes passos:
-* ```git clone https://github.com/desenho2019-1/docs.git```
-* ```pip install mkdocs```
-* ```pip install mkdocs-material```
+## Equipe
 
-E então veja localmente o seu site:
-* ```mkdocs serve```
-
-Assim, que estiver desejável, você deverá commitar suas alterações
-* ```git add . ```
-* ```git commit -m "Nome do seu commit em inglês"```
-* ```git push origin master```
-
-E atualizar a documentação disponível no site:
-* ```mkdocs gh-deploy```
+| Nome | Email | GitHub|
+|--|--|--|
+| Alexandre Miguel | aleronupe@gmail.com | [@aleronupe](https://github.com/aleronupe) |
+| Davi Alves | davialvb@gmail.com | [@davialvb](https://github.com/davialvb) |
+| Gabriela Guedes | gabrielabguedes@gmail.com  | [@gabibguedes](https://github.com/gabibguedes)  |
+| Helena Goulart | helenabretasg@gmail.com | [@helenagoulart](https://github.com/helenagoulart) |
+| João Robson | joaorobsonmartins@gmail.com | [@joaorobson](https://github.com/joaorobson) |
+| Letícia Meneses| lmbs.geo@gmail.com | [@mbslet](https://github.com/mbslet)|
+| Luiz Guilherme Silva | do.guilherme@hotmail.com | [@luizguilherme5](https://github.com/luizguilherme5) |
+| Renan | welzrenan@gmail.com | [@renan601](https://github.com/renan601) |
+| Rômulo| romulovinicius10@gmail.com | [@romulosouza](https://github.com/RomuloSouza) |
+| Victor | victorhdcoelho@gmail.com | [@victorhdcoelho](https://github.com/victorhdcoelho) | |
