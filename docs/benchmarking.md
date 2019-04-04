@@ -1,6 +1,6 @@
 # Benchmarking - Translate me
 
-### 1.0 Detalhes do produto
+## 1.0 Detalhes do produto
 O Translate me trata-se de um Web App para traduzir artigos científicos da
 comunidade acadêmica, contendo dois _stakeholders_: o autor do artigo
 e uma pessoa com certificação no idioma  - desejado pelo autor - para realizar
@@ -17,17 +17,16 @@ tradutores possuem acesso somente a pequenos trechos do artigo. Após a conclus�
 da tradução, ela é revisada por demais tradutores, que também são recompensados
 por essa atividade.
 
-### 2.0 Métricas utilizadas
+## 2.0 Métricas utilizadas
 Os critérios de pesquisa relacionaram-se a dois pontos que se destacam no
 Translate me: o público da comunidade acadêmica e ferramentas de tradução. Dos
 sites similares encontrados, nenhum possui restrição ao público como o Web App
 deste documento. Sendo assim, algumas preocupações como direitos autorais
-assemelham-se pouco com o Translate me.
+assemelham-se pouco com o Translate me. <br>
 
+## 3.0 Análise de similares <br>
 
-### 3.0 Análise de similares
-
-#### 3.1 [SLD Trados](https://www.sdltrados.com/)
+### 3.1 [SLD Trados](https://www.sdltrados.com/) <br>
 
 <b> O que é </b> <br>
 É uma plataforma que traduz textos através do trabalho de tradutores
@@ -57,35 +56,36 @@ Caso o usuário pretenda utilizar a plataforma uma única vez, ele acaba pagando
 pelo uso do software por um ano, e não por unidade de serviço prestado.
 
 
-#### 3.2 [WordFast](https://www.wordfast.net/)
+### 3.2 [WordFast](https://www.wordfast.net/)
 <b> O que é </b> <br>
 <br> <b> Pontos em comum </b> <br>
 <br> <b> Pontos divergentes </b> <br>
 <br> <b> Pontos Positivos </b> <br>
 <br> <b> Pontos Negativos </b> <br>
 
-#### 3.3 [OmegaT](https://omegat.org/)
+### 3.3 [OmegaT](https://omegat.org/)
 <b> O que é </b> <br>
 <br> <b> Pontos em comum </b> <br>
 <br> <b> Pontos divergentes </b> <br>
 <br> <b> Pontos Positivos </b> <br>
 <br> <b> Pontos Negativos </b> <br>
 
-#### 3.4 [Lingua Et Machina](http://lingua-et-machina.com/)
+
+### 3.4 [Lingua Et Machina](http://lingua-et-machina.com/)
 <b> O que é </b> <br>
 <br> <b> Pontos em comum </b> <br>
 <br> <b> Pontos divergentes </b> <br>
 <br> <b> Pontos Positivos </b> <br>
 <br> <b> Pontos Negativos </b> <br>
 
-#### 3.5 [WordLingo](http://www.worldlingo.com/)
+### 3.5 [WordLingo](http://www.worldlingo.com/)
 <b> O que é </b> <br>
 <br> <b> Pontos em comum </b>  <br>
 <br> <b> Pontos divergentes </b>  <br>
 <br> <b> Pontos Positivos </b>  <br>
 <br> <b> Pontos Negativos </b>  <br>
 
-#### 3.6 [iTranslate4](http://itranslate4.eu/en/) </b>
+### 3.6 [iTranslate4](http://itranslate4.eu/en/) </b>
 <b> O que é </b>  <br>
 <br> <b> Pontos em comum </b>  <br>
 <br> <b> Pontos divergentes </b>  <br>
@@ -101,19 +101,12 @@ pelo uso do software por um ano, e não por unidade de serviço prestado.
 
 #### 3.8 [Google Tradutor](https://translate.google.com.br/)
 <b> O que é </b> <br>
-<br> <b> Pontos em comum </b> <br>
-<br> <br> b> Pontos divergentes </b> <br>
+<br> <b> Pontos em comum </b>
+<br> <br> Pontos divergentes </b> <br>
 <br> <b> Pontos Positivos </b> <br>
 <br> <b> Pontos Negativos </b> <br>
 
 #### 3.9 [My Memory](https://mymemory.translated.net/)
-<b> O que é </b> <br>
-<br> <b> Pontos em comum </b> <br>
-<br> <b> Pontos divergentes </b> <br>
-<br> <b> Pontos Positivos </b> <br>
-<br> <b> Pontos Negativos </b> <br>
-
-#### 3.10 [My Memory](https://mymemory.translated.net/)
 <b> O que é </b> <br>
 <br> <b> Pontos em comum </b> <br>
 <br> <b> Pontos divergentes </b> <br>
