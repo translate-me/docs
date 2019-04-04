@@ -37,7 +37,7 @@ pages:
   #   - Backward-From: backward_from.md
   #   - Forward-From: forward_from.md
 theme:
-    name: mkdocs
+    name: material
     language: 'pt'
     logo:
       icon: 'translate'

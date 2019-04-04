@@ -9,9 +9,9 @@ acadêmico interessado no serviço realiza um pagamento como recompensa pelo
 trabalho realizado. Além disso, há um processo de gamificação no qual quanto
 mais traduções forem feitas, melhor é a avaliação do tradutor. As avaliações
 dividem os tradutores em níveis, permitindo que quanto maior o nível, maior a
-quantidade de traduções simultâneas podem ser realizadas. <br>
+quantidade de traduções simultâneas podem ser realizadas.
 
-<p> Uma vez que o artigo em questão ainda não foi publicado durante a etapa de
+Uma vez que o artigo em questão ainda não foi publicado durante a etapa de
 tradução, é necessária uma atenção maior com os direitos autorais. Sendo assim, os
 tradutores possuem acesso somente a pequenos trechos do artigo. Após a conclusão
 da tradução, ela é revisada por demais tradutores, que também são recompensados
@@ -92,21 +92,21 @@ pelo uso do software por um ano, e não por unidade de serviço prestado.
 <br> <b> Pontos Positivos </b> <br>
 <br> <b> Pontos Negativos </b>  <br>
 
-#### 3.7 [My Memory](https://mymemory.translated.net/)
+### 3.7 [My Memory](https://mymemory.translated.net/)
 <b> O que é </b> <br>
 <br> <b> Pontos em comum </b> <br>
 <br> <b> Pontos divergentes </b> <br>
 <br> <b> Pontos Positivos </b> <br>
 <br> <b> Pontos Negativos </b> <br>
 
-#### 3.8 [Google Tradutor](https://translate.google.com.br/)
+### 3.8 [Google Tradutor](https://translate.google.com.br/)
 <b> O que é </b> <br>
 <br> <b> Pontos em comum </b>
 <br> <br> Pontos divergentes </b> <br>
 <br> <b> Pontos Positivos </b> <br>
 <br> <b> Pontos Negativos </b> <br>
 
-#### 3.9 [My Memory](https://mymemory.translated.net/)
+### 3.9 [My Memory](https://mymemory.translated.net/)
 <b> O que é </b> <br>
 <br> <b> Pontos em comum </b> <br>
 <br> <b> Pontos divergentes </b> <br>
