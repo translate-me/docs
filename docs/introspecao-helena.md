@@ -41,12 +41,58 @@ do artigo.
 
 | Código | Descrição | Prioridade | Classificação |
 |--|--|--|--|
-| INT1.1 | O site deve conter uma página inicial explicando o que é o site e como ele funciona | Should | Não Funcional |
-| INT1.2 | O site deve conter uma página para explicar as diretrizes de segurança de direitos autorais | Should | Não Funcional |
-| INT1.3 | O site deve apresentar a opção de inscrever-se através de nome de usuário e senha | Should | Funcional |
-| INT1.4 | O site deve conter a opção de inscrever-se com facebook ou gmail | Must | Funcional |
-| INT1.5 | O site deve conter a opção de realizar o login com nome de usuário e senha | Must | Funcional |
-| INT1.6 | O site deve conter a opção de realizar o login com facebook ou gmail | Must | Funcional |
-| INT1.7 | O cadastro no site deve ser efetivado através de um e-mail de confirmação, que ativa a conta com apenas um _click_ | Should | Funcional |
-| INT1.8 | O usuário cadastrado deve receber um tutorial de uso do site, no qual as principais funcionalidades recebem ênfase e informações detalhadas de como usar | Should | Funcional |
-| INT1.9 | O usuário deve ter a opção de submeter o artigo no site | Should | Funcional |
+| INT1.1 | O site deve conter uma página inicial explicando o que é o site e como ele funciona | Must | Não Funcional |
+| INT1.2 | O site deve conter uma página para explicar as diretrizes de segurança de direitos autorais | Must | Não Funcional |
+| INT1.3 | O site deve apresentar a opção de inscrever-se através de nome de usuário e senha | Must | Funcional |
+| INT1.4 | O site deve conter a opção de inscrever-se com facebook ou gmail | Should | Funcional |
+| INT1.5 | O site deve conter a opção de realizar o login com nome de usuário e senha | Should | Funcional |
+| INT1.6 | O site deve conter a opção de realizar o login com facebook ou gmail | Should | Funcional |
+| INT1.7 | O cadastro no site deve ser efetivado através de um e-mail de confirmação, que ativa a conta com apenas um _click_ | Must | Funcional |
+| INT1.8 | O usuário cadastrado deve receber um tutorial de uso do site, no qual as principais funcionalidades recebem ênfase e informações detalhadas de como usar | Must | Funcional |
+| INT1.9 | O usuário deve ter a opção de submeter o artigo no site | Must | Funcional |
+
+## Introspecção 2
+
+#### Rastreabilidade
+
+| Nome | Papel | Observação |
+|--|--|--|
+| Helena Goulart | Usuária do Web App | Membro da equipe |
+
+#### Contexto
+Ao clicar na opção de submeter o texto traduzido, Bianca conferiu se o tipo do
+arquivo era compatível com o exigido pela plataforma, que era um formato PDF.
+Este pré-requisito foi atendido e a usuária pode visualizar logo após submeter
+o artigo quais eram os trechos que os tradutores teriam acesso. Surgem na tela
+então duas opções: aceitar os trechos como estão, ou definir manualmente como os
+trechos poderiam ser dividos. Bianca não viu muito sentido em como os trechos
+estavam dividos e optou por editar a divisão. Ao concluí-la, o site alertou
+se ela tem certeza sobre a edição, e que o site não se responsabiliza pelo excesso
+de informação disponibilizada pela própria autora do texto. Ela afirmou se
+responsabilizar, afinal havia pressa para que o serviço fosse realizado e não
+se atentou muito à segurança dos dados. O site questionou qual o prazo para a
+conclusão do serviço, informando as opções de prazo mínimo e máximo que os tradutores
+possuem. Bianca, com muita pressa, optou pelo prazo mínimo.
+
+#### Necessidades Técnicas
+* Ferramentas que suportem formatos de texto mais comuns para subimissão de artigos;
+* Divisão automática do texto em trechos.
+
+#### Necessidades Sociais
+* Privacidade dos dados.
+
+#### Necessidades Individuais
+* Prazos para conclusão do serviço.
+
+#### Requisitos Elicitados
+
+| Código | Descrição | Prioridade | Classificação |
+|--|--|--|--|
+| INT2.1 | O site deve suportar formatos de texto mais comuns para subimissão de artigos; | Should | Não Funcional |
+| INT2.2 |O site deve dividir o texto do usuário em vários pequenos trechos | Must | Funcional |
+| INT2.3 | Um mesmo tradutor não pode ter acesso completo ao texto do usuário | Must | Não Funcional |
+| INT2.4 | O usuário deve poder personalizar a divisão de trechos do texto | Must | Funcional |
+| INT2.5 | O usuário não poderá disponibilizar o texto completo para o tradutor no processo de personalização da divisão | Must | Funcional |
+| INT2.6 | O site deve questionar se o usuário possui certeza da personalização da divisão do texto | Should | Funcional |
+| INT2.7 | O site deve disponibiliar prazo mínimo e máximo para a conclusão do serviço | Must | Funcional |
+| INT2.8 | O usuário deve poder selecionar uma data limite para receber o texto traduzido de acordo com o período mínimo e máximo disponibilizado pelo site | Must | Funcional
