@@ -3,8 +3,7 @@
 Este repositório contém a documentação do projeto Translate.me que integra-se
 com a disciplina ofertada pela Universidade de Brasília - Faculdade do Gama
 (UnB/FGA) nomeada como Arquitetura e Desenho de Software, no semestre 2019/2,
-ministrada pela da docente Milene Serrano. Para conferir a documentação completa
-da equipe, [clique aqui](https://desenho2019-1.github.io/docs/).
+ministrada pela da docente Milene Serrano.
 
 ## Equipe
 
