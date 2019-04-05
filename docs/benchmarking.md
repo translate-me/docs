@@ -1,4 +1,24 @@
-# Benchmarking - Translate me
+# Benchmarking
+
+## Histórico de Revisão:
+| Data | Versão | Descrição | Autor |
+|---|---|---|---|
+| 04/04/2019 | 0.1 | Adicionando template, detalhes do produto e métrica 2.1 | Helena Goulart |
+| 01/04/2019 | 0.2 | Inclusão do histórico de revisão, sumário e links para o sumário  | Helena Goulart |
+
+## Sumário
+
+1. [Detalhes do produto](#)              
+2. [Métricas utilizadas](#)          
+3. [Análise de similares](#) <br>
+  3.1 [SLD Trados](#) <br>
+  3.2 [WordFast](#) <br>
+  3.3 [OmegaT](#) <br>
+  3.4 [Lingua Et Machina](#) <br>
+  3.5 [WordLingo](#) <br>
+  3.6 [iTranslate4](#) <br>
+  3.7 [My Memory](#) <br>
+  3.8 [Google Tradutor](#)
 
 ## 1.0 Detalhes do produto
 O Translate me trata-se de um Web App para traduzir artigos científicos da
@@ -103,12 +123,5 @@ pelo uso do software por um ano, e não por unidade de serviço prestado.
 <b> O que é </b> <br>
 <br> <b> Pontos em comum </b>
 <br> <br> Pontos divergentes </b> <br>
-<br> <b> Pontos Positivos </b> <br>
-<br> <b> Pontos Negativos </b> <br>
-
-### 3.9 [My Memory](https://mymemory.translated.net/)
-<b> O que é </b> <br>
-<br> <b> Pontos em comum </b> <br>
-<br> <b> Pontos divergentes </b> <br>
 <br> <b> Pontos Positivos </b> <br>
 <br> <b> Pontos Negativos </b> <br>
