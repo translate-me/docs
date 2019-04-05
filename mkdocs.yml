@@ -5,8 +5,13 @@ pages:
   - Documento de Visão: doc_de_visao.md
   - Documento de Arquitetura: doc_de_arquitetura.md
   - Benchmarking: benchmarking.md
+<<<<<<< HEAD
   - Elicitação de requisitos:
 	- Introspeccção - Helena: introspecao-helena.md
+=======
+  - Introspecção:
+    - Victor Backlog: victor_backlog.md
+>>>>>>> 16390eba1b5253270f13685957330460149fd84f
   # - RASTREABILIDADE:
   #   - Rastros: rastreabilidade.md
   # - PRÉ-RASTREABILIDADE:
