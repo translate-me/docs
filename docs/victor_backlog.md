@@ -13,7 +13,7 @@
 <p>O obejtivo principal desse documento é deixar de uma forma mais clara, com hístorias de usuários, em uma tabela os requisitos retirados pelo grupo para o app em questão.</p>
 
 ## 3. Metodologia
-<p>A metodologia usada para a confecção desses requisitos foi a introspecção.</p>
+<p>A metodogolia usada para a confecção desses requisitos foi a introspecção.</p>
 
 |Tema|Épico|ID |Eu, como| Desejo|Para que eu possa|
 |--- |---  |---|---     |---    |---              |
