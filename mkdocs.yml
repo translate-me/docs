@@ -6,8 +6,9 @@ pages:
   - Documento de Arquitetura: doc_de_arquitetura.md
   - Benchmarking: benchmarking.mds
   - Elicitação de requisitos:
-	- Helena Backlog: helena_backlog.md
-	- Victor Backlog: victor_backlog.md
+    - Helena Backlog: helena_backlog.md
+    - Victor Backlog: victor_backlog.md
+    - Gabriela Backlog: gabriela_backlog.md
   # - RASTREABILIDADE:
   #   - Rastros: rastreabilidade.md
   # - PRÉ-RASTREABILIDADE:
