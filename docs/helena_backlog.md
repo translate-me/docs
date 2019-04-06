@@ -108,7 +108,7 @@ possuem. Bianca, com muita pressa, optou pelo prazo mínimo.
   | Helena Goulart | Tradutora | Membro da equipe |
 
 #### Contexto
-Certa vez a estudante de história Fabíola estava interessada em conseguir dinheiro sem necessariamente passar horas em um escritório ou qualaquer emprego fixo, uma vez que estava redigindo seu TCC1 na Universidade de Brasília. Fabíola possui alta pontuação no TOEFL e já deu aulas particulares de inglês, e então realizou uma busca no google de _"freelancer inglês"_, deparando-se com o Translate-me. Ao ler a página de informações para freelancers, Fabíola concluiu que atende aos requisitos necessários para ser tradutora no site, dentre eles: ter uma conta em um banco virtual, ter um diploma ou certificado de competência em língua estrangeira, e optou por inscrever-se na plataforma.
+Certa vez a estudante de história Fabíola estava interessada em conseguir dinheiro sem necessariamente passar horas em um escritório ou qualquer emprego fixo, uma vez que estava redigindo seu TCC1 na Universidade de Brasília. Fabíola possui alta pontuação no TOEFL e já deu aulas particulares de inglês, e então realizou uma busca no google de _"freelancer inglês"_, deparando-se com o Translate-me. Ao ler a página de informações para freelancers, Fabíola concluiu que atende aos requisitos necessários para ser tradutora no site, dentre eles: ter uma conta em um banco virtual, ter um diploma ou certificado de competência em língua estrangeira, e optou por inscrever-se na plataforma.
 
 #### Necessidades Técnicas
 * Informações sobre os pré-requisitos para participar.
@@ -160,3 +160,93 @@ Após retirar seu certificado da gaveta, Fabíola anexou uma foto dele no Transl
 | INT4.6 | O usuário deve poder editar as informações do seu perfil  | Must | Funcional |
 | INT4.7 | O site deve validar a veracidade da certificação em língua estrangeira | Must | Não Funcional |
 | INT4.8 | O site deve expor no perfil qual é a certificação do usuário em questão | Must | Não Funcional |
+
+## Introspecção 5
+
+#### Rastreabilidade
+
+| Nome | Papel | Observação |
+|--|--|--|
+  | Helena Goulart | Tradutora | Membro da equipe |
+
+#### Contexto
+Dois dias após realizar o login na plataforma, Fabíola percebeu que não recebeu notificações a respeito de pedidos de traduções, e entrou no Translate.me para ver se havia recebido alguma mensagem. Ao efetuar o _login_, percebeu que havia um _feed_, mostrando os novos pedidos de traduções, e uma lista de categorias à direita. Ao clicar na categoria _Ciências da natureza_, encontrou uma tese de mestrado solicitando tradução. Fabíola ficou bastante surpresa pelas traduções ficarem categorizadas, e aceitou fazer a tradução da tese de mestrado de uma estudante chamada Bianca. Ao clicar em "Quero traduzir esse texto", apareceram alguns trechos para Bianca traduzir.
+
+#### Necessidades Técnicas
+* Existência de categorização dos textos a serem traduzidos.
+
+#### Necessidades Sociais
+* Existir um _feed_ contendo todas as traduções submetidas recentemente no site.
+
+#### Necessidades Individuais
+* Acessibilidade e facilidade em encontrar trabalhos.
+
+#### Requisitos Elicitados
+
+| Código | Descrição | Prioridade | Classificação |
+|--|--|--|--|
+| INT5.1 | O site deve conter um _feed_ com as traduções submetidas recentemente | Must | Não Funcional |
+  | INT5.2 | O site deve conter categorias que separem os textos a serem traduzidos de acordo com temas em comum | Must | Não Funcional |
+| INT5.3 | O site deve conter uma comunicação de estilo conversativa com o usuário | Should | Não Funcional |
+| INT5.4 | O usuário deve poder selecionar a opção de traduzir o texto | Must | Funcional |
+
+## Introspecção 6
+
+
+#### Rastreabilidade
+
+| Nome | Papel | Observação |
+|--|--|--|
+  | Helena Goulart | Usuária | Membro da equipe |
+
+#### Contexto
+Era uma terça-feira a tarde quando Bianca entrou no Translate.me para acompanhar o processo de tradução de seu artigo. Ao digitar o link e entrar na página, encontrou a opção "Textos em andamento", e viu que havia uma bola vermelha e pequena nessa opção, indicando uma notificação. Ao clicar, apareceu o nome de quatro pessoas que estavam com a tradução em andamento, e Bianca visualizou o perfil de uma por uma, e ficou bastante contente em ver que todos que estavam realizando o trabalho eram bastante competentes para isso. Ao voltar para a página de "Textos em andamento", clicou na opção de "Acompanhar a tradução de Fabíola", e conseguiu ver em tempo real como andava o trabalho da tradutora.
+
+#### Necessidades Técnicas
+* Notificar os usuários de que existem atualizações no status de tradução do texto.
+
+#### Necessidades Sociais
+* Conhecer quem está traduzindo o texto.
+
+#### Necessidades Individuais
+* Acompanhar se o texto submetido está em processo de tradução.
+
+#### Requisitos Elicitados
+
+| Código | Descrição | Prioridade | Classificação |
+|--|--|--|--|
+| INT6.1 | O site deve notificar quando houver uma atualização no status de alguma atividade do usuário | Must | Não Funcional |
+| INT6.2 | O usuário deve poder visualizar o perfil de outros usuários | Must | Funcional |
+| INT6.3 | O site deve informar quem são as pessoas que estão traduzindo o texto do usuário | Should | Não Funcional |
+| INT6.4 | O usuário deve poder acompanhar as traduções e visualizar como elas estão sendo feitas | Must | Funcional |
+
+
+## Introspecção 7
+
+#### Rastreabilidade
+
+| Nome | Papel | Observação |
+|--|--|--|
+  | Helena Goulart | Tradutora | Membro da equipe |
+
+#### Contexto
+Assim que clicou para começar a tradução do texto de Bianca, o site Translate.me direcionou Fabíola para uma página informando as diretrizes de segurança, assim como as políticas de privacidade e de segurança de dados. Fabíola clicou na caixa de seleção informando estar ciente de todas as regras e em seguida apertou a opção "Continuar". Então, foi direcionada para a tradução. Nessa página informava o prazo máximo para entrega do serviço, e Fabíola logo começou a realizar o trabalho. Enquanto realizava a tradução, quando escrevia palavras, termos e expressões de maneira incorreta, o _software_ oferecia sugestões de correção, o que facilitou o serviço de tradução. Duas horas depois, o serviço estava concluído. 
+
+#### Necessidades Técnicas
+* Informar aos usuários a importância da segurança de dados e as diretrizes do site;
+* Auxiliar o usuário com as traduções.
+
+#### Necessidades Sociais
+* Prazos para entrega da tradução.
+
+#### Necessidades Individuais
+* Visualizar o prazo de entrega do serviço.
+
+#### Requisitos Elicitados
+
+| Código | Descrição | Prioridade | Classificação |
+|--|--|--|--|
+| INT3.1 | O site deve informar a importância das seguranças de dados e as diretrizes do site | Must | Não Funcional |
+| INT3.2 | O usuário não poderá começar nenhuma tradução sem antes confirmar que está de acordo com as políticas de privacidade e de segurança de dados do site | Must | Funcional |
+| INT3.3 | O site deve informar ao tradutor o prazo para a entrega do serviço | Must | Não Funcional |
+| INT3.4 | O site deve conter o apoio do _software_ CAT | Must | Funcional |
