@@ -6,7 +6,7 @@ pages:
   - Documento de Arquitetura: doc_de_arquitetura.md
   - Benchmarking: benchmarking.mds
   - Elicitação de requisitos:
-	- Introspeccção - Helena: introspecao-helena.md
+	- Helena Backlog: introspecao_helena.md
 	- Victor Backlog: victor_backlog.md
   # - RASTREABILIDADE:
   #   - Rastros: rastreabilidade.md
