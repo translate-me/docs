@@ -5,12 +5,15 @@ pages:
   - Documento de Visão: doc_de_visao.md
   - Documento de Arquitetura: doc_de_arquitetura.md
   - Benchmarking: benchmarking.md
-  - Elicitação de requisitos:
+  - Backlogs Individuais:
     - Helena Backlog: helena_backlog.md
     - Victor Backlog: victor_backlog.md
     - Gabriela Backlog: gabriela_backlog.md
     - Alexandre Backlog: alexandre_backlog.md
     - Luiz Backlog: luiz_backlog.md
+    - Leticia Backlog: leticia_introspeccao.md
+  - Backlog Geral: backlog.md
+
   # - RASTREABILIDADE:
   #   - Rastros: rastreabilidade.md
   # - PRÉ-RASTREABILIDADE:
