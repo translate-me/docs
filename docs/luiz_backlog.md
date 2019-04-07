@@ -9,7 +9,7 @@ Este documento visa elaborar um backlog individual, que define, formatado no for
 O objetivo, é demonstrar a visão individual sobre o projeto e formular um backlog individual listando as principais funcionalidades.
 
 ### Metodologia
-As funcionalidades foram listadas através de Histórias de Usuário, onde é especificado funcionamentos da aplicação e o objetivo que o usuário espera ter com isso. Para um melhor compreendimento, as histórias foram divididas em Épicos, após uma observação das histórias listadas. Foi também estabelecido IDs para identificação e rastreabilidade, o ID contem o prefixo **USL** significando ***U**ser **S**tory de **L**uiz*, já que o backlog é individual, usar somente US poderia se tornar confuso em questões de rastreabilidade.
+As funcionalidades foram listadas através de Histórias de Usuário, onde é especificado funcionamentos da aplicação e o objetivo que o usuário espera ter com isso. Para um melhor compreendimento, as histórias foram divididas em Épicos, após uma observação das histórias listadas. Foi também estabelecido IDs para identificação e rastreabilidade, o ID contem o prefixo **USL** significando **U**ser **S**tory de **L**uiz, já que o backlog é individual, usar somente US poderia se tornar confuso em questões de rastreabilidade.
 
 ### Lista de *User Stories*
 
