@@ -39,7 +39,7 @@ A finalidade deste documento é definir e priorizar as tarefas a serem feitas du
 | US18 |Tradução em andamento| Cliente | Ver o andamento das minhas traduções | Eu possa fazer o acompanhamento das traduções  | ----- | ------ |
 | US19 |Pedido de Tradução| Cliente | Solicitar traduções novas | Possa ter novos textos traduzidos | ----- | ------ |
 | US20 | Pedido de Tradução| Cliente  | Dividir o texto em tópicos | Dividir o trabalho entre vários tradutores | ----- | -----|
-| US21 |Tradução em andamento| Cliente| |Estar informado sobre quantidade de tradutores trabalhando, tempo necessário para entrega, segurança do meu texto| Compreender o serviço | ---- | ----|
+| US21 |Tradução em andamento| Cliente| Estar informado sobre quantidade de tradutores trabalhando, tempo necessário para entrega, segurança do meu texto| Compreender o serviço | ---- | ----|
 | US22 | Pagamento| Cliente| Pagar pelo serviço de tradução | Ter o serviço feito | ----- | ----- |
 | US23 | Tradução em andamento | Cliente | Saber a fase em que a tradução está, se algum tradutor já aceitou o trabalho, se está em fase de revisão | Acompanhar o processo e o tempo de entrega | ---- | ----|
 | US24 | Pedidos de Tradução| Tradutor| Receber pedidos de tradução que se encaixem em meu perfil | Encontrar trabalhos facilmente | ----- | ----- |
