@@ -35,7 +35,7 @@ A finalidade deste documento é definir e priorizar as tarefas a serem feitas du
 | US14 | Login | Usuário | Realizar o login na aplicação | Acessar os recursos da aplicação | Must | ----- |
 | US15 | Login | Usuário | Realizar o login na aplicação pelo Facebook | Acessar os recursos da aplicação com integração à conta do facebook | Should | ---- |
 | US16 | Login | Usuário | Realizar o login na aplicação pelo Google | Acessar os recursos da aplicação com integração à conta do Google | Should | ---- |
-| US17 | Pagamento | Desenvolvedor | Acoplar sistema de carteira virtual à aplicação | Permitir que os usuários realizem transferências seguras de crédito | Would | IA1.06 |
+| US17 | Pagamento | Desenvolvedor | Acoplar sistema de carteira virtual à aplicação | Permitir que os usuários realizem transferências seguras de crédito | Would | ------- |
 | US18 |Tradução em andamento| Cliente | Ver o andamento das minhas traduções | Eu possa fazer o acompanhamento das traduções  | ----- | ------ |
 | US19 |Pedido de Tradução| Cliente | Solicitar traduções novas | Possa ter novos textos traduzidos | ----- | ------ |
 | US20 | Pedido de Tradução| Cliente  | Dividir o texto em tópicos | Dividir o trabalho entre vários tradutores | ----- | -----|
