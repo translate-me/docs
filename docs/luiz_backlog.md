@@ -40,3 +40,8 @@ As funcionalidades foram listadas através de Histórias de Usuário, onde é es
 |Revisão|USL23|Revisor|Conseguir validar a tradução|Aprovar ou reprovar uma determinada tradução|
 |Revisão|USL24|Revisor|Criar um léxico de tradução para padronização|Padronizar a tradução de determinados termos para todos os tradutores|
 
+### Mapa Mental
+Para realização do processo de elicitação dessas determinadas histórias de usuário, fora utilizado um mapa mental, que pode ser visto abaixo:
+
+![Imgur](https://i.imgur.com/BvrKkem.png)
+
