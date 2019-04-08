@@ -5,6 +5,7 @@
 |---|---|---|---|
 | 04/04/2019 | 0.1 | Adicionando template, detalhes do produto e métrica 2.1 | Helena Goulart |
 | 01/04/2019 | 0.2 | Inclusão do histórico de revisão, sumário e links para o sumário  | Helena Goulart |
+| 08/04/2019 | 0.3 | Inclusão da descrição dos demais serviços de tradução analisados  | Luiz Guilherme |
 
 ## Sumário
 
@@ -75,53 +76,82 @@ para softwares de jogos. <br>
 Caso o usuário pretenda utilizar a plataforma uma única vez, ele acaba pagando
 pelo uso do software por um ano, e não por unidade de serviço prestado.
 
-
 ### 3.2 [WordFast](https://www.wordfast.net/)
 <b> O que é </b> <br>
+É uma plataforma de tradução para desktop, que permite tradutores freelancers traduzirem textos produzidos por terceiros em diversos idiomas.
+
 <br> <b> Pontos em comum </b> <br>
+A tradução pode ser realizada em fragmentos, dentro de uma tabela, divindo o texto em períodos. Além disso, também possui um espaço para terminologias (léxicos)
+
 <br> <b> Pontos divergentes </b> <br>
+A plataforma não possui um catálogo de textos para contratação entre o cliente que precisa da tradução e o tradutor, também não oferece um espaço para revisão ou diversos tradutores realizando a mesma tradução.
+
 <br> <b> Pontos Positivos </b> <br>
+A plataforma é bem completa e possui diversas ferramentas para facilitar a tradução de textos. A plataforma conta com uma interface amigável e uma boa integração entre a terminologia de forma fácil dentro do próprio texto.
+
 <br> <b> Pontos Negativos </b> <br>
+Não possui uma interação entre cliente e tradutor, não possui transparência durante a tradução, não pode ser utilizada no navegador.
 
 ### 3.3 [OmegaT](https://omegat.org/)
 <b> O que é </b> <br>
+Plataforma open-source para Windows, macOS e Linux feita para tradutores profissionais realizarem traduções.
+
 <br> <b> Pontos em comum </b> <br>
+Tirando o conceito em ser uma ferramenta de tradução, não existem muitos pontos em comum na proposta de funcionamento de ambas plataformas.
+
 <br> <b> Pontos divergentes </b> <br>
+O OmegaT não se propõe a ser um local para unir clientes e tradutores, mas sim uma plataforma que serve a diversos formatos, necessidades para vários tipos de usuários.
+
 <br> <b> Pontos Positivos </b> <br>
+A plataforma é acessível a todas as plataformas necessárias, tem código aberto, possui uma comunidade ativa e possui suporte a diferentes línguas, formatos de arquivos e sistemas operacionais.
+
 <br> <b> Pontos Negativos </b> <br>
+A aplicação não possui divisão dos textos por período e não permite também a tradução em diversos dispositivos, pela nuvem.
 
-
-### 3.4 [Lingua Et Machina](http://lingua-et-machina.com/)
+### 3.4 [WordLingo](http://www.worldlingo.com/)
 <b> O que é </b> <br>
-<br> <b> Pontos em comum </b> <br>
-<br> <b> Pontos divergentes </b> <br>
-<br> <b> Pontos Positivos </b> <br>
-<br> <b> Pontos Negativos </b> <br>
+Uma plataforma de tradução que oferece dois tipos de tradução, uma automatizada feita por uma ferramenta de tradução e outra feita por um tradutor profissional.
 
-### 3.5 [WordLingo](http://www.worldlingo.com/)
-<b> O que é </b> <br>
 <br> <b> Pontos em comum </b>  <br>
+A aplicação permite o upload de arquivos em diversos idiomas diferentes para tradução profissional. A plataforma também é acessível pela web.
+
 <br> <b> Pontos divergentes </b>  <br>
+Possui uma ferramenta de tradução automatizada, que permite a primeira tradução ser feita a partir de um documento, email ou um texto.
+
 <br> <b> Pontos Positivos </b>  <br>
-<br> <b> Pontos Negativos </b>  <br>
+A plataforma conta com um sistema gratuito de tradução automatizada e um sistema interessante de cotação da tradução realizada por um tradutor profissional.
 
-### 3.6 [iTranslate4](http://itranslate4.eu/en/) </b>
-<b> O que é </b>  <br>
-<br> <b> Pontos em comum </b>  <br>
-<br> <b> Pontos divergentes </b>  <br>
-<br> <b> Pontos Positivos </b> <br>
 <br> <b> Pontos Negativos </b>  <br>
+A interface é simplista e não possui muitos recursos que auxiliem a utilização.
 
-### 3.7 [My Memory](https://mymemory.translated.net/)
+### 3.5 [My Memory](https://mymemory.translated.net/)
 <b> O que é </b> <br>
+O MyMemory é um tradutor automático que conta com auxílio de colaboradores humanos que ajudam a traduzir os termos perguntados.
+
 <br> <b> Pontos em comum </b> <br>
-<br> <b> Pontos divergentes </b> <br>
-<br> <b> Pontos Positivos </b> <br>
-<br> <b> Pontos Negativos </b> <br>
+Não possui pontos em comum.
 
-### 3.8 [Google Tradutor](https://translate.google.com.br/)
-<b> O que é </b> <br>
-<br> <b> Pontos em comum </b>
-<br> <br> Pontos divergentes </b> <br>
+<br> <b> Pontos divergentes </b> <br>
+O foco da plataforma é uma tradução muito mais automatizada, mas validada por um grupo de usuários que revisam a tradução e oferecem uma nova visão sobre uma tradução equivocada.
+
 <br> <b> Pontos Positivos </b> <br>
+É uma plataforma rápida de tradução e oferece suporte a diversas linguagens, além do diferencial da contribuição humana.
+
 <br> <b> Pontos Negativos </b> <br>
+A plataforma é simples, e falta em recursos como a tradução de documentos, suporte a textos mais longos e a contratação de profissionais de tradução.
+
+### 3.6 [Google Tradutor](https://translate.google.com.br/)
+<b> O que é </b> <br>
+A mais utilizada ferramenta de tradução do mundo, mas que funciona de forma automatizada e conta com a atuação da comunidade para revisar as traduções realizadas de forma automatizada.
+
+<br> <b> Pontos em comum </b>
+Não possui pontos em comum.
+
+<br> <br> Pontos divergentes </b> <br>
+O foco da plataforma é uma tradução diferente, automatizada e não permite que um tradutor seja contratado para realizar a tradução de um documento.
+
+<br> <b> Pontos Positivos </b> <br>
+A plataforma é gratuita, possui um grande banco de dados de acordo com sua utilização mundial em grande escala. Possui um bom sistema de sinônimos e suporte a diversas linguagens.
+
+<br> <b> Pontos Negativos </b> <br>
+Não possui a opção de tradução por um profissional da tradução.
