@@ -3,7 +3,7 @@
 |---|---|---|---|
 | 27/03/2019 | 0.1 | Adicionando template | Gabriela e Renan |
 | 01/04/2019 | 0.2 | Modificando template para preenchimento  | Alexandre Miguel |
-|   |   |   |   |
+|  08/04/2019 | 0.3  | Adicionando proposta no documento  |  Victor Hugo  |
 
 
 ## Sumário
@@ -34,7 +34,8 @@
 ### 1. Introdução  
 
 #### 1.1. Proposta  
-
+<p> Este documento tem como objetivo apresentar a ideia geral do webapp translate.me e com isso entender o contexto no qual a webapp está inserido.</p>
+<p> O translate.me é uma webapp, feito para comunicade acadêmica, que visa implementar um marketplace de tradução de textos de artigos científicos e livros.</p>
 #### 1.2. Escopo  
 
 #### 1.3. Definições, Acronimos, e Abreviações     
@@ -70,7 +71,15 @@
 
 ---
 ### 6. Restrições
+#### 6.1. Restrições de Design
+<p> O webapp tem que ter um design de alta compreensão e acessibilidade.</p>
 
+#### 6.2. Restrições de Implementação
+<p> A aplicação será implementada em python com framework Django, Rest Framework  e React. E será dividido em microserviços.</p>
+#### 6.3. Restrições de Segurança
+<p> O aplicativo não será responsável por copyright dos textos submetidos com taxa abaixo 50% de privacidade(indice medidos com métricas do site).</p>
+#### 6.4. Restrições de Design
+<p> Por se tratar de uma aplicação na web uma restrição do projeto é possuir acesso a uma internet estável e navegadores compatíveis com os listados no projeto para acessar o webapp.</p>
 ---
 ### 7. Critérios de Qualidade
 ---
