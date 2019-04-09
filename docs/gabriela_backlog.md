@@ -8,7 +8,7 @@ Este documento tem como função montar um backlog, feito individualmente, para 
 Listar as funcionalidades necessárias para o produto final.
 
 ### Metodologia
-As funcionalidades foram listadas através de Histórias de Usuário, onde é especificado funcionamentos da aplicação e o objetivo que o usuário espera ter com isso. Para um melhor compreendimento, as histórias foram divididas em Épicos, após uma observação das histórias listadas. Foi também estabelecido IDs para identificação e rastreabilidade, o ID contem o prefixo **USG** significando ***U**ser **S**tory de **G**abriela*, já que o backlog é individual, usar somente US poderia se tornar confuso em questões de rastreabilidade.
+As funcionalidades foram listadas através de Histórias de Usuário, onde é especificado funcionamentos da aplicação e o objetivo que o usuário espera ter com isso. Para um melhor compreendimento, as histórias foram divididas em Épicos, após uma observação das histórias listadas. Foi também estabelecido IDs para identificação e rastreabilidade, o ID contem o prefixo **USG** significando _**U**ser **S**tory de **G**abriela_, já que o backlog é individual, usar somente US poderia se tornar confuso em questões de rastreabilidade.
 
 ### Lista de *User Stories*
 
