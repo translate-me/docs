@@ -70,15 +70,17 @@
 ### 5. Funcionalidades do Produto
 
 ---
-### 6. Restrições
-#### 6.1. Restrições de Design
+### 6. Restrições   
+#### 6.1. Restrições de Design   
 <p> O webapp tem que ter um design de alta compreensão e acessibilidade.</p>
 
-#### 6.2. Restrições de Implementação
+#### 6.2. Restrições de Implementação   
 <p> A aplicação será implementada em python com framework Django, Rest Framework  e React. E será dividido em microserviços.</p>
-#### 6.3. Restrições de Segurança
+
+#### 6.3. Restrições de Segurança   
 <p> O aplicativo não será responsável por copyright dos textos submetidos com taxa abaixo 50% de privacidade(indice medidos com métricas do site).</p>
-#### 6.4. Restrições de Design
+
+#### 6.4. Restrições de Design   
 <p> Por se tratar de uma aplicação na web uma restrição do projeto é possuir acesso a uma internet estável e navegadores compatíveis com os listados no projeto para acessar o webapp.</p>
 ---
 ### 7. Critérios de Qualidade
