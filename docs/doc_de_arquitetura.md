@@ -5,7 +5,7 @@
 |---|---|---|---|
 | 31/03/2019 | 0.1 | Adicionando o Template do documento de arquitetura | Victor |
 | 01/04/2019 | 0.2 | Modificando Template para preenchimento | Alexandre Miguel|
-|   |   |   |   |
+| 09/04/2019 | 0.3 | Adicionando Introdução e Requisitos e Restrições arquiteturais | Gabriela Guedes |
 
 
 ### Objetivo do documento
@@ -14,7 +14,7 @@ translate.me. A caraterização será feita apenas no ambito do software não le
 como de performace.
 
 ## Sumário
-1. [Introdução](#1)  
+1. [Introdução](#1-introdução)  
 	1.1 [Finalidade](#1.1)  
 	1.2 [Escopo](#1.2)  
 	1.3 [Definições, Acrônimos e Abreviações](#1.3)  
@@ -31,7 +31,9 @@ como de performace.
 
 
 ### 1. Introdução
----
+
+Este documento visa apresentar a arquitetura de software a ser aplicada no sistema do Translate.me, de forma que facilite a visualização dos requisitos e da estrutura para os envolvidos. 
+
 #### 1.1. Finalidade
 ---
 #### 1.2. Escopo
@@ -39,12 +41,21 @@ como de performace.
 #### 1.3. Definições, Acrônimos e Abreviações
 ---
 #### 1.4. Referências
+[Lino](https://botlino.github.io/docs/doc-arquitetura)
 ---
 ### 2. Representação arquitetural
 ![arquitetura](https://i.ibb.co/zf99Pb7/architecture.png)
 ---
 ### 3. Requisitos e Restrições arquiteturais
----
+
+|Requisito|Solução|
+|---|---|
+|Linguagem|O front-end será feito em JavaScript e o back-end, em Python|
+|Plataforma|Serão usadas as plataformas ReactJS para o front-end e Django para o back-end|
+|Segurança| É necessário uma segurança para com os dados, pois todos os usuários irão interagir de forma anônima. Para uma maior segurança das informações, será necessário a utilização de token nas requisições|
+|Persistência|O sistema lidará com uma quantidade grande de dados(informações de usuário e textos em tradução), que para um bom funcionamento do sistema não podem ser perdidos, para a persistência destes dados será utilizado um banco de dados relacional|
+|Arquitetura|Será feita uma arquitetura de microsserviços, para um melhor funcionamento e desempenho do sistema, já que não serão dependentes entre si|
+
 ### 4. Visão Lógica
 ---
 #### 4.1. Visão geral de camadas e pacotes
