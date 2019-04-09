@@ -41,6 +41,7 @@ como de performace.
 #### 1.4. Referências
 ---
 ### 2. Representação arquitetural
+![arquitetura](https://i.ibb.co/zf99Pb7/architecture.png)
 ---
 ### 3. Requisitos e Restrições arquiteturais
 ---
