@@ -4,6 +4,7 @@
 | 27/03/2019 | 0.1 | Adicionando template | Gabriela e Renan |
 | 01/04/2019 | 0.2 | Modificando template para preenchimento  | Alexandre Miguel |
 |  08/04/2019 | 0.3  | Adicionando proposta no documento  |  Victor Hugo  |
+|  09/04/2019 | 0.4  | Adicionando abreviações  |  Gabriela Guedes  |
 
 
 ## Sumário
@@ -11,7 +12,7 @@
 1. [Introdução](#)         
 1.1. [Proposta](#)   
 1.2. [Escopo](#)   
-1.3. [Definições, Acronimos, e Abreviações](#)     
+1.3. [Definições, Acronimos, e Abreviações](#13-definições-acronimos-e-abreviações)     
 1.4. [Visão Geral](#)         
 2. [Posicionamento](#)          
 2.1. [Oportunidade de Negócio](#)        
@@ -38,7 +39,14 @@
 <p> O translate.me é uma webapp, feito para comunicade acadêmica, que visa implementar um marketplace de tradução de textos de artigos científicos e livros.</p>
 #### 1.2. Escopo  
 
-#### 1.3. Definições, Acronimos, e Abreviações     
+#### 1.3. Definições, Acronimos, e Abreviações
+UnB - Universidade de Brasília
+
+FGA - Faculdade do Gama, campus da UnB
+
+Desenho - A matéria Arquitetura e Desenho de Software
+
+Translate.me - Nome do sistema a ser desenvolvido    
 
 #### 1.4. Visão Geral
 ---
@@ -87,7 +95,7 @@
 
 #### 6.4. Restrições de Design   
 <p> Por se tratar de uma aplicação na web uma restrição do projeto é possuir acesso a uma internet estável e navegadores compatíveis com os listados no projeto para acessar o webapp.</p>
----
+
 ### 7. Critérios de Qualidade
 ---
 ### 8. Requisitos    
