@@ -5,7 +5,9 @@ pages:
   - Documento de Visão: doc_de_visao.md
   - Documento de Arquitetura: doc_de_arquitetura.md
   - Benchmarking: benchmarking.md
-  - Requisitos: requisitos.md
+  - Requisitos:
+    - Tabela de Requisitos: requisitos.md
+    - NFRs: doc_nfr.md
   - Backlogs Individuais:
     - Helena Backlog: helena_backlog.md
     - Victor Backlog: victor_backlog.md
