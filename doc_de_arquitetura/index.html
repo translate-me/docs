@@ -406,9 +406,29 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#7-dimensionamento" title="7. Dimensionamento" class="md-nav__link">
-    7. Dimensionamento
+  <a href="#7-dimensionamento-e-performance" title="7. Dimensionamento e Performance" class="md-nav__link">
+    7. Dimensionamento e Performance
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-volume" title="7.1. Volume" class="md-nav__link">
+    7.1. Volume
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-perfomance" title="7.2. Perfomance" class="md-nav__link">
+    7.2. Perfomance
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -747,9 +767,29 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#7-dimensionamento" title="7. Dimensionamento" class="md-nav__link">
-    7. Dimensionamento
+  <a href="#7-dimensionamento-e-performance" title="7. Dimensionamento e Performance" class="md-nav__link">
+    7. Dimensionamento e Performance
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-volume" title="7.1. Volume" class="md-nav__link">
+    7.1. Volume
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-perfomance" title="7.2. Perfomance" class="md-nav__link">
+    7.2. Perfomance
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -802,6 +842,12 @@
 <td>Alexandre Miguel</td>
 </tr>
 <tr>
+<td>10/04/2019</td>
+<td>0.3</td>
+<td>Adicionando informações de Dimensionamento e Performance e de Qualidade</td>
+<td>Alexandre Miguel</td>
+</tr>
+<tr>
 <td></td>
 <td></td>
 <td></td>
@@ -842,10 +888,76 @@ como de performace.</p>
 <hr />
 <h3 id="6-visao-de-implementacao">6. Visão de implementação</h3>
 <hr />
-<h3 id="7-dimensionamento">7. Dimensionamento</h3>
+<h3 id="7-dimensionamento-e-performance">7. Dimensionamento e Performance</h3>
+<p>Seção responsável pela estimativa em valores quantizados do desempenho dos módulos da arquitetura, bem como de sua performance em execução, conforme a análise qualitativa estabelecida no <a href="#">Documento de Requisitos Não Funcionais</a></p>
+<h4 id="71-volume">7.1. Volume</h4>
+<p>De forma geral, o sistema deve permitir que o fluxo de usuários de ambos os tipos tenham acesso, otimizando acessos de usuários autores para velocidade enquanto dispõe de uma quantidade maior de acessos a usuários tradutores, que representam maior tempo de atividade e em maior número de acesso aos sistemas, com uma escala 1 : 4 em termos de autores e tradutores. Assim, é possível montar a seguinte tabela de estimativas para volumes, traçando paralelos entre usuários tradutores e usuários autores.</p>
+<table>
+<thead>
+<tr>
+<th><strong>-</strong></th>
+<th>Tradutores</th>
+<th>Autores</th>
+<th>Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Número de Usuários</strong></td>
+<td>400</td>
+<td>1600</td>
+<td>2000</td>
+</tr>
+<tr>
+<td><strong>Número de Acessos Diários por usuário</strong></td>
+<td>1 - 5</td>
+<td>7 - 15</td>
+<td>8 - 20</td>
+</tr>
+<tr>
+<td><strong>Tempo de Sessão de Usuário</strong></td>
+<td>15 - 50 minutos</td>
+<td>50 minutos - 1 hora e 20 minutos</td>
+<td>33 minutos - 1 hora</td>
+</tr>
+</tbody>
+</table>
+<h4 id="72-perfomance">7.2. Perfomance</h4>
+<p>Para o correto funcionamento do sistema, a performance deve ser rápida e com a conclusão de funcionalidades como o <em>upload</em> de textos em até 1 minuto, para textos com mais de 200 páginas, bem como respostas eficientes da utilização de sistemas como a separação de fragmentos e o envio do texto para tradução.</p>
 <hr />
 <h3 id="8-qualidade">8. Qualidade</h3>
-<hr />
+<p>Os seguintes itens conferem ao sistema aspectos de qualidade, bem como a descrição da abordagem realizada para satisfazer esses aspectos.</p>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Solução</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Escalabilidade</strong></td>
+<td>Arquietura de Microsserviços</td>
+<td>Em prol de permitir que o sistema evolua sem grandes gargalos, o sistema de modularização aplicado pela arquitetura de microsserviços propicia alterações no funcionamento de um serviço sem alterações em grande escala nos demais serviços relacionados, permitindo modificações mais pontuais e uma integração facilitada do sistema.</td>
+</tr>
+<tr>
+<td><strong>Confiabilidade</strong></td>
+<td>Manutenção Periódica e Modularização do Sistema</td>
+<td>Pela modularização do sistema permitir menor impacto de um microsserviço no funcionamento de outro, a prática de manutenções periódicas permite a solução de problemas de forma pontual e sem impedir o funcionamento de demais serviços, ao contrário de abordagens monolíticas</td>
+</tr>
+<tr>
+<td><strong>Segurança</strong></td>
+<td>Encriptação de dados e Servidor Remoto</td>
+<td>Para garantir a segurança de informações sensíveis, a abordagem utilizada será a encriptação de dados e utilização de Hashes, permitindo que informações puras não trafeguem por mais módulos da aplicação do que o necessário, armazenando-as no servidor remoto e acessando-as por meio das hashes.</td>
+</tr>
+<tr>
+<td><strong>Portabilidade</strong></td>
+<td>Ambiente Docker</td>
+<td>A Utilização do Docker para configuração do ambiente de desenvolvimento e produção permite que a aplicação se mantenha consolidada, sem conflitos de versões de linguagens como python e que possa ser transferida de servidores por meio das imagens geradas</td>
+</tr>
+</tbody>
+</table>
                 
                   
                 
