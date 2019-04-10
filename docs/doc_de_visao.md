@@ -5,7 +5,8 @@
 | 01/04/2019 | 0.2 | Modificando template para preenchimento  | Alexandre Miguel |
 |  08/04/2019 | 0.3  | Adicionando proposta no documento  |  Victor Hugo  |
 |  09/04/2019 | 0.4  | Adicionando abreviações  |  Gabriela Guedes  |
-|  10/04/2019 | 0.5  | Adicionando Funcionalidades do Produto  |  Alexandre Miguel  |
+|  10/04/2019 | 0.5  | Adicionando Perspectiva do Produto  |  Davi Alves  |
+|  10/04/2019 | 0.6  | Adicionando Funcionalidades do Produto e Definição dos Envolvidos  |  Alexandre Miguel  |
 
 ### 1. Introdução  
 
@@ -74,12 +75,14 @@ São estudantes de diversas áreas do conhecimento que elaboraram textos acadêm
 
 #### 4.1. Perspectiva do Produto
 
+<p>O produto tem como principal caracteristica ajudar não somente a pessoa que deseja a tradução de seu artigo, mas também os envolvidos em que estão fazendo o trabalho requerido. Com diferenciais de segurança na submição de seu documento, cominicação com o tradudor e por fim incetivos baseados em gamificação na plataforma.</p>
+
 #### 4.2. Resumo dos Recursos
 
 ---
 ### 5. Funcionalidades do Produto
 
-Os recursos e funcionalidades do webapp ***translate-me*** compreendem serviços implementados independentemente, buscando atender as necessidades identificadas dos usuários da plataforma, aqui descritos em ordem de prioridade.
+Os recursos e funcionalidades do webapp ***translate.me*** compreendem serviços implementados independentemente, buscando atender as necessidades identificadas dos usuários da plataforma, aqui descritos em ordem de prioridade.
 
 #### 5.1. Login e Cadastro
 
@@ -87,7 +90,7 @@ A Aplicação possui um sistema para cadastro de usuários em conexão direta co
 
 #### 5.2. Submissão de texto
 
-O ***translate-me***, para cumprir com sua função principal de propiciar a tradução, possui a funcionalidade de submissão de textos em formatos que propiciem diferentes etapas de funcionalidades que compõem o restante da aplicação, como a fragmentação de textos.
+O ***translate.me***, para cumprir com sua função principal de propiciar a tradução, possui a funcionalidade de submissão de textos em formatos que propiciem diferentes etapas de funcionalidades que compõem o restante da aplicação, como a fragmentação de textos.
 
 #### 5.3. Fragmentação de textos
 
@@ -111,7 +114,7 @@ Como forma de motivação dos usuários tradutores, seja para maior participaç�
 
 #### 5.8. Contato Anônimo
 
-A Aplicação ***translate-me*** possui ainda um sistema de comunicação entre tradutor e autor, porém estabelecendo critérios rígidos de anônimato em ambas as pontas, garantindo que determinados usuários não sejam beneficiados por motivos que saem do escopo da aplicação ou do método gamificado.
+A Aplicação ***translate.me*** possui ainda um sistema de comunicação entre tradutor e autor, porém estabelecendo critérios rígidos de anônimato em ambas as pontas, garantindo que determinados usuários não sejam beneficiados por motivos que saem do escopo da aplicação ou do método gamificado.
 
 ---
 ### 6. Restrições   
