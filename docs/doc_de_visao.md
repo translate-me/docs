@@ -6,7 +6,8 @@
 |  08/04/2019 | 0.3  | Adicionando proposta no documento  |  Victor Hugo  |
 |  09/04/2019 | 0.4  | Adicionando abreviações  |  Gabriela Guedes  |
 |  10/04/2019 | 0.5  | Adicionando Perspectiva do Produto  |  Davi Alves  |
-|  10/04/2019 | 0.6  | Adicionando Funcionalidades do Produto e Definição dos Envolvidos  |  Alexandre Miguel  |
+|  10/04/2019 | 0.6  | Adicionando Funcionalidades do Produto e Definição dos Usuários  |  Alexandre Miguel  |
+|  10/04/2019 | 0.7  | Adicionando Visão Geral e Definição dos Envolvidos  |  Luiz Guilherme  |
 
 ### 1. Introdução  
 
@@ -31,7 +32,13 @@
 **Usuário Autor** - Usuário da aplicação que submete textos para serem traduzidos   
 
 #### 1.4. Visão Geral
----
+O Translate.me é um projeto criado para a disciplina de Desenho de Software da Universidade de Brasília, na Faculdade do Gama (FGA) e é uma aplicação web que servirá como uma ferramenta de aproximação entre um cliente que precisa de uma tradução profissional e tradutores freelancers que buscam realizar sua profissão de forma fácil.
+
+O público-alvo da aplicação são estudantes acadêmicos e produzem artigos científicos, relatórios, documentam processos ou demais atividades acadêmicas que buscam relevância internacional com sua publicação. Assim, um estudante brasileiro que não possui uma proficiência em uma determinada língua pode ter a sua publicação traduzida em diversos idiomas, por um tradutor que a domina e que busca realizar esse serviço de forma centralizada. Com isso, o público-alvo também passa a ser os tradutores profissionais.
+
+A criação do Translate.me surge da ideia de facilitar o encontro entre um cliente e um especialista em tradução, porém, diferenciando-se do disposto atualmente no mercado, a plataforma descentraliza a tradução feita por somente um tradutor, permitindo a tradução de textos privados, estudos não-publicados, patentes e demais propriedades intelectuais que poderiam 'vazar' se a tradução é realizada somente por um profissional.
+
+Este documento está organizado de acordo com a metodologia RUP, o Rational Unified Process, definindo o problema a ser resolvido, os requisitos do software, o momento do mercado no qual o projeto se encaixa, a utilização da aplicação desejada e os usuários, levantamentos sobre metodologia de desenvolvimento do software e os processos utilizados, um esboço do cronograma de desenvolvimento e sua documentação.
 
 ### 2. Posicionamento     
 
@@ -47,26 +54,41 @@
 #### 2.3. Posicionamento do Produto
 ---
 ### 3. Perfil dos Usuários, Envolvidos e Mercado    
+Os envolvidos na utilização da plataforma podem ser simplificados na tabela abaixo:
 
-#### 3.1. Definição dos Envolvidos  
+|Representantes|Descrição|Tipo|Responsabilidades|Envolvimento|
+|---|---|---|---|---|
+|Estudantes de Línguas Estrangeiras|Estudantes, não-certificados que possuem conhecimento em uma ou várias línguas estrangeiras|Usuário interessado que não atua profissionalmente como tradutor ainda e busca melhorar|Realizar traduções de textos simples e textos auxiliares|Médio|
+|Graduados e Professores de Línguas Estrangeiras|Estudantes e professores certificados que possuem conhecimento avançado em uma ou várias línguas estrangeiras|Usuário que trabalha como tradutor profissional e busca uma forma fácil de realizar sua atividade profissional|Realizar traduções técnicas, de cunho acadêmicos e revisão de textos já traduzidos|Alto|
+|Estudantes autores de textos acadêmicos|Estudantes acadêmicos de diferentes níveis que buscam traduzir uma produção acadêmica de sua autoria|Usuário com pouca proficiência em uma determinada língua que busca contratar um profissional de tradução|Definir o texto a ser traduzido, dividí-lo e categorizá-lo|Alto|
 
-Os envolvidos ou partes interessadas no contexto da aplicação são:
+#### 3.1. Definição dos Envolvidos
+A definição de envolvidos no projeto (stakeholders) é bastante confusa dentro da engenharia de software. Neste projeto, será assumido que os envolvidos no projeto são todos os interessados na criação e utilização do software da melhor forma possível, assim são definidos os seguintes stakeholders:
 
-##### 3.1.1. Estudantes de Línguas Estrangeiras
+##### 3.1.1 Usuários finais da aplicação
+São estes os usuários descritos no próximo tópico, dentre eles são os utilizadores da plataforma, que são alunos com proficiência para tradução de textos mais simples e auxiliares; professores e profissionais de tradução, que são responsáveis pelas traduções mais técnicas e acadêmicas e por fim o cliente que contrata o serviço de tradução oferecido.
+
+##### 3.1.2 Desenvolvedores
+Os desenvolvedores do projeto consiste em um grupo de 10 (dez) alunos do curso de Engenharia de Software da UnB que cursam a disciplina de Desenho de Software no primeiro semestre do ano de 2019 na Universidade de Brasília. Estes são os responsáveis pela documentação, desenvolvimento da aplicação, idealização e manutenção da plataforma. A lista dos desenvolvedores pode ser encontrada na [página inicial deste documento](https://desenho2019-1.github.io/docs/)
+
+##### 3.1.3 Professores e Monitores da disciplina
+Por fim, existem também os stakeholders que avaliam a disciplina, cujo foco é este projeto. Os alunos são coordenados pela professora Milene Serrano e pelo conjunto de monitores da disciplina. Seus objetivos são definir critérios de qualidade, prazos de entrega e atribuir determinados padrões de projeto que devem ser adotados no decorrer do desenvolvimento do projeto.
+
+#### 3.2. Definição dos Usuários  
+
+Os usuários no contexto da aplicação são:
+
+##### 3.2.1. Estudantes de Línguas Estrangeiras
 
 São estudantes que, a medida que desenvolvem o aprendizado em uma língua estrangeira, sentem-se aptos a realizar serviços de traduções, ainda que conscientes das limitações de seu conhecimento, porém representando uma quantidade significativa de possíveis usuários, que agilizam o processo de tradução.
 
-##### 3.1.2. Graduados e Professores de Línguas Estrangeiras
+##### 3.2.2. Graduados e Professores de Línguas Estrangeiras
 
 Representam envolvidos com alto conhecimento da língua estrangeira em questão e que podem prestar serviços mais especializados de tradução ou revisão, na expectativa de receberem pagamentos maiores do que estudantes da área, com menos flexibilidade para serviços de tradução, porém com maior garantia de qualidade.
 
-##### 3.1.3. Estudantes autores de textos acadêmicos
+##### 3.2.3. Estudantes autores de textos acadêmicos
 
 São estudantes de diversas áreas do conhecimento que elaboraram textos acadêmicos e desejam submeter esses textos para algum contexto internacional, sejam seminários ou avaliações de bancas acadêmicas, fazendo necessária a tradução desse texto de forma especializada e coerente, o que fogem de seus conhecimentos na língua em específico, pelo uso de expressões e termos nativos.
-
-
-
-#### 3.2. Definição de Usuários  
 
 #### 3.3. Alternativas e Competição   
 ---
