@@ -101,6 +101,8 @@ Translate.me - Nome do sistema a ser desenvolvido
 ### 8. Requisitos    
 ---
 ### 9. Documentação Adicional
----
+<p> A plataforma dispõe de documentos gerais como FAQ, informações sobre a equipe e formas de contato. </p>
+<p> Acerca do FAQ do Translate.me, são reunidas as dúvidas mais frequentes, sendo criados links que levam a resolução desse problema ou um esclarecimento sobre determinado assunto. Mesmo que a dúvida do usuário não se enquadre nas expostas, existe o campo para fazer próprias perguntas, e será dado todo o suporte para o esclarecimento e resolução de alguma pendencia para o usuário. </p>
+<p> Conjuntamente as documentações adicionais apresentada ao usuário, as informações sobre o software e a equipe integra as documentações para usuários, aborda informações sobre os integrantes e dados técnicos sobre o sistema, por conseguinte aborda formas de contato com os responsáveis pelo Translate.me.
 ### 10. Referências
 ---
