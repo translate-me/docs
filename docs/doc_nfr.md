@@ -19,6 +19,8 @@
 
 ## 4. Privacidade
 
+![nfr_privacidade](assets/images/nfr_privacidade.png)
+
 ## 5. Usabilidade
 
 ## 6. Flexibilidade
