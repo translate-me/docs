@@ -38,9 +38,9 @@ como de performace.
 ---
 #### 1.3. Definições, Acrônimos e Abreviações
 
-<p> UnB - *Universidade de Brasília*</p>
-<p> FGA - *Faculdade do Gama*</p>
-<p> Translate.me - *WebApp com finalidade em tradução de textos, ligando tradutor e cliente.*</p>
+<p> UnB - Universidade de Brasília</p>
+<p> FGA - Faculdade do Gama</p>
+<p> Translate.me - WebApp com finalidade em tradução de textos, ligando tradutor e cliente.</p>
 
 
 
