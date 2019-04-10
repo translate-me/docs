@@ -5,48 +5,29 @@
 | 01/04/2019 | 0.2 | Modificando template para preenchimento  | Alexandre Miguel |
 |  08/04/2019 | 0.3  | Adicionando proposta no documento  |  Victor Hugo  |
 |  09/04/2019 | 0.4  | Adicionando abreviações  |  Gabriela Guedes  |
-
-
-## Sumário
-
-1. [Introdução](#)         
-1.1. [Proposta](#)   
-1.2. [Escopo](#)   
-1.3. [Definições, Acronimos, e Abreviações](#13-definições-acronimos-e-abreviações)     
-1.4. [Visão Geral](#)         
-2. [Posicionamento](#)          
-2.1. [Oportunidade de Negócio](#)        
-2.2. [Problema a Ser Resolvido](#)   
-2.3. [Posicionamento do Produto](#)   
-3. [Perfil dos Usuários, Envolvidos e Mercado](#)     
-3.1. [Definição dos Envolvidos](#)     
-3.2. [Definição de Usuários](#)   
-3.3. [Alternativas e Competição](#)            
-4. [Definição do Produto](#)        
-4.1. [Perspectiva do Produto](#)   
-4.2. [Resumo dos Recursos](#)    
-5. [Funcionalidades do Produto](#) <!-- Em lista de prioridade -->  
-6. [Restrições](#)     
-7. [Critérios de Qualidade](#)
-8. [Requisitos](#)     
-9. [Documentação](#)   
-10. [Referências](#Referências)
+|  10/04/2019 | 0.5  | Adicionando Funcionalidades do Produto  |  Alexandre Miguel  |
 
 ### 1. Introdução  
 
 #### 1.1. Proposta  
 <p> Este documento tem como objetivo apresentar a ideia geral do webapp translate.me e com isso entender o contexto no qual a webapp está inserido.</p>
 <p> O translate.me é uma webapp, feito para comunicade acadêmica, que visa implementar um marketplace de tradução de textos de artigos científicos e livros.</p>
+
 #### 1.2. Escopo  
 
 #### 1.3. Definições, Acronimos, e Abreviações
-UnB - Universidade de Brasília
 
-FGA - Faculdade do Gama, campus da UnB
+**UnB** - Universidade de Brasília
 
-Desenho - A matéria Arquitetura e Desenho de Software
+**FGA** - Faculdade do Gama, campus da UnB
 
-Translate.me - Nome do sistema a ser desenvolvido    
+**Desenho** - A matéria Arquitetura e Desenho de Software
+
+**Translate.me** - Nome do sistema a ser desenvolvido
+
+**Usuário Tradutor** - Usuário da aplicação responsável pela tradução de textos
+
+**Usuário Autor** - Usuário da aplicação que submete textos para serem traduzidos   
 
 #### 1.4. Visão Geral
 ---
@@ -66,7 +47,23 @@ Translate.me - Nome do sistema a ser desenvolvido
 ---
 ### 3. Perfil dos Usuários, Envolvidos e Mercado    
 
-#### 3.1. Definição dos Envolvidos    
+#### 3.1. Definição dos Envolvidos  
+
+Os envolvidos ou partes interessadas no contexto da aplicação são:
+
+##### 3.1.1. Estudantes de Línguas Estrangeiras
+
+São estudantes que, a medida que desenvolvem o aprendizado em uma língua estrangeira, sentem-se aptos a realizar serviços de traduções, ainda que conscientes das limitações de seu conhecimento, porém representando uma quantidade significativa de possíveis usuários, que agilizam o processo de tradução.
+
+##### 3.1.2. Graduados e Professores de Línguas Estrangeiras
+
+Representam envolvidos com alto conhecimento da língua estrangeira em questão e que podem prestar serviços mais especializados de tradução ou revisão, na expectativa de receberem pagamentos maiores do que estudantes da área, com menos flexibilidade para serviços de tradução, porém com maior garantia de qualidade.
+
+##### 3.1.3. Estudantes autores de textos acadêmicos
+
+São estudantes de diversas áreas do conhecimento que elaboraram textos acadêmicos e desejam submeter esses textos para algum contexto internacional, sejam seminários ou avaliações de bancas acadêmicas, fazendo necessária a tradução desse texto de forma especializada e coerente, o que fogem de seus conhecimentos na língua em específico, pelo uso de expressões e termos nativos.
+
+
 
 #### 3.2. Definição de Usuários  
 
@@ -81,6 +78,40 @@ Translate.me - Nome do sistema a ser desenvolvido
 
 ---
 ### 5. Funcionalidades do Produto
+
+Os recursos e funcionalidades do webapp ***translate-me*** compreendem serviços implementados independentemente, buscando atender as necessidades identificadas dos usuários da plataforma, aqui descritos em ordem de prioridade.
+
+#### 5.1. Login e Cadastro
+
+A Aplicação possui um sistema para cadastro de usuários em conexão direta com o sistema de Login, fazendo uso tanto de um método nativo para o fluxo de registro, quanto métodos que integrem informações de outras aplicações (como Facebook ou Google), permitindo acesso facilitado ao usuário.
+
+#### 5.2. Submissão de texto
+
+O ***translate-me***, para cumprir com sua função principal de propiciar a tradução, possui a funcionalidade de submissão de textos em formatos que propiciem diferentes etapas de funcionalidades que compõem o restante da aplicação, como a fragmentação de textos.
+
+#### 5.3. Fragmentação de textos
+
+Para separar o texto completo a ser traduzido em módulos menores, impedindo que um único tradutor tenha contato com todo o conteúdo, a aplicação conta com a funcionalidade de separação do texto em fragmentos, por meio de indicação do usuário autor dos pontos em que cada fragmento se inicia e finaliza.
+
+#### 5.4. Estimativa de Dados
+
+Visando garantir a integridade do texto e uma estimativa de dados como o tempo total de tradução, a aplicação conta com um sistema de medição de informações para que o usuário autor possa realizar planejamentos de custos, prazos e segurança do arquivo traduzido que receberá, analisando métricas coletadas automaticamente pela aplicação e as informando em formato amigável ao usuário autor.
+
+#### 5.5. Acompanhamento de tradução
+
+Durante o período de tradução, o sistema conta ainda com um suporte ao usuário que informa a porcentagem da correção, permitindo um acompanhamento do processo antes da efetiva entrega do texto traduzido, sendo ainda uma forma de fornecer ao usuário a possbilidade de replanejamento de prazos conforme o ritmo de tradução.
+
+#### 5.6. Revisão de tradução
+
+Para mitigar traduções errôneas, a aplicação conta com um sistema que limita a quantidade de correções disponíveis para o usuário tradutor mediante revisão de traduções de terceiros, para garantir que um texto traduzido tenha tido contato com mais de uma fonte de tradução, dificultando assim a propagação de erros no arquivo traduzido.
+
+#### 5.7. Sistema de Gamificação
+
+Como forma de motivação dos usuários tradutores, seja para maior participação na plataforma ou para contribuição com outros tradutores por meio das correções, a aplicação institui um sistema de gamificação com pontuações e rankings, que se refletem em priorizações de traduções ou, em casos negativos, a penalidades como suspensão temporária ou definitiva. Esse sistema leva em conta, ainda, a afinidade do usuário tradutor com a língua utilizada.
+
+#### 5.8. Contato Anônimo
+
+A Aplicação ***translate-me*** possui ainda um sistema de comunicação entre tradutor e autor, porém estabelecendo critérios rígidos de anônimato em ambas as pontas, garantindo que determinados usuários não sejam beneficiados por motivos que saem do escopo da aplicação ou do método gamificado.
 
 ---
 ### 6. Restrições   
@@ -107,3 +138,4 @@ Translate.me - Nome do sistema a ser desenvolvido
 
 ### 10. Referências
 ---
+ * **Template de Documento de Visão - ** [https://www.ibm.com/support/knowledgecenter/pt-br/SSYMRC_6.0.5/com.ibm.rational.rrm.help.doc/topics/r_vision_doc.html](https://www.ibm.com/support/knowledgecenter/pt-br/SSYMRC_6.0.5/com.ibm.rational.rrm.help.doc/topics/r_vision_doc.html)
