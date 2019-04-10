@@ -5,6 +5,7 @@
 | 01/04/2019 | 0.2 | Modificando template para preenchimento  | Alexandre Miguel |
 |  08/04/2019 | 0.3  | Adicionando proposta no documento  |  Victor Hugo  |
 |  09/04/2019 | 0.4  | Adicionando abreviações  |  Gabriela Guedes  |
+|  10/04/2019 | 0.5  | Adicionando Perspectiva do Produto  |  Davi Alves  |
 
 
 ## Sumário
@@ -76,6 +77,8 @@ Translate.me - Nome do sistema a ser desenvolvido
 ### 4. Definição do Produto
 
 #### 4.1. Perspectiva do Produto
+
+<p>O produto tem como principal caracteristica ajudar não somente a pessoa que deseja a tradução de seu artigo, mas também os envolvidos em que estão fazendo o trabalho requerido. Com diferenciais de segurança na submição de seu documento, cominicação com o tradudor e por fim incetivos baseados em gamificação na plataforma.</p>
 
 #### 4.2. Resumo dos Recursos
 
