@@ -122,6 +122,9 @@ São estudantes de diversas áreas do conhecimento que elaboraram textos acadêm
 
 #### 4.2. Resumo dos Recursos
 
+Dentre os principais recursos oferecidos pelo ***translate.me***, estão os serviços de cadastro, login e logout de usuário; inserção, tradução e revisão de textos; sistema de pagamento; chat e acompanhamento entre autores e tradutores; sistema de nivelamento entre os tradutores.
+
+
 ---
 ### 5. Funcionalidades do Produto
 
