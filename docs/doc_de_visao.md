@@ -12,6 +12,9 @@
 | 10/04/2019 | 0.9 | Adicionando Visão Geral e Definição dos Envolvidos  | Luiz Guilherme |
 | 10/04/2019 | 0.9.1 | Adicionando Introdução  | Renan Schadt |
 | 10/04/2019 | 0.9.2 | Adicionando Problema a Ser Resolvido  | Renan Schadt |
+| 11/04/2019 | 0.9.3 | Adicionando Posicionamento do Produto  | Renan Schadt |
+
+
 
 ### 1. Introdução
 O documento de visão define o escopo de alto nível do produto, o propósito do software a ser desenvolvido e seu valor mercadológico. Este visa estabelecer e nivelar as expectativas dos envolvidos, de modo a alinhar a visão dos stakeholders sobre o que exatamente é o software em questão.
@@ -55,20 +58,21 @@ Este documento está organizado de acordo com a metodologia RUP, o Rational Unif
 <p> O objetivo da aplicação é facilitar e automatizar os processos do serviço de tradução de textos, o qual um cliente tem a necessidade de tradução, disposto a pagar pelo serviço, e um tradutor que deve receber um valor justo pelo trabalho feito. Logo, o Translate.me intermedia essa transição para que ambas partem possam ser beneficiadas, contando com uma estratégia de segurança na tradução do artigo, diversidade de tradutores para o mesmo documento evitando a exposição total do texto e garantindo qualidade e revisão de tradução. Entre todo os trâmites nesse fluxo, o Translate.me deve ganhar uma porcentagem do valor da tradução de até 15%, partindo dai o capital gerado pelo sistema.</p>
 
 #### 2.2. Problema a Ser Resolvido
-O problema de &emsp; &emsp; &emsp; &emsp; &emsp; Falta de proficiência para traduzir um texto complexo para outra língua
-
----
-Afeta &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &ensp; &emsp; &emsp;Acadêmicos e outros profissionais que desejam que seu trabalho supere a barreira linguística
-
----
-Cujos impactos são &emsp; &emsp; &emsp; &nbsp; Desempenho ruim em conferências e oportunidades de negócio perdidas
-
----
-Uma boa solução seria &emsp; &emsp; &nbsp;Um software com a função de conectar usuários com pessoas capazes na língua em questão, para que seja feito o serviço de tradução
+| O problema de | Falta de proficiência para traduzir um texto complexo para outra língua |
+|:---:|:---:|
+| Afeta | Acadêmicos e outros profissionais que desejam que seu trabalho supere a barreira linguística |
+| Cujos impactos são | Desempenho ruim em conferências e oportunidades de negócio perdidas |
+| Uma boa solução seria | Um software com a função de conectar usuários com pessoas capazes na língua em questão, para que seja feito o serviço de tradução |
 
 
 #### 2.3. Posicionamento do Produto
-
+| Para | Profissionais |
+|:---:|:---:|
+| Que | Desejam que seus trabalhos sejam traduzidos para diferentes línguas |
+| O translate.me | É um website |
+| Que | Visa conectar tradutores e clientes, para que seja efetuado o serviço de tradução |
+| Diferente de | Websites similares que não permitem acompanhamento do processo e comunicação entre as partes envolvidas |
+| Nosso produto | Oferece uma fórmula modularizada e interativa de tradução a um preço acessível |
 
 ### 3. Perfil dos Usuários, Envolvidos e Mercado    
 Os envolvidos na utilização da plataforma podem ser simplificados na tabela abaixo:
