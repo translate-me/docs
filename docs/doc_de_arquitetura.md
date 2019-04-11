@@ -9,6 +9,7 @@
 | 09/04/2019 | 0.4 | Adicionando Introdução e Requisitos e Restrições arquiteturais | Gabriela Guedes |
 | 10/04/2019 | 0.5 | Adicionando informações de Dimensionamento e Performance e de Qualidade  | Alexandre Miguel|
 | 11/04/2019   | 0.6  | Adicionando escopo do projeto  | Helena Goulart  |
+| 11/04/2019 | 0.7 | Adicionando Diagrama de Classes | Rômulo Souza |
 
 ### Objetivo do documento
 Este documento tem como objetivo descrever e caracterizar as decisões arquiteturais do projeto
@@ -33,18 +34,21 @@ Este documento de arquitetura se aplica ao Translate.me, aplicação desenvolvid
 
 #### 1.4. Referências
 [Lino](https://botlino.github.io/docs/doc-arquitetura)
+
+[Design Patterns](https://refactoring.guru/design-patterns)
 ### 2. Representação arquitetural
 ![arquitetura](https://i.ibb.co/zf99Pb7/architecture.png)
 ---
 ### 3. Requisitos e Restrições arquiteturais
 ---
 ### 4. Visão Lógica
+
+#### 4.1 Diagrama de Classes
+![diagrama_classes](assets/images/diagrama_classes.png)
 ---
 #### 4.1. Visão geral de camadas e pacotes
 ---
 ### 5. Visão de implementação
----
-#### 5.1. Diagrama de classes
 ---
 ### 6. Visão de implementação
 ---
