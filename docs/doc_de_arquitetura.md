@@ -11,6 +11,8 @@
 | 11/04/2019   | 0.6  | Adicionando escopo do projeto  | Helena Goulart  |
 | 11/04/2019 | 0.7 | Adicionando Diagrama de Classes | Rômulo Souza |
 | 11/04/2019| 0.8| Adiconando o diagrama de implementação|
+| 11/04/2019| 0.9| Adiconando finalidade do documento | João Robson|
+
 
 ### Objetivo do documento
 Este documento tem como objetivo descrever e caracterizar as decisões arquiteturais do projeto
@@ -20,7 +22,11 @@ como de performace.
 
 ### 1. Introdução
 Este documento visa apresentar a arquitetura de software a ser aplicada no sistema do Translate.me, de forma que facilite a visualização dos requisitos e da estrutura para os envolvidos.
+
 #### 1.1. Finalidade
+
+Este documento apresenta os aspectos arquiteturais do projeto, exibindo como se dará a intgração entre os microserviços que compõem o Baack-end e o Front-end. Dessa forma, ele é composto não só de diagramas e de uma visualização mais abstrata, mas também provê uma visão que trata das tecnologias envolvidas na elaboração do projeto e da forma na qual esses elementos serão incorporados para se obter os requisitos funcionais e não funcionais propostos.
+
 ---
 #### 1.2. Escopo
 Este documento de arquitetura se aplica ao Translate.me, aplicação desenvolvida na disciplina Arquitetura e Desenho de Software.
@@ -38,10 +44,10 @@ Este documento de arquitetura se aplica ao Translate.me, aplicação desenvolvid
 
 [Design Patterns](https://refactoring.guru/design-patterns)
 ### 2. Representação arquitetural
-![arquitetura](https://i.ibb.co/zf99Pb7/architecture.png)
+![arquitetura](https://i.ibb.co/zf99Pb7/architecture.png) 
 ---
 ### 3. Requisitos e Restrições arquiteturais
-
+i
 |Requisito|Solução|
 |---|---|
 |Linguagem|O front-end será feito em *JavaScript* e o back-end, em *Python*|
@@ -59,10 +65,10 @@ Este documento de arquitetura se aplica ao Translate.me, aplicação desenvolvid
 #### 4.1. Visão geral de camadas e pacotes
 ---
 ### 5. Visão de implementação
-![](https://i.imgur.com/rCzw0LC.png)
+![](https://i.imgur.com/rCzw0LC.png)i
 ---
 ### 6. Dimensionamento e Performance
-
+i
 Seção responsável pela estimativa em valores quantizados do desempenho dos módulos da arquitetura, bem como de sua performance em execução, conforme a análise qualitativa estabelecida no [Documento de Requisitos Não Funcionais](#)
 
 #### 6.1. Volume
