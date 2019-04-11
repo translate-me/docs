@@ -15,7 +15,7 @@
 | 11/04/2019 | 0.9.3 | Adicionando Posicionamento do Produto  | Renan Schadt |
 |11/04/2019 | 0.9.4 | Adicionando Resumo dos Recursos | Rômulo Souza |
 |11/04/2019 | 0.9.5 | Adicionando Alternativas e Critérios de Qualidade | João Robson |
-
+|11/04/2019 | 1.0 | Adicionando Requisitos | Davi Alves |
 
 
 ### 1. Introdução
@@ -195,6 +195,9 @@ No Front-end, os componentes do [Material-UI](https://material-ui.com/) serão u
 ---
 ### 8. Requisitos    
 ---
+Os requisitos podem ser acessados diretamente em nossos documentos.
+[Ver Requisitos](https://github.com/desenho2019-1/docs/blob/master/docs/requisitos.md)
+
 ### 9. Documentação Adicional
 <p> A plataforma dispõe de documentos gerais como FAQ, informações sobre a equipe e formas de contato. </p>
 <p> Acerca do FAQ do Translate.me, são reunidas as dúvidas mais frequentes, sendo criados links que levam a resolução desse problema ou um esclarecimento sobre determinado assunto. Mesmo que a dúvida do usuário não se enquadre nas expostas, existe o campo para fazer próprias perguntas, e será dado todo o suporte para o esclarecimento e resolução de alguma pendencia para o usuário. </p>
