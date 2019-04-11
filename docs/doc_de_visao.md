@@ -116,10 +116,11 @@ São estudantes de diversas áreas do conhecimento que elaboraram textos acadêm
 ---
 
 ### 4. Definição do Produto
+O Translate.me trata-se de uma plataforma de tradução de textos e artigos acadêmicos. A especificidade e limitação do público e do tema se deve à preocupação dos desenvolvedores deste projeto com os direitos autoriais dos textos em processo de tradução. Além disso, houve também uma preocupação em atender ao público de pessoas que possuem certificação em língua estrangeira, permitindo que atuem como _freelancers_ neste projeto. A gamificação será uma metodologia presente no Translate.me, como forma de incentivar que os usuários se mantenham conectados à plataforma e em uso constante da mesma.
 
 #### 4.1. Perspectiva do Produto
 
-<p>O produto tem como principal caracteristica ajudar não somente a pessoa que deseja a tradução de seu artigo, mas também os envolvidos em que estão fazendo o trabalho requerido. Com diferenciais de segurança na submição de seu documento, cominicação com o tradudor e por fim incetivos baseados em gamificação na plataforma.</p>
+<p>O produto tem como principal caracteristica ajudar não somente a pessoa que deseja a tradução de seu artigo, mas também os envolvidos em que estão fazendo o trabalho requerido. Com diferenciais de segurança na submição de seu documento, comunicação com o tradudor e por fim incetivos baseados em gamificação na plataforma.</p>
 
 #### 4.2. Resumo dos Recursos
 
