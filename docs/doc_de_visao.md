@@ -13,6 +13,7 @@
 | 10/04/2019 | 0.9.1 | Adicionando Introdução  | Renan Schadt |
 | 10/04/2019 | 0.9.2 | Adicionando Problema a Ser Resolvido  | Renan Schadt |
 | 11/04/2019 | 0.9.3 | Adicionando Posicionamento do Produto  | Renan Schadt |
+|11/04/2019 | 0.9.4 | Adicionando Resumo dos Recursos | Rômulo Souza |
 
 
 
