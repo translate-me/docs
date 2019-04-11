@@ -1,17 +1,19 @@
 ## Histórico de Revisão:
 | Data | Versão | Descrição | Autor |
 |---|---|---|---|
-| 27/03/2019 | 0.1 | Adicionando template | Gabriela e Renan |
+| 27/03/2019 | 0.1 | Adicionando template  | Gabriela e Renan |
 | 01/04/2019 | 0.2 | Modificando template para preenchimento  | Alexandre Miguel |
-|  08/04/2019 | 0.3  | Adicionando proposta no documento  |  Victor Hugo  |
-| 08/04/2019 | 0.4 | Adicionando Oportunidade de Negócio | Letícia Meneses |
-| 09/04/2019 | 0.5 | Adicionando Documento Adicionais | Letícia Meneses |
-|  09/04/2019 | 0.6  | Adicionando abreviações  |  Gabriela Guedes  |
-|  10/04/2019 | 0.7  | Adicionando Perspectiva do Produto  |  Davi Alves  |
-|  10/04/2019 | 0.8  | Adicionando Funcionalidades do Produto e Definição dos Usuários  |  Alexandre Miguel  |
-|  10/04/2019 | 0.9  | Adicionando Visão Geral e Definição dos Envolvidos  |  Luiz Guilherme  |
+| 08/04/2019 | 0.3 | Adicionando proposta no documento  | Victor Hugo |
+| 08/04/2019 | 0.4 | Adicionando Oportunidade de Negócio  | Letícia Meneses |
+| 09/04/2019 | 0.5 | Adicionando Documento Adicionais  | Letícia Meneses |
+| 09/04/2019 | 0.6 | Adicionando abreviações  | Gabriela Guedes |
+| 10/04/2019 | 0.7 | Adicionando Perspectiva do Produto  | Davi Alves |
+| 10/04/2019 | 0.8 | Adicionando Funcionalidades do Produto e Definição dos Usuários  | Alexandre Miguel |
+| 10/04/2019 | 0.9 | Adicionando Visão Geral e Definição dos Envolvidos  | Luiz Guilherme |
+| 10/04/2019 | 0.9.1 | Adicionando Introdução  | Luiz Guilherme |
 
-### 1. Introdução  
+### 1. Introdução
+O documento de visão define o escopo de alto nível do produto, o propósito do software a ser desenvolvido e seu valor mercadológico. Este visa estabelecer e nivelar as expectativas dos envolvidos, de modo a alinhar a visão dos stakeholders sobre o que exatamente é o software em questão.
 
 #### 1.1. Proposta  
 <p> Este documento tem como objetivo apresentar a ideia geral do webapp translate.me e com isso entender o contexto no qual a webapp está inserido.</p>
