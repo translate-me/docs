@@ -8,6 +8,7 @@
 
 ## Tabela de Requisitos
 | ID | Requisitos |
+|---|---|
 | 01 | Cadastrar |
 | 02 | Efetuar Login |
 | 03 | Cadastrar artigo |
