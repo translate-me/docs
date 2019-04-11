@@ -14,6 +14,7 @@
 | 10/04/2019 | 0.9.2 | Adicionando Problema a Ser Resolvido  | Renan Schadt |
 | 11/04/2019 | 0.9.3 | Adicionando Posicionamento do Produto  | Renan Schadt |
 |11/04/2019 | 0.9.4 | Adicionando Resumo dos Recursos | Rômulo Souza |
+|11/04/2019 | 0.9.5 | Adicionando Alternativas e Critérios de Qualidade | João Robson |
 
 
 
@@ -113,6 +114,11 @@ Representam envolvidos com alto conhecimento da língua estrangeira em questão 
 São estudantes de diversas áreas do conhecimento que elaboraram textos acadêmicos e desejam submeter esses textos para algum contexto internacional, sejam seminários ou avaliações de bancas acadêmicas, fazendo necessária a tradução desse texto de forma especializada e coerente, o que fogem de seus conhecimentos na língua em específico, pelo uso de expressões e termos nativos.
 
 #### 3.3. Alternativas e Competição   
+Existem algumas soluções existentes que realizam a tradução de texto por meio de uma plataforma digital. Considerando serviços de tradução instantânea, que são genéricos e não são especializados em determinado tipo ou tema específico de texto, podemos citar o Google Tradutor e o Yandex. Tratando-se de serviços para tradução que têm o foco em traduções de manuscritos ou artigos científicos, alguns podem ser destacados, como mostrado abaixo:
+* [EditingServices](https://www.tandfeditingservices.com/services/translation.html)
+    * Proveem serviços de edição e tradução, com fases dedicadas a revisão do texto traduzido por especialitas e revisão gramatical e semântico.
+* [Editage](https://www.editage.com/translation-services/brazilian-portuguese-to-english-translation.html)
+    * Serviço especializado em tradução de documentos acadêmicos, formado por tradutores de várias áreas com experiência que combinam seu conhecimento para entregar um documento perfeitamente traduzido.
 ---
 
 ### 4. Definição do Produto
@@ -179,6 +185,13 @@ A Aplicação ***translate.me*** possui ainda um sistema de comunicação entre 
 <p> Por se tratar de uma aplicação na web uma restrição do projeto é possuir acesso a uma internet estável e navegadores compatíveis com os listados no projeto para acessar o webapp.</p>
 
 ### 7. Critérios de Qualidade
+
+#### 7.1 - Testes unitários
+Serão utilizados testes unitários em cada microserviço criado no Back-end para garantir um nível de qualidade razoável.
+
+#### 7.2 - Usabilidade
+No Front-end, os componentes do [Material-UI](https://material-ui.com/) serão utilizados. Eles são baseados no [Material Design](https://material.io/), uma linguagem visual que provê boas práticas de design e acessibilidade para criar produtos de alta qualidade.
+
 ---
 ### 8. Requisitos    
 ---
