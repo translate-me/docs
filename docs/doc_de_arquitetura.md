@@ -6,7 +6,8 @@
 | 31/03/2019 | 0.1 | Adicionando o Template do documento de arquitetura | Victor |
 | 01/04/2019 | 0.2 | Modificando Template para preenchimento | Alexandre Miguel|
 | 09/04/2019 | 0.3 | Adicionando Definições, Acrônimos e Abreviações  | Letícia Meneses|
-| 10/04/2019 | 0.4 | Adicionando informações de Dimensionamento e Performance e de Qualidade  | Alexandre Miguel|
+| 09/04/2019 | 0.4 | Adicionando Introdução e Requisitos e Restrições arquiteturais | Gabriela Guedes |
+| 10/04/2019 | 0.5 | Adicionando informações de Dimensionamento e Performance e de Qualidade  | Alexandre Miguel|
 |   |   |   |   |
 
 ### Objetivo do documento
@@ -16,7 +17,7 @@ como de performace.
 
 
 ### 1. Introdução
----
+Este documento visa apresentar a arquitetura de software a ser aplicada no sistema do Translate.me, de forma que facilite a visualização dos requisitos e da estrutura para os envolvidos.
 #### 1.1. Finalidade
 ---
 #### 1.2. Escopo
@@ -30,7 +31,7 @@ como de performace.
 
 
 #### 1.4. Referências
----
+[Lino](https://botlino.github.io/docs/doc-arquitetura)
 ### 2. Representação arquitetural
 ![arquitetura](https://i.ibb.co/zf99Pb7/architecture.png)
 ---
