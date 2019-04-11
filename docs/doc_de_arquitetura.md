@@ -8,7 +8,7 @@
 | 09/04/2019 | 0.3 | Adicionando Definições, Acrônimos e Abreviações  | Letícia Meneses|
 | 09/04/2019 | 0.4 | Adicionando Introdução e Requisitos e Restrições arquiteturais | Gabriela Guedes |
 | 10/04/2019 | 0.5 | Adicionando informações de Dimensionamento e Performance e de Qualidade  | Alexandre Miguel|
-|   |   |   |   |
+| 11/04/2019   | 0.6  | Adicionando escopo do projeto  | Helena Goulart  |
 
 ### Objetivo do documento
 Este documento tem como objetivo descrever e caracterizar as decisões arquiteturais do projeto
@@ -21,7 +21,8 @@ Este documento visa apresentar a arquitetura de software a ser aplicada no siste
 #### 1.1. Finalidade
 ---
 #### 1.2. Escopo
----
+Este documento de arquitetura se aplica ao Translate.me, aplicação desenvolvida na disciplina Arquitetura e Desenho de Software.
+
 #### 1.3. Definições, Acrônimos e Abreviações
 
 <p> UnB - Universidade de Brasília</p>
