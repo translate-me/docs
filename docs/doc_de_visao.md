@@ -4,10 +4,12 @@
 | 27/03/2019 | 0.1 | Adicionando template | Gabriela e Renan |
 | 01/04/2019 | 0.2 | Modificando template para preenchimento  | Alexandre Miguel |
 |  08/04/2019 | 0.3  | Adicionando proposta no documento  |  Victor Hugo  |
-|  09/04/2019 | 0.4  | Adicionando abreviações  |  Gabriela Guedes  |
-|  10/04/2019 | 0.5  | Adicionando Perspectiva do Produto  |  Davi Alves  |
-|  10/04/2019 | 0.6  | Adicionando Funcionalidades do Produto e Definição dos Usuários  |  Alexandre Miguel  |
-|  10/04/2019 | 0.7  | Adicionando Visão Geral e Definição dos Envolvidos  |  Luiz Guilherme  |
+| 08/04/2019 | 0.4 | Adicionando Oportunidade de Negócio | Letícia Meneses |
+| 09/04/2019 | 0.5 | Adicionando Documento Adicionais | Letícia Meneses |
+|  09/04/2019 | 0.6  | Adicionando abreviações  |  Gabriela Guedes  |
+|  10/04/2019 | 0.7  | Adicionando Perspectiva do Produto  |  Davi Alves  |
+|  10/04/2019 | 0.8  | Adicionando Funcionalidades do Produto e Definição dos Usuários  |  Alexandre Miguel  |
+|  10/04/2019 | 0.9  | Adicionando Visão Geral e Definição dos Envolvidos  |  Luiz Guilherme  |
 
 ### 1. Introdução  
 

@@ -5,7 +5,8 @@
 |---|---|---|---|
 | 31/03/2019 | 0.1 | Adicionando o Template do documento de arquitetura | Victor |
 | 01/04/2019 | 0.2 | Modificando Template para preenchimento | Alexandre Miguel|
-| 10/04/2019 | 0.3 | Adicionando informações de Dimensionamento e Performance e de Qualidade  | Alexandre Miguel|
+| 09/04/2019 | 0.3 | Adicionando Definições, Acrônimos e Abreviações  | Letícia Meneses|
+| 10/04/2019 | 0.4 | Adicionando informações de Dimensionamento e Performance e de Qualidade  | Alexandre Miguel|
 |   |   |   |   |
 
 ### Objetivo do documento
