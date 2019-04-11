@@ -10,6 +10,7 @@
 | 10/04/2019 | 0.5 | Adicionando informações de Dimensionamento e Performance e de Qualidade  | Alexandre Miguel|
 | 11/04/2019   | 0.6  | Adicionando escopo do projeto  | Helena Goulart  |
 | 11/04/2019 | 0.7 | Adicionando Diagrama de Classes | Rômulo Souza |
+| 11/04/2019| 0.8| Adiconando o diagrama de implementação|
 
 ### Objetivo do documento
 Este documento tem como objetivo descrever e caracterizar as decisões arquiteturais do projeto
@@ -49,14 +50,13 @@ Este documento de arquitetura se aplica ao Translate.me, aplicação desenvolvid
 #### 4.1. Visão geral de camadas e pacotes
 ---
 ### 5. Visão de implementação
+![](https://i.imgur.com/rCzw0LC.png)
 ---
-### 6. Visão de implementação
----
-### 7. Dimensionamento e Performance
+### 6. Dimensionamento e Performance
 
 Seção responsável pela estimativa em valores quantizados do desempenho dos módulos da arquitetura, bem como de sua performance em execução, conforme a análise qualitativa estabelecida no [Documento de Requisitos Não Funcionais](#)
 
-#### 7.1. Volume
+#### 6.1. Volume
 
 De forma geral, o sistema deve permitir que o fluxo de usuários de ambos os tipos tenham acesso, otimizando acessos de usuários autores para velocidade enquanto dispõe de uma quantidade maior de acessos a usuários tradutores, que representam maior tempo de atividade e em maior número de acesso aos sistemas, com uma escala 1 : 4 em termos de autores e tradutores. Assim, é possível montar a seguinte tabela de estimativas para volumes, traçando paralelos entre usuários tradutores e usuários autores.
 
@@ -66,12 +66,12 @@ De forma geral, o sistema deve permitir que o fluxo de usuários de ambos os tip
 | **Número de Acessos Diários por usuário** | 1 - 5 | 7 - 15 | 8 - 20|
 | **Tempo de Sessão de Usuário** |15 - 50 minutos | 50 minutos - 1 hora e 20 minutos | 33 minutos - 1 hora |
 
-#### 7.2. Perfomance
+#### 6.2. Perfomance
 
 Para o correto funcionamento do sistema, a performance deve ser rápida e com a conclusão de funcionalidades como o *upload* de textos em até 1 minuto, para textos com mais de 200 páginas, bem como respostas eficientes da utilização de sistemas como a separação de fragmentos e o envio do texto para tradução.
 
 ---
-### 8. Qualidade
+### 7. Qualidade
 
 Os seguintes itens conferem ao sistema aspectos de qualidade, bem como a descrição da abordagem realizada para satisfazer esses aspectos.
 
