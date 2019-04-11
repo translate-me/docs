@@ -50,7 +50,8 @@ A criação do Translate.me surge da ideia de facilitar o encontro entre um clie
 
 Este documento está organizado de acordo com a metodologia RUP, o Rational Unified Process, definindo o problema a ser resolvido, os requisitos do software, o momento do mercado no qual o projeto se encaixa, a utilização da aplicação desejada e os usuários, levantamentos sobre metodologia de desenvolvimento do software e os processos utilizados, um esboço do cronograma de desenvolvimento e sua documentação.
 
-### 2. Posicionamento     
+### 2. Posicionamento
+O transalate.me ataca o nicho de tradução científica, para usuários que demandam uma tradução de alto nível. Trazendo diferenciais como divisão de textos entre tradutores, elementos de gamificação e preço acessível. Este tópico demonstra como o produto se encaixa no mercado e quais são seus diferenciais para obter destaque.  
 
 #### 2.1. Oportunidade de Negócio
 <p> O Translate.me oferece uma plataforma de serviço de tradução de artigos e documentos, fazendo a ligação entre o usuário que precisa de uma tradução e o usuário tradutor. </p>
