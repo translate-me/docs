@@ -40,6 +40,15 @@ Este documento de arquitetura se aplica ao Translate.me, aplicação desenvolvid
 ![arquitetura](https://i.ibb.co/zf99Pb7/architecture.png)
 ---
 ### 3. Requisitos e Restrições arquiteturais
+
+|Requisito|Solução|
+|---|---|
+|Linguagem|O front-end será feito em *JavaScript* e o back-end, em *Python*|
+|Plataforma|Serão usadas as plataformas *ReactJS* para o front-end e *Django* para o back-end|
+|Segurança| É necessário uma segurança para com os dados, pois todos os usuários irão interagir de forma anônima. Para uma maior segurança das informações, será necessário a utilização de token nas requisições|
+|Persistência|O sistema lidará com uma quantidade grande de dados(informações de usuário e textos em tradução), que para um bom funcionamento do sistema não podem ser perdidos, para a persistência destes dados será utilizado um banco de dados relacional *PostgreSQL*|
+|Arquitetura|Será feita uma arquitetura de microsserviços, para um melhor funcionamento e desempenho do sistema, já que não serão dependentes entre si|
+
 ---
 ### 4. Visão Lógica
 
