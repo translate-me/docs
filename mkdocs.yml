@@ -2,21 +2,34 @@ site_name: Translate.me
 extra_css: [extra.css]
 pages:
   - Início: index.md
-  - Documento de Visão: doc_de_visao.md
-  - Documento de Arquitetura: doc_de_arquitetura.md
-  - Benchmarking: benchmarking.md
+  - Documentos:
+    - Metodologia: documentos/metodologia.md
+    - Documento de Visão: documentos/doc_de_visao.md
+    - Documento de Arquitetura: documentos/doc_de_arquitetura.md
+    - Benchmarking: documentos/benchmarking.md
+    - UML:
+      - Estáticos: documentos/uml/uml_estatico.md
+      - Dinâmicos: documentos/uml/uml_dinamico.md
+  - Design Sprint: design_sprint.md
   - Requisitos:
-    - Tabela de Requisitos: requisitos.md
-    - NFRs: doc_nfr.md
-  - Backlogs Individuais:
-    - Helena Backlog: helena_backlog.md
-    - Victor Backlog: victor_backlog.md
-    - Gabriela Backlog: gabriela_backlog.md
-    - Alexandre Backlog: alexandre_backlog.md
-    - Luiz Backlog: luiz_backlog.md
-    - Leticia Backlog: leticia_introspeccao.md
-    - Davi Backlog: davi_backlog.md
-  - Backlog Geral: backlog.md
+    - Brainstorming: requisitos/brainstorming.md
+    - NFRs: requisitos/doc_nfr.md
+    - Tabela de Requisitos: requisitos/requisitos.md
+  - Backlogs:
+    - Backlogs Individuais:
+      - Helena Backlog: backlogs/helena_backlog.md
+      - Victor Backlog: backlogs/victor_backlog.md
+      - Gabriela Backlog: backlogs/gabriela_backlog.md
+      - Alexandre Backlog: backlogs/alexandre_backlog.md
+      - Luiz Backlog: backlogs/luiz_backlog.md
+      - Leticia Backlog: backlogs/leticia_introspeccao.md
+      - Davi Backlog: backlogs/davi_backlog.md
+    - Backlog Geral: backlogs/backlog_geral.md
+  - Reuniões:
+    - Sprint Review / Planning:
+      - Sprint 0: reunioes/sprints/sprint_0.md
+    - Pontos de Controle:
+      - PC 1: reunioes/pontos_de_controle/pc_1.md
 
 
   # - RASTREABILIDADE:
