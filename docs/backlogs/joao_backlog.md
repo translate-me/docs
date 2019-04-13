@@ -5,7 +5,7 @@
 Este documento visa exibir um backlog individual dos requisitos do projeto baseado em histórias de usuário. 
 
 ## Objetivo
-iEnumerar e descrever possíveis funcionalidades da aplicação.
+Enumerar e descrever possíveis funcionalidades da aplicação.
 
 |  Código | Épico | Eu, como... | Gostaria de... | Para poder... |
 | :---: | :---: | :---: | :---: | :---: |
