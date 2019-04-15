@@ -19,7 +19,7 @@
 
 ## 4. Privacidade
 
-![nfr_privacidade](assets/images/nfr_privacidade.png)
+![nfr_privacidade](../assets/images/nfr_privacidade.png)
 
 ## 5. Usabilidade
 

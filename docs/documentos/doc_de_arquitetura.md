@@ -60,12 +60,15 @@ i
 ### 4. Visão Lógica
 
 #### 4.1 Diagrama de Classes
-![diagrama_classes](assets/images/diagrama_classes.png)
+
+![diagrama_classes](../assets/images/diagrama_classes.png)
 ---
-#### 4.1. Visão geral de camadas e pacotes
+#### 4.2. Visão geral de camadas e pacotes
+
+![](../assets/uml/uml_pacotes.png)
 ---
 ### 5. Visão de implementação
-![](https://i.imgur.com/rCzw0LC.png)i
+![implementacao](https://i.imgur.com/oFSxr4I.png)
 ---
 ### 6. Dimensionamento e Performance
 i
