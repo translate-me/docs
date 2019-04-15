@@ -7,10 +7,7 @@ pages:
     - Documento de Visão: documentos/doc_de_visao.md
     - Documento de Arquitetura: documentos/doc_de_arquitetura.md
     - Benchmarking: documentos/benchmarking.md
-    - UML:
-      - Estáticos: documentos/uml/uml_estatico.md
-      - Dinâmicos: documentos/uml/uml_dinamico.md
-  - Design Sprint: design_sprint.md
+    - UML: documentos/uml.md
   - Requisitos:
     - Brainstorming: requisitos/brainstorming.md
     - NFRs: requisitos/doc_nfr.md
