@@ -68,7 +68,7 @@ i
 ![](../assets/uml/uml_pacotes.png)
 ---
 ### 5. Visão de implementação
-![implementacao](../assets/imagens/diagrama_implementacao.png)
+![implementacao](https://i.imgur.com/oFSxr4I.png)
 ---
 ### 6. Dimensionamento e Performance
 i
