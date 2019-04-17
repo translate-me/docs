@@ -41,6 +41,9 @@ Após as palavras propostas estarem todas no quadro, foi realizado um processo d
 
 A Etapa de transcrição ocorreu tanto durante a **Etapa 1** quanto na **Etapa 2** , perimitindo observações e uma estrutura em lista que facilita a visualização dos aspectos elaborados na discussão, permitindo que outras abordagens fossem realizadas para a elaboração do escopo do produto.
 
+
+#### Definição de Tópicos
+
 |  Tópico | Associações |
 | --- | --- |
 | **Login** | ***Senha*** <br> ***Perfil*** <br> ***Facebook*** <br> ***Gmail*** <br> ***Usuário*** <br>  &nbsp;&nbsp;&nbsp;&nbsp; - Aqui chamado de "Autor" ou "Tradutor"  |
@@ -53,3 +56,25 @@ A Etapa de transcrição ocorreu tanto durante a **Etapa 1** quanto na **Etapa 2
 | **Contato** | ***Chat*** <br>  &nbsp;&nbsp;&nbsp;&nbsp; - Notificação por Email <br>***Dúvida*** |
 
 De forma geral, foi possível notar um afunilamento dos tópicos da tabela anterior com os épicos do [Backlog](#docs/backlogs/backlog_geral) montado bem como dos servições analisados na arquitetura.
+
+### Etapa 4 - Prototipação
+
+Para alinhamento da equipe com a aplicação elaborada após as etapas mais abstratas, foi realizada uma prototipação conceitual, contando com apoio da representação visual no quadro branco para a elaboração de alguns fluxos da aplicação, como o fluxo de login, cadastro e traduções.
+
+#### Protótipo - Login/Cadastro do Autor
+
+Representação do primeiro esboço do fluxo de login e cadastro do autor, com as informações principais
+
+![brainstorming_3_prototipo](../assets/brainstorming/brainstorming_3_prototipo.jpg)
+
+
+#### Protótipo - Login/Cadastro do Tradutor
+
+Representação do primeiro esboço do fluxo de login e cadastro do tradutor, com as informações princiais necessárias
+
+![brainstorming_4_prototipo](../assets/brainstorming/brainstorming_4_prototipo.jpg)
+
+
+### Conclusão
+
+Após a realização do Brainstorming, a equipe concluiu que a formalização dos requisitos seria realizada individualmente, em prol da montagem de backlogs individuais que representassem as abordagens para o desenvolvimento da aplicação esboçada, o que é melhor descrito no documento de [Backlog Geral](../../backlogs/backlog_geral).
