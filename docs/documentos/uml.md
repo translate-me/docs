@@ -9,7 +9,16 @@
 
 ## UMLs Estáticos
 
+### Diagrama de Classes
+![diagrama_classes](../assets/images/diagrama_classes.png)
+
 ### Diagrama de Pacotes
-![](../assets/uml/uml_pacotes.png)
+![diagrama_pacotes](../assets/uml/uml_pacotes.png)
+
+### Diagrama de implantação
+![implantacao](https://i.imgur.com/oFSxr4I.png)
 
 ## UMLs Dinâmicos
+
+### Diagrama de estados
+![estados](../assets/images/StateDiagram.png)

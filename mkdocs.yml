@@ -8,6 +8,7 @@ pages:
     - Documento de Arquitetura: documentos/doc_de_arquitetura.md
     - Benchmarking: documentos/benchmarking.md
     - UML: documentos/uml.md
+  - Design Sprint: design_sprint.md
   - Requisitos:
     - Brainstorming: requisitos/brainstorming.md
     - NFRs: requisitos/doc_nfr.md
@@ -72,5 +73,5 @@ theme:
     favicon: 'assets/images/favicon.ico'
 
 repo_name: 'Translate.me'
-repo_url: 'https://github.com/desenho2019-1/traducao/'
+repo_url: 'https://github.com/translate-me/translate-me/'
 edit_uri: ''
