@@ -55,7 +55,7 @@ A Etapa de transcrição ocorreu tanto durante a **Etapa 1** quanto na **Etapa 2
 | **Pagamento** | ***Reembolso*** <br> ***Volume de Trabalho*** <br> ***Prazo*** <br> ***Budget (Orçamento)*** <br> &nbsp;&nbsp;&nbsp;&nbsp; - Carteira Virtual <br>  &nbsp;&nbsp;&nbsp;&nbsp; - Resgate|
 | **Contato** | ***Chat*** <br>  &nbsp;&nbsp;&nbsp;&nbsp; - Notificação por Email <br>***Dúvida*** |
 
-De forma geral, foi possível notar um afunilamento dos tópicos da tabela anterior com os épicos do [Backlog](#docs/backlogs/backlog_geral) montado bem como dos servições analisados na arquitetura.
+De forma geral, foi possível notar um afunilamento dos tópicos da tabela anterior com os épicos do [Backlog](../../backlogs/backlog_geral) montado bem como dos servições analisados na arquitetura.
 
 ### Etapa 4 - Prototipação
 

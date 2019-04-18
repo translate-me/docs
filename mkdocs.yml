@@ -1,6 +1,6 @@
 site_name: Translate.me
 extra_css: [extra.css]
-pages:
+nav:
   - Início: index.md
   - Documentos:
     - Metodologia: documentos/metodologia.md
@@ -25,10 +25,12 @@ pages:
       - Joao Backlog: backlogs/joao_backlog.md
     - Backlog Geral: backlogs/backlog_geral.md
   - Reuniões:
-    - Sprint Review / Planning:
+    - Reunião de Sprint:
       - Sprint 0: reunioes/sprints/sprint_0.md
     - Pontos de Controle:
       - PC 1: reunioes/pontos_de_controle/pc_1.md
+      - PC 2: reunioes/pontos_de_controle/pc_2.md
+      - PC 3: reunioes/pontos_de_controle/pc_3.md
 
 
   # - RASTREABILIDADE:

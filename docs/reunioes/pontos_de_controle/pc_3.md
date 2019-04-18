@@ -1,10 +1,10 @@
-# Reunião da Sprint 0
+# Ponto de Controle 3
 
-| Data da Reunião | Participantes | Meio | Local |
-| --- | --- | --- | --- |
-| **30/03/2019** | Alexandre Miguel <br> Gabriela Guedes <br> Helena Goulart <br> Luiz Guilherme <br > Renan Schadt <br> Rômulo Vinícius <br> Victor Hugo  | Presencial | FGA |
+| Data da Reunião | Participantes | Meio |
+| --- | --- | --- |
+| **08/04/2019** | Alexandre Miguel <br> Davi Alves <br> Gabriela Guedes <br> Helena Goulart <br> Letícia Meneses <br> Renan Schadt <br> Rômulo Vinícius <br> Victor Hugo  | Hangouts |
 
-  Reunião realizada para análise e principalmente planejamento das atividades da sprint a serem realizadas 
+  Reunião realizada para ponto de controle de acompanhamento e decisão das atividades da semana após as informações da aula
 
 ## Histórico de Revisão
 

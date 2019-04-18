@@ -18,22 +18,22 @@ Para um melhor entendimento dos temas propostos foi elaborado artefatos para cad
 
 #### Mapas Mentais:
 
-![](../assets/design_sprint/mapa_mental_marketplace.png)
+![Marketplace](assets/design_sprint/mapa_mental_marketplace.png)
 
-![](../assets/design_sprint/mapa_mental_marketplace2.jpg)
+![Marketplace2](assets/design_sprint/mapa_mental_marketplace2.jpg)
 
 #### Rich Picture:
 
-![](../assets/design_sprint/richpicture_marketplace.jpg)
+![richpicture](assets/design_sprint/richpicture_marketplace.jpg)
 
 ### Crawler para Mineração de Dados
 
 #### 5W2H:
 1. What ?
 	* O produto a ser feito é um marketplace que venderá dados que serão gerados através de um crawler ou, como é dito no meio de DataScience, será feito um data mining.
-	* O produto também vai funcionar como um sistema de requisições de dados, ou seja, conforme a necessidade dos clientes que usaram o site, um crawler específico será feito para aquela pessoa caso seja assindo o pacote premium do site. 
+	* O produto também vai funcionar como um sistema de requisições de dados, ou seja, conforme a necessidade dos clientes que usaram o site, um crawler específico será feito para aquela pessoa caso seja assindo o pacote premium do site.
 2. When ?
-	* Tudo será produzido no tempo da disciplina, de no mínimo um MVP do escopo feito no começo do semestre e o máximo de entrega final dos seminários ao final da matéria, sendo este o prazo total de produção. 
+	* Tudo será produzido no tempo da disciplina, de no mínimo um MVP do escopo feito no começo do semestre e o máximo de entrega final dos seminários ao final da matéria, sendo este o prazo total de produção.
 3. Who ?
 	* Todo o serviço será feito pelo grupo que foi determinado no começo da matéria.
 4. Where ?
@@ -60,24 +60,25 @@ Para um melhor entendimento dos temas propostos foi elaborado artefatos para cad
 
 #### Protótipo:
 
-![](../assets/design_sprint/prototipo_crawler.png)
+![prototipo_crawler](assets/design_sprint/prototipo_crawler.png)
 
 ### Plataforma para Traduções de Artigos
 #### Mapa Mental:
-![](../assets/design_sprint/mapa_mental_traducao.png)
+![mapa_mental_traducao](assets/design_sprint/mapa_mental_traducao.png)
 
 #### Rich Pictures:
-![](../assets/design_sprint/richpicture_traducao2.jpg)
+![richpicture_traducao2](assets/design_sprint/richpicture_traducao2.jpg)
 
-![](../assets/design_sprint/richpicture_traducao.png)
-![](../assets/design_sprint/richpicture_traducao3.jpg)
+![richpicture_traducao](assets/design_sprint/richpicture_traducao.png)
+
+![richpicture_traducao3](assets/design_sprint/richpicture_traducao3.jpg)
 
 ## Decisões:
 **Estrutura:** De acordo com os conhecimentos gerais do grupo e as afinidades da maioria com determinadas linguagens e frameworks, optamos por um projeto utilizando as linguagens JavaScript e Python.
 
 **Tema:** Com todas as ideias apresentadas, realizamos uma votação que buscava enfim decidir qual projeto seria o executado no decorrer da disciplina.
 
-![](../assets/design_sprint/votacao.png)
+![votacao](assets/design_sprint/votacao.png)
 
 Assim, o tema escolhido foi o da **Plataforma para Tradução de Artigos**
 
