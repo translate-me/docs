@@ -5,7 +5,7 @@ com a disciplina ofertada pela Universidade de Brasília - Faculdade do Gama
 (UnB/FGA) nomeada como Arquitetura e Desenho de Software, no semestre 2019/2,
 ministrada pela da docente Milene Serrano.
 
-A documentação pode ser acessada através deste [link](https://desenho2019-1.github.io/docs/)
+A documentação pode ser acessada através deste link:  [http://translate-me.github.io/docs](http://translate-me.github.io/docs)
 
 ## Equipe
 

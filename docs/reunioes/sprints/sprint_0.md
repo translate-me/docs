@@ -4,68 +4,67 @@
 | --- | --- | --- | --- |
 | **30/03/2019** | Alexandre Miguel <br> Gabriela Guedes <br> Helena Goulart <br> Luiz Guilherme <br > Renan Schadt <br> Rômulo Vinícius <br> Victor Hugo  | Presencial | FGA |
 
-  Reunião realizada para análise e principalmente planejamento das atividades da sprint a serem realizadas 
+  Reunião realizada para análise e principalmente planejamento das atividades da sprint a serem realizadas .
 
 ## Histórico de Revisão
 
   | Data | Versão | Descrição | Autor |
   |---|---|---|---|
-  | 18/04/2019 | 1.0 | Transcrição da documentação da reunião realizada em 08/04/2019 | Alexandre Miguel |
+  | 18/04/2019 | 1.0 | Transcrição da documentação da reunião realizada em 30/03/2019 | Alexandre Miguel |
 
 ## Planejamento
 
   Os seguintes tópicos foram levados em conta na reunião realizada.
 
-### **Contextualização**
+### **Documentação**
 
-  * Reforçar cumprimento dos Prazos de preenchimento de documentação
-  * Realocar requisitos na tabela geral
+#### **Documento Novo**
 
-### **Modelagem UML**
+  * Documento de Requisitos Não Funcionais composto por artefatos NFRs
+  * Explicação do modelo NFR por **Alexandre Miguel e Renan Schadt**
 
- * Estabelecer duplas para modelagem dos artefatos UML
- * Elaborar primeira versão dos artefatos até sexta-feira (12/04/2019)
+#### **Decisão de Documentação**
 
+  * Definição entre documentação realizada em Markdown ou Google Docs
+  * A Opção do Grupo foi pelo **Markdown**
+  * Documentação no **Github Pages**
+  * Adicionar templates no **Github Pages**
+  * Definição dos responsáveis pela pesquisa do template
 
-  **Tabela de Artefatos e Duplas**
+  | Documentação | Responsáveis pelo template |
+  | --- | --- |
+  | **Documento de Arquitetura** | Gabriela Guedes e Renan Schadt|
+  | **Documento de Visão** | Victor Hugo e João Robson|
+  | **Documento de NFRs** | Rômulo Vinícius, Alexandre Miguel e Renan Schadt |
+  | **Folha de Estilo** | Davi Alves e Letícia Meneses |
+  | **Benchmarking** | Luiz Guilherme e Helena Goulart|
 
+### **Organização**
 
- | Artefato | Dupla Responsável |
- | --- | --- |
- | Diagrama de Pacotes | Gabriela Guedes e Alexandre Miguel |
- | Diagrama de Classes | Luiz Guilherme e Letícia Meneses |
- | Diagrama de Estados | Renan Schadt e Helena Goulart |
- | Diagrama de Implantação | Victor Hugo e João Robson |
- | Diagrama de Classes | Rômulo Vinícius e Davi Alves  |
+#### **Apresentação da Arquitetura De Microsserviços**
 
+  * Conceitos gerais de Arquitetura de Microsserviços foram explicados ao grupo por **Victor Hugo** para alinhamento da equipe.
 
-### **Dinâmica 3**
+### **Elementos de Motodologias**
 
-* Validar Modelagens com Milene Serrano
-* Validar Backlog com Milene Serrano
+  Com o que a equipe já havia adquirido de conhecimento, as seguintes metodologias foram elencadas para desenvolvimento e implantação no projeto.
 
+| Metodologias|
+| --- |
+| Scrum |
+| XP |
+| KanBan|
 
-### **Documentação de Gerência**
+### **Escopo do Projeto**
 
-* Verificar com Monitores e Milene Serrano
-* Consultar o material PMBOK
-* Estudar a possibilidade de Planilha de Custos
-* Responsáveis: **Helena Goulart e Renan Schadt**
+#### **Brainstorming**
 
-### **Organização do Github Pages**
+  * Para alinhamento da equipe e decisão do escopo, foi realizado um [Brainstorming](../../requisitos/brainstorming.md), que foi explanado no conteúdo do link anterior
 
-* Indexar Documentações
-* Reorganizar Index
-* Responsáveis: **Gabriela Guedes e Alexandre Miguel**
+#### **Escolha de Nome**
 
-### **Organização da Reunião de Sprint 1**
+ * Sugestão de Nomes Gerais pela Equipe
+ * Escolha através de votação dos nomes
+ * Nome escolhido: ***Translate.me***
 
-* Priorizar Histórias
-* Treinamento de Django e React
-* Montar Sprint Backlog
-* Pontuar Histórias da Semana
-* Rotacionar Papéis
-    * Scrum Master
-    * Product Owner
-    * Architect
-* Revisão Geral dos Documentos
+ ![nomes_de_projeto](../../assets/reunioes/sprint0_nome.jpeg)
