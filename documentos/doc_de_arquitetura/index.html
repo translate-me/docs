@@ -446,6 +446,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../identidade_visual/" title="Identidade Visual" class="md-nav__link">
+      Identidade Visual
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -708,11 +720,11 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-1" type="checkbox" id="nav-6-1">
     
     <label class="md-nav__link" for="nav-6-1">
-      Reunião de Sprint
+      Sprint Review / Planning
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-6-1">
-        Reunião de Sprint
+        Sprint Review / Planning
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -761,30 +773,6 @@
   <li class="md-nav__item">
     <a href="../../reunioes/pontos_de_controle/pc_1/" title="PC 1" class="md-nav__link">
       PC 1
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../reunioes/pontos_de_controle/pc_2/" title="PC 2" class="md-nav__link">
-      PC 2
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../reunioes/pontos_de_controle/pc_3/" title="PC 3" class="md-nav__link">
-      PC 3
     </a>
   </li>
 
@@ -982,8 +970,8 @@
 <tr>
 <td>11/04/2019</td>
 <td>0.8</td>
-<td>Adicionando o diagrama de implementação</td>
-<td>Victor Hugo</td>
+<td>Adiconando o diagrama de implementação</td>
+<td></td>
 </tr>
 <tr>
 <td>11/04/2019</td>
@@ -1017,36 +1005,14 @@ como de performace.</p>
 <h3 id="2-representacao-arquitetural">2. Representação arquitetural</h3>
 <h2 id="_1"><img alt="arquitetura" src="https://i.ibb.co/zf99Pb7/architecture.png" /></h2>
 <h3 id="3-requisitos-e-restricoes-arquiteturais">3. Requisitos e Restrições arquiteturais</h3>
-<table>
-<thead>
-<tr>
-<th>Requisito</th>
-<th>Solução</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Linguagem</td>
-<td>O front-end será feito em <em>JavaScript</em> e o back-end, em <em>Python</em></td>
-</tr>
-<tr>
-<td>Plataforma</td>
-<td>Serão usadas as plataformas <em>ReactJS</em> para o front-end e <em>Django</em> para o back-end</td>
-</tr>
-<tr>
-<td>Segurança</td>
-<td>É necessário uma segurança para com os dados, pois todos os usuários irão interagir de forma anônima. Para uma maior segurança das informações, será necessário a utilização de token nas requisições</td>
-</tr>
-<tr>
-<td>Persistência</td>
-<td>O sistema lidará com uma quantidade grande de dados(informações de usuário e textos em tradução), que para um bom funcionamento do sistema não podem ser perdidos, para a persistência destes dados será utilizado um banco de dados relacional <em>PostgreSQL</em></td>
-</tr>
-<tr>
-<td>Arquitetura</td>
-<td>Será feita uma arquitetura de microsserviços, para um melhor funcionamento e desempenho do sistema, já que não serão dependentes entre si</td>
-</tr>
-</tbody>
-</table>
+<p>i
+|Requisito|Solução|
+|---|---|
+|Linguagem|O front-end será feito em <em>JavaScript</em> e o back-end, em <em>Python</em>|
+|Plataforma|Serão usadas as plataformas <em>ReactJS</em> para o front-end e <em>Django</em> para o back-end|
+|Segurança| É necessário uma segurança para com os dados, pois todos os usuários irão interagir de forma anônima. Para uma maior segurança das informações, será necessário a utilização de token nas requisições|
+|Persistência|O sistema lidará com uma quantidade grande de dados(informações de usuário e textos em tradução), que para um bom funcionamento do sistema não podem ser perdidos, para a persistência destes dados será utilizado um banco de dados relacional <em>PostgreSQL</em>|
+|Arquitetura|Será feita uma arquitetura de microsserviços, para um melhor funcionamento e desempenho do sistema, já que não serão dependentes entre si|</p>
 <hr />
 <h3 id="4-visao-logica">4. Visão Lógica</h3>
 <h4 id="41-diagrama-de-classes">4.1 Diagrama de Classes</h4>
@@ -1056,7 +1022,8 @@ como de performace.</p>
 <h3 id="5-visao-de-implementacao">5. Visão de implementação</h3>
 <h2 id="_4"><img alt="implementacao" src="https://i.imgur.com/oFSxr4I.png" /></h2>
 <h3 id="6-dimensionamento-e-performance">6. Dimensionamento e Performance</h3>
-<p>Seção responsável pela estimativa em valores quantizados do desempenho dos módulos da arquitetura, bem como de sua performance em execução, conforme a análise qualitativa estabelecida no <a href="#">Documento de Requisitos Não Funcionais</a></p>
+<p>i
+Seção responsável pela estimativa em valores quantizados do desempenho dos módulos da arquitetura, bem como de sua performance em execução, conforme a análise qualitativa estabelecida no <a href="#">Documento de Requisitos Não Funcionais</a></p>
 <h4 id="61-volume">6.1. Volume</h4>
 <p>De forma geral, o sistema deve permitir que o fluxo de usuários de ambos os tipos tenham acesso, otimizando acessos de usuários autores para velocidade enquanto dispõe de uma quantidade maior de acessos a usuários tradutores, que representam maior tempo de atividade e em maior número de acesso aos sistemas, com uma escala 1 : 4 em termos de autores e tradutores. Assim, é possível montar a seguinte tabela de estimativas para volumes, traçando paralelos entre usuários tradutores e usuários autores.</p>
 <table>
