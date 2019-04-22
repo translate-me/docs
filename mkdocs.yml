@@ -8,6 +8,7 @@ nav:
     - Documento de Arquitetura: documentos/doc_de_arquitetura.md
     - Benchmarking: documentos/benchmarking.md
     - UML: documentos/uml.md
+    - Identidade Visual: documentos/identidade_visual.md
   - Design Sprint: design_sprint.md
   - Requisitos:
     - Brainstorming: requisitos/brainstorming.md
