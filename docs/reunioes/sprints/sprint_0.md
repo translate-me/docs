@@ -45,7 +45,7 @@
 
   * Conceitos gerais de Arquitetura de Microsserviços foram explicados ao grupo por **Victor Hugo** para alinhamento da equipe.
 
-### **Elementos de Motodologias**
+### **Elementos de Metodologias**
 
   Com o que a equipe já havia adquirido de conhecimento, as seguintes metodologias foram elencadas para desenvolvimento e implantação no projeto.
 
