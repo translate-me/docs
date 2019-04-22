@@ -16,6 +16,7 @@
 |11/04/2019 | 0.9.4 | Adicionando Resumo dos Recursos | Rômulo Souza |
 |11/04/2019 | 0.9.5 | Adicionando Alternativas e Critérios de Qualidade | João Robson |
 |11/04/2019 | 1.0 | Adicionando Requisitos | Davi Alves |
+|22/04/2019 | 1.1 | Revisando Documento | Alexandre Miguel |
 
 
 ### 1. Introdução
@@ -41,24 +42,31 @@ O documento de visão define o escopo de alto nível do produto, o propósito do
 
 **Usuário Autor** - Usuário da aplicação que submete textos para serem traduzidos   
 
+**Stakeholders** - Partes envolvidas e interessadas na aplicação, como possíveis usuários, investidores, dentre outros
+
+**RUP** - *Rational Unified Process*, Processo proposto pela IBM que fornece técnicas para aumentar a produtividade da equipe
+
 #### 1.4. Visão Geral
-O Translate.me é um projeto criado para a disciplina de Desenho de Software da Universidade de Brasília, na Faculdade do Gama (FGA) e é uma aplicação web que servirá como uma ferramenta de aproximação entre um cliente que precisa de uma tradução profissional e tradutores freelancers que buscam realizar sua profissão de forma fácil.
 
-O público-alvo da aplicação são estudantes acadêmicos e produzem artigos científicos, relatórios, documentam processos ou demais atividades acadêmicas que buscam relevância internacional com sua publicação. Assim, um estudante brasileiro que não possui uma proficiência em uma determinada língua pode ter a sua publicação traduzida em diversos idiomas, por um tradutor que a domina e que busca realizar esse serviço de forma centralizada. Com isso, o público-alvo também passa a ser os tradutores profissionais.
+O **Translate.me** é um projeto criado para a disciplina de Desenho de Software da Universidade de Brasília, na Faculdade do Gama (FGA) e é uma aplicação web que servirá como uma ferramenta de aproximação entre um cliente que precisa de uma tradução profissional e tradutores freelancers que buscam realizar sua profissão de forma fácil.
 
-A criação do Translate.me surge da ideia de facilitar o encontro entre um cliente e um especialista em tradução, porém, diferenciando-se do disposto atualmente no mercado, a plataforma descentraliza a tradução feita por somente um tradutor, permitindo a tradução de textos privados, estudos não-publicados, patentes e demais propriedades intelectuais que poderiam 'vazar' se a tradução é realizada somente por um profissional.
+O público-alvo da aplicação são estudantes acadêmicos ques produzem artigos científicos, relatórios, documentam processos ou demais atividades acadêmicas que buscam relevância internacional com sua publicação. Assim, um estudante brasileiro que não possui uma proficiência em uma determinada língua pode ter a sua publicação traduzida em diversos idiomas, por um tradutor que a domina e que busca realizar esse serviço de forma centralizada. Com isso, o público-alvo também passa a ser os tradutores profissionais.
 
-Este documento está organizado de acordo com a metodologia RUP, o Rational Unified Process, definindo o problema a ser resolvido, os requisitos do software, o momento do mercado no qual o projeto se encaixa, a utilização da aplicação desejada e os usuários, levantamentos sobre metodologia de desenvolvimento do software e os processos utilizados, um esboço do cronograma de desenvolvimento e sua documentação.
+A criação do **Translate.me** surge da ideia de facilitar o encontro entre um cliente e um especialista em tradução, porém, diferenciando-se do disposto atualmente no mercado, a plataforma descentraliza a tradução feita por somente um tradutor, permitindo a tradução de textos privados, estudos não-publicados, patentes e demais propriedades intelectuais que poderiam ter seu conteúdo exposto se a tradução é realizada somente por um profissional.
+
+Este documento está organizado de acordo com a metodologia **RUP**, o *Rational Unified Process* , definindo o problema a ser resolvido, os requisitos do software, o momento do mercado no qual o projeto se encaixa, a utilização da aplicação desejada e os usuários, levantamentos sobre metodologia de desenvolvimento do software e os processos utilizados, um esboço do cronograma de desenvolvimento e sua documentação.
+
+---
 
 ### 2. Posicionamento
-O transalate.me ataca o nicho de tradução científica, para usuários que demandam uma tradução de alto nível. Trazendo diferenciais como divisão de textos entre tradutores, elementos de gamificação e preço acessível. Este tópico demonstra como o produto se encaixa no mercado e quais são seus diferenciais para obter destaque.  
+O **Translate.me** ataca o nicho de tradução científica, para usuários que demandam uma tradução de alto nível. Trazendo diferenciais como divisão de textos entre tradutores, elementos de gamificação e preço acessível. Este tópico demonstra como o produto se encaixa no mercado e quais são seus diferenciais para obter destaque.  
 
 #### 2.1. Oportunidade de Negócio
-<p> O Translate.me oferece uma plataforma de serviço de tradução de artigos e documentos, fazendo a ligação entre o usuário que precisa de uma tradução e o usuário tradutor. </p>
+<p> O **Translate.me** oferece uma plataforma de serviço de tradução de artigos e documentos, fazendo a ligação entre o usuário que precisa de uma tradução e o usuário tradutor. </p>
 
-<p> O serviço automatizado visa solucionar a demanda de traduções de artigos, em que muitas vezes o escritor/pesquisador não possui o conhecimento para traduzir seus textos, precisando assim de alguém que possa fazer isso, com qualidade e segurança.</p>
+<p> O serviço automatizado visa solucionar a demanda de traduções de artigos, em que muitas vezes o escritor/pesquisador não possui o conhecimento para traduzir seus textos, precisando assim de alguém que possa fazer isso, com qualidade e segurança. </p>
 
-<p> O objetivo da aplicação é facilitar e automatizar os processos do serviço de tradução de textos, o qual um cliente tem a necessidade de tradução, disposto a pagar pelo serviço, e um tradutor que deve receber um valor justo pelo trabalho feito. Logo, o Translate.me intermedia essa transição para que ambas partem possam ser beneficiadas, contando com uma estratégia de segurança na tradução do artigo, diversidade de tradutores para o mesmo documento evitando a exposição total do texto e garantindo qualidade e revisão de tradução. Entre todo os trâmites nesse fluxo, o Translate.me deve ganhar uma porcentagem do valor da tradução de até 15%, partindo dai o capital gerado pelo sistema.</p>
+<p> O objetivo da aplicação é facilitar e automatizar os processos do serviço de tradução de textos, o qual um cliente tem a necessidade de tradução, disposto a pagar pelo serviço, e um tradutor que deve receber um valor justo pelo trabalho feito. Logo, o Translate.me intermedia essa transição para que ambas partem possam ser beneficiadas, contando com uma estratégia de segurança na tradução do artigo, diversidade de tradutores para o mesmo documento evitando a exposição total do texto e garantindo qualidade e revisão de tradução. Entre todo os trâmites nesse fluxo, o Translate.me deve ganhar uma porcentagem do valor da tradução de até 15%, partindo dai o capital gerado pelo sistema. </p>
 
 #### 2.2. Problema a Ser Resolvido
 | O problema de | Falta de proficiência para traduzir um texto complexo para outra língua |
@@ -77,6 +85,8 @@ O transalate.me ataca o nicho de tradução científica, para usuários que dema
 | Diferente de | Websites similares que não permitem acompanhamento do processo e comunicação entre as partes envolvidas |
 | Nosso produto | Oferece uma fórmula modularizada e interativa de tradução a um preço acessível |
 
+---
+
 ### 3. Perfil dos Usuários, Envolvidos e Mercado    
 Os envolvidos na utilização da plataforma podem ser simplificados na tabela abaixo:
 
@@ -93,7 +103,7 @@ A definição de envolvidos no projeto (stakeholders) é bastante confusa dentro
 São estes os usuários descritos no próximo tópico, dentre eles são os utilizadores da plataforma, que são alunos com proficiência para tradução de textos mais simples e auxiliares; professores e profissionais de tradução, que são responsáveis pelas traduções mais técnicas e acadêmicas e por fim o cliente que contrata o serviço de tradução oferecido.
 
 ##### 3.1.2 Desenvolvedores
-Os desenvolvedores do projeto consiste em um grupo de 10 (dez) alunos do curso de Engenharia de Software da UnB que cursam a disciplina de Desenho de Software no primeiro semestre do ano de 2019 na Universidade de Brasília. Estes são os responsáveis pela documentação, desenvolvimento da aplicação, idealização e manutenção da plataforma. A lista dos desenvolvedores pode ser encontrada na [página inicial deste documento](https://desenho2019-1.github.io/docs/)
+Os desenvolvedores do projeto consiste em um grupo de 10 (dez) alunos do curso de Engenharia de Software da UnB que cursam a disciplina de Desenho de Software no primeiro semestre do ano de 2019 na Universidade de Brasília. Estes são os responsáveis pela documentação, desenvolvimento da aplicação, idealização e manutenção da plataforma. A lista dos desenvolvedores pode ser encontrada na [página inicial deste documento](https://translate-me.github.io/docs/)
 
 ##### 3.1.3 Professores e Monitores da disciplina
 Por fim, existem também os stakeholders que avaliam a disciplina, cujo foco é este projeto. Os alunos são coordenados pela professora Milene Serrano e pelo conjunto de monitores da disciplina. Seus objetivos são definir critérios de qualidade, prazos de entrega e atribuir determinados padrões de projeto que devem ser adotados no decorrer do desenvolvimento do projeto.
@@ -116,14 +126,16 @@ São estudantes de diversas áreas do conhecimento que elaboraram textos acadêm
 
 #### 3.3. Alternativas e Competição   
 Existem algumas soluções existentes que realizam a tradução de texto por meio de uma plataforma digital. Considerando serviços de tradução instantânea, que são genéricos e não são especializados em determinado tipo ou tema específico de texto, podemos citar o Google Tradutor e o Yandex. Tratando-se de serviços para tradução que têm o foco em traduções de manuscritos ou artigos científicos, alguns podem ser destacados, como mostrado abaixo:
+
 * [EditingServices](https://www.tandfeditingservices.com/services/translation.html)
     * Proveem serviços de edição e tradução, com fases dedicadas a revisão do texto traduzido por especialitas e revisão gramatical e semântico.
 * [Editage](https://www.editage.com/translation-services/brazilian-portuguese-to-english-translation.html)
     * Serviço especializado em tradução de documentos acadêmicos, formado por tradutores de várias áreas com experiência que combinam seu conhecimento para entregar um documento perfeitamente traduzido.
+
 ---
 
 ### 4. Definição do Produto
-O Translate.me trata-se de uma plataforma de tradução de textos e artigos acadêmicos. A especificidade e limitação do público e do tema se deve à preocupação dos desenvolvedores deste projeto com os direitos autoriais dos textos em processo de tradução. Além disso, houve também uma preocupação em atender ao público de pessoas que possuem certificação em língua estrangeira, permitindo que atuem como _freelancers_ neste projeto. A gamificação será uma metodologia presente no Translate.me, como forma de incentivar que os usuários se mantenham conectados à plataforma e em uso constante da mesma.
+O **Translate.me** trata-se de uma plataforma de tradução de textos e artigos acadêmicos. A especificidade e limitação do público e do tema se deve à preocupação dos desenvolvedores deste projeto com os direitos autoriais dos textos em processo de tradução. Além disso, houve também uma preocupação em atender ao público de pessoas que possuem certificação em língua estrangeira, permitindo que atuem como _freelancers_ neste projeto. A gamificação será uma metodologia presente no **Translate.me** , como forma de incentivar que os usuários se mantenham conectados à plataforma e em uso constante da mesma.
 
 #### 4.1. Perspectiva do Produto
 
@@ -131,13 +143,13 @@ O Translate.me trata-se de uma plataforma de tradução de textos e artigos acad
 
 #### 4.2. Resumo dos Recursos
 
-Dentre os principais recursos oferecidos pelo ***translate.me***, estão os serviços de cadastro, login e logout de usuário; inserção, tradução e revisão de textos; sistema de pagamento; chat e acompanhamento entre autores e tradutores; sistema de nivelamento entre os tradutores.
+Dentre os principais recursos oferecidos pelo **Translate.me**, estão os serviços de cadastro, login e logout de usuário; inserção, tradução e revisão de textos; sistema de pagamento; chat e acompanhamento entre autores e tradutores; sistema de nivelamento entre os tradutores.
 
 
 ---
 ### 5. Funcionalidades do Produto
 
-Os recursos e funcionalidades do webapp ***translate.me*** compreendem serviços implementados independentemente, buscando atender as necessidades identificadas dos usuários da plataforma, aqui descritos em ordem de prioridade.
+Os recursos e funcionalidades do webapp **Translate.me** compreendem serviços implementados independentemente, buscando atender as necessidades identificadas dos usuários da plataforma, aqui descritos em ordem de prioridade.
 
 #### 5.1. Login e Cadastro
 
@@ -145,7 +157,7 @@ A Aplicação possui um sistema para cadastro de usuários em conexão direta co
 
 #### 5.2. Submissão de texto
 
-O ***translate.me***, para cumprir com sua função principal de propiciar a tradução, possui a funcionalidade de submissão de textos em formatos que propiciem diferentes etapas de funcionalidades que compõem o restante da aplicação, como a fragmentação de textos.
+O **Translate.me**, para cumprir com sua função principal de propiciar a tradução, possui a funcionalidade de submissão de textos em formatos que propiciem diferentes etapas de funcionalidades que compõem o restante da aplicação, como a fragmentação de textos.
 
 #### 5.3. Fragmentação de textos
 
@@ -169,41 +181,56 @@ Como forma de motivação dos usuários tradutores, seja para maior participaç�
 
 #### 5.8. Contato Anônimo
 
-A Aplicação ***translate.me*** possui ainda um sistema de comunicação entre tradutor e autor, porém estabelecendo critérios rígidos de anônimato em ambas as pontas, garantindo que determinados usuários não sejam beneficiados por motivos que saem do escopo da aplicação ou do método gamificado.
+A Aplicação **Translate.me** possui ainda um sistema de comunicação entre tradutor e autor, porém estabelecendo critérios rígidos de anônimato em ambas as pontas, garantindo que determinados usuários não sejam beneficiados por motivos que saem do escopo da aplicação ou do método gamificado.
 
 ---
-### 6. Restrições   
+
+### 6. Restrições  
+
 #### 6.1. Restrições de Design   
 <p> O webapp tem que ter um design de alta compreensão e acessibilidade.</p>
 
 #### 6.2. Restrições de Implementação   
-<p> A aplicação será implementada em python com framework Django, Rest Framework  e React. E será dividido em microserviços.</p>
+<p> A aplicação será implementada em python com framework Django, Rest Framework  e React. E será dividido em microsserviços.</p>
 
 #### 6.3. Restrições de Segurança   
 <p> O aplicativo não será responsável por copyright dos textos submetidos com taxa abaixo 50% de privacidade(indice medidos com métricas do site).</p>
 
 #### 6.4. Restrições de Design   
-<p> Por se tratar de uma aplicação na web uma restrição do projeto é possuir acesso a uma internet estável e navegadores compatíveis com os listados no projeto para acessar o webapp.</p>
+<p> Por se tratar de uma aplicação na, web uma restrição do projeto é possuir acesso a uma internet estável e navegadores compatíveis com os listados no projeto para acessar o webapp.</p>
+
+---
 
 ### 7. Critérios de Qualidade
 
 #### 7.1 - Testes unitários
-Serão utilizados testes unitários em cada microserviço criado no Back-end para garantir um nível de qualidade razoável.
+
+Serão utilizados testes unitários em cada microsserviço criado no Back-end para garantir um nível de qualidade razoável.
 
 #### 7.2 - Usabilidade
+
 No Front-end, os componentes do [Material-UI](https://material-ui.com/) serão utilizados. Eles são baseados no [Material Design](https://material.io/), uma linguagem visual que provê boas práticas de design e acessibilidade para criar produtos de alta qualidade.
 
 ---
-### 8. Requisitos    
+
+### 8. Requisitos   
+
+Os requisitos podem ser acessados diretamente no documento elaborado, acessado a [Tabela de Requisitos](../../requisitos/requisitos).
+
 ---
-Os requisitos podem ser acessados diretamente em nossos documentos.
-[Ver Requisitos](https://github.com/desenho2019-1/docs/blob/master/docs/requisitos.md)
+
 
 ### 9. Documentação Adicional
 <p> A plataforma dispõe de documentos gerais como FAQ, informações sobre a equipe e formas de contato. </p>
-<p> Acerca do FAQ do Translate.me, são reunidas as dúvidas mais frequentes, sendo criados links que levam a resolução desse problema ou um esclarecimento sobre determinado assunto. Mesmo que a dúvida do usuário não se enquadre nas expostas, existe o campo para fazer próprias perguntas, e será dado todo o suporte para o esclarecimento e resolução de alguma pendencia para o usuário. </p>
-<p> Conjuntamente as documentações adicionais apresentada ao usuário, as informações sobre o software e a equipe integra as documentações para usuários, aborda informações sobre os integrantes e dados técnicos sobre o sistema, por conseguinte aborda formas de contato com os responsáveis pelo Translate.me.
+<p> Acerca do FAQ do **Translate.me** , são reunidas as dúvidas mais frequentes, sendo criados links que levam a resolução desse problema ou um esclarecimento sobre determinado assunto. Mesmo que a dúvida do usuário não se enquadre nas expostas, existe o campo para fazer próprias perguntas, e será dado todo o suporte para o esclarecimento e resolução de alguma pendencia para o usuário. </p>
+<p> Conjuntamente as documentações adicionais apresentada ao usuário, as informações sobre o software e a equipe integra as documentações para usuários, aborda informações sobre os integrantes e dados técnicos sobre o sistema, por conseguinte aborda formas de contato com os responsáveis pelo **Translate.me** . </p>
+
+---
 
 ### 10. Referências
----
- * **Template de Documento de Visão - ** [https://www.ibm.com/support/knowledgecenter/pt-br/SSYMRC_6.0.5/com.ibm.rational.rrm.help.doc/topics/r_vision_doc.html](https://www.ibm.com/support/knowledgecenter/pt-br/SSYMRC_6.0.5/com.ibm.rational.rrm.help.doc/topics/r_vision_doc.html)
+
+ *  [Template de Documento de Visão](https://www.ibm.com/support/knowledgecenter/pt-br/SSYMRC_6.0.5/com.ibm.rational.rrm.help.doc/topics/r_vision_doc.html)
+
+ * [Definição de RUP](https://pt.wikipedia.org/wiki/IBM_Rational_Unified_Process)
+
+ * [Editage](https://www.editage.com/translation-services/brazilian-portuguese-to-english-translation.html)

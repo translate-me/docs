@@ -2,8 +2,9 @@
 | Data | Versão | Descrição | Autor |
 |---|---|---|---|
 |07/04/2019| 0.1 | Criação do modelo de elicitação de requisitos| Gabriela Guedes, Letícia Meneses e Renan Schadt |
-|11/04/2019| 0.12 | Adicionando requisitos| Letícia Meneses |
-|12/04/2019| 0.2| Adicionando requisitos | Victor|
+|11/04/2019| 0.2 | Adicionando requisitos| Letícia Meneses |
+|12/04/2019| 0.3 | Adicionando requisitos | Victor|
+|18/04/2019| 0.4 | Adicionando requisitos conforme Backlogs montados | Alexandre Miguel |
 
 
 

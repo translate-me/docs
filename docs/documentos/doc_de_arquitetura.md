@@ -1,77 +1,91 @@
-# Documento de Arquitetura Translate.me
+# Documento de Arquitetura
 
 ### Histórico de Revisão:
 | Data | Versão | Descrição | Autor |
 |---|---|---|---|
-| 31/03/2019 | 0.1 | Adicionando o Template do documento de arquitetura | Victor |
+| 31/03/2019 | 0.1 | Adicionando o Template do documento de arquitetura | Victor Hugo |
 | 01/04/2019 | 0.2 | Modificando Template para preenchimento | Alexandre Miguel|
-| 09/04/2019 | 0.3 | Adicionando Definições, Acrônimos e Abreviações  | Letícia Meneses|
+| 09/04/2019 | 0.3 | Adicionando Definições, Acrônimos e Abreviações  | Letícia Meneses |
 | 09/04/2019 | 0.4 | Adicionando Introdução e Requisitos e Restrições arquiteturais | Gabriela Guedes |
-| 10/04/2019 | 0.5 | Adicionando informações de Dimensionamento e Performance e de Qualidade  | Alexandre Miguel|
+| 10/04/2019 | 0.5 | Adicionando informações de Dimensionamento e Performance e de Qualidade  | Alexandre Miguel |
 | 11/04/2019   | 0.6  | Adicionando escopo do projeto  | Helena Goulart  |
 | 11/04/2019 | 0.7 | Adicionando Diagrama de Classes | Rômulo Souza |
-| 11/04/2019| 0.8| Adicionando o diagrama de implementação|Victor Hugo|
-| 11/04/2019| 0.9| Adiconando finalidade do documento | João Robson|
+| 11/04/2019| 0.8| Adicionando o diagrama de implementação | Victor Hugo |
+| 11/04/2019| 0.9| Adicionando finalidade do documento | João Robson |
+| 22/04/2019| 0.9.1 | Revisando e Adicionando Descrições de Tópicos  | Alexandre Miguel |
 
 
-### Objetivo do documento
+### Objetivo do Documento
 Este documento tem como objetivo descrever e caracterizar as decisões arquiteturais do projeto
-translate.me. A caraterização será feita apenas no ambito do software não levando em conta medições
-como de performace.
+**Translate.me** . A caraterização será feita com enfoque no ambito do software, não levando em conta medições como de performace.
 
 
 ### 1. Introdução
-Este documento visa apresentar a arquitetura de software a ser aplicada no sistema do Translate.me, de forma que facilite a visualização dos requisitos e da estrutura para os envolvidos.
+Este documento visa apresentar a arquitetura de software a ser aplicada no sistema do **Translate.me** , de forma que facilite a visualização dos requisitos e da estrutura para os envolvidos.
 
 #### 1.1. Finalidade
 
-Este documento apresenta os aspectos arquiteturais do projeto, exibindo como se dará a intgração entre os microserviços que compõem o Baack-end e o Front-end. Dessa forma, ele é composto não só de diagramas e de uma visualização mais abstrata, mas também provê uma visão que trata das tecnologias envolvidas na elaboração do projeto e da forma na qual esses elementos serão incorporados para se obter os requisitos funcionais e não funcionais propostos.
+Este documento apresenta os aspectos arquiteturais do projeto, exibindo como se dará a integração entre os microsserviços que compõem o *Back-end* e o *Front-end* . Dessa forma, ele é composto não só de diagramas e abordagens abstratas, mas também de uma visão que trata das tecnologias envolvidas na elaboração do projeto e da forma na qual esses elementos serão incorporados para se obter os requisitos funcionais e não funcionais propostos.
 
 ---
 #### 1.2. Escopo
-Este documento de arquitetura se aplica ao Translate.me, aplicação desenvolvida na disciplina Arquitetura e Desenho de Software.
+Este documento de arquitetura se aplica ao **Translate.me** , aplicação desenvolvida na disciplina Arquitetura e Desenho de Software.
 
 #### 1.3. Definições, Acrônimos e Abreviações
 
-<p> UnB - Universidade de Brasília</p>
-<p> FGA - Faculdade do Gama</p>
-<p> Translate.me - WebApp com finalidade em tradução de textos, ligando tradutor e cliente.</p>
+ **UnB** - Universidade de Brasília
 
+ **FGA** - Faculdade do Gama
+
+ **Translate.me** - WebApp com finalidade em tradução de textos, ligando tradutor e cliente.
 
 
 #### 1.4. Referências
-[Lino](https://botlino.github.io/docs/doc-arquitetura)
+[Lino](https://botlino.github.io/docs/doc-arquitetura) - Documentação de arquitetura do projeto de Bot em desenvolvimento na FGA
 
-[Design Patterns](https://refactoring.guru/design-patterns)
-### 2. Representação arquitetural
-![arquitetura](https://i.ibb.co/zf99Pb7/architecture.png) 
+[Design Patterns](https://refactoring.guru/design-patterns) - Padrões de Design aplicados ao desenvolvimento de software
+
 ---
-### 3. Requisitos e Restrições arquiteturais   
+
+### 2. Representação Arquitetural
+
+Modelo de representação dos serviços implementados e as interações estabelecidas entre esses serviços, bem como a natureza dessas interações.
+
+![arquitetura](https://i.ibb.co/zf99Pb7/architecture.png)
+
+---
+
+### 3. Requisitos e Restrições Arquiteturais
 
 |Requisito|Solução|
 |---|---|
-|Linguagem|O front-end será feito em *JavaScript* e o back-end, em *Python*|
-|Plataforma|Serão usadas as plataformas *ReactJS* para o front-end e *Django* para o back-end|
-|Segurança| É necessário uma segurança para com os dados, pois todos os usuários irão interagir de forma anônima. Para uma maior segurança das informações, será necessário a utilização de token nas requisições|
-|Persistência|O sistema lidará com uma quantidade grande de dados(informações de usuário e textos em tradução), que para um bom funcionamento do sistema não podem ser perdidos, para a persistência destes dados será utilizado um banco de dados relacional *PostgreSQL*|
+|Linguagem|O front-end será feito em *JavaScript* e o back-end, em *Python*.|
+|Plataforma|Serão usadas as plataformas *ReactJS* para o front-end e *Django* para o back-end. |
+|Segurança| É necessário uma segurança para com os dados, pois todos os usuários irão interagir de forma anônima. Para uma maior segurança das informações, será necessário a utilização de token nas requisições. |
+|Persistência|O sistema lidará com uma quantidade grande de dados (informações de usuário e textos em tradução), que para um bom funcionamento do sistema não podem ser perdidos, para a persistência destes dados será utilizado um banco de dados relacional *PostgreSQL* .|
 |Arquitetura|Será feita uma arquitetura de microsserviços, para um melhor funcionamento e desempenho do sistema, já que não serão dependentes entre si|
 
 ---
 ### 4. Visão Lógica
 
+Modelagens conforme padrão UML que representam os aspectos arquiteturais do sistema, como as classes utilizadas, as camadas e pacotes da aplicação e a visão da implementação de cada serviço.
+
 #### 4.1 Diagrama de Classes
 
 ![diagrama_classes](../assets/images/diagrama_classes.png)
----
-#### 4.2. Visão geral de camadas e pacotes
 
-![](../assets/uml/uml_pacotes.png)
+#### 4.2. Visão Geral de Camadas e Pacotes
+
+![diagrama_pacotes](../assets/uml/uml_pacotes.png)
+
 ---
 ### 5. Visão de implementação
-![implementacao](https://i.imgur.com/oFSxr4I.png)
+
+![visao_implementacao](https://i.imgur.com/oFSxr4I.png)
 ---
-### 6. Dimensionamento e Performance   
-Seção responsável pela estimativa em valores quantizados do desempenho dos módulos da arquitetura, bem como de sua performance em execução, conforme a análise qualitativa estabelecida no [Documento de Requisitos Não Funcionais](#)
+### 6. Dimensionamento e Performance
+
+Seção responsável pela estimativa em valores quantizados do desempenho dos módulos da arquitetura, bem como de sua performance em execução, conforme a análise qualitativa estabelecida no [Documento de Requisitos Não Funcionais](../../requisitos/doc_nfr).
 
 #### 6.1. Volume   
 De forma geral, o sistema deve permitir que o fluxo de usuários de ambos os tipos tenham acesso, otimizando acessos de usuários autores para velocidade enquanto dispõe de uma quantidade maior de acessos a usuários tradutores, que representam maior tempo de atividade e em maior número de acesso aos sistemas, com uma escala 1 : 4 em termos de autores e tradutores. Assim, é possível montar a seguinte tabela de estimativas para volumes, traçando paralelos entre usuários tradutores e usuários autores.
@@ -82,7 +96,7 @@ De forma geral, o sistema deve permitir que o fluxo de usuários de ambos os tip
 | **Número de Acessos Diários por usuário** | 1 - 5 | 7 - 15 | 8 - 20|
 | **Tempo de Sessão de Usuário** |15 - 50 minutos | 50 minutos - 1 hora e 20 minutos | 33 minutos - 1 hora |
 
-#### 6.2. Perfomance
+#### 6.2. Perfomrance
 
 Para o correto funcionamento do sistema, a performance deve ser rápida e com a conclusão de funcionalidades como o *upload* de textos em até 1 minuto, para textos com mais de 200 páginas, bem como respostas eficientes da utilização de sistemas como a separação de fragmentos e o envio do texto para tradução.
 
