@@ -30,21 +30,21 @@ Todos os textos do site devem estar na fonte *Raleway*
 ## Cores
 ![](../assets/identidade_visual/cores.jpeg)
 
-<br>
+### **Cor primária:**
+**#2B423E**  
+	Cor contrastante: Branco fantasma  
+	Relação de contraste: 10.36  
 
-* **Cor primária:** 
-    **#2B423E**  
-		Cor contrastante: Branco fantasma  
-		Relação de contraste: 10.36  
-<br>
-* **Cores secundárias:**	
-	**#8693AB**  
-		Cor contrastante: Verde  
-		Relação de contraste: 3.47  
-	**#090B0B**  
-		Cor contrastante: Branco fantasma  
-		Relação de contraste: 19  
-	**#F9FBFC**  
-		Cor contrastante: Verde  
-		Relação de contraste: 10.36  
+### **Cores secundárias:**
+**#8693AB**  
+Cor contrastante: Verde  
+Relação de contraste: 3.47
+
+**#090B0B**  
+Cor contrastante: Branco fantasma  
+Relação de contraste: 19
+
+**#F9FBFC**  
+Cor contrastante: Verde  
+Relação de contraste: 10.36  
 
