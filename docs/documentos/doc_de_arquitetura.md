@@ -10,7 +10,7 @@
 | 10/04/2019 | 0.5 | Adicionando informações de Dimensionamento e Performance e de Qualidade  | Alexandre Miguel|
 | 11/04/2019   | 0.6  | Adicionando escopo do projeto  | Helena Goulart  |
 | 11/04/2019 | 0.7 | Adicionando Diagrama de Classes | Rômulo Souza |
-| 11/04/2019| 0.8| Adiconando o diagrama de implementação|
+| 11/04/2019| 0.8| Adicionando o diagrama de implementação|Victor Hugo|
 | 11/04/2019| 0.9| Adiconando finalidade do documento | João Robson|
 
 
@@ -46,8 +46,8 @@ Este documento de arquitetura se aplica ao Translate.me, aplicação desenvolvid
 ### 2. Representação arquitetural
 ![arquitetura](https://i.ibb.co/zf99Pb7/architecture.png) 
 ---
-### 3. Requisitos e Restrições arquiteturais
-i
+### 3. Requisitos e Restrições arquiteturais   
+
 |Requisito|Solução|
 |---|---|
 |Linguagem|O front-end será feito em *JavaScript* e o back-end, em *Python*|
@@ -70,12 +70,10 @@ i
 ### 5. Visão de implementação
 ![implementacao](https://i.imgur.com/oFSxr4I.png)
 ---
-### 6. Dimensionamento e Performance
-i
+### 6. Dimensionamento e Performance   
 Seção responsável pela estimativa em valores quantizados do desempenho dos módulos da arquitetura, bem como de sua performance em execução, conforme a análise qualitativa estabelecida no [Documento de Requisitos Não Funcionais](#)
 
-#### 6.1. Volume
-
+#### 6.1. Volume   
 De forma geral, o sistema deve permitir que o fluxo de usuários de ambos os tipos tenham acesso, otimizando acessos de usuários autores para velocidade enquanto dispõe de uma quantidade maior de acessos a usuários tradutores, que representam maior tempo de atividade e em maior número de acesso aos sistemas, com uma escala 1 : 4 em termos de autores e tradutores. Assim, é possível montar a seguinte tabela de estimativas para volumes, traçando paralelos entre usuários tradutores e usuários autores.
 
 | **-** | Tradutores | Autores | Total |
