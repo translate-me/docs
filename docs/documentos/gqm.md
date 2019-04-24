@@ -3,6 +3,7 @@
 | Data | Versão | Descrição | Autor |
 |---|---|---|---|
 | 24/04/2019 | 0.1 | Adicionando o Template do documento de GQM | Helena Goulart |
+| 24/04/2019 | 0.2 | Adicionando as tabelas de Métricas e Abstraction Sheet | Helena Goulart |
 
 O Goal, Question and Metric (GQM) é um plano de medição bastante utilizado em
 projetos. A escolha deste se deve à clareza e nível de granularidade
@@ -22,18 +23,16 @@ desenvolvimento do projeto para conferir se a equipe cumpriu com o proposto.
 #### Questão 1.0
 - Quais padrões de projeto foram utilizados? <br>
 
-#### Métricas 1.0
-- Definição em equipe entre os projetos apresentados pela discente, quais
-serão utilizados.
+###### Métrica 1.0
+- Detalhamento dos padrões de projetos utilizados e suas limitações.
 
 #### Questão 1.1
 
 - A equipe aplicou os padrões de projeto que se propôs a utilizar? <br>
 
-#### Métrica 1.1
+###### Métrica 1.1
 
-- Comparativo entre a documentação do padrão de projeto e a documentação
-da equipe relatando quais padrões seriam utilizados e como.
+-  Comparativo entre o padrão de projeto utilizado e o que foi definido que o grupo aplicará.
 
 ### Objetivos de equipe 2.0
 
@@ -48,15 +47,72 @@ da equipe relatando quais padrões seriam utilizados e como.
 
 - A equipe possui ciência dos riscos do projeto? <br>
 
-#### Métrica 2.0
+###### Métrica 2.0
 
-- Apresentar detalhamento dos riscos do projeto no Termo de Abertura do
-Projeto (TAP)
+- Apresentar detalhamento dos riscos do projeto
 
 #### Questão 2.1
 - Os riscos estão sob controle?
 
-#### Métrica 2.1
+###### Métrica 2.1
 - Acompanhamento semanal dos riscos <br>
 
+# Detalhamento das Métricas
+
+#### Métrica 1.0 Detalhamento dos padrões de projetos utilizados e suas limitações
+
+| Objetivo de medição |   |
+|---|
+| Entidade |  |
+| Tipo |  |
+| Escala de medição |  |
+| Coleta | |
+| Procedimento | |
+| Análise | |
+| Providência | | |
+
+#### Métrica 1.1 Comparativo entre o padrão de projeto utilizado e o que foi definido que o grupo aplicará
+
+| Objetivo de medição |  |
+|---|
+| Entidade |  |
+| Tipo |  |
+| Escala de medição |  |
+| Coleta | |
+| Procedimento | |
+| Análise | |
+| Providência | | |
+
+#### Métrica 2.0 Apresentar o detalhamento dos riscos do projeto
+
+| Objetivo de medição |  |
+|---|
+| Entidade |  |
+| Tipo |  |
+| Escala de medição |  |
+| Coleta | |
+| Procedimento | |
+| Análise | |
+| Providência | | |
+
+#### Métrica 2.1 Acompanhamento semanal dos riscos
+
+| Objetivo de medição |  |
+|---|
+| Entidade |  |
+| Tipo |  |
+| Escala de medição |  |
+| Coleta | |
+| Procedimento | |
+| Análise | |
+| Providência | | |
+
+
+
+
 # Abstraction Sheet
+
+#### Métrica 1.0
+| Objeto | Propósito | Foco de qualidade | Ponto de vista | Ambiente |
+|---|
+|  |  | | | | |
