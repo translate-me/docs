@@ -72,9 +72,11 @@ theme:
     logo:
       icon: 'translate'
     palette:
-      primary: 'cyan'
-      accent: 'cyan'
+      primary: 'blue grey'
+      accent: ''
     favicon: 'assets/images/favicon.ico'
+    font:
+      text: 'Raleway'
 
 repo_name: 'Translate.me'
 repo_url: 'https://github.com/translate-me/translate-me/'
