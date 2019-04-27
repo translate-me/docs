@@ -1,4 +1,4 @@
-# Uml Dinâmico
+# UML Dinâmicos
 
 ### Histórico de Revisão:
 | Data | Versão | Descrição | Autor |

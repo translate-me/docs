@@ -2,31 +2,50 @@ site_name: Translate.me
 extra_css: [extra.css]
 nav:
   - Início: index.md
+  - Metodologia: metodologia.md
   - Documentos:
-    - Metodologia: documentos/metodologia.md
-    - Documento de Visão: documentos/doc_de_visao.md
-    - Documento de Arquitetura: documentos/doc_de_arquitetura.md
-    - Benchmarking: documentos/benchmarking.md
-    - UML: documentos/uml.md
-    - Identidade Visual: documentos/identidade_visual.md
-    - GQM: documentos/gqm.md
-    - UML Dinâmico: documentos/uml_dinamico/uml_dinamico.md
-  - Design Sprint: design_sprint.md
+    - Documentos de Projeto:
+      - Documento de Visão: documentos/projeto/doc_de_visao.md
+      - Documento de Arquitetura: documentos/projeto/doc_de_arquitetura.md
+      - Benchmarking: documentos/projeto/benchmarking.md
+      - Identidade Visual: documentos/projeto/identidade_visual.md
+    - Documentos de Gerência:
+      - GQM: documentos/gerencia/gqm.md
+      - Política de Contribuição: documentos/gerencia/pol_contribuicao.md
+      - Canvas: documentos/gerencia/canvas.md
+      - Definição de Pronto: documentos/gerencia/def_pronto.md
+      - Termo de Abertura do Projeto: documentos/gerencia/tap.md
+  - Definição do Tema: def_tema.md
   - Requisitos:
-    - Brainstorming: requisitos/brainstorming.md
-    - NFRs: requisitos/doc_nfr.md
-    - Tabela de Requisitos: requisitos/requisitos.md
-  - Backlogs:
-    - Backlogs Individuais:
-      - Helena Backlog: backlogs/helena_backlog.md
-      - Victor Backlog: backlogs/victor_backlog.md
-      - Gabriela Backlog: backlogs/gabriela_backlog.md
-      - Alexandre Backlog: backlogs/alexandre_backlog.md
-      - Luiz Backlog: backlogs/luiz_backlog.md
-      - Leticia Backlog: backlogs/leticia_introspeccao.md
-      - Davi Backlog: backlogs/davi_backlog.md
-      - Joao Backlog: backlogs/joao_backlog.md
-    - Backlog Geral: backlogs/backlog_geral.md
+    - Elicitação:
+      - Rich Picture: requisitos/elicitacao/rich_picture.md
+      - Mapa Mental: requisitos/elicitacao/mapa_mental.md
+      - Introspecção: requisitos/elicitacao/introspeccao.md
+      - Brainstorming: requisitos/elicitacao/brainstorming.md
+      - Protótipo: requisitos/elicitacao/prototipo.md
+    - Modelagem:
+      - Backlogs Individuais:
+        - Helena Backlog: requisitos/modelagem/backlogs_individuais/helena_backlog.md
+        - Victor Backlog: requisitos/modelagem/backlogs_individuais/victor_backlog.md
+        - Gabriela Backlog: requisitos/modelagem/backlogs_individuais/gabriela_backlog.md
+        - Alexandre Backlog: requisitos/modelagem/backlogs_individuais/alexandre_backlog.md
+        - Luiz Backlog: requisitos/modelagem/backlogs_individuais/luiz_backlog.md
+        - Leticia Backlog: requisitos/modelagem/backlogs_individuais/leticia_introspeccao.md
+        - Davi Backlog: requisitos/modelagem/backlogs_individuais/davi_backlog.md
+        - Joao Backlog: requisitos/modelagem/backlogs_individuais/joao_backlog.md
+      - Backlog Geral: requisitos/modelagem/backlog_geral.md
+      - NFR: requisitos/modelagem/nfr.md
+    - Tabela de Requisitos: requisitos/tabela_requisitos.md
+  - Desenho de Software:
+    - UML:
+      - Estáticos: desenho_de_software/uml/uml_estaticos.md
+      - Dinâmicos: desenho_de_software/uml/uml_dinamicos.md
+    - Padrões de Projeto:
+      - GRASP: desenho_de_software/padroes/grasp.md
+      - GoF: desenho_de_software/padroes/gof.md
+  - Arquitetura de Software:
+    - Modelos: arquitetura_de_software/modelos.md
+    - Padrões Arquiteturais: arquitetura_de_software/padroes_arquiteturais.md
   - Reuniões:
     - Reunião de Sprint:
       - Sprint 0: reunioes/sprints/sprint_0.md
@@ -35,50 +54,18 @@ nav:
       - PC 2: reunioes/pontos_de_controle/pc_2.md
       - PC 3: reunioes/pontos_de_controle/pc_3.md
       - PC 4: reunioes/pontos_de_controle/pc_4.md
-  - Banco de Dados: banco_de_dados.md
 
-  # - RASTREABILIDADE:
-  #   - Rastros: rastreabilidade.md
-  # - PRÉ-RASTREABILIDADE:
-  #   - Argumentação: argumentacao.md
-  #   - RichPicture: rich_picture.md
-  # - ELICITAÇÃO DE REQUISITOS:
-  #   - Análise de Discurso: analise_discurso.md
-  #   - Análise de Protocolo: analise_protocolo.md
-  #   - Entrevista: entrevista.md
-  #   - Introspecção: introspeccao.md
-  #   - Questionário: questionario.md
-  #   - Storytelling: storytelling.md
-  #   - Conclusão: conclusao_elicitacao.md
-  # - MODELAGEM:
-  #   - Cenários: cenarios.md
-  #   - Léxicos: lexicos.md
-  #   - Diagramas de Caso de Uso: diagramas_caso_uso.md
-  #   - Especificações de Caso de Uso: especificacoes_caso_uso.md
-  #   - Especificação Suplementar: especificacao_suplementar.md
-  #   - Especificação Suplementar 2.0: especificacao_suplementar_2.md
-  #   - Backlog do Produto: backlog.md
-  #   - NFR: nfr.md
-  #   - i*: iStar.md
-  # - ANÁLISE:
-  #   - NFR: analise_NFR.md
-  #   - Pré-rastreabilidade: pre_rastreabilidade_analise.md
-  #   - iStar: Istar_analise_inspecao.md
-  #   - Caso de Uso: inspecao_caso_uso.md
-  # - PÓS-RASTREABILIDADE:
-  #   - Backward-From: backward_from.md
-  #   - Forward-From: forward_from.md
+#######################################################################################
+
 theme:
     name: material
     language: 'pt'
     logo:
       icon: 'translate'
     palette:
-      primary: 'blue grey'
-      accent: ''
+      primary: 'cyan'
+      accent: 'cyan'
     favicon: 'assets/images/favicon.ico'
-    font:
-      text: 'Raleway'
 
 repo_name: 'Translate.me'
 repo_url: 'https://github.com/translate-me/translate-me/'
