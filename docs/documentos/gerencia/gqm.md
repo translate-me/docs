@@ -1,10 +1,13 @@
-# Plano de medição GQM
+# GQM - *Goal Question Metric*
 
+## Histórico de Revisão:
 | Data | Versão | Descrição | Autor |
 |---|---|---|---|
 | 24/04/2019 | 0.1 | Adicionando o Template do documento de GQM | Helena Goulart |
 | 24/04/2019 | 0.2 | Adicionando as tabelas de Métricas e Abstraction Sheet | Helena Goulart |
 | 25/04/2019 | 0.3 | Adicionando o detalhamento das Métricas | Gabriela Guedes |
+
+## Introdução
 
 O Goal, Question and Metric (GQM) é um plano de medição bastante utilizado em
 projetos. A escolha deste se deve à clareza e nível de granularidade

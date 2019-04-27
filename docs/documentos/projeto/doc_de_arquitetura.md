@@ -1,6 +1,6 @@
 # Documento de Arquitetura
 
-### Histórico de Revisão:
+## Histórico de Revisão:
 | Data | Versão | Descrição | Autor |
 |---|---|---|---|
 | 31/03/2019 | 0.1 | Adicionando o Template do documento de arquitetura | Victor Hugo |
@@ -8,30 +8,31 @@
 | 09/04/2019 | 0.3 | Adicionando Definições, Acrônimos e Abreviações  | Letícia Meneses |
 | 09/04/2019 | 0.4 | Adicionando Introdução e Requisitos e Restrições arquiteturais | Gabriela Guedes |
 | 10/04/2019 | 0.5 | Adicionando informações de Dimensionamento e Performance e de Qualidade  | Alexandre Miguel |
-| 11/04/2019   | 0.6  | Adicionando escopo do projeto  | Helena Goulart  |
+| 11/04/2019 | 0.6 | Adicionando escopo do projeto  | Helena Goulart  |
 | 11/04/2019 | 0.7 | Adicionando Diagrama de Classes | Rômulo Souza |
-| 11/04/2019| 0.8| Adicionando o diagrama de implementação | Victor Hugo |
-| 11/04/2019| 0.9| Adicionando finalidade do documento | João Robson |
-| 22/04/2019| 0.9.1 | Revisando e Adicionando Descrições de Tópicos  | Alexandre Miguel |
+| 11/04/2019 | 0.8 | Adicionando o diagrama de implementação | Victor Hugo |
+| 11/04/2019 | 0.9 | Adicionando finalidade do documento | João Robson |
+| 22/04/2019 | 0.9.1 | Revisando e Adicionando Descrições de Tópicos  | Alexandre Miguel |
+| 27/04/2019 | 1.0 | Adicionando informações do Banco de Dados  | Alexandre Miguel e Rômulo Souza |
 
 
-### Objetivo do Documento
+## Objetivo do Documento
 Este documento tem como objetivo descrever e caracterizar as decisões arquiteturais do projeto
 **Translate.me** . A caraterização será feita com enfoque no ambito do software, não levando em conta medições como de performace.
 
 
-### 1. Introdução
+## 1. Introdução
 Este documento visa apresentar a arquitetura de software a ser aplicada no sistema do **Translate.me** , de forma que facilite a visualização dos requisitos e da estrutura para os envolvidos.
 
-#### 1.1. Finalidade
+### 1.1. Finalidade
 
 Este documento apresenta os aspectos arquiteturais do projeto, exibindo como se dará a integração entre os microsserviços que compõem o *Back-end* e o *Front-end* . Dessa forma, ele é composto não só de diagramas e abordagens abstratas, mas também de uma visão que trata das tecnologias envolvidas na elaboração do projeto e da forma na qual esses elementos serão incorporados para se obter os requisitos funcionais e não funcionais propostos.
 
 ---
-#### 1.2. Escopo
+### 1.2. Escopo
 Este documento de arquitetura se aplica ao **Translate.me** , aplicação desenvolvida na disciplina Arquitetura e Desenho de Software.
 
-#### 1.3. Definições, Acrônimos e Abreviações
+### 1.3. Definições, Acrônimos e Abreviações
 
  **UnB** - Universidade de Brasília
 
@@ -43,14 +44,14 @@ Este documento de arquitetura se aplica ao **Translate.me** , aplicação desenv
 
  **Frontend** - Parte da aplicação responsável pelo contato com o usuário, consumindo recursos do Backend.
 
-#### 1.4. Referências
+### 1.4. Referências
 [Lino](https://botlino.github.io/docs/doc-arquitetura) - Documentação de arquitetura do projeto de Bot em desenvolvimento na FGA
 
 [Design Patterns](https://refactoring.guru/design-patterns) - Padrões de Design aplicados ao desenvolvimento de software
 
 ---
 
-### 2. Representação Arquitetural
+## 2. Representação Arquitetural
 
 Modelo de representação dos serviços implementados e as interações estabelecidas entre esses serviços, bem como a natureza dessas interações.
 
@@ -58,7 +59,7 @@ Modelo de representação dos serviços implementados e as interações estabele
 
 ---
 
-### 3. Requisitos e Restrições Arquiteturais
+## 3. Requisitos e Restrições Arquiteturais
 
 |Requisito|Solução|
 |---|---|
@@ -69,28 +70,28 @@ Modelo de representação dos serviços implementados e as interações estabele
 |Arquitetura|Será feita uma arquitetura de microsserviços, para um melhor funcionamento e desempenho do sistema, já que não serão dependentes entre si|
 
 ---
-### 4. Visão Lógica
+## 4. Visão Lógica
 
 Modelagens conforme padrão UML que representam os aspectos arquiteturais do sistema, como as classes utilizadas, as camadas e pacotes da aplicação e a visão da implementação de cada serviço.
 
-#### 4.1 Diagrama de Classes
+### 4.1 Diagrama de Classes
 
-![diagrama_classes](../assets/images/diagrama_classes.png)
+![diagrama_classes](../../assets/desenho/uml/diagrama_classes.png)
 
-#### 4.2. Visão Geral de Camadas e Pacotes
+### 4.2. Visão Geral de Camadas e Pacotes
 
-![diagrama_pacotes](../assets/uml/uml_pacotes.png)
+![diagrama_pacotes](../../assets/desenho/uml/diagrama_pacotes.png)
 
 ---
-### 5. Visão de implementação
+## 5. Visão de implementação
 
 ![visao_implementacao](https://i.imgur.com/oFSxr4I.png)
 ---
-### 6. Dimensionamento e Performance
+## 6. Dimensionamento e Performance
 
-Seção responsável pela estimativa em valores quantizados do desempenho dos módulos da arquitetura, bem como de sua performance em execução, conforme a análise qualitativa estabelecida no [Documento de Requisitos Não Funcionais](../../requisitos/doc_nfr).
+Seção responsável pela estimativa em valores quantizados do desempenho dos módulos da arquitetura, bem como de sua performance em execução, conforme a análise qualitativa estabelecida no [Documento de Requisitos Não Funcionais](../../../requisitos/modelagem/nfr).
 
-#### 6.1. Volume   
+### 6.1. Volume   
 De forma geral, o sistema deve permitir que o fluxo de usuários de ambos os tipos tenham acesso, otimizando acessos de usuários autores para velocidade enquanto dispõe de uma quantidade maior de acessos a usuários tradutores, que representam maior tempo de atividade e em maior número de acesso aos sistemas, com uma escala 1 : 4 em termos de autores e tradutores. Assim, é possível montar a seguinte tabela de estimativas para volumes, traçando paralelos entre usuários tradutores e usuários autores.
 
 | **-** | Autores | Tradutores | Total |
@@ -99,12 +100,12 @@ De forma geral, o sistema deve permitir que o fluxo de usuários de ambos os tip
 | **Número de Acessos Diários por usuário** | 1 - 5 | 7 - 15 | 8 - 20|
 | **Tempo de Sessão de Usuário** |15 - 50 minutos | 50 minutos - 1 hora e 20 minutos | 33 minutos - 1 hora |
 
-#### 6.2. Performance
+### 6.2. Performance
 
 Para o correto funcionamento do sistema, a performance deve ser rápida e com a conclusão de funcionalidades como o *upload* de textos em até 1 minuto, para textos com mais de 200 páginas, bem como respostas eficientes da utilização de sistemas como a separação de fragmentos e o envio do texto para tradução.
 
 ---
-### 7. Qualidade
+## 7. Qualidade
 
 Os seguintes itens conferem ao sistema aspectos de qualidade, bem como a descrição da abordagem realizada para satisfazer esses aspectos.
 
@@ -115,39 +116,39 @@ Os seguintes itens conferem ao sistema aspectos de qualidade, bem como a descri�
 | **Segurança** | Encriptação de dados e Servidor Remoto | Para garantir a segurança de informações sensíveis, a abordagem utilizada será a encriptação de dados e utilização de Hashes, permitindo que informações puras não trafeguem por mais módulos da aplicação do que o necessário, armazenando-as no servidor remoto e acessando-as por meio das hashes.  |
 | **Portabilidade** | Arquitetura de Microsserviços | A Utilização da arquitetura de microsserviços permite o desenvolvimento do Backend da aplicação desacoplado do Frontend, permitindo então que esse Frontend seja adaptado para diferentes plataformas, com um funcionamento equivalente conforme o que foi implementado no Backend, contando ainda com a independência de funcionamento de cada serviço. |  
 
-### 8. Banco de Dados
+## 8. Banco de Dados
 
-#### Modelo Entidade - Relacionamento (ME-R)
+### 8.1. Modelo Entidade - Relacionamento (ME-R)
 
   Dada a arquitetura do projeto, modularizada por microsserviços, as entidades se referem ao que será requerido e utilizado em cada módulo
 
-##### Entidades e Atributos
+#### 8.1.1. Entidades e Atributos
 
-###### Certificação
+##### Certificação
 
 * CERTIFICACAO (<span style="text-decoration:underline">idCertificacao</span> , idioma, escola, tipoCertificacao)
 
-###### Autenticação
+##### Autenticação
 
 * AUTOR (<span style="text-decoration:underline">idAutor</span> , cpf, nome, apelido, email, senha)
 
 * TRADUTOR (<span style="text-decoration:underline">idAutor</span>, <span style="text-decoration:underline">idTradutor</span> , cpf, nome, apelido, email, senha, nivel, {lingua})
 
-###### Tradução
+##### Tradução
 
 * TEXTO (<span style="text-decoration:underline">idTexto</span> , contexto, linguaOrigem , linguaDestino)
 
 * FRAGMENTO (<span style="text-decoration:underline">idFragmento</span> , contexto, linguaOrigem , linguaDestino, conteudo, valor)
 
 
-###### Chat
+##### Chat
 
 * CHAT (<span style="text-decoration:underline">idChat</span> , apelidoTradutor, apelidoAutor)
 
 * FRAGMENTO (<span style="text-decoration:underline">idMessage</span> , conteudo, data)
 
 
-##### Relacionamentos
+#### 8.1.2. Relacionamentos
 
 * **TRADUTOR -** ***detem*** **- CERTIFICACAO**  
 Um tradutor detêm nenhuma ou várias certificações, mas cada certificação é detida somente por um tradutor.  
@@ -173,8 +174,8 @@ Cardinalidade: **1:n**
 Um autor possui nenhum ou vários textos, mas cada texto é possuído por um único autor.
 Cardinalidade: **1:n**
 
-#### Diagrama Entidade - Relacionamento (DE-R)
+### 8.3. Diagrama Entidade - Relacionamento (DE-R)
 
-![translateme_der](assets/banco_de_dados/translateme_der.png)
+![translateme_der](../../assets/documentos/projeto/db_der.png)
 
-#### Diagrama Lógico
+### 8.4. Diagrama Lógico

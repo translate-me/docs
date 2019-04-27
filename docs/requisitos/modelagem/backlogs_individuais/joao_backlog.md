@@ -1,8 +1,12 @@
-# Backlog
+# Backlog Individual
+
+|  Autor | Data |
+| --- | --- |
+| João Robson | 13/04/2019 |
 
 ## Introdução
 
-Este documento visa exibir um backlog individual dos requisitos do projeto baseado em histórias de usuário. 
+Este documento visa exibir um backlog individual dos requisitos do projeto baseado em histórias de usuário.
 
 ## Objetivo
 Enumerar e descrever possíveis funcionalidades da aplicação.
@@ -12,7 +16,7 @@ Enumerar e descrever possíveis funcionalidades da aplicação.
 | US01 | Cadastro | Usuário | Efetuar cadastro | Acessar a aplicação |
 | US02 | Cadastro | Tradutor | Efetuar cadastro  | Disponibilizar meus serviços pela aplicação |
 | US03 | Login | Usuário | Efetuar login utilizando minha conta do Google|Entrar na aplicação|
-| US04 | Login | Usuário | Efetuar login uilizando meu email| Entrar na aplicação| 
+| US04 | Login | Usuário | Efetuar login uilizando meu email| Entrar na aplicação|
 | US05 | Tradução | Usuário | Cadastrar um texto | Recebê-lo traduzido|
 | US06 | Tradução | Usuário | Avaliar uma tradução | Indicar a qualidade do serviço oferecido|
 | US07 | Tradução | Usuário | Receber uma notificação| Saber que meu texto já foi traduzido|

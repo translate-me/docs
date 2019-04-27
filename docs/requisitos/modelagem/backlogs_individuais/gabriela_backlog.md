@@ -1,5 +1,8 @@
-# Backlog Individual Translate.me
-**por: Gabriela Barrozo Guedes**
+# Backlog Individual
+
+|  Autor | Data |
+| --- | --- |
+| Gabriela Guedes | 06/04/2019 |
 
 ### Introdução
 Este documento tem como função montar um backlog, feito individualmente, para a elaboração do Backlog do Produto final, que será feito a partir das ideias extraídas dos backlogs individuais.

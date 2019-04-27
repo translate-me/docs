@@ -1,5 +1,8 @@
-# Backlog Individual Translate.me
-**por: Luiz Guilherme Silva**
+# Backlog Individual
+
+|  Autor | Data |
+| --- | --- |
+| Luiz Guilherme | 07/04/2019 |
 
 ### Introdução
 
@@ -44,4 +47,3 @@ As funcionalidades foram listadas através de Histórias de Usuário, onde é es
 Para realização do processo de elicitação dessas determinadas histórias de usuário, fora utilizado um mapa mental, que pode ser visto abaixo:
 
 ![Imgur](https://i.imgur.com/BvrKkem.png)
-

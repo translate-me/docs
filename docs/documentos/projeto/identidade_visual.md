@@ -1,3 +1,5 @@
+# Identidade Visual
+
 ## Histórico de Revisão:
 | Data | Versão | Descrição | Autor |
 |---|---|---|---|
@@ -16,19 +18,19 @@ Através da análise de sites que o grupo se identifica mais com o visual, compr
 
 ## Fontes
 #### Logo translate.me
-![](../assets/identidade_visual/logo.jpeg)
+![logo](../../assets/documentos/projeto/id_visual_logo.jpeg)
 
 A logo deve estar na fonte *Nixie One*
 
 
 #### Texto do site
-![](../assets/identidade_visual/fonte.jpeg)
+![fonte](../../assets/documentos/projeto/id_visual_fonte.jpeg)
 
 Todos os textos do site devem estar na fonte *Raleway*
 
 
 ## Cores
-![](../assets/identidade_visual/cores.jpeg)
+![cores](../../assets/documentos/projeto/id_visual_cores.jpeg)
 
 ### **Cor primária:**
 **#2B423E**  
@@ -47,4 +49,3 @@ Relação de contraste: 19
 **#F9FBFC**  
 Cor contrastante: Verde  
 Relação de contraste: 10.36  
-

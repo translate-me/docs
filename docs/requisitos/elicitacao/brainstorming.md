@@ -27,7 +27,7 @@ Para essa primeira etapa, diversas ideias foram ditas em formas de palavras sem 
 
 #### Palavras Anotadas
 
-![brainstorming_1](../assets/brainstorming/brainstorming_1.jpg)
+![brainstorming_1](../../assets/requisitos/elicitacao/brainstorming_1.jpg)
 
 ### Etapa 2 - Seleção
 
@@ -35,7 +35,7 @@ Após as palavras propostas estarem todas no quadro, foi realizado um processo d
 
 #### Palavras Selecionadas
 
-![brainstorming_2](../assets/brainstorming/brainstorming_2.jpg)
+![brainstorming_2](../../assets/requisitos/elicitacao/brainstorming_2.jpg)
 
 ### Etapa 3 - Transcrição
 
@@ -65,14 +65,14 @@ Para alinhamento da equipe com a aplicação elaborada após as etapas mais abst
 
 Representação do primeiro esboço do fluxo de login e cadastro do autor, com as informações principais
 
-![brainstorming_3_prototipo](../assets/brainstorming/brainstorming_3_prototipo.jpg)
+![brainstorming_3_prototipo](../../assets/requisitos/elicitacao/brainstorming_3_prototipo.jpg)
 
 
 #### Protótipo - Login/Cadastro do Tradutor
 
 Representação do primeiro esboço do fluxo de login e cadastro do tradutor, com as informações princiais necessárias
 
-![brainstorming_4_prototipo](../assets/brainstorming/brainstorming_4_prototipo.jpg)
+![brainstorming_4_prototipo](../../assets/requisitos/elicitacao/brainstorming_4_prototipo.jpg)
 
 
 ### Conclusão

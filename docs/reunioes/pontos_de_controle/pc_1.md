@@ -4,7 +4,7 @@
 | --- | --- | --- |
 | **25/03/2019** | Todos | Hangouts |
 
-  Para organização da equipe foi realizada essa primeira reunião, que posteriormente foi nomeada como "Ponto de Controle" após a definição da [Metodologia da Equipe](../../documentos/metodologia.md).
+  Para organização da equipe foi realizada essa primeira reunião, que posteriormente foi nomeada como "Ponto de Controle" após a definição da [Metodologia da Equipe](../../metodologia.md).
 
 ## Histórico de Revisão
 

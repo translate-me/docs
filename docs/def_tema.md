@@ -1,7 +1,9 @@
+# Definição de Tema
+
 ## Histórico de Revisão:
 | Data | Versão | Descrição | Autor |
 |---|---|---|---|
-|12/04/2019|1.0|Primeira versão do documento|Gabriela Guedes|
+| 12/04/2019 | 1.0 | Primeira versão do documento | Gabriela Guedes|
 
 ## Definição do Tema do Projeto
 Inicialmente foram elaboradas várias propostas de possíveis temas, sendo elas:
@@ -18,13 +20,13 @@ Para um melhor entendimento dos temas propostos foi elaborado artefatos para cad
 
 #### Mapas Mentais:
 
-![Marketplace](assets/design_sprint/mapa_mental_marketplace.png)
+![Marketplace](assets/definicao_tema/mapa_mental_marketplace.png)
 
-![Marketplace2](assets/design_sprint/mapa_mental_marketplace2.jpg)
+![Marketplace2](assets/definicao_tema/mapa_mental_marketplace2.jpg)
 
 #### Rich Picture:
 
-![richpicture](assets/design_sprint/richpicture_marketplace.jpg)
+![richpicture](assets/definicao_tema/richpicture_marketplace.jpg)
 
 ### Crawler para Mineração de Dados
 
@@ -60,25 +62,26 @@ Para um melhor entendimento dos temas propostos foi elaborado artefatos para cad
 
 #### Protótipo:
 
-![prototipo_crawler](assets/design_sprint/prototipo_crawler.png)
+![prototipo_crawler](assets/definicao_tema/prototipo_crawler.png)
 
 ### Plataforma para Traduções de Artigos
 #### Mapa Mental:
-![mapa_mental_traducao](assets/design_sprint/mapa_mental_traducao.png)
+![mapa_mental_traducao](assets/requisitos/elicitacao/mapa_mental_traducao.png)
 
 #### Rich Pictures:
-![richpicture_traducao2](assets/design_sprint/richpicture_traducao2.jpg)
 
-![richpicture_traducao](assets/design_sprint/richpicture_traducao.png)
+![richpicture_traducao_1](assets/requisitos/elicitacao/richpicture_traducao_1.png)
 
-![richpicture_traducao3](assets/design_sprint/richpicture_traducao3.jpg)
+![richpicture_traducao_2](assets/requisitos/elicitacao/richpicture_traducao_2.jpg)
+
+![richpicture_traducao_3](assets/requisitos/elicitacao/richpicture_traducao_3.jpg)
 
 ## Decisões:
 **Estrutura:** De acordo com os conhecimentos gerais do grupo e as afinidades da maioria com determinadas linguagens e frameworks, optamos por um projeto utilizando as linguagens JavaScript e Python.
 
 **Tema:** Com todas as ideias apresentadas, realizamos uma votação que buscava enfim decidir qual projeto seria o executado no decorrer da disciplina.
 
-![votacao](assets/design_sprint/votacao.png)
+![votacao](assets/definicao_tema/votacao.png)
 
 Assim, o tema escolhido foi o da **Plataforma para Tradução de Artigos**
 
