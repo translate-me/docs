@@ -39,6 +39,9 @@ Este documento de arquitetura se aplica ao **Translate.me** , aplicação desenv
 
  **Translate.me** - WebApp com finalidade em tradução de textos, ligando tradutor e cliente.
 
+ **Backend** - Parte da aplicação responsável pelo gerenciamento de recursos a serem utilizados no Frontend.
+
+ **Frontend** - Parte da aplicação responsável pelo contato com o usuário, consumindo recursos do Backend.
 
 #### 1.4. Referências
 [Lino](https://botlino.github.io/docs/doc-arquitetura) - Documentação de arquitetura do projeto de Bot em desenvolvimento na FGA
@@ -87,17 +90,16 @@ Modelagens conforme padrão UML que representam os aspectos arquiteturais do sis
 
 Seção responsável pela estimativa em valores quantizados do desempenho dos módulos da arquitetura, bem como de sua performance em execução, conforme a análise qualitativa estabelecida no [Documento de Requisitos Não Funcionais](../../requisitos/doc_nfr).
 
-#### 6.1. Volume
-
+#### 6.1. Volume   
 De forma geral, o sistema deve permitir que o fluxo de usuários de ambos os tipos tenham acesso, otimizando acessos de usuários autores para velocidade enquanto dispõe de uma quantidade maior de acessos a usuários tradutores, que representam maior tempo de atividade e em maior número de acesso aos sistemas, com uma escala 1 : 4 em termos de autores e tradutores. Assim, é possível montar a seguinte tabela de estimativas para volumes, traçando paralelos entre usuários tradutores e usuários autores.
 
-| **-** | Tradutores | Autores | Total |
+| **-** | Autores | Tradutores | Total |
 | --- | --- | --- | --- |
 | **Número de Usuários** | 400 | 1600 | 2000|
 | **Número de Acessos Diários por usuário** | 1 - 5 | 7 - 15 | 8 - 20|
 | **Tempo de Sessão de Usuário** |15 - 50 minutos | 50 minutos - 1 hora e 20 minutos | 33 minutos - 1 hora |
 
-#### 6.2. Perfomrance
+#### 6.2. Performance
 
 Para o correto funcionamento do sistema, a performance deve ser rápida e com a conclusão de funcionalidades como o *upload* de textos em até 1 minuto, para textos com mais de 200 páginas, bem como respostas eficientes da utilização de sistemas como a separação de fragmentos e o envio do texto para tradução.
 
@@ -111,4 +113,4 @@ Os seguintes itens conferem ao sistema aspectos de qualidade, bem como a descri�
 | **Escalabilidade** | Arquietura de Microsserviços | Em prol de permitir que o sistema evolua sem grandes gargalos, o sistema de modularização aplicado pela arquitetura de microsserviços propicia alterações no funcionamento de um serviço sem alterações em grande escala nos demais serviços relacionados, permitindo modificações mais pontuais e uma integração facilitada do sistema. |
 | **Confiabilidade** | Manutenção Periódica e Modularização do Sistema | Pela modularização do sistema permitir menor impacto de um microsserviço no funcionamento de outro, a prática de manutenções periódicas permite a solução de problemas de forma pontual e sem impedir o funcionamento de demais serviços, ao contrário de abordagens monolíticas |
 | **Segurança** | Encriptação de dados e Servidor Remoto | Para garantir a segurança de informações sensíveis, a abordagem utilizada será a encriptação de dados e utilização de Hashes, permitindo que informações puras não trafeguem por mais módulos da aplicação do que o necessário, armazenando-as no servidor remoto e acessando-as por meio das hashes.  |
-| **Portabilidade** | Ambiente Docker | A Utilização do Docker para configuração do ambiente de desenvolvimento e produção permite que a aplicação se mantenha consolidada, sem conflitos de versões de linguagens como python e que possa ser transferida de servidores por meio das imagens geradas  |  
+| **Portabilidade** | Arquitetura de Microsserviços | A Utilização da arquitetura de microsserviços permite o desenvolvimento do Backend da aplicação desacoplado do Frontend, permitindo então que esse Frontend seja adaptado para diferentes plataformas, com um funcionamento equivalente conforme o que foi implementado no Backend, contando ainda com a independência de funcionamento de cada serviço. |  

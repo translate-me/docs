@@ -9,6 +9,7 @@ nav:
     - Benchmarking: documentos/benchmarking.md
     - UML: documentos/uml.md
     - Identidade Visual: documentos/identidade_visual.md
+    - UML Dinâmico: documentos/uml_dinamico/uml_dinamico.md
   - Design Sprint: design_sprint.md
   - Requisitos:
     - Brainstorming: requisitos/brainstorming.md
