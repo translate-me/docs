@@ -10,6 +10,7 @@ nav:
     - UML: documentos/uml.md
     - Identidade Visual: documentos/identidade_visual.md
     - GQM: documentos/gqm.md
+    - UML Dinâmico: documentos/uml_dinamico/uml_dinamico.md
   - Design Sprint: design_sprint.md
   - Requisitos:
     - Brainstorming: requisitos/brainstorming.md
