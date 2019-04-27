@@ -55,7 +55,7 @@ A Etapa de transcrição ocorreu tanto durante a **Etapa 1** quanto na **Etapa 2
 | **Pagamento** | ***Reembolso*** <br> ***Volume de Trabalho*** <br> ***Prazo*** <br> ***Budget (Orçamento)*** <br> &nbsp;&nbsp;&nbsp;&nbsp; - Carteira Virtual <br>  &nbsp;&nbsp;&nbsp;&nbsp; - Resgate|
 | **Contato** | ***Chat*** <br>  &nbsp;&nbsp;&nbsp;&nbsp; - Notificação por Email <br>***Dúvida*** |
 
-De forma geral, foi possível notar um afunilamento dos tópicos da tabela anterior com os épicos do [Backlog](../../backlogs/backlog_geral) montado bem como dos servições analisados na arquitetura.
+De forma geral, foi possível notar um afunilamento dos tópicos da tabela anterior com os épicos do [Backlog](../../modelagem/backlog_geral) montado bem como dos servições analisados na arquitetura.
 
 ### Etapa 4 - Prototipação
 
@@ -77,4 +77,4 @@ Representação do primeiro esboço do fluxo de login e cadastro do tradutor, co
 
 ### Conclusão
 
-Após a realização do Brainstorming, a equipe concluiu que a formalização dos requisitos seria realizada individualmente, em prol da montagem de backlogs individuais que representassem as abordagens para o desenvolvimento da aplicação esboçada, o que é melhor descrito no documento de [Backlog Geral](../../backlogs/backlog_geral).
+Após a realização do Brainstorming, a equipe concluiu que a formalização dos requisitos seria realizada individualmente, em prol da montagem de backlogs individuais que representassem as abordagens para o desenvolvimento da aplicação esboçada, o que é melhor descrito no documento de [Backlog Geral](../../modelagem/backlog_geral).
