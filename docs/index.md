@@ -16,7 +16,7 @@ da equipe, [clique aqui](https://translate-me.github.io/docs/).
 | Helena Goulart | helenabretasg@gmail.com | [@helenagoulart](https://github.com/helenagoulart) |
 | João Robson | joaorobsonmartins@gmail.com | [@joaorobson](https://github.com/joaorobson) |
 | Letícia Meneses| lmbs.geo@gmail.com | [@mbslet](https://github.com/mbslet)|
-| Luiz Guilherme Silva | do.guilherme@hotmail.com | [@luizguilherme5](https://github.com/luizguilherme5) |
-| Renan | welzrenan@gmail.com | [@renan601](https://github.com/renan601) |
-| Rômulo| romulovinicius10@gmail.com | [@romulosouza](https://github.com/RomuloSouza) |
-| Victor | victorhdcoelho@gmail.com | [@victorhdcoelho](https://github.com/victorhdcoelho) | |
+| Luiz Guilherme | do.guilherme@hotmail.com | [@luizguilherme5](https://github.com/luizguilherme5) |
+| Renan Schadt | welzrenan@gmail.com | [@renan601](https://github.com/renan601) |
+| Rômulo Vinícius | romulovinicius10@gmail.com | [@romulosouza](https://github.com/RomuloSouza) |
+| Victor Hugo | victorhdcoelho@gmail.com | [@victorhdcoelho](https://github.com/victorhdcoelho) | |
