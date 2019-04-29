@@ -5,6 +5,7 @@
 |---|---|---|---|
 | 26/04/2019 | 0.1 | Adicionando diagrama de sequência de submissão e acompanhamento | Victor Hugo, Renan Schidt |
 | 26/04/2019 | 0.2 | Adicionando diagrama de sequência de escolha e acesso de fragmento de texto | Letícia Meneses, Luiz Guilherme|
+|29/04/2019 | 0.3 | Adicionando diagrama de colaboração | Gabriela Guedes e Helena Goulart |
 
 ## Introdução
 
@@ -19,3 +20,6 @@
 
 ### Diagrama de estados
 ![diagrama_estados](../../assets/desenho/uml/diagrama_estados.png)
+
+### Diagrama de Colaboração
+![diagrama_colaboracao](../../assets/desenho/uml/diagrama_colaboracao.png)
