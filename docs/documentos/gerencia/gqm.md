@@ -5,11 +5,10 @@
 |---|---|---|---|
 | 24/04/2019 | 0.1 | Adicionando o Template do documento de GQM | Helena Goulart |
 | 24/04/2019 | 0.2 | Adicionando as tabelas de Métricas e Abstraction Sheet | Helena Goulart |
-| 25/04/2019 | 0.3 | Adicionando o detalhamento das Métricas | Gabriela Guedes |
+| 25/04/2019 | 0.3 | Adicionando o detalhamento das Métricas | Gabriela Guedes|
+| 29/04/2019 | 0.4 | Preechendo a tabela Abstraction Sheet | Gabriela Guedes |
 
 ## Introdução
-
-## Plano de medição GQM
 
 O Goal, Question and Metric (GQM) é um plano de medição bastante utilizado em
 projetos. A escolha deste se deve à clareza e nível de granularidade
@@ -24,7 +23,7 @@ desenvolvimento do projeto para conferir se a equipe cumpriu com o proposto.
 | Com o propósito de | avaliar |
 | Em relação a | aplicabilidade |
 | Do ponto de vista | da disciplina Arquitetura e Desenho de Software |
-| No contexto | do uso de padrões de projeto apresentados na disciplina| |
+| No contexto | do uso de padrões de projeto apresentados na disciplina|
 
 #### Questão 1.0
 - Quais padrões de projeto foram utilizados? <br>
@@ -47,7 +46,7 @@ desenvolvimento do projeto para conferir se a equipe cumpriu com o proposto.
 | Com o propósito de | analisar |
 | Em relação a | tomada de decisões |
 | Do ponto de vista | da equipe |
-| No contexto | do desenvolvimento do projeto translate.me | |
+| No contexto | do desenvolvimento do projeto translate.me |
 
 #### Questão 2.0
 
@@ -126,11 +125,11 @@ desenvolvimento do projeto para conferir se a equipe cumpriu com o proposto.
     <th>Ambiente</th>
   </tr>
     <tr>
-    <td>O processo de desenvolvimento do software</td>
+    <td>O uso de padrões de projeto durante o desenvolvimento do software</td>
     <td>Avaliar o desempenho na disciplina</td>
-    <td>aplicabilidade</td>
+    <td>Aplicabilidade</td>
     <td>Disciplina Arquitetura e Desenho de Software</td>
-    <td>Desenvolvimento do projeto <i>translate.me</i></td>
+    <td>Uso de padrões de projeto apresentados na disciplina</td>
   </tr>
   <tr>
     <th colspan="2">Fatores de Qualidade</th>
@@ -143,6 +142,8 @@ desenvolvimento do projeto para conferir se a equipe cumpriu com o proposto.
         <p>3. Coerencia entre os padrões planejados e os aplicados</p>
     </td>
     <td colspan="3">
+      <p>1. Nível de entendimento da equipe sobre padrões de projeto</p>
+      <p>2. Flexibilidade do software para aplicar os padrões apresentados na disciplina</p>
     </td>
   </tr>
   <tr>
@@ -150,13 +151,19 @@ desenvolvimento do projeto para conferir se a equipe cumpriu com o proposto.
     <th colspan="3">Impacto na Hipótese de BaseLine</th>
   </tr>
     <tr>
-    <td colspan="2"></td>
-    <td colspan="3"></td>
+    <td colspan="2">
+      <p>1. Estudo e capacitação da equipe</p>
+      <p>2. Que o software seja desenvolvido de forma aplicavel a padrões de projeto</p>
+    </td>
+    <td colspan="3">
+      <p>1. O estudo influência na capacidade da equipe de aplicar corretamente os padrões de projeto estudados</p>
+      <p>2. A aplicabilidade de padrões de projeto do software possibilita o uso de mais padrões</p>
+    </td>
   </tr>
 </table>
 
 
-#### Objetivos de Equipe 1.0
+#### Objetivos de Equipe 2.0
 
 <table>
   <tr>
@@ -167,26 +174,41 @@ desenvolvimento do projeto para conferir se a equipe cumpriu com o proposto.
     <th>Ambiente</th>
   </tr>
     <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>Os riscos do projeto</td>
+    <td>Analisar o tratamendo e acompanhamento dos riscos ao decorrer do projeto</td>
+    <td>Tomada de decisões</td>
+    <td>Da equipe de desenvolvimento</td>
+    <td>Desenvolvimento do projeto <i>translate.me</i></td>
   </tr>
   <tr>
     <th colspan="2">Fatores de Qualidade</th>
     <th colspan="3">Fatores de Variação</th>
   </tr>
   <tr>
-    <td colspan="2"></td>
-    <td colspan="3"></td>
+    <td colspan="2">
+      <p>1. Diminuição dos riscos identificados</p>
+      <p>3. Rápida identificação de riscos</p>
+      <p>2. Tratamento rápido de riscos</p>
+    </td>
+    <td colspan="3">
+      <p>1. Comprometimento da equipe</p>
+      <p>2. A facilidade de identificação e tratamento dos riscos em questão</p>
+    </td>
   </tr>
   <tr>
     <th colspan="2">Hipóteses de BaseLine</th>
     <th colspan="3">Impacto na Hipótese de BaseLine</th>
   </tr>
     <tr>
-    <td colspan="2"></td>
-    <td colspan="3"></td>
+    <td colspan="2">
+      <p>1. Membros da equipe se mantem observadores</p>
+      <p>2. Documentação dos possíveis problemas do projeto</p>
+      <p>3. Discussões sobre a identificação e tratamento dos riscos</p>
+    </td>
+    <td colspan="3">
+      <p>1. A observação da equipe auxilia a identificar novos riscos rapidamente</p>
+      <p>2. A documentação garante a rastreabilidade dos riscos identificados</p>
+      <p>3. Discussões sobre o tratamento e identificação de riscos auxiliam a encontrar uma forma correta de tratar os riscos</p>
+    </td>
   </tr>
 </table>
