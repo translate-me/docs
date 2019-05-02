@@ -15,11 +15,11 @@
 | 10/04/2019 | 0.9.1 | Adicionando Introdução  | Renan Schadt |
 | 10/04/2019 | 0.9.2 | Adicionando Problema a Ser Resolvido  | Renan Schadt |
 | 11/04/2019 | 0.9.3 | Adicionando Posicionamento do Produto  | Renan Schadt |
-|11/04/2019 | 0.9.4 | Adicionando Resumo dos Recursos | Rômulo Souza |
-|11/04/2019 | 0.9.5 | Adicionando Alternativas e Critérios de Qualidade | João Robson |
-|11/04/2019 | 1.0 | Adicionando Requisitos | Davi Alves |
-|22/04/2019 | 1.1 | Revisando Documento | Alexandre Miguel |
-|23/04/2019 | 2.0 | Revisão final do documento | Gabriela Guedes e Renan Schadt|
+| 11/04/2019 | 0.9.4 | Adicionando Resumo dos Recursos | Rômulo Souza |
+| 11/04/2019 | 0.9.5 | Adicionando Alternativas e Critérios de Qualidade | João Robson |
+| 11/04/2019 | 1.0 | Adicionando Requisitos | Davi Alves |
+| 22/04/2019 | 1.1 | Revisando Documento | Alexandre Miguel |
+| 23/04/2019 | 2.0 | Revisão final do documento | Gabriela Guedes e Renan Schadt|
 
 
 ## 1. Introdução
