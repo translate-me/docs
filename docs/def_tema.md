@@ -3,9 +3,10 @@
 ## Histórico de Revisão:
 | Data | Versão | Descrição | Autor |
 |---|---|---|---|
-| 12/04/2019 | 1.0 | Primeira versão do documento | Gabriela Guedes |
-| 02/05/2019 | 1.1 | Refatoração do documento, adição dos tópicos 3 e 4 | Renan Schadt |
-| 04/05/2019 | 1.2 | Adição dos tópicos 1 e 2 | Renan Schadt |
+| 12/04/2019 | 0.1 | Primeira versão do documento | Gabriela Guedes |
+| 02/05/2019 | 0.2 | Refatoração do documento, adição dos tópicos 3 e 4 | Renan Schadt |
+| 04/05/2019 | 0.3 | Adição dos tópicos 1 e 2 | Renan Schadt |
+| 05/05/2019 | 1.0 | Adição dos tópicos 5, 6 e 7 | Renan Schadt |
 
 
 ## 1. Introdução
@@ -66,7 +67,7 @@ Um protótipo de software, é uma previsão de como a aplicação será visualme
 
 
 ## 4. Propostas de Tema
-Este tópico compreende os temas gerados pelo grupo com o objetivo de gerar um escopo que atenda os requisitos da disciplina de Desenho e Arquitetura de Software (Fase Understand).
+Este tópico compreende os temas gerados pelo grupo com o objetivo de gerar um produto com escopo que atenda os requisitos da disciplina de Desenho e Arquitetura de Software (Fase Understand).
 
 Os temas foram definidos individualmente e surgiram de necessidades do mercado percebidas pelos membros, como a dificuldade de se traduzir um texto técnico ou obter bases de dados relevantes para algoritmos de aprendizado de máquina.
 
@@ -94,8 +95,6 @@ Rich picture desenhado a mão ilustrando pequenos protótipos das áreas princip
 Uma das ideias do grupo, foi a construção de um crawler para mineração de dados, embasada pela experiência de alguns membros, na dificuldade de se obter bases de dados para uso em algoritmos de inteligência artificial. 
 
 "Os crawlers coletam documentos de base de dados para que estes possam ser analisados, indexados, procurados e extraídos (IBM)". A aplicação prevista, iria vender diferentes crawlers para diferentes propósitos, como crawlers para extração em bancos não relacionais, arquivos de texto, entre outros. 
-
-Seguindo os princípios do Design Sprint, os artefatos abaixo caracterizam as fases de __sketch__ e __prototype__.
 
 #### 4.2.2 5W2H
 1. What ?
@@ -153,13 +152,56 @@ Rich picture ilustrando a divisão do texto original em fragmentos, distribuído
 ![richpicture_traducao_3](assets/requisitos/elicitacao/richpicture_traducao_3.jpg)
 
 ## 5. Definição de Tema
-Com todas as ideias apresentadas, realizamos uma votação que buscava enfim decidir qual projeto seria o executado no decorrer da disciplina.
+Os temas propostos foram julgados pelos participantes do grupo e no final foi decidido o vencedor (Fase Decide).
+
+### 5.1 Marketplace de Video Aulas
+Pontos Positivos:
+1. Tema conhecido entre os membros.
+2. Permite uso de linguagens e frameworks de preferência do grupo.
+3. Plataforma com apelo para o universo acadêmico.
+4. Ótimo portfólio por se tratar de um marketplace.
+
+Pontos Negativos:
+1. Concorrência gigantesca e estabelecida no mercado (Udemy, Udacity, entre outros).
+2. Alguns membros do grupo não iriam obter novos conhecimentos.
+3. Poucas inovações para se diferenciar da concorrência.
+
+### 5.2 Crawler para Mineração de Dados
+Pontos Positivos:
+1. Tema extremamente relevante para o mercado.
+2. Pouca concorrência.
+3. Permite uso de linguagens e frameworks de preferência do grupo.
+4. Tema despertou interesse do grupo.
+
+Pontos Negativos:
+1. Incerteza se o escopo é adequado a matéria.
+2. Perigos de lidar com dados de terceiros.
+3. Completo desconhecimento por parte da maioria dos membros do grupo sobre todos aspectos e particularidades do produto.
+
+### 5.3 WebApp para Tradução de Artigos:
+Pontos Positivos:
+1. Permite uso de linguagens e frameworks de preferência do grupo.
+2. Plataforma com apelo para o universo acadêmico.
+3. Pouca concorrência.
+4. Inovações relevantes para se diferenciar da concorrência.
+
+Pontos Negativos:
+1. Sistema com muitas regras de negócio.
+2. Nicho de mercado bem específico e exigente.
+
+### 5.4 Escolha do Tema
+Depois de apontar os pontos positivos e negativos de cada ideia, foi realizada uma votação que buscava enfim decidir qual projeto seria o executado no decorrer da disciplina.
 
 ![votacao](assets/definicao_tema/votacao.png)
 
-Assim, o tema escolhido foi o da **Plataforma para Tradução de Artigos**
+Assim, o tema escolhido foi o **WebApp para Tradução de Artigos**.
 
-## 6. Referências
+## 6. Conclusão
+A técnica de Design Sprint foi extremamente eficaz para ajudar a definir o produto a ser construído, permitiu muita interação entre o grupo e discussão sobre os temas propostos, através dessas discussões foi possível verificar diversas regras de negócio e evoluir as soluções propostas. O protótipo contruído para ilustrar o produto se encontra na aba [Protótipo](requisitos/elicitacao/prototipo.md) (Fase Prototype).
+
+Com a ideia do produto definida e validada foi possível seguir para a fase de Requisitos.
+
+## 7. Referências
 * [Crawler](https://www.ibm.com/support/knowledgecenter/pt-br/SS5RWK_3.5.0/com.ibm.discovery.es.nav.doc/iiysaovcompc.htm)
 * [5W2H](https://www.heflo.com/blog/action-plan/5w2h-method/)
 * [Desmitificando aprendizado de máquina: A importancia de dados](https://www.quora.com/Is-good-data-or-good-algorithm-more-important-in-machine-learning)
