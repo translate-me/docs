@@ -4,7 +4,7 @@
 | Data | Versão | Descrição | Autor |
 |:---:|:---:|:---:|:---:|
 |05/05/2019|0.1| Adicionando o template, introdução e tópico **controlador** | Rômulo Souza |
-|05/05/2019|0.2| Adicionando tópico **creator** e **referências** | Rômulo Souza |
+|05/05/2019|0.2| Adicionando tópicos **criador**, **baixo acoplamento**, **polimorfismo**, **fabricação pura** e **referências** | Rômulo Souza |
 
 ## 1. Introdução
 
@@ -48,7 +48,23 @@ Ao realizar a análise dos requisitos para a utilização do creator, vê-se que
 
 ### 2.6. Baixo Acoplamento
 
+#### 2.6.1. Definição
+
+O baixo acomplamento visa manter a independência de elementos no código, assegurando que não estejam fortemente conectados. Por conseguinte, obtêm-se maior manutenibilidade do sistema e reutilização de código.
+
+#### 2.6.2. Análise
+
+Será aplicado o conceito de baixo acoplamento em algumas partes do projeto. Uma aplicação visível no projto é no padrão composite, que poderá ser utilizado com a parte de fragmentação de texto e com as mensagens do chat. O composite permitirá que a classe composta esteja diretamente associada somente a uma interface, ao invés de se associar a todas as classes concretas que a implementam.
+
 ### 2.7. Polimorfismo
+
+#### 2.7.1. Definição
+
+Polimorfismo é um conceito que permite a declaração de uma  interface para ser utilizada por diferentes tipos de dados. No polimorfismo, não há a preocupação com os detalhes de implementação de quem a está usando. Em suma, o polimorfismo nos permite exercer diferentes comportamentos em estruturas de mesmo nome.
+
+#### 2.7.2. Análise
+
+O polimorfismo pode ser aplicado na linguagem escolhida para o backend (python). Torna-se viável sua utilização em alguns dos padrões desejados pela equipe, como o composite, que poderá ser usado na criação de fragmentos ou na criação de mensagens para o chat.
 
 ### 2.8. Fabricação Pura
 
@@ -63,6 +79,8 @@ O padrão Fabricação Pura é representado por uma classe que não apresenta um
 
 ## 3. Referências
 
-* [Ramom Silva - Padrão Creator](http://ramonsilva.net/boas-praticas/grasp/creator-padroes-grasp/)
 * [GRASP Design Principles](https://www.cs.colorado.edu/~kena/classes/5448/f12/presentation-materials/rao.pdf)
 * [GRASP – General Responsibility Assignment Software Patterns Explained](http://www.kamilgrzybek.com/design/grasp-explained/)
+* [Ramom Silva - Padrão Creator](http://ramonsilva.net/boas-praticas/grasp/creator-padroes-grasp/)
+* [Object Oriented Programming](https://medium.com/from-the-scratch/oop-everything-you-need-to-know-about-object-oriented-programming-aee3c18e281b)
+* [Herança e Polimorfismo Python](https://www.caelum.com.br/apostila-python-orientacao-objetos/heranca-e-classes-abstratas/#exerccios---classes-abstratas)
