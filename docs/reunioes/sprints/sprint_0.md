@@ -59,7 +59,7 @@
 
 #### **Brainstorming**
 
-  * Para alinhamento da equipe e decisão do escopo, foi realizado um [Brainstorming](../../requisitos/brainstorming.md), que foi explanado no conteúdo do link anterior
+  * Para alinhamento da equipe e decisão do escopo, foi realizado um [Brainstorming](../../requisitos/elicitacao/brainstorming.md), que foi explanado no conteúdo do link anterior
 
 #### **Escolha de Nome**
 
