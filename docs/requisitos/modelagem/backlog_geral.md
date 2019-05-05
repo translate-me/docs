@@ -15,7 +15,7 @@ Este Backlog foi elaborado de acordo com os backlogs e introspecções individua
 
 ## Objetivo
 
-A finalidade deste documento é definir e priorizar as tarefas a serem feitas durante o projeto.
+A finalidade deste documento é definir e priorizar as tarefas a serem feitas durante o projeto e manter a rastreabilidade ao fazer referência aos requisitos associados da [tabela de requisitos](https://translate-me.github.io/docs/requisitos/tabela_requisitos/).
 
 
 ## Backlog
