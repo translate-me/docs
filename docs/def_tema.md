@@ -5,11 +5,42 @@
 |---|---|---|---|
 | 12/04/2019 | 1.0 | Primeira versão do documento | Gabriela Guedes |
 | 02/05/2019 | 1.1 | Refatoração do documento, adição dos tópicos 3 e 4 | Renan Schadt |
+| 04/05/2019 | 1.2 | Adição dos tópicos 1 e 2 | Renan Schadt |
 
 
 ## 1. Introdução
+Este documento tem por finalidade definir a metodologia Design Sprint e representar a aplicação desta pelo grupo, a qual foi usada para idealizar um produto com escopo viável para a matéria de Desenho e Arquitetura de Software, contendo ainda um tema relevante e de interesse aos participantes do grupo. 
 
 ## 2. Design Sprint
+A metodologia de Design Sprint é um processo de cinco dias para criar uma solução eficiente e interativa para um problema. Nela estão inseridos elementos de estratégia de negócios, inovação, design thinking, desenvolvimento colaborativo, entre outros.
+
+Através dessa metodologia é possível reduzir o tempo de idealização de um produto, estabelecendo bem o problema e deixando que os membros criem rapidamente diversas soluções, escolhendo as melhores e validando estas com um protótipo ao invés de um MVP (Mínimo Produto Viável). Através da prototipação é possível ter um vislumbre do produto finalizado antes de tomar decisões precipatadas.
+
+As seis fases do Design Sprint estão detalhadas abaixo, compreendendo os cinco dias de trabalho e a fase de preparação.
+
+**Preparação - Fase Understand**
+
+Na preparação para aplicar a metodologia é necessário preparar o tempo e espaço adequado para condução da dinâmica, além de entender o problema e compartilhar o conhecimento entre os membros participantes acerca deste.
+
+**Segunda - Fase Define**
+
+Nesta fase o time avalia o problema, define sua "linha de ataque", contexto das possíveis soluções, além de objetivos e métricas de sucesso.
+
+**Terça - Fase Sketch**
+
+Nas duas fases anteriores os participantes entenderam o problema e estabeleceram o foco da solução. Na fase Sketch cada membro do time irá elaborar sua solução individual e gerar artefatos visuais detalhando-a.
+
+**Quarta - Fase Decide**
+
+Na fase Decide, os participantes apresentam suas soluções e o time enumera os pontos positivos e negativos destas, a partir dessa análise, chegam em um consenso da solução final a ser levada para prototipação.
+
+**Quinta - Fase Prototype**
+
+Na fase Prototype, o time irá criar um protótipo simples da solução definida na fase anterior, detalhado o suficiente para ser validado com clientes reais.
+
+**Sexta - Fase Validate**
+
+Depois de criar o protótipo do que foi considerada a melhor solução, o time irá validá-lo observando a reação de terceiros, conseguindo extrair diversos feedbacks e tendo um direcionamento claro do que o produto deve ser, podendo assim definir os passos para alcançar esse objetivo.
 
 ## 3. Artefatos Construídos
 Para idealização e elucidação das propostas de tema, foram construídos diversos artefatos, abaixo estão descritos quais são, o que são, seu propósito e porque o fizemos. Uma descrição mais detalhada dos artefatos do tema escolhido, pode ser encontrada na pasta "Requisitos", sub-pasta "Modelagem".
@@ -35,13 +66,16 @@ Um protótipo de software, é uma previsão de como a aplicação será visualme
 
 
 ## 4. Propostas de Tema
+Este tópico compreende os temas gerados pelo grupo com o objetivo de gerar um escopo que atenda os requisitos da disciplina de Desenho e Arquitetura de Software (Fase Understand).
+
+Os temas foram definidos individualmente e surgiram de necessidades do mercado percebidas pelos membros, como a dificuldade de se traduzir um texto técnico ou obter bases de dados relevantes para algoritmos de aprendizado de máquina.
+
+Abaixo estão definidos os temas (Fase Define) e os artefatos construídos para comprovar sua viabilidade e melhor visualizá-los (Fase Sketch).
 
 ### 4.1 Marketplace de Video Aulas
 
 #### 4.1.1 Definição
 Uma das ideias do grupo, foi a construção de um marketplace de vídeo aulas, onde é possível adquirir cursos e criar seus próprios para a venda. Foi pensado, tendo em mente plataformas como a Udemy, com um incentivo a alunos para criarem cursos das suas áreas de domínio. Conta com diversas funcionalidades extras para dar suporte ao produto, como busca inteligente, listas de desejo, cupons de desconto, foruns de dúvida, entre outros.
-
-Os artefatos abaixo mostram mais detalhes sobre o produto e caracterizam as fases de __sketch__ e __prototype__ do Design Sprint.
 
 #### 4.1.2 Mapas Mentais
 Mapa mental mostrando conexão entre áreas da aplicação e algumas regras de negócio.
@@ -78,7 +112,7 @@ Seguindo os princípios do Design Sprint, os artefatos abaixo caracterizam as fa
 
     |Tipo|Assunto|Link|
     |	---	| ---	 | --- |
-    |Fórum|O que é mais importante? Bons dados ou Bons algoritmos?|https://www.quora.com/Is-good-data-or-good-algorithm-more-important-in-machine-learning
+    |Fórum|O que é mais importante? Bons dados ou Bons algoritmos?|https://www.quora.com/Is-good-data-or-good-algorithm-more-important-in-machine-learning|
     |Artigo| Desmitificando aprendizado de máquina: A importancia de dados|https://www.quora.com/Is-good-data-or-good-algorithm-more-important-in-machine-learning|
     |Artigo| A importancia da coleta de dados para seu negócio|https://www.simplybusiness.co.uk/knowledge/articles/2010/06/2010-06-03-why-marketing-data-is-important-to-a-growing-business/|
     |Artigo Científico|Reality Check: Combinando Experiências de Escolha com Dados de Mercado para Estimar a Importância dos Atributos do Produto.|https://pubsonline.informs.org/doi/pdf/10.1287/mnsc.1090.1136|
@@ -100,7 +134,7 @@ Protótipo de baixa fidelidade ilustrando a tela inicial do marketplace de crawl
 ### 4.3 WebApp para Tradução de Artigos
 
 #### 4.3.1 Definição 
-Um dos projetos pensados pelo grupo foi uma aplicação web que serve como uma ferramenta de aproximação entre um cliente que precisa de uma tradução profissional e tradutores freelancers que buscam uma alternativa extra de renda. A ideia do projeto se originou a partir da dificuldade de se traduzir um texto acadêmico e do preço elevado cobrado por profissionais da área. 
+Um dos projetos pensados pelo grupo foi uma aplicação web que serve como uma ferramenta de aproximação entre um cliente que precisa de uma tradução profissional e tradutores freelancers que buscam uma alternativa extra de renda. A ideia do projeto se originou a partir da dificuldade de se traduzir um texto acadêmico e do preço elevado cobrado por profissionais da área.
 
 A plataforma pensada pelo grupo descentraliza a tradução, para que não seja feita por somente um tradutor, permitindo a tradução de textos privados, estudos não-publicados, patentes e demais propriedades intelectuais que poderiam ter seu conteúdo exposto se a tradução é realizada somente por um profissional.
 
@@ -118,8 +152,8 @@ Rich picture com foco na interação entre usuário e tradutor.
 Rich picture ilustrando a divisão do texto original em fragmentos, distribuídos entre tradutores.
 ![richpicture_traducao_3](assets/requisitos/elicitacao/richpicture_traducao_3.jpg)
 
-## 5. Conclusão
-**Tema:** Com todas as ideias apresentadas, realizamos uma votação que buscava enfim decidir qual projeto seria o executado no decorrer da disciplina.
+## 5. Definição de Tema
+Com todas as ideias apresentadas, realizamos uma votação que buscava enfim decidir qual projeto seria o executado no decorrer da disciplina.
 
 ![votacao](assets/definicao_tema/votacao.png)
 
@@ -133,5 +167,6 @@ Assim, o tema escolhido foi o da **Plataforma para Tradução de Artigos**
 * [Reality Check: Combinando Experiências de Escolha com Dados de Mercado para Estimar a Importância dos Atributos do Produto](https://pubsonline.informs.org/doi/pdf/10.1287/mnsc.1090.1136)
 * [Sistemas e métodos para aprendizado de máquina e gerenciamento de dados](https://patentimages.storage.googleapis.com/21/3d/63/eaa0b260547816/US6845340.pdf)
 * [Tecnicas de aprendizado de máquina para mineração de dados: A pesquisa](https://ieeexplore.ieee.org/abstract/document/6724149/)
-
 * [Rich Picture](http://www.mspguide.org/tool/rich-picture)
+* [Google - Design Sprint](https://designsprintkit.withgoogle.com/methodology/overview)
+* [GV - Design Sprint](https://www.gv.com/sprint/)
