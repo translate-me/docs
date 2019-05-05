@@ -7,6 +7,8 @@
 | 06/04/2019 | 0.2 | Adição das Introspecção 8 e 9  | Letícia Meneses |
 | 06/04/2019 | 0.3 | Adição da Introspecção 10 e 11 | Alexandre Miguel |
 | 27/04/2019 | 0.4 | Criação do documento | Alexandre Miguel |
+| 02/05/2019 | 0.5 | Refatoração de identificação |  Letícia Meneses |
+
 
 ## Introdução  
 
@@ -262,10 +264,10 @@ Assim que clicou para começar a tradução do texto de Bianca, o site Translate
 
 | Código | Descrição | Prioridade | Classificação |
 |--|--|--|--|
-| INT3.1 | O site deve informar a importância das seguranças de dados e as diretrizes do site | Must | Não Funcional |
-| INT3.2 | O usuário não poderá começar nenhuma tradução sem antes confirmar que está de acordo com as políticas de privacidade e de segurança de dados do site | Must | Funcional |
-| INT3.3 | O site deve informar ao tradutor o prazo para a entrega do serviço | Must | Não Funcional |
-| INT3.4 | O site deve conter o apoio do _software_ CAT | Must | Funcional |
+| INT7.1 | O site deve informar a importância das seguranças de dados e as diretrizes do site | Must | Não Funcional |
+| INT7.2 | O usuário não poderá começar nenhuma tradução sem antes confirmar que está de acordo com as políticas de privacidade e de segurança de dados do site | Must | Funcional |
+| INT7.3 | O site deve informar ao tradutor o prazo para a entrega do serviço | Must | Não Funcional |
+| INT7.4 | O site deve conter o apoio do _software_ CAT | Must | Funcional |
 
 ## Introspecção 8
 
@@ -294,13 +296,13 @@ Este tópico aborda as necessidades obtidas nessa introspecção.
 
 | Código | Descrição |
 |--|--|
-|INT1.1 | O usuário deve conseguir ver de forma resumida a plataforma
-| INT1.2 | Deve aparecer a opção de login/cadastro na tela inicial
-| INT1.3 |O site deve mostrar informações básicas e chamativas para despertar o interesse na pessoa
-| INT1.4 | O site deve mostrar um menu com opções limitadas para a pessoa que está visualizando sem cadastro
-| INT1.5 | O usuário deve ver opções de FAQ, contato e uma explicação sobre o Translate.me
-| INT1.6 | A opção de cadastro/login deve estar sempre aparecendo na tela para os não logados
-| INT1.7 | Algumas opções do site devem ser restritas a usuários não logados, aparecendo então um pop up de cadastro/login ao ser clicado
+|INT8.1 | O usuário deve conseguir ver de forma resumida a plataforma
+| INT8.2 | Deve aparecer a opção de login/cadastro na tela inicial
+| INT8.3 |O site deve mostrar informações básicas e chamativas para despertar o interesse na pessoa
+| INT8.4 | O site deve mostrar um menu com opções limitadas para a pessoa que está visualizando sem cadastro
+| INT8.5 | O usuário deve ver opções de FAQ, contato e uma explicação sobre o Translate.me
+| INT8.6 | A opção de cadastro/login deve estar sempre aparecendo na tela para os não logados
+| INT8.7 | Algumas opções do site devem ser restritas a usuários não logados, aparecendo então um pop up de cadastro/login ao ser clicado
 
 
 ## Introspecção 9
@@ -331,18 +333,18 @@ Este tópico aborda as necessidades obtidas nessa introspecção.
 
 | Código | Descrição |
 |--|--|
-| INT2.1 | Ao entrar na página, o usuário deve conseguir fazer cadastro ou login na plataforma
-| INT2.2 |Durante o cadastro, o usuário deve ver não termos de aceite informações de confiabilidade a exposição do artigo
-| INT2.3 | O usuário deve conseguir visualizar e editar suas informações de perfil
-| INT2.4 | O usuário deve conseguir colocar/cadastrar seu artigo para que seja traduzido
-| INT2.5 | O usuário deve poder escolher qual língua será traduzida seu artigo
-| INT2.6 | O usuário deve conseguir dividir seu artigo para que vários tradutores traduzam e desconectar informações
-| INT2.7 | O usuário deve conseguir requerer níveis maiores de tradutores para que conduza a tradução do seu artigo
-| INT2.8 | O usuário tradutor e o usuário contratante devem conseguir ter contato entre eles
-| INT2.9 | O usuário deve conseguir ver informações básicas de seus tradutores
-| INT2.10 | O usuário deve conseguir estabelecer um prazo para a entrega da tradução
-| INT2.11 | O usuário deve acompanhar o processo de tradução de seu artigo/documento
-| INT2.12 | O usuário avaliar o serviço do tradutor, dentro das normas a serem cumpridas
+| INT9.1 | Ao entrar na página, o usuário deve conseguir fazer cadastro ou login na plataforma
+| INT9.2 |Durante o cadastro, o usuário deve ver não termos de aceite informações de confiabilidade a exposição do artigo
+| INT9.3 | O usuário deve conseguir visualizar e editar suas informações de perfil
+| INT9.4 | O usuário deve conseguir colocar/cadastrar seu artigo para que seja traduzido
+| INT9.5 | O usuário deve poder escolher qual língua será traduzida seu artigo
+| INT9.6 | O usuário deve conseguir dividir seu artigo para que vários tradutores traduzam e desconectar informações
+| INT9.7 | O usuário deve conseguir requerer níveis maiores de tradutores para que conduza a tradução do seu artigo
+| INT9.8 | O usuário tradutor e o usuário contratante devem conseguir ter contato entre eles
+| INT9.9 | O usuário deve conseguir ver informações básicas de seus tradutores
+| INT9.10 | O usuário deve conseguir estabelecer um prazo para a entrega da tradução
+| INT9.11 | O usuário deve acompanhar o processo de tradução de seu artigo/documento
+| INT9.12 | O usuário avaliar o serviço do tradutor, dentro das normas a serem cumpridas
 
 
 ## Introspecção 10
@@ -359,25 +361,25 @@ Usuário chamado João precisa traduzir artigo a ser publicado em seu TCC, ao pe
 
 |  Requisito | ID |
 | :---: | :---: |
-|  A Aplicação deve possuir um sistema de cadastro | IA1.01 |
-|  A Aplicação deve permitir o cadastro pelo facebook | IA1.02 |
-|  A Aplicação deve permitir o cadastro pela conta do google | IA1.03 |
-|  A aplicação deve permitir a diferenciação entre usuários tradutores e usuários autores | IA1.04 |
-|  Os usuários que desejam ter textos traduzidos devem ser referidos como "Autores" | IA1.05 |
-|  Os usuários que traduzem textos devem ser referidos como "Tradutores" | IA1.06 |
-|  A aplicação deve possuir um sistema de Carteira Virtual para transferência de créditos como pagamento por serviço | IA1.07 |
-|  A Aplicação deve possuir uma funcionalidade de inserção de texto pelo usuário autor a ser traduzido pelo usuário tradutor | IA1.08 |
-|  A Aplicação deve possuir diferentes formas de inserção de texto a critério do usuário autor | IA1.09 |
-|  A aplicação deve possuir um sistema de separação do texto em fragmentos para correção  | IA1.10 |
-|  A aplicação deve possuir um sistema de envio sem repetição de fragmentos para usuários corretores | IA1.11 |
-|  A aplicação deve notificar o usuário da não responsabilização por direitos autorais | IA1.12 |
-|  A aplicação deve medir a segurança do texto de acordo com a quantidade de fragmentos | IA1.13 |
-|  A aplicação deve informar ao usuário um prazo para a entrega da correção conforme a quantidade e tamanho dos fragmentos  | IA1.14 |
-|  Os fragmentos de texto devem possuir resumos elaborados pelo autor para contextualização do tradutor | IA1.15 |
-|  A aplicação deve possuir uma página de acompanhamento de correções para o usuário autor | IA1.16 |
-|  A aplicação deve notificar o usuário autor de que seu texto foi totalmente traduzido | IA1.17 |
-|  Os fragmentos de texto devem possuir tags que indiquem o tema e a complexidade do texto geral | IA1.18 |
-|  A Aplicação deve estabelecer um contato em anonimato entre usuário tradutor e usuário autor para solução de dúvidas | IA1.19 |
+|  A Aplicação deve possuir um sistema de cadastro | INT10.01 |
+|  A Aplicação deve permitir o cadastro pelo facebook | INT10.02 |
+|  A Aplicação deve permitir o cadastro pela conta do google | INT10.03 |
+|  A aplicação deve permitir a diferenciação entre usuários tradutores e usuários autores | INT10.04 |
+|  Os usuários que desejam ter textos traduzidos devem ser referidos como "Autores" | INT10.05 |
+|  Os usuários que traduzem textos devem ser referidos como "Tradutores" | INT10.06 |
+|  A aplicação deve possuir um sistema de Carteira Virtual para transferência de créditos como pagamento por serviço | INT10.07 |
+|  A Aplicação deve possuir uma funcionalidade de inserção de texto pelo usuário autor a ser traduzido pelo usuário tradutor | INT10.08 |
+|  A Aplicação deve possuir diferentes formas de inserção de texto a critério do usuário autor | INT10.09 |
+|  A aplicação deve possuir um sistema de separação do texto em fragmentos para correção  | INT10.10 |
+|  A aplicação deve possuir um sistema de envio sem repetição de fragmentos para usuários corretores | INT10.11 |
+|  A aplicação deve notificar o usuário da não responsabilização por direitos autorais | INT10.12 |
+|  A aplicação deve medir a segurança do texto de acordo com a quantidade de fragmentos | INT10.13 |
+|  A aplicação deve informar ao usuário um prazo para a entrega da correção conforme a quantidade e tamanho dos fragmentos  | INT10.14 |
+|  Os fragmentos de texto devem possuir resumos elaborados pelo autor para contextualização do tradutor | INT10.15 |
+|  A aplicação deve possuir uma página de acompanhamento de correções para o usuário autor | INT10.16 |
+|  A aplicação deve notificar o usuário autor de que seu texto foi totalmente traduzido | INT10.17 |
+|  Os fragmentos de texto devem possuir tags que indiquem o tema e a complexidade do texto geral | INT10.18 |
+|  A Aplicação deve estabelecer um contato em anonimato entre usuário tradutor e usuário autor para solução de dúvidas | INT10.19 |
 
 
 ## Introspecção 11
@@ -392,18 +394,18 @@ Uma usuária chamada Ana, que deseja traduzir textos para complementar seus ganh
 
 ### Requisitos Elicitados
 
-|  A Aplicação deve possuir sistema de verificação de proeficiência dos falantes da língua | IA2.01 |
+|  A Aplicação deve possuir sistema de verificação de proeficiência dos falantes da língua | IA11.01 |
 | :---: | :---: |
-|  Os fragmentos devem ser enviados para os usuários tradutores com prazo estabelecido | IA2.02 |
-|  A Aplicação deve possuir uma página para seleção dos fragmentos a serem traduzidos | IA2.03 |
-|  A Aplicação possuir sistema de revisão por usuários de fragmentos traduzidos | IA2.04 |
-|  [Não Funcional] A Aplicação deve enviar mensagens explicativas sobre dúvidas que possam surgir para o usuário, como a explicação do motivo das correções | IA2.05 |
-|  A Aplicação deve possuir um sistema de pontuação para usuários tradutores | IA2.06 |
-|  [Não Funcional] O Sistema de pontuação deve influenciar nas ações dos usuários tradutores da plataforma | IA2.07 |
-|  O Usuário tradutor deve possuir badges ou selos que identifiquem seu nível de proeficiência na língua | IA2.08 |
-|  O Sistema de pontuação deve ser utilizado para priorizar a disponibilização de fragmentos para tradução | IA2.09 |
-|  A Aplicação deve limitar novas correções por revisões de correções de outros usuários | IA2.10 |
-|  O Usuário Tradutor deve poder fazer correções nas traduções em que atua como revisor | IA2.11 |
-|  A Aplicação deve possuir um sistema de Login próprio | IA2.12 |
-|  A Aplicação deve possuir um sistema de Login com facebook | IA2.13 |
-|  A Aplicação deve possuir um sistema de Login com Google | IA2.14 |
+|  Os fragmentos devem ser enviados para os usuários tradutores com prazo estabelecido | INT11.02 |
+|  A Aplicação deve possuir uma página para seleção dos fragmentos a serem traduzidos | INT11.03 |
+|  A Aplicação possuir sistema de revisão por usuários de fragmentos traduzidos | INT11.04 |
+|  [Não Funcional] A Aplicação deve enviar mensagens explicativas sobre dúvidas que possam surgir para o usuário, como a explicação do motivo das correções | INT11.05 |
+|  A Aplicação deve possuir um sistema de pontuação para usuários tradutores | INT11.06 |
+|  [Não Funcional] O Sistema de pontuação deve influenciar nas ações dos usuários tradutores da plataforma | INT11.07 |
+|  O Usuário tradutor deve possuir badges ou selos que identifiquem seu nível de proeficiência na língua | INT11.08 |
+|  O Sistema de pontuação deve ser utilizado para priorizar a disponibilização de fragmentos para tradução | INT11.09 |
+|  A Aplicação deve limitar novas correções por revisões de correções de outros usuários | INT11.10 |
+|  O Usuário Tradutor deve poder fazer correções nas traduções em que atua como revisor | INT11.11 |
+|  A Aplicação deve possuir um sistema de Login próprio | INT11.12 |
+|  A Aplicação deve possuir um sistema de Login com facebook | INT11.13 |
+|  A Aplicação deve possuir um sistema de Login com Google | INT11.14 |
