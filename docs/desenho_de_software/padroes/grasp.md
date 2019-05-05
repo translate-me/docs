@@ -3,7 +3,8 @@
 ## Histórico de Revisão:
 | Data | Versão | Descrição | Autor |
 |:---:|:---:|:---:|:---:|
-|05/05/2019|0.1| Adicionando o template, introdução e tópico 'controlador' | Rômulo Souza |
+|05/05/2019|0.1| Adicionando o template, introdução e tópico **controlador** | Rômulo Souza |
+|05/05/2019|0.2| Adicionando tópico **creator** e **referências** | Rômulo Souza |
 
 ## 1. Introdução
 
@@ -49,7 +50,14 @@ Ao realizar a análise dos requisitos para a utilização do creator, vê-se que
 
 ### 2.7. Polimorfismo
 
-### 2.8. Invenção Pura
+### 2.8. Fabricação Pura
+
+#### 2.8.1 Definição
+
+O padrão Fabricação Pura é representado por uma classe que não apresenta um conceito bem definido no domínio do problema. Pode ser exemplificado como uma classe que realiza um papel similar à prestação de serviços. O uso desse padrão auxilia no baixo acoplamento e na alta coesão do sistema, além de facilitar a manutenção e a reutilização do código.
+
+#### 2.8.2 Análise
+
 
 ### 2.9. Variações Protegidas
 
