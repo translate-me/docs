@@ -407,3 +407,9 @@ Uma usuária chamada Ana, que deseja traduzir textos para complementar seus ganh
 |  A Aplicação deve possuir um sistema de Login próprio | IA2.12 |
 |  A Aplicação deve possuir um sistema de Login com facebook | IA2.13 |
 |  A Aplicação deve possuir um sistema de Login com Google | IA2.14 |
+
+### Referências
+Conhecimentos adquiridos na disciplina de [Requisitos de Software](https://matriculaweb.unb.br/graduacao/disciplina.aspx?cod=201308)
+<br>
+
+[Elicitação de Requisitos](http://www2.dbd.puc-rio.br/pergamum/tesesabertas/0521479_08_cap_02.pdf)

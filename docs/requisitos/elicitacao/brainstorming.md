@@ -6,6 +6,7 @@
 |---|---|---|---|
 | 12/04/2019 | 1.0 | Primeira versão do documento| Gabriela Guedes|
 | 13/04/2019 | 1.1 | Adicionando Informações do Brainstorming Realizado | Alexandre Miguel |
+|05/05/2019| 1.2 | Incluindo referências | Letícia Meneses |
 
 ## Introdução
 
@@ -78,3 +79,6 @@ Representação do primeiro esboço do fluxo de login e cadastro do tradutor, co
 ### Conclusão
 
 Após a realização do Brainstorming, a equipe concluiu que a formalização dos requisitos seria realizada individualmente, em prol da montagem de backlogs individuais que representassem as abordagens para o desenvolvimento da aplicação esboçada, o que é melhor descrito no documento de [Backlog Geral](../../modelagem/backlog_geral).
+
+### Referências
+Conhecimentos adquiridos na disciplina de [Requisitos de Software](https://matriculaweb.unb.br/graduacao/disciplina.aspx?cod=201308)
