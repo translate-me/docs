@@ -46,6 +46,14 @@ Ao realizar a análise dos requisitos para a utilização do creator, vê-se que
 
 ### 2.5. Alta Coesão
 
+#### 2.5.1. Definição
+
+Coesão é um conceito que indica quão relacionadas estão as responsibilidades de determinado elemento do projeto, isto é, o nível de pertencimento das partes de algum elemento àquele escopo específico.
+
+#### 2.5.2. Análise
+
+A aplicação da alta coesão no projeto se dará em diversos contextos. Um dele é a distribuição de responsabilidades específicas entre os microserviços do back-end. Ao se utilizar um serviço independente para gerenciar a autenticação, por exemplo, mantém-se o foco da classe que lida com a autenticação apenas na criação de novos usuários, administradores ou comuns, e na geração e validação dos tokens dos mesmos, atribuindo a função de modificar o perfil desses usuários à outro microserviço, o de perfis.
+
 ### 2.6. Baixo Acoplamento
 
 #### 2.6.1. Definição
