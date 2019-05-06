@@ -11,13 +11,13 @@
 
 ## 1. Introdução
 
-Diagramas dinâmicos são compreendidos como diagramas de interação, diagramas de máquinas de estados e diagramas de atividade, e são usados ​​para descrever o comportamento interno de um sistema. Sâo exemplos de diagramas dinâmicos: diagrama de sequência, diagrama de colaboraçâo, diagrama de atividades, diagrama de estados. 
+Diagramas dinâmicos são compreendidos como diagramas de interação, diagramas de máquinas de estados e diagramas de atividade. São diagramas usados ​​para descrever o comportamento interno de um sistema. Sâo exemplos de diagramas dinâmicos: diagrama de sequência, diagrama de colaboraçâo, diagrama de atividades, diagrama de estados. 
 
 ## 2. Artefatos
 
 ### 2.1. Diagrama de Sequência
 
-Diagrama de sequência é o diagram dinâmico mais relevante na UML, em especial, para a fase de projeto do software. Este confere, dentre outras particularidades, a representação das interações entre os objetos, distribuídas entre várias linhas de vida.
+O diagrama de sequência é a solução dinâmica de modelagem em UML mais relevante, pois incide especificamente sobre linhas da vida - período entre a fase inicial e a fase final - de um projeto. O diagrama representa os processos e objetos que vivem simultaneamente, e as mensagens trocadas entre eles para desempenhar uma função antes do término da linha da vida.
 
 #### 2.1.1. Submissão e Acompanhamento de Texto
 
@@ -29,7 +29,10 @@ Diagrama de sequência é o diagram dinâmico mais relevante na UML, em especial
 
 ### 2.2. Diagrama de estados
 
-O diagrama de estados procura apresentar os vários estados pelos quais um objeto pode passar. Ao longo do tempo, um objeto muda de estado quando acontece algum evento interno ou externo ao sistema.
+Um estado modela uma situação durante a qual alguma condição (usualmente implícita) se
+mantém. Essa invariância tanto pode representar uma situação estática, como um objeto aguardando
+que um evento externo ocorra, quanto condições dinâmicas, como um processo apresentando um
+determinado comportamento. O diagrama de estados procura apresentar os vários estados pelos quais um objeto pode passar.
 
 #### 2.2.1. Diagrama 1
 
@@ -37,7 +40,7 @@ O diagrama de estados procura apresentar os vários estados pelos quais um objet
 
 ### 2.3. Diagrama de Colaboração
 
-Diagrama de colaboração é um diagram dinâmico que mostra a interação entre objetos e/ou partes usando mensagens sequenciais. Ênfase na ordem das mensagens, normalmente, com foco em um cenário de uso.
+Diagrama de colaboração é um diagrama dinâmico que mostra a interação entre objetos e/ou partes usando mensagens sequenciais. É um diagrama que não se preocupa com temporalidade, com o foco na organização estrutural dos projetos.
 
 #### 2.3.1. Diagrama 1
 
@@ -45,7 +48,9 @@ Diagrama de colaboração é um diagram dinâmico que mostra a interação entre
 
 ### 2.4 Diagrama de Atividades
 
-O diagrama de atividades mostra o fluxo entre objetos, ou seja, a parte comportamental, representando-a como um fluxo de ações. O foco, portanto, está nos procedimentos, processos de negócio e fluxo de trabalho.
+O diagrama de atividades é um diagrama UML utilizado para modelar o aspecto
+comportamental de processos. Neste diagrama, uma atividade é modelada como uma
+sequência estruturada de ações, controladas potencialmente por nós quanto a decisão e sincronismo. O foco, portanto, está nos procedimentos, processos de negócio e fluxo de trabalho.
 
 #### 2.4.1. Diagrama 1
 
@@ -59,5 +64,6 @@ Versão 2.0
 
 ## Referências
 
-[Diagramas UML](https://www.lucidchart.com/pages/pt/o-que-e-uml)
+* [Diagramas UML](https://www.lucidchart.com/pages/pt/o-que-e-uml)
+* [Diagrama de Atividade e Diagramas de Estado](http://www.dca.fee.unicamp.br/~gudwin/ftp/ea976/AtEst.pdf)
 
