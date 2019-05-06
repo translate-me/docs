@@ -1,3 +1,4 @@
+
 # Brainstorming
 
 ## Histórico de Revisão:
@@ -10,7 +11,9 @@
 
 ## Introdução
 
-O inicio da compreenção do projeto junto com a equipe foi feito a partir de um brainstorming para definir melhor a idéia proposta. As idéias foram juntadas em grupos e foram definidos épicos a partir disso.
+O brainstorming é uma técnica para juntar informações e levar a pessoa ou equipe a um pensamento criativo, em que, de forma organizada, várias pessoas falam e expõem seus pontos de vista e chegam em um denominador comum. A ideia é que a equipe possa obter ideias inovadoras para aplicar e colocar um projeto em prática. Uma característica marcante no brainstorming é abranger todas as ideias, sem dispersar nenhum e considerar a todos. Tudo o que for sugerido deve ser anotado e analisado, tendo como foco a viabilidade de ser colocado em prática.
+
+O inicio da compreensão do projeto junto com a equipe foi feito a partir de um brainstorming para definir melhor a ideia proposta. As ideias foram juntadas em grupos e foram definidos épicos a partir disso.
 
 ## Informações
 
@@ -82,3 +85,7 @@ Após a realização do Brainstorming, a equipe concluiu que a formalização do
 
 ### Referências
 Conhecimentos adquiridos na disciplina de [Requisitos de Software](https://matriculaweb.unb.br/graduacao/disciplina.aspx?cod=201308)
+
+[Novo Negócio](https://novonegocio.com.br/empreendedorismo/o-que-e-brainstorming/)
+
+[SEBRAE](https://bibliotecas.sebrae.com.br/chronus/ARQUIVOS_CHRONUS/bds/bds.nsf/741A876FE828908203256E7C00614A23/$File/NT00002206.pdf)

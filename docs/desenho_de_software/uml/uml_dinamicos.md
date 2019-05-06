@@ -5,9 +5,9 @@
 |---|---|---|---|
 | 26/04/2019 | 0.1 | Adicionando diagrama de sequência de submissão e acompanhamento | Victor Hugo, Renan Schidt |
 | 26/04/2019 | 0.2 | Adicionando diagrama de atividades e de sequência de escolha e acesso de fragmento de texto  | Letícia Meneses, Luiz Guilherme|
-|29/04/2019 | 0.3 | Adicionando diagrama de colaboração | Gabriela Guedes e Helena Goulart |
+| 29/04/2019 | 0.3 | Adicionando diagrama de colaboração | Gabriela Guedes e Helena Goulart |
+| 03/05/2019 | 0.4 | Adicionado diagrama de atividade | Davi Alves e João Robson|
 
-## Introdução
 
 ## Artefatos
 
@@ -25,4 +25,9 @@
 ![diagrama_colaboracao](../../assets/desenho/uml/diagrama_colaboracao.png)
 
 ### Diagrama de Atividades
+#### V01
 ![diagrama_colaboracao](../../assets/desenho/uml/diagrama_atividades.png)
+
+#### V02
+![diagrama_colaboracao](../../assets/desenho/uml/diagrama_atividades_2.png)
+

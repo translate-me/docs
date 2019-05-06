@@ -1,3 +1,6 @@
+
+
+
 # Protótipo
 
 ## Histórico de Revisão:
@@ -8,10 +11,9 @@
 |05/05/2019 | 0.3 | Explicação do protótipo | Letícia Meneses |
 
 ## Introdução
-O protótipo de alta fidelidade foi feito com o objetivo de guiar os desenvolvedores para a implementação do projeto. Construído com base na [identidade visual](documentos/projeto/identidade_visual.md) do projeto, o protótipo visa trazer uma aproximação visual do que será a aplicação **Translate.me**.
-<br>
+Protótipos são modelos funcionais construídos para simular a aparência de funcionalidades de um software. Para os desenvolvedores, é uma direção e gabarito na produção do sistema, enquanto os futuros usuários podem interagir e avaliar a usabilidade do software por meio do protótipo. O protótipo de alta fidelidade deve representar o produto final, em termos de aparência visual, interatividade navegação.
 
-O protótipo foi feito com a ferramenta web **Figma**.
+O protótipo de alta fidelidade foi feito com o objetivo de guiar os desenvolvedores para a implementação do projeto. Construído com base na [identidade visual](documentos/projeto/identidade_visual.md) do projeto, o protótipo visa trazer uma aproximação visual do que será a aplicação **Translate.me**, e foi desenvolvido feito com a ferramenta web **Figma**.
 
 ## Telas do protótipo
 
