@@ -7,7 +7,7 @@
 | 26/04/2019 | 0.2 | Adicionando diagrama de atividades e de sequência de escolha e acesso de fragmento de texto  | Letícia Meneses, Luiz Guilherme|
 | 29/04/2019 | 0.3 | Adicionando diagrama de colaboração | Gabriela Guedes e Helena Goulart |
 | 03/05/2019 | 0.4 | Adicionado diagrama de atividade | Davi Alves e João Robson|
-
+| 06/05/2019 | 0.5 | Adicionado introdução do documento e aos diagramas | Rômulo Souza|
 
 ## 1. Introdução
 
@@ -15,7 +15,7 @@ Diagramas dinâmicos são compreendidos como diagramas de interação, diagramas
 
 ## 2. Artefatos
 
-### 2.1. Diagramas de Sequência
+### 2.1. Diagrama de Sequência
 
 Diagrama de sequência é o diagram dinâmico mais relevante na UML, em especial, para a fase de projeto do software. Este confere, dentre outras particularidades, a representação das interações entre os objetos, distribuídas entre várias linhas de vida.
 
@@ -29,21 +29,31 @@ Diagrama de sequência é o diagram dinâmico mais relevante na UML, em especial
 
 ### 2.2. Diagrama de estados
 
+O diagrama de estados procura apresentar os vários estados pelos quais um objeto pode passar. Ao longo do tempo, um objeto muda de estado quando acontece algum evento interno ou externo ao sistema.
+
+#### 2.2.1. Diagrama 1
+
 ![diagrama_estados](../../assets/desenho/uml/diagrama_estados.png)
 
 ### 2.3. Diagrama de Colaboração
 
 Diagrama de colaboração é um diagram dinâmico que mostra a interação entre objetos e/ou partes usando mensagens sequenciais. Ênfase na ordem das mensagens, normalmente, com foco em um cenário de uso.
 
+#### 2.3.1. Diagrama 1
+
 ![diagrama_colaboracao](../../assets/desenho/uml/diagrama_colaboracao.png)
 
 ### 2.4 Diagrama de Atividades
 
-#### Versão 1.0
+O diagrama de atividades mostra o fluxo entre objetos, ou seja, a parte comportamental, representando-a como um fluxo de ações. O foco, portanto, está nos procedimentos, processos de negócio e fluxo de trabalho.
+
+#### 2.4.1. Diagrama 1
+
+Versão 1.0
 
 ![diagrama_colaboracao](../../assets/desenho/uml/diagrama_atividades.png)
 
-#### Versão 2.0
+Versão 2.0
 
 ![diagrama_colaboracao](../../assets/desenho/uml/diagrama_atividades_2.png)
 
