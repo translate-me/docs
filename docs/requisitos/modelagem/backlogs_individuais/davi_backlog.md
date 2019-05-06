@@ -12,15 +12,15 @@ Este documento tem como objetivo expor a elaboração individual de um backlog d
 
 Elaborar um levantamento das funcionalidades que possivelmente ira existir na aplicação.
 
-|  Código | Épico | Eu, como... | Gostaria de... | Para poder... |
-| :---: | :---: | :---: | :---: | :---: |
-| US01 | Cadastro | Usuário | Efetuar cadastro | Ultilizar a aplicação |
-| US02 | Login | Usuário | Recuperar senha | Obter novamente acesso a aplicação |
-| US03 | Login | Usuário | Recuperar email cadastrado | Obter novamente acesso a aplicação |
-| US04 | Login | Usuário | Adicionar numero de celular | Verificar conta e recuperar login |
-| US05 | Login | Usuário | Modificar minha senha | Trocar a senha usada na aplicação |
-| US06 | Login | Usuário | Modificar o email usado na aplicação | Obter uma nova forma de acessar a aplicação |
-| US07 | Serviço de Tradução | Usuário | Cadastrar como um tradutor | Ultilizar a plataforma para traduzir artigos |
+|  Código | Épico | Eu, como... | Gostaria de... | Para poder... |Requisito Associado |
+| :---: | :---: | :---: | :---: | :---: | :---: |
+| US01 | Cadastro | Usuário | Efetuar cadastro | Ultilizar a aplicação | [INT8.2](../../../requisitos/elicitacao/instrospeccao#introspeccao-8) |
+| US02 | Login | Usuário | Recuperar senha | Obter novamente acesso a aplicação | [INT1.3](../../../requisitos/elicitacao/instrospeccao#introspeccao-1) |
+| US03 | Login | Usuário | Recuperar email cadastrado | Obter novamente acesso a aplicação | [INT1.4](../../../requisitos/elicitacao/instrospeccao#introspeccao-1)|
+| US04 | Login | Usuário | Adicionar numero de celular | Verificar conta e recuperar login | [INT9.3](../../../requisitos/elicitacao/instrospeccao#introspeccao-9)|
+| US05 | Login | Usuário | Modificar minha senha | Trocar a senha usada na aplicação | [INT1.3](../../../requisitos/elicitacao/instrospeccao#introspeccao-1)|
+| US06 | Login | Usuário | Modificar o email usado na aplicação | Obter uma nova forma de acessar a aplicação | [INT10.3](../../../requisitos/elicitacao/instrospeccao#introspeccao-10)|
+| US07 | Serviço de Tradução | Usuário | Cadastrar como um tradutor | Ultilizar a plataforma para traduzir artigos | [INT5.2](../../../requisitos/elicitacao/instrospeccao#introspeccao-5) |
 | US08 | Serviço de Tradução | Usuário | Receber propostas de artigos para contribuir na tradução | Traduzir materiais  |
 | US09 | Serviço de Tradução | Usuário | Adicionar tradutores a minha conexão | Fazer network dentro da plataforma |
 | US10 | Serviço de Tradução | Usuário | Efetuar algum tipo de reclamação a respeito do serviço | Dar feedback para melhoria da plataforma |
