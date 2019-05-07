@@ -3,7 +3,7 @@
 ## Histórico de Revisão:
 | Data | Versão | Descrição | Autor |
 |---|---|---|---|
-  | **20/04/2019** | 1.0 | Criação e definição do documento de políticas de contribuição | Luiz Guilherme |
+| **06/05/2019** | 1.0 | Criação e definição do documento de políticas de contribuição | Luiz Guilherme |
 
 ## Política de *Branches*
 Para a criação de _branches_ siga os seguintes passos e modelo:
