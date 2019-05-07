@@ -16,15 +16,24 @@ Diagramas umls estáticos são diagramas que tratam da parte estrutural do proje
 
 ### Diagrama de Classes
 Diagrama de classe mostra as diferentes classes que existem na aplicação e como ela se relacionam. Além disso, este diagrama é considerado estático pois, mostram todos os métodos e atributos das classes bem como os relacionamentos estáticos entre elas, ou seja, quais classes conhecem quais classes ou quais classes são parte das outras classes. Esse tipo de diagrama não mostram as mensagens entre elas. Nesse diagrama os retângulos são a representação das classes e dentro dos retângulos menores existem atributos e métodos que são diferenciados com a utilização de "()" para diferenciar os tipos.
-![diagrama_classes](../assets/images/diagrama_classes.png)
+### CD01
+![diagrama_classes](../../assets/desenho/uml/diagrama_classes.png)
 
 ### Diagrama de Pacotes
 Diagrama de pacotes é básicamente o empacotamento das classes da aplicação. Apesar dos critérios de empacotamento ser subjetivo tendem a ser empacotados classes que tem relacionamento é ou modificação conjunta na aplicação. Pode ser usado para mostrar a arquitetura do sistema em questão. Nesse diagrama os retângulos em volta das classes representam o pacote, ou seja, conjunto de classes correlacionadas. Os retângulos menores são as classes pertecentes e as ligações representam a comunicação entre as classes.
-![diagrama_pacotes](../assets/uml/uml_pacotes.png)
+### SD01
+![diagrama_pacotes](../../assets/desenho/uml/diagrama_pacotes1.jpg)
+
+### SD02
+![diagrama_pacotes](../../assets/desenho/uml/diagrama_pacotes2.png)
 
 ### Diagrama de implantação
 No contexto do UML o diagrama de implantação está relacionada a classificação de diagramas estruturais, pois descreve aspectos do sistema da aplicação em si. Esse diagrama é relacionado a parte física da aplicação, ou seja, a parte do hardware em que essa aplicação será implantada. Nesse diagrama as caixas em 3d são os nós da aplicação e os retângulos estão relacionados as classes da aplicação, no nosso caso os serviços, e a ligação entre elas são os protocolos de comunicação que fazem a ponte entre nós ou classes.
-![implantacao](https://i.imgur.com/oFSxr4I.png)
+### ID01
+![implementacao1](../../assets/desenho/uml/diagrama_implementacao1.png)
+### ID02
+![implantacao2](https://i.imgur.com/oFSxr4I.png)
+
 
 ## Referências
 WIKIPEDIA, Diagrama de pacotes. Disponível em:
