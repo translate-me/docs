@@ -13,8 +13,6 @@
 
 ### 1.2. Escopo
 
-### 1.3. Referências
-
 ## 2. Segurança e Privacidade
 
 <iframe frameborder="0" style="width:160%;height:400px;" src="https://www.draw.io/?lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1#G1MJrp5h0Ak-EyIoB_GbuJ2dNzD2Rnbodu"></iframe>
@@ -24,3 +22,5 @@
 <iframe frameborder="0" style="width:200%;height:400px;" src="https://www.draw.io/?lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1#G160iv-Dl_g6iKoA6OzDitaviQzbkm-6mR"></iframe>
 
 ## 4. Flexibilidade
+
+## 5. Referências
