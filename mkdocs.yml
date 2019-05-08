@@ -10,7 +10,7 @@ nav:
       - Benchmarking: documentos/projeto/benchmarking.md
       - Identidade Visual: documentos/projeto/identidade_visual.md
     - Documentos de Gerência:
-      - GQM: documentos/gerencia/gqm.md
+      - Goal Question Metric: documentos/gerencia/gqm.md
       - Política de Contribuição: documentos/gerencia/pol_contribuicao.md
       - Canvas: documentos/gerencia/canvas.md
       - Termo de Abertura do Projeto: documentos/gerencia/tap.md

@@ -40,11 +40,10 @@ Todos os textos do site devem estar na fonte *Raleway*, cuja ausência de serifa
 ![fonte](../../assets/documentos/projeto/id_visual_fonte.jpeg)
 
 
-
 ## 5. Cores
 ![cores](../../assets/documentos/projeto/id_visual_cores.jpeg)
 
-### 5.1. **Cor primária:**
+### 5.1. **Cor primária**
 
 Em prol do tom de seriedade, confiança, crescimento e sobriedade,a cor verde indigo foi escolhida como cor primária para os elementos da aplicação.
 
@@ -52,7 +51,7 @@ Em prol do tom de seriedade, confiança, crescimento e sobriedade,a cor verde in
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cor contrastante: Branco fantasma  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Relação de contraste: 10.36  
 
-### 5.2. **Cores secundárias:**
+### 5.2. **Cores secundárias**
 
 Como acompanhamento para a cor verde indigo principal, as demais cores agem como auxílio, compondo ainda a ideia de seriedade transmitida e contrastando com o tom principal, auxiliando no uso e identificação de diferenças de coloração por pessoas com vertentes do daltonismo.
 
