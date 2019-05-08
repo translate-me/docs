@@ -14,7 +14,7 @@
 ## 2. Objetivo
 
 O principal objetivo de realizar o mapa mental é:
-* Vizualizar a nivel macro a ideia 
+* Vizualizar a nivel macro a ideia
 * Ter ideias durante a elaboração
 * Ter um noção de modo geral
 
@@ -23,18 +23,18 @@ O principal objetivo de realizar o mapa mental é:
 <p align="justify">A realização dos mapas mentais consiste em realizar desenhos e ou anotações em tempo real ou brainstorming,podendo mostrar, de forma rápida e prática, ideias muitas vezes expressas em apenas uma a três palavras onde irradiam a partir de um tema central. Especificando cada ação que pode ser feita na aplicação.
 </p>
 
-## Artefato
+## 5. Artefato
 
 ![mapa_mental](../../assets/requisitos/elicitacao/mapa_mental_traducao.png)
 
 
-## 5. Conclusão
+## 6. Conclusão
 
 <p align="justify">
 Após a criação e visualização final do mapa mental, foi possível observar como um todo alguns detalhes e possíveis problemas da aplicação. Trazendo conhecimentos e até requisitos futuros.
 </p>
 
-## 6. Referências
+## 7. Referências
 
 BORNEMANMAPS, Elizabeth - What are Mental Maps? / September 9, 2014
 [Link](https://www.geolounge.com/mental-maps/)

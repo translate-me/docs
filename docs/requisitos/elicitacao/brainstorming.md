@@ -9,13 +9,13 @@
 | 13/04/2019 | 1.1 | Adicionando Informações do Brainstorming Realizado | Alexandre Miguel |
 |05/05/2019| 1.2 | Incluindo referências | Letícia Meneses |
 
-## Introdução
+## 1. Introdução
 
 O brainstorming é uma técnica para juntar informações e levar a pessoa ou equipe a um pensamento criativo, em que, de forma organizada, várias pessoas falam e expõem seus pontos de vista e chegam em um denominador comum. A ideia é que a equipe possa obter ideias inovadoras para aplicar e colocar um projeto em prática. Uma característica marcante no brainstorming é abranger todas as ideias, sem dispersar nenhum e considerar a todos. Tudo o que for sugerido deve ser anotado e analisado, tendo como foco a viabilidade de ser colocado em prática.
 
 O inicio da compreensão do projeto junto com a equipe foi feito a partir de um brainstorming para definir melhor a ideia proposta. As ideias foram juntadas em grupos e foram definidos épicos a partir disso.
 
-## Informações
+## 2. Informações
 
 | Dados | Informações|
 | --- | --- |
@@ -23,30 +23,30 @@ O inicio da compreensão do projeto junto com a equipe foi feito a partir de um 
 | **Participantes** | Alexandre Miguel <br> Gabriela Guedes <br> Helena Goulart <br> Luiz Guilherme <br> Renan Schadt <br> Victor Hugo |
 | **Local** | FGA |
 
-## Metodologia
+## 3. Metodologia
 
-### Etapa 1 - Ideias
+### 3.1. Etapa 1 - Ideias
 
 Para essa primeira etapa, diversas ideias foram ditas em formas de palavras sem contexto específico, sendo essas palavras anotadas no quadro para memorzação e posterior manipulação. Foi produzido, também, um áudio dessa etapa, disposto no link: [Áudio_Brainstorming](https://drive.google.com/file/d/1eQUj43HaWzndOX-65U22wZPKXpsnREv8/view?usp=sharing).
 
-#### Palavras Anotadas
+#### 3.1.1. Palavras Anotadas
 
 ![brainstorming_1](../../assets/requisitos/elicitacao/brainstorming_1.jpg)
 
-### Etapa 2 - Seleção
+### 3.2. Etapa 2 - Seleção
 
 Após as palavras propostas estarem todas no quadro, foi realizado um processo de filtragem, em que o significado de cada palavra no projeto foi discutido, sua relevância também foi mensurada e, palavras que representam um escopo maior, foram selecionadas e atribuídas o papel de representantes de pacotes, como é visível na figura a seguir.
 
-#### Palavras Selecionadas
+#### 3.2.1. Palavras Selecionadas
 
 ![brainstorming_2](../../assets/requisitos/elicitacao/brainstorming_2.jpg)
 
-### Etapa 3 - Transcrição
+### 3.3. Etapa 3 - Transcrição
 
 A Etapa de transcrição ocorreu tanto durante a **Etapa 1** quanto na **Etapa 2** , perimitindo observações e uma estrutura em lista que facilita a visualização dos aspectos elaborados na discussão, permitindo que outras abordagens fossem realizadas para a elaboração do escopo do produto.
 
 
-#### Definição de Tópicos
+#### 3.3.1. Definição de Tópicos
 
 |  Tópico | Associações |
 | --- | --- |
@@ -61,29 +61,29 @@ A Etapa de transcrição ocorreu tanto durante a **Etapa 1** quanto na **Etapa 2
 
 De forma geral, foi possível notar um afunilamento dos tópicos da tabela anterior com os épicos do [Backlog](../../modelagem/backlog_geral) montado bem como dos servições analisados na arquitetura.
 
-### Etapa 4 - Prototipação
+### 3.4. Etapa 4 - Prototipação
 
 Para alinhamento da equipe com a aplicação elaborada após as etapas mais abstratas, foi realizada uma prototipação conceitual, contando com apoio da representação visual no quadro branco para a elaboração de alguns fluxos da aplicação, como o fluxo de login, cadastro e traduções.
 
-#### Protótipo - Login/Cadastro do Autor
+#### 3.4.1. Protótipo - Login/Cadastro do Autor
 
 Representação do primeiro esboço do fluxo de login e cadastro do autor, com as informações principais
 
 ![brainstorming_3_prototipo](../../assets/requisitos/elicitacao/brainstorming_3_prototipo.jpg)
 
 
-#### Protótipo - Login/Cadastro do Tradutor
+#### 3.4.2. Protótipo - Login/Cadastro do Tradutor
 
 Representação do primeiro esboço do fluxo de login e cadastro do tradutor, com as informações princiais necessárias
 
 ![brainstorming_4_prototipo](../../assets/requisitos/elicitacao/brainstorming_4_prototipo.jpg)
 
 
-### Conclusão
+## 4. Conclusão
 
 Após a realização do Brainstorming, a equipe concluiu que a formalização dos requisitos seria realizada individualmente, em prol da montagem de backlogs individuais que representassem as abordagens para o desenvolvimento da aplicação esboçada, o que é melhor descrito no documento de [Backlog Geral](../../modelagem/backlog_geral).
 
-### Referências
+## 5. Referências
 Conhecimentos adquiridos na disciplina de [Requisitos de Software](https://matriculaweb.unb.br/graduacao/disciplina.aspx?cod=201308)
 
 [Novo Negócio](https://novonegocio.com.br/empreendedorismo/o-que-e-brainstorming/)
