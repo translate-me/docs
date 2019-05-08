@@ -1541,7 +1541,7 @@
 <h2 id="2-metodologias-de-base">2. Metodologias de Base</h2>
 <h3 id="21-scrum">2.1 Scrum</h3>
 <p>O Scrum é uma metodologia ágil que contém diversas rotinas para manter a equipe engajada e atualizada sobre o projeto, a se organizarem enquanto resolvem um problema e a refletirem sobre os êxitos e fracassos para melhorarem continuamente. Scrum é um framework estrutural usado para gerenciar o desenvolvimento de produtos. Ele é fundado nos princípios de transparência, inspeção e adaptação. Aos princípios do Scrum integramos eventos, papéis e artefatos, administrando as relações e interações entre eles.</p>
-<p>Os papéis do Scrum são Product Owner, Scrum Master e time de desenvolvimento. O Product Owner é o responsável por maximizar o valor do produto e gerenciar o Product Backlog, garantindo que ele está claro para toda equipe. O Scrum Master tem a função de garantir que a equipe está cumprindo as regras da metodologia. O time de desenvolvimento, tem a função de incrementar o produto a cada sprint.</p>
+<p>Os papéis do Scrum são Product Owner, Architect, Scrum Master e time de desenvolvimento. O Product Owner é o responsável por maximizar o valor do produto e gerenciar o Product Backlog, garantindo que ele está claro para toda equipe. O Architect é responsável por elaborar a arquitetura do software e garantir que ela seja seguida. O Scrum Master tem a função de garantir que a equipe está cumprindo as regras da metodologia. O time de desenvolvimento, tem a função de incrementar o produto a cada sprint.</p>
 <p>Os eventos do Scrum são: Sprint (período de um mês ou menos onde a equipe se dedica a incrementar o produto), Planejamento de Sprint (reunião ao início de cada sprint onde a equipe decide o que será feito nesta), Review e Retrospectiva da Sprint (a equipe analisa como foi a sprint e quais atividades atividades e artefatos alocados a ela foram finalizados) e Daily (reunião diária para alinhamento da equipe sobre o andamento da sprint).</p>
 <p>Os artefatos do Scrum são: Product Backlog (lista ordenada de tudo que é necessário no produto), Sprint Backlog (conjunto de itens do backlog do produto selecionados para a sprint) e Incremento (soma de todos os itens do backlog do produto completados durante uma sprint).</p>
 <p><img alt="" src="https://i2.wp.com/www.scrumportugal.pt/wp-content/uploads/como-funciona-o-scrum.png?fit=1300%2C570" /></p>
@@ -1570,13 +1570,27 @@
 </ol>
 <p>Extreme Programming é dinâmica e flexível, entre as suas "boas práticas" é possível citar: TDD, Comentários em código, diversas entregas pequenas, programação em pares, testes de aceitação, planejamento por pontos, refatoramento, presença constante do cliente, integração contínua, entre outros.</p>
 <h3 id="24-rup">2.4 RUP</h3>
-<p>Segundo o documento descritivo do IBM Rational Unified Process, em mais de 20 anos de experiência trabalhando com clientes em milhares de projetos, o grupo IBM Rational construiu uma biblioteca de práticas comprovadas para desenvolvimento de softwares, extensíveis e escaláveis para se adaptarem às necessidades específicas dos projetos. O IBM Rational Unified Process (ou IBM RUP), é uma biblioteca abrangente que fornece práticas centradas em torno de um conjunto de princípios que a IBM achou que caracterizam as mais bem sucedidas organizações de sistemas e software do mundo:
-* Adaptar o processo
-* Balencear as prioridades dos <strong>stakeholders</strong>
-* Colaboração entre as equipes
-* Demonstrar valor iterativamente
-* Elevar o nível de abstração
-* Foco na qualidade</p>
+<p>Segundo o documento descritivo do IBM Rational Unified Process, em mais de 20 anos de experiência trabalhando com clientes em milhares de projetos, o grupo IBM Rational construiu uma biblioteca de práticas comprovadas para desenvolvimento de softwares, extensíveis e escaláveis para se adaptarem às necessidades específicas dos projetos. O IBM Rational Unified Process (ou IBM RUP), é uma biblioteca abrangente que fornece práticas centradas em torno de um conjunto de princípios que a IBM achou que caracterizam as mais bem sucedidas organizações de sistemas e software do mundo:</p>
+<ul>
+<li>
+<p>Adaptar o processo</p>
+</li>
+<li>
+<p>Balencear as prioridades dos <strong>stakeholders</strong></p>
+</li>
+<li>
+<p>Colaboração entre as equipes</p>
+</li>
+<li>
+<p>Demonstrar valor iterativamente</p>
+</li>
+<li>
+<p>Elevar o nível de abstração</p>
+</li>
+<li>
+<p>Foco na qualidade</p>
+</li>
+</ul>
 <p>Esses princípios ajudam a melhorar a produtividade individual e a colaboração de equipe para criar software e sistemas de alta qualidade, permitindo a construção de aplicações flexíveis que podem crescer e se adaptar.</p>
 <p>"Para projetos menores com equipes fixas e tecnologia conhecida, os processos podem ser simples e informais. Para projetos maiores e distribuídos, que usam mais tecnologias e têm que estar de acordo com padrões mais rígidos, os processos se tornam mais complexos
 e disciplinados." (IBM Rational Unified Process - Disponibilizado em: ftp://public.dhe.ibm.com//software/pdf/br/RUP_DS.pdf) </p>
@@ -1586,41 +1600,93 @@ e disciplinados." (IBM Rational Unified Process - Disponibilizado em: ftp://publ
 <p>Decidimos utilizar uma metodologia deste tipo, pois nenhuma das metodologias puristas se encaixava em nosso contexto. Seja pelo excesso de documentação, no caso do RUP; excesso de rotinas, no caso do Scrum; ou pela falta destas, no caso do XP e Kanban.</p>
 <p>Nos sub-tópicos abaixo mostramos quais elementos das metodologias definidas acima foram aplicados no projeto.</p>
 <h3 id="31-elementos-scrum">3.1 Elementos SCRUM</h3>
-<p>As seguintes rotinas provindas do SCRUM foram utilizadas no projeto:
-1. Sprints com duas semanas de duração
-2. Reunião de Planejamento da Sprint
-3. Reunião de Review da Sprint
-4. Reunião de Retrospectiva da Sprint
-5. Reuniões com time-box</p>
-<p>Os seguintes artefatos provindos do SCRUM foram utilizados no projeto:
-1. Product Backlog
-2. Sprint Backlog
-3. Documento de Planejamento da Sprint
-4. Documento de Revisão da Sprint
-5. Definição de pronto</p>
-<p>O modelo de papéis do SCRUM foi utilizado no projeto, contando com Product Owner, Scrum Master e Dev Team.
+<p>As seguintes rotinas provindas do SCRUM foram utilizadas no projeto:</p>
+<ol>
+<li>
+<p>Sprints com duas semanas de duração</p>
+</li>
+<li>
+<p>Reunião de Planejamento da Sprint</p>
+</li>
+<li>
+<p>Reunião de Review da Sprint</p>
+</li>
+<li>
+<p>Reunião de Retrospectiva da Sprint</p>
+</li>
+<li>
+<p>Reuniões com time-box</p>
+</li>
+</ol>
+<p>Os seguintes artefatos provindos do SCRUM foram utilizados no projeto:</p>
+<ol>
+<li>
+<p>Product Backlog</p>
+</li>
+<li>
+<p>Sprint Backlog</p>
+</li>
+<li>
+<p>Documento de Planejamento da Sprint</p>
+</li>
+<li>
+<p>Documento de Revisão da Sprint</p>
+</li>
+<li>
+<p>Definição de pronto</p>
+</li>
+</ol>
+<p>O modelo de papéis do SCRUM foi utilizado no projeto, contando com Product Owner, Architect, Scrum Master e time de desenvolvimento.
 O SCRUM é a metodologia base do projeto, principalmente no que se refere a rotinas, provendo maneiras eficazes para controle do grupo durante o desenvolvimento. Os artefatos do SCRUM servem como base para realizar as rotinas.</p>
 <h3 id="32-elementos-kanban">3.2 Elementos Kanban</h3>
 <p>O grupo decidiu aplicar o Kanban para possibilitar o acompanhamento do progresso das tarefas definidas, através do plug-in ZenHub. As tarefas são bem documentadas e cada "card" pode receber comentários, com dúvidas e outros tipos de feedback.</p>
 <p>Aplicamos as seis práticas básicas do Kanban: Visualizar o fluxo de trabalho (workflow), limitar a quantidade de trabalho em andamento (WIP), gerenciar e medir o fluxo, tornar as políticas do processo explícitas, implementar loops de feedback e usar modelos para reconhecer oportunidades de melhoria, para extrairmos o máximo da técnica.</p>
 <p>Como nossa metodologia não contém dailys, uma parte da comunicação é feita nas issues do ZenHub, que são usadas para verificar critérios de aceitação, demandar revisão, comunicar dificuldades, esclarecer pontos críticos, entre outros.</p>
 <h3 id="33-elementos-xp">3.3 Elementos XP</h3>
-<p>Os seguintes artefatos e rotinas do XP foram adotados: 
-1. Comentários em Código
-2. Entregas Pequenas
-3. Programação em Pares
-4. Planejamento por Pontos
-5. Refatoramento
-6. Integração Contínua</p>
+<p>Os seguintes artefatos e rotinas do XP foram adotados: </p>
+<ol>
+<li>
+<p>Comentários em Código</p>
+</li>
+<li>
+<p>Entregas Pequenas</p>
+</li>
+<li>
+<p>Programação em Pares</p>
+</li>
+<li>
+<p>Planejamento por Pontos</p>
+</li>
+<li>
+<p>Refatoramento</p>
+</li>
+<li>
+<p>Integração Contínua</p>
+</li>
+</ol>
 <p>A equipe segue os cinco princípios básicos do XP: comunicação, simplicidade, feedback constante, coragem e respeito.</p>
 <h3 id="34-elementos-rup">3.4 Elementos RUP</h3>
-<p>Os seis princípios básicos do RUP são seguidos pelo grupo, são eles:
-1. Adaptar o processo
-2. Balencear as prioridades dos <strong>stakeholders</strong>
-3. Colaboração entre as equipes
-4. Demonstrar valor iterativamente
-5. Elevar o nível de abstração
-6. Foco na qualidade</p>
+<p>Os seis princípios básicos do RUP são seguidos pelo grupo, são eles:</p>
+<ol>
+<li>
+<p>Adaptar o processo</p>
+</li>
+<li>
+<p>Balencear as prioridades dos <strong>stakeholders</strong></p>
+</li>
+<li>
+<p>Colaboração entre as equipes</p>
+</li>
+<li>
+<p>Demonstrar valor iterativamente</p>
+</li>
+<li>
+<p>Elevar o nível de abstração</p>
+</li>
+<li>
+<p>Foco na qualidade</p>
+</li>
+</ol>
 <p>Como o RUP é uma solução privada e altamente personalizável, o grupo decidiu apenas seguir alguns padrões e templates dessa metodologia. Podemos destacar modelos UML estáticos e dinâmicos, templates de diversos documentos como visão, arquitetura, termo de abertura do projeto, entre outros.</p>
 <h2 id="4-diagramas">4. Diagramas</h2>
 <p>Abaixo estão 11 diagramas, modelados utilizando a notação BPMN e o software modelador de processos Bizagi, que ilustram a organização, tarefas e artefatos gerados pelo grupo, caracterizando o que chamamos de metodologia.</p>
@@ -1628,8 +1694,8 @@ O SCRUM é a metodologia base do projeto, principalmente no que se refere a roti
 <p>Os títulos dos diagramas mostram qual processo ele define. O diagrama 4.1 compreende o funcionamento geral da nossa metodologia, contendo sub-processos que representam outros diagramas, os artefatos nesse diagrama foram omitidos para melhorar a clareza deste, de qualquer forma eles estão detalhados nos modelos sequentes. Os diagramas 4.2 a 4.6, compreendem processos realizados no começo do projeto, cada um deles realizado uma única vez, antes da fase de desenvolvimento, marcando um rastro e funcionando como um passo-a-passo do que foi feito. Os diagramas 4.7 a 4.11 compreendem processos cíclicos, que ocorrem ao longo do desenvolvimento diversas vezes e ilustram o funcionamento das sprints neste projeto.</p>
 <h3 id="41-funcionamento-geral">4.1 Funcionamento Geral</h3>
 <p>Funcionamento Geral - V1.0
-<img alt="" src="../assets/metodologia/bpmn_funcionamento_sprints.png" />
-Funcionamento Geral - V1.1
+<img alt="" src="../assets/metodologia/bpmn_funcionamento_sprints.png" /></p>
+<p>Funcionamento Geral - V1.1
 <img alt="" src="../assets/metodologia/bpmn_funcionamento_sprints_v2.png" /></p>
 <h3 id="42-processo-de-decisao-de-tema">4.2 Processo de Decisão de Tema</h3>
 <p>Processo de Decisão de Tema - V1.0
