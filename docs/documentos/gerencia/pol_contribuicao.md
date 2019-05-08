@@ -86,7 +86,7 @@ Para a criação de um _pull request_ direcionado a branch _master_, deve-se seg
  
 ### _Reviewers_ 
 
-* Assinale os _reviewers_, ou seja, aqueles responsáveis à análise do _pull request_. Por exemplo, caso sua _feature_ esteja relacionada a arquitetura do projeto, assinale o **EPS** que desempenha esse papel.
+* Assinale os _reviewers_, ou seja, aqueles responsáveis à análise do _pull request_. Por exemplo, caso sua _feature_ esteja relacionada a arquitetura do projeto, assinale o membro da equipe que desempenha esse papel.
 
 ![](https://user-images.githubusercontent.com/18364727/44523705-31385e00-a6b1-11e8-9e2b-ce3e14702132.png)
 
