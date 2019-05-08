@@ -51,12 +51,19 @@ Um rich picture é um desenho de uma situação ou fluxo, que ilustra seus eleme
 
 ### 3.2 5W2H
 O 5W2H é um método simples e de fácil aplicação para elucidar a visão dos stakeholders sobre o produto, respondendo sete questões fundamentais, que dão o nome ao método.
+
 1. O que será feito? Descrição do produto (What).
+
 2. Por que será feito? Razão de existência do produto (Why).
+
 3. Onde será feito? Local onde é feito o desenvolvimento (Where).
+
 4. Quando será feito? Datas, prazos (When).
+
 5. Quem irá fazer? Responsáveis pelo produto (Who).
+
 6. Como será feito? Metodologia, processos envolvidos (How).
+
 7. Quanto irá custar? Custo de desenvolvimento, despesas envolvidas (How much).
 
 ### 3.3 Mapa Mental
@@ -156,37 +163,57 @@ Os temas propostos foram julgados pelos participantes do grupo e no final foi de
 
 ### 5.1 Marketplace de Video Aulas
 Pontos Positivos:
+
 1. Tema conhecido entre os membros.
+
 2. Permite uso de linguagens e frameworks de preferência do grupo.
+
 3. Plataforma com apelo para o universo acadêmico.
+
 4. Ótimo portfólio por se tratar de um marketplace.
 
 Pontos Negativos:
+
 1. Concorrência gigantesca e estabelecida no mercado (Udemy, Udacity, entre outros).
+
 2. Alguns membros do grupo não iriam obter novos conhecimentos.
+
 3. Poucas inovações para se diferenciar da concorrência.
 
 ### 5.2 Crawler para Mineração de Dados
 Pontos Positivos:
+
 1. Tema extremamente relevante para o mercado.
+
 2. Pouca concorrência.
+
 3. Permite uso de linguagens e frameworks de preferência do grupo.
+
 4. Tema despertou interesse do grupo.
 
 Pontos Negativos:
+
 1. Incerteza se o escopo é adequado a matéria.
+
 2. Perigos de lidar com dados de terceiros.
+
 3. Completo desconhecimento por parte da maioria dos membros do grupo sobre todos aspectos e particularidades do produto.
 
 ### 5.3 WebApp para Tradução de Artigos:
 Pontos Positivos:
+
 1. Permite uso de linguagens e frameworks de preferência do grupo.
+
 2. Plataforma com apelo para o universo acadêmico.
+
 3. Pouca concorrência.
+
 4. Inovações relevantes para se diferenciar da concorrência.
 
 Pontos Negativos:
+
 1. Sistema com muitas regras de negócio.
+
 2. Nicho de mercado bem específico e exigente.
 
 ### 5.4 Escolha do Tema
