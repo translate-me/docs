@@ -1,8 +1,8 @@
-# Ponto de Controle
+# Reunião da Sprint 3
 
 | Data da Reunião | Participantes | Meio |
 | --- | --- | --- |
-| **29/04/2019** | Alexandre Miguel <br> Davi Alves <br> Gabriela Guedes <br> Helena Goulart <br> Letícia Meneses <br> Renan Schadt <br> Luiz Guilherme <br> Rômulo Vinícius <br> Victor Hugo | Hangouts |
+| 29/04/2019 | Alexandre Miguel <br> Davi Alves <br> Gabriela Guedes <br> Helena Goulart <br> Letícia Meneses <br> Renan Schadt <br> Luiz Guilherme <br> Rômulo Vinícius <br> Victor Hugo | Hangouts |
 
   Reunião realizada para o planejamento da sprint, seguindo os pontos decididos e discutidos pela equipe e tarefas a serem feitas na semana.
 
