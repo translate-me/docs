@@ -57,11 +57,11 @@ Permite a criação dinâmica de objetos com base em algoritmos facilmente inter
 
 ## Conclusão
 
+A implementação destes GOFs dentro do projeto se aplicam em diversos aspectos, que vão desde uma implementação relacionada as linguagens escolhidas, quanto a complexidade de criação de instâncias de objetos. Para o 'Prototype', pode ser aplicado devido a utilização do Javascript. No Javascript, a principal classe é a 'Object' e todas as demais classes à herdam. Portanto, todas as classes do Javascript possuem disponíveis um atributo chamado 'prototype' e portanto, toda classe criada, pode implementar este padrão de projeto, permitindo a clonagem de uma classe e adicionar um determinado atributo ou função, através do seu protótipo.
 
-* prototype - Talvez a linguagem Js já implementa por default o prototype. 
-* object pool - não existe ainda uma complexidade para o uso
-* builder - aplicar para mostrar um comparativo usando ele e sem o uso dele
+Já para a implementação do Object Pool, não é tão simples, pois requere um grau de complexidade ainda não alcançado na aplicação e de acordo com o escopo determinado, também não deve alcançar. Tal padrão de projeto, pode ser implementado, porém sem uma real necessidade e portanto, não sera implementado até o momento. 
 
+Diferentemente, o Builder é um padrão de projeto essencial e pode ser aplicado em diversos aspectos do software, como existem diferentes categorias de texto disponíveis, recomenda-se a implementação criando um construtor de textos e uma especificação em cada uma das categorias de texto. Além disso, o construtor pode ser implementado para efeitos comparativos sobre performance, analisando em um possível benchmarking, a velocidade da criação de um objeto desacoplado com e sem um construtor aplicado.
 
 ## Referencias
 
