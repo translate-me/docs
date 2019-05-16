@@ -1,4 +1,4 @@
-# Documentação de viabilidade do uso de GoFs criacionais 
+# Documentação de viabilidade do uso de GoFs criacionais
 
 ### Histórico de Revisão:
 | Data | Versão | Descrição | Autor |
@@ -55,18 +55,48 @@ Permite a criação dinâmica de objetos com base em algoritmos facilmente inter
 * A adição de nova funcionalidade de criação sem alterar o código principal é necessária.
 * O controle de tempo de execução sobre o processo de criação é necessário.
 
+### 4. Abstract Factory
+
+![AbstractMethodAplication](http://www.dsc.ufcg.edu.br/~jacques/cursos/map/html/pat/abstractfactory2.gif)
+
+Exemplo de diagrama de classe UML para o desenho de padrão do modelo _"Abstract Factory"._
+
+#### Explicação
+Trata-se da criação de famílias de objetos relacionados ou dependentes por meio de apenas uma interface gráfica e sem que a classe concreta seja especificada. Logo, a estrutura mínima de um _Abstract Factory_ exige as estruturas da imagem acima.
+
+#### Quando deve ser usado
+- É utilizado quando um sistema deve ser independente de como seus produtos relacionados são criados e representados;
+- É aplicável em casos onde uma família de produtos foi projetada para uso conjunto e é necessária implementar uma restrição;
+
+É interessante ressaltar que ambos os pontos acima são aplicáveis no seguinte exemplo: um _software_ precisa ser utilizado em dois sistemas operacionais distintos, Windows e Ubuntu. Para isso, ele possui uma parte
+
+### Singleton
+
+![](https://cdn-images-1.medium.com/max/1200/1*WXXQZp1glrQxLqrQ_TDN7Q.png)
+
+#### Explicação
+
+Conforme incita o próprio nome, os padrões de projeto do tipo _Singleton_ possibilitam criar objetos únicos para os quais há apenas uma instância, permitindo acesso a ela através de um ponto global. Dessa forma, uma classe gerencia sua própria instância e nenhuma outra classe poderá gerenciá-la.
+
+#### Quando deve ser usado
+
+- O _Singleton_ é recomendado quando é necessário conhecer bem o ponto de acesso à classe de um objeto;
+- Quando é necessário controlar como e quando a instância será acessada.
+
 ## Conclusão
 
 A implementação destes GOFs dentro do projeto se aplicam em diversos aspectos, que vão desde uma implementação relacionada as linguagens escolhidas, quanto a complexidade de criação de instâncias de objetos. Para o 'Prototype', pode ser aplicado devido a utilização do Javascript. No Javascript, a principal classe é a 'Object' e todas as demais classes à herdam. Portanto, todas as classes do Javascript possuem disponíveis um atributo chamado 'prototype' e portanto, toda classe criada, pode implementar este padrão de projeto, permitindo a clonagem de uma classe e adicionar um determinado atributo ou função, através do seu protótipo.
 
-Já para a implementação do Object Pool, não é tão simples, pois requere um grau de complexidade ainda não alcançado na aplicação e de acordo com o escopo determinado, também não deve alcançar. Tal padrão de projeto, pode ser implementado, porém sem uma real necessidade e portanto, não sera implementado até o momento. 
+Já para a implementação do Object Pool, não é tão simples, pois requere um grau de complexidade ainda não alcançado na aplicação e de acordo com o escopo determinado, também não deve alcançar. Tal padrão de projeto, pode ser implementado, porém sem uma real necessidade e portanto, não sera implementado até o momento.
 
 Diferentemente, o Builder é um padrão de projeto essencial e pode ser aplicado em diversos aspectos do software, como existem diferentes categorias de texto disponíveis, recomenda-se a implementação criando um construtor de textos e uma especificação em cada uma das categorias de texto. Além disso, o construtor pode ser implementado para efeitos comparativos sobre performance, analisando em um possível benchmarking, a velocidade da criação de um objeto desacoplado com e sem um construtor aplicado.
 
 ## Referencias
 
-https://circle.visual-paradigm.com/category/uml-diagrams/gof-design/
-https://www.oodesign.com/object-pool-pattern.html
-https://medium.com/@sawomirkowalski/design-patterns-object-pool-e8269fd45e10
-https://circle.visual-paradigm.com/builder/
-https://www.oodesign.com/builder-pattern.html
+[1] https://circle.visual-paradigm.com/category/uml-diagrams/gof-design/ <br>
+[2] https://www.oodesign.com/object-pool-pattern.html <br>
+[3] https://medium.com/@sawomirkowalski/design-patterns-object-pool-e8269fd45e10 <br>
+[4] https://circle.visual-paradigm.com/builder/ <br>
+[5] https://www.oodesign.com/builder-pattern.html <br>
+[6] http://www.dsc.ufcg.edu.br/~jacques/cursos/map/html/pat/abstractfactory.htm <br>
+[7] https://www.devmedia.com.br/padrao-de-projeto-singleton-em-java/26392 <br>
