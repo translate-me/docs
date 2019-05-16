@@ -57,22 +57,28 @@ Permite a criação dinâmica de objetos com base em algoritmos facilmente inter
 
 ### 4. Abstract Factory
 
-![AbstractMethodAplication](http://www.dsc.ufcg.edu.br/~jacques/cursos/map/html/pat/abstractfactory2.gif)
+![AbstractMethodAplication](https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/F%C3%A1brica_Abstrata.png/356px-F%C3%A1brica_Abstrata.png)
 
 Exemplo de diagrama de classe UML para o desenho de padrão do modelo _"Abstract Factory"._
 
 #### Explicação
-Trata-se da criação de famílias de objetos relacionados ou dependentes por meio de apenas uma interface gráfica e sem que a classe concreta seja especificada. Logo, a estrutura mínima de um _Abstract Factory_ exige as estruturas da imagem acima.
+Trata-se da criação de famílias de objetos relacionados ou dependentes por meio de apenas uma interface gráfica e sem que a classe concreta seja especificada. Logo, a estrutura mínima de um _Abstract Factory_ exige todas as estruturas da imagem acima: <br>
+- <b> ProdutoAbstratoA e ProdutoAbstratoB: </b> classe abstrata para seus respectivos tipos de produtos;
+- <b> ProdutoA1, ProdutoA2, ProdutoB1 e ProdutoB2: </b> definem produtos criados pela fábrica concreta, que implementa a interface declarada em ProdutoAbstratoA (para ProdutoA1 e ProdutoA2) e em ProdutoAbstratoB (para ProdutoB1 e ProdutoB2);
+- <b> FabricaAbstrata: </b> classe ou interface abstrata para operações de criação de produtos;
+- <b> FabricaConcreta1 e FabricaConcreta2: </b> Implementam as operações para criar objetos para produtos concretos.
 
 #### Quando deve ser usado
 - É utilizado quando um sistema deve ser independente de como seus produtos relacionados são criados e representados;
 - É aplicável em casos onde uma família de produtos foi projetada para uso conjunto e é necessária implementar uma restrição;
 
-É interessante ressaltar que ambos os pontos acima são aplicáveis no seguinte exemplo: um _software_ precisa ser utilizado em dois sistemas operacionais distintos, Windows e Ubuntu. Para isso, ele possui uma parte
+É interessante ressaltar que ambos os pontos acima são aplicáveis no seguinte exemplo: um _software_ precisa ser utilizado em dois sistemas operacionais distintos, Windows e Ubuntu.
 
 ### Singleton
 
-![](https://cdn-images-1.medium.com/max/1200/1*WXXQZp1glrQxLqrQ_TDN7Q.png)
+![HowSingletonWorks](https://cdn-images-1.medium.com/max/1200/1*WXXQZp1glrQxLqrQ_TDN7Q.png)
+
+Exemplo de diagrama de classe UML para o desenho de padrão do modelo _"Singleton"._
 
 #### Explicação
 
@@ -81,7 +87,7 @@ Conforme incita o próprio nome, os padrões de projeto do tipo _Singleton_ poss
 #### Quando deve ser usado
 
 - O _Singleton_ é recomendado quando é necessário conhecer bem o ponto de acesso à classe de um objeto;
-- Quando é necessário controlar como e quando a instância será acessada.
+- É recomendado também quando é necessário controlar como e quando a instância será acessada.
 
 ## Conclusão
 
@@ -90,6 +96,10 @@ A implementação destes GOFs dentro do projeto se aplicam em diversos aspectos,
 Já para a implementação do Object Pool, não é tão simples, pois requere um grau de complexidade ainda não alcançado na aplicação e de acordo com o escopo determinado, também não deve alcançar. Tal padrão de projeto, pode ser implementado, porém sem uma real necessidade e portanto, não sera implementado até o momento.
 
 Diferentemente, o Builder é um padrão de projeto essencial e pode ser aplicado em diversos aspectos do software, como existem diferentes categorias de texto disponíveis, recomenda-se a implementação criando um construtor de textos e uma especificação em cada uma das categorias de texto. Além disso, o construtor pode ser implementado para efeitos comparativos sobre performance, analisando em um possível benchmarking, a velocidade da criação de um objeto desacoplado com e sem um construtor aplicado.
+
+Além disso, a Abstact Factory é um padrão de projeto que deixa os elementos acoplados, contudo exige uma aplicação um tanto quanto complexa devido aos seus componentes mínimos exigidos. Outros padrões de projeto, como o Factory Method por exemplo, permitem que o problema seja implementado no código sem tanta complexidade. 
+
+O Singleton costuma ser um padrão mais versátil considerando a simplicidade de seu conceito em relação aos demais padrões de projeto. Pode ser implementado em Python, C++, Java, Ruby, C# e PHP, e é bastante viável de ser utilizado dentro do translate.me.
 
 ## Referencias
 
