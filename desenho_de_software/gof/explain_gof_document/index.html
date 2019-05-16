@@ -1302,29 +1302,36 @@
 <li>O controle de tempo de execução sobre o processo de criação é necessário.</li>
 </ul>
 <h3 id="4-abstract-factory">4. Abstract Factory</h3>
-<p><img alt="AbstractMethodAplication" src="http://www.dsc.ufcg.edu.br/~jacques/cursos/map/html/pat/abstractfactory2.gif" /></p>
+<p><img alt="AbstractMethodAplication" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/F%C3%A1brica_Abstrata.png/356px-F%C3%A1brica_Abstrata.png" /></p>
 <p>Exemplo de diagrama de classe UML para o desenho de padrão do modelo <em>"Abstract Factory".</em></p>
 <h4 id="explicacao_3">Explicação</h4>
-<p>Trata-se da criação de famílias de objetos relacionados ou dependentes por meio de apenas uma interface gráfica e sem que a classe concreta seja especificada. Logo, a estrutura mínima de um <em>Abstract Factory</em> exige as estruturas da imagem acima.</p>
+<p>Trata-se da criação de famílias de objetos relacionados ou dependentes por meio de apenas uma interface gráfica e sem que a classe concreta seja especificada. Logo, a estrutura mínima de um <em>Abstract Factory</em> exige todas as estruturas da imagem acima: <br>
+- <b> ProdutoAbstratoA e ProdutoAbstratoB: </b> classe abstrata para seus respectivos tipos de produtos;
+- <b> ProdutoA1, ProdutoA2, ProdutoB1 e ProdutoB2: </b> definem produtos criados pela fábrica concreta, que implementa a interface declarada em ProdutoAbstratoA (para ProdutoA1 e ProdutoA2) e em ProdutoAbstratoB (para ProdutoB1 e ProdutoB2);
+- <b> FabricaAbstrata: </b> classe ou interface abstrata para operações de criação de produtos;
+- <b> FabricaConcreta1 e FabricaConcreta2: </b> Implementam as operações para criar objetos para produtos concretos.</p>
 <h4 id="quando-deve-ser-usado_3">Quando deve ser usado</h4>
 <ul>
 <li>É utilizado quando um sistema deve ser independente de como seus produtos relacionados são criados e representados;</li>
 <li>É aplicável em casos onde uma família de produtos foi projetada para uso conjunto e é necessária implementar uma restrição;</li>
 </ul>
-<p>É interessante ressaltar que ambos os pontos acima são aplicáveis no seguinte exemplo: um <em>software</em> precisa ser utilizado em dois sistemas operacionais distintos, Windows e Ubuntu. Para isso, ele possui uma parte</p>
+<p>É interessante ressaltar que ambos os pontos acima são aplicáveis no seguinte exemplo: um <em>software</em> precisa ser utilizado em dois sistemas operacionais distintos, Windows e Ubuntu.</p>
 <h3 id="singleton">Singleton</h3>
-<p><img alt="" src="https://cdn-images-1.medium.com/max/1200/1*WXXQZp1glrQxLqrQ_TDN7Q.png" /></p>
+<p><img alt="HowSingletonWorks" src="https://cdn-images-1.medium.com/max/1200/1*WXXQZp1glrQxLqrQ_TDN7Q.png" /></p>
+<p>Exemplo de diagrama de classe UML para o desenho de padrão do modelo <em>"Singleton".</em></p>
 <h4 id="explicacao_4">Explicação</h4>
 <p>Conforme incita o próprio nome, os padrões de projeto do tipo <em>Singleton</em> possibilitam criar objetos únicos para os quais há apenas uma instância, permitindo acesso a ela através de um ponto global. Dessa forma, uma classe gerencia sua própria instância e nenhuma outra classe poderá gerenciá-la.</p>
 <h4 id="quando-deve-ser-usado_4">Quando deve ser usado</h4>
 <ul>
 <li>O <em>Singleton</em> é recomendado quando é necessário conhecer bem o ponto de acesso à classe de um objeto;</li>
-<li>Quando é necessário controlar como e quando a instância será acessada.</li>
+<li>É recomendado também quando é necessário controlar como e quando a instância será acessada.</li>
 </ul>
 <h2 id="conclusao">Conclusão</h2>
 <p>A implementação destes GOFs dentro do projeto se aplicam em diversos aspectos, que vão desde uma implementação relacionada as linguagens escolhidas, quanto a complexidade de criação de instâncias de objetos. Para o 'Prototype', pode ser aplicado devido a utilização do Javascript. No Javascript, a principal classe é a 'Object' e todas as demais classes à herdam. Portanto, todas as classes do Javascript possuem disponíveis um atributo chamado 'prototype' e portanto, toda classe criada, pode implementar este padrão de projeto, permitindo a clonagem de uma classe e adicionar um determinado atributo ou função, através do seu protótipo.</p>
 <p>Já para a implementação do Object Pool, não é tão simples, pois requere um grau de complexidade ainda não alcançado na aplicação e de acordo com o escopo determinado, também não deve alcançar. Tal padrão de projeto, pode ser implementado, porém sem uma real necessidade e portanto, não sera implementado até o momento.</p>
 <p>Diferentemente, o Builder é um padrão de projeto essencial e pode ser aplicado em diversos aspectos do software, como existem diferentes categorias de texto disponíveis, recomenda-se a implementação criando um construtor de textos e uma especificação em cada uma das categorias de texto. Além disso, o construtor pode ser implementado para efeitos comparativos sobre performance, analisando em um possível benchmarking, a velocidade da criação de um objeto desacoplado com e sem um construtor aplicado.</p>
+<p>Além disso, a Abstact Factory é um padrão de projeto que deixa os elementos acoplados, contudo exige uma aplicação um tanto quanto complexa devido aos seus componentes mínimos exigidos. Outros padrões de projeto, como o Factory Method por exemplo, permitem que o problema seja implementado no código sem tanta complexidade. </p>
+<p>O Singleton costuma ser um padrão mais versátil considerando a simplicidade de seu conceito em relação aos demais padrões de projeto. Pode ser implementado em Python, C++, Java, Ruby, C# e PHP, e é bastante viável de ser utilizado dentro do translate.me.</p>
 <h2 id="referencias">Referencias</h2>
 <p>[1] https://circle.visual-paradigm.com/category/uml-diagrams/gof-design/ <br>
 [2] https://www.oodesign.com/object-pool-pattern.html <br>
