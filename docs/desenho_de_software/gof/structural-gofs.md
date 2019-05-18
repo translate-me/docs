@@ -4,6 +4,7 @@
 | Data | Versão | Descrição | Autor |
 |---|---|---|---|
 |18/05/2019|0.1|Adição dos topicos| Davi Alves e Victor Hugo|
+|18/05/2019|0.2|Adição do twin| Davi Alves e Victor Hugo|
 
 ## Introdução
 
@@ -34,6 +35,14 @@ Permite o controle de acesso em nível de objeto, agindo como uma passagem atrav
 * Funcionalidade adicionada é necessária quando um objeto é acessado.
 
 ### 2. Twin
+
+![alt](https://upload.wikimedia.org/wikipedia/commons/2/28/Iker_minta.png)
+   
+#### Explicação
+Twin é um padrão no qual apenas algumas linguagem que não aceitam multiplas heranças para uma mesma classe utilizam. Como por exemplo java, neste caso, se divide a classe ,que irá herdar as outras classes, em n classes onde n é o npumero de classes que serão herdadas, nesse caso cada uma dessas classes irão herdar de apenas uma classe especifica e depois as classes que foram dividias são ligadas com agregassões entre si.
+
+#### Quando deve ser usado
+* Quando tiver que fazer herança de várias classes a uma classe só e que a linguagem não tenha suporte para esse tipo de operação.
 
 ### 3. Module
 
