@@ -1,27 +1,29 @@
 # GoFs Criacionais
 
 ## Histórico de Revisão:
+
 | Data | Versão | Descrição | Autor |
 |---|---|---|---|
 | 20/05/2019 | 0.1 | Adicionando Multiton GOF | Gabriela Guedes |
 | 20/05/2019 | 0.2 | Adicionando Factory Method GOF | Renan Schadt |
+| 23/05/2019 | 0.3 | Adicionando Singleton e Abstract Factory GOFs | Helena Goulart | |
 
 ## 1. Introdução
 
-## 2. GoFs
+## 2. GoFs Criacionais
 
 ### 2.1 Factory Method
 
 #### 2.1.1 Definição
 O _Factory Method_ é um padrão de design criacional que provê uma interface para criação de objetos em uma superclasse, mas permite que as subclasses alterem o tipo dos objetos que serão criados, este padrão sugere a substituição de chamadas diretas de construção de objeto, com chamadas para um método especial de criação.
 
-O padrão _Factory Method_ contém os seguintes elementos: 
+O padrão _Factory Method_ contém os seguintes elementos:
 
 1. Uma interface ilustrando um Produto (ex: Carro), contendo métodos (ex: acelerar, frear) e atributos (ex: cor, volume do porta malas) que pertençam a todos produtos.
 
 2. Uma especialização de Produto, Produto Concreto (ex: Carro Honda, Carro Fiat), que contenha a implementação dos métodos definidos na interface, e possíveis métodos e atributos extras.
 
-3. Uma classe Criador (Fábrica de Carros), que contenha um método de criação base, que pode ser sobrescrito pelas suas filhas e que retorne um Produto. O Criador pode ser uma classe abstrata para forçar que as filhas implementem suas próprias versões de seus métodos, ou uma classe padrão, que pode criar um Produto Concreto. 
+3. Uma classe Criador (Fábrica de Carros), que contenha um método de criação base, que pode ser sobrescrito pelas suas filhas e que retorne um Produto. O Criador pode ser uma classe abstrata para forçar que as filhas implementem suas próprias versões de seus métodos, ou uma classe padrão, que pode criar um Produto Concreto.
 
 4. Uma especialização de Criador, Criador Concreto (ex: Fábrica de Carros Honda, Fábrica de Carros Fiat), que sobrescreve o método base do Criador e returna um tipo diferente de Produto.
 
@@ -80,8 +82,57 @@ print(b is c)
 * Inicializador da classe
 * Método `getInstance()` que retorna um objeto da classe
 
+## 2.3 Abstract Factory  
+
+### 2.3.1 Definição
+
+Trata-se da criação de famílias de objetos relacionados ou dependentes por meio de apenas uma interface gráfica e sem que a classe concreta seja especificada. Logo, a estrutura mínima de um _Abstract Factory_ exige todas as estruturas da imagem acima: <br>
+- <b> ProdutoAbstratoA e ProdutoAbstratoB: </b> classe abstrata para seus respectivos tipos de produtos;
+- <b> ProdutoA1, ProdutoA2, ProdutoB1 e ProdutoB2: </b> definem produtos criados pela fábrica concreta, que implementa a interface declarada em ProdutoAbstratoA (para ProdutoA1 e ProdutoA2) e em ProdutoAbstratoB (para ProdutoB1 e ProdutoB2);
+- <b> FabricaAbstrata: </b> classe ou interface abstrata para operações de criação de produtos;
+- <b> FabricaConcreta1 e FabricaConcreta2: </b> Implementam as operações para criar objetos para produtos concretos.
+
+### 2.3.2 Análise
+
+- É utilizado quando um sistema deve ser independente de como seus produtos relacionados são criados e representados;
+- É aplicável em casos onde uma família de produtos foi projetada para uso conjunto e é necessária implementar uma restrição;
+
+Em virtude dos pontos apresentados anterioremnte, conclui-se que ele pode ser aplicado no translate.me, como por exemplo: um mesmo usuário pode ser tradutor e usário a ter seu texto traduzido. Logo, ambos possuem características em comum, mas também características específicas que precisam ser desenvolvidas separadamente.
+
+### 2.3.3 Estrutura mínima
+
+![](../../../assets/desenho/padroes/abstract_factory.png)
+
+
+## 2.4 Singleton
+
+
+### 2.4.1 Definição
+
+Conforme incita o próprio nome, os padrões de projeto do tipo _Singleton_ possibilitam criar objetos únicos para os quais há apenas uma instância, permitindo acesso a ela através de um ponto global. Dessa forma, uma classe gerencia sua própria instância e nenhuma outra classe poderá gerenciá-la.
+
+### 2.4.2 Análise
+
+O _Singleton_ pode ser utilizado no translate.me. Por ser recomendado quando é necessário controlar como e quando a instância será acessada, como por exemplo dados de pagamento que incluem informações pessoais de cartão de cŕedito.
+
+
+### 2.4.3 Estrutura mínima
+
+![](../../../assets/desenho/padroes/Singleton.png)
+
+
 ## 3. Referências
+
+### Links de sites
+
+* [UFCG - Abstract Factory](http://www.dsc.ufcg.edu.br/~jacques/cursos/map/html/pat/abstractfactory.htm)  <br>
+* [DevMedia - Singleton](https://www.devmedia.com.br/padrao-de-projeto-singleton-em-java/26392). <br>
 * [Black Wasp - Multiton](http://www.blackwasp.co.uk/Multiton.aspx)
 * [Stack Overflow](https://stackoverflow.com/questions/669932/how-to-create-a-class-that-doesnt-re-create-an-object-with-identical-input-para)
 * [Refactoring Guru - Factory Method](https://refactoring.guru/design-patterns/factory-method)
 * [Aula GoFs Criacionais - Milene Serrano](https://aprender.ead.unb.br/mod/resource/view.php?id=46112)
+
+### Livros e artigos
+
+[1] NOBLE, James. GOF patterns for GUI Design. preprint of Macquarie University, Sydney Australia, 1997. <br>
+[2] ELLIS, Brian; STYLOS, Jeffrey; MYERS, Brad. The factory pattern in API design: A usability evaluation. In: Proceedings of the 29th international conference on Software Engineering. IEEE Computer Society, 2007. p. 302-312
