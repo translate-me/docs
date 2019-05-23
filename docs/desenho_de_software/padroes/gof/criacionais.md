@@ -115,7 +115,6 @@ Conforme incita o próprio nome, os padrões de projeto do tipo _Singleton_ poss
 
 O _Singleton_ pode ser utilizado no translate.me. Por ser recomendado quando é necessário controlar como e quando a instância será acessada, como por exemplo dados de pagamento que incluem informações pessoais de cartão de cŕedito.
 
-
 ### 2.4.3 Estrutura mínima
 
 ![](../../../assets/desenho/padroes/Singleton.png)
