@@ -2,6 +2,11 @@
 
 ## Proxy
 ### O que é?
+Responsável por controlar o acesso ao objeto (OU CLASSE, PODEM MUDAR ISSO AQUI SE QUISEREM ) e modificar seu comportamento, agindo como um "substituto" do objeto real.
+
+#### Benefícios
+* Segurança
+* Evita duplicação de obejtos, aumentando a eficiência
 
 ### Exemplo em Java
 ![](../../../assets/desenho/padroes/DiagramaProxy.png)
