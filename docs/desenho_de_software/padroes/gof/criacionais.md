@@ -20,7 +20,7 @@ Trata-se da criação de famílias de objetos relacionados ou dependentes por me
 - É utilizado quando um sistema deve ser independente de como seus produtos relacionados são criados e representados;
 - É aplicável em casos onde uma família de produtos foi projetada para uso conjunto e é necessária implementar uma restrição;
 
-É interessante ressaltar que ambos os pontos acima são aplicáveis no seguinte exemplo: um mesmo usuário pode ser tradutor e usário a ter seu texto traduzido. Logo, ambos possuem características em comum, mas também características específicas que precisam ser desenvolvidas separadamente.
+Em virtude dos pontos apresentados anterioremnte, conclui-se que ele pode ser aplicado no translate.me, como por exemplo: um mesmo usuário pode ser tradutor e usário a ter seu texto traduzido. Logo, ambos possuem características em comum, mas também características específicas que precisam ser desenvolvidas separadamente.
 
 ### Estrutura mínima
 
@@ -36,7 +36,7 @@ Conforme incita o próprio nome, os padrões de projeto do tipo _Singleton_ poss
 
 ### Análise
 
-O _Singleton_ é recomendado quando é necessário controlar como e quando a instância será acessada, como por exemplo dados de pagamento que incluem informações pessoais de cartão de cŕedito.
+O _Singleton_ pode ser utilizado no translate.me. Por ser recomendado quando é necessário controlar como e quando a instância será acessada, como por exemplo dados de pagamento que incluem informações pessoais de cartão de cŕedito.
 
 
 ### Estrutura mínima
