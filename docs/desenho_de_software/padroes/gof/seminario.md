@@ -13,7 +13,7 @@ Responsável por controlar o acesso ao objeto (OU CLASSE, PODEM MUDAR ISSO AQUI 
 Veja o exemplo completo no [repositório](https://github.com/translate-me/exemplosGOF/tree/master/proxy).
 
 ### É aplicavel em nosso projeto?
-A estrutura do Proxy é facilmente aplicável no translate.me. Veja abaixo alguns exemplos iniciais de restrições que podem ser implementadas por proxy:
+A estrutura do proxy é facilmente aplicável no translate.me. Veja abaixo alguns exemplos iniciais de restrições que podem ser implementadas por proxy:
 
 * __Validação da criação do perfil tradutor:__ Ao criar um perfil de tradutor ele deve ser associado a um usuário que ainda não possui um perfil de tradutor, e como o usuário cria o perfil através da plataforma, ele deve estar logado.
 
@@ -22,6 +22,8 @@ A estrutura do Proxy é facilmente aplicável no translate.me. Veja abaixo algun
 * __Criação de categorias:__ Durante a criação de uma categoria deve ter uma validação para que a categoria criada não é repetida.
 
     (Essa validação pode também ser feita com o Multiton)
+
+Inclusive o Django, plataforma utilizada no projeto do translate.me para fazer a API de microsservissos, utiliza deste padrão de projeto. O __serializer__ do Django é um proxy que adiciona restrições, controle e valida os dados serão passados para a API.
 
 
 
