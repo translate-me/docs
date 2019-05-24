@@ -59,6 +59,12 @@ Inclusive o Django, plataforma utilizada no projeto do translate.me para fazer a
 Facade é um dos Padrões de Design mais simples e mais usados na programação orientada a objetos. Ele discute o encapsulamento de um subsistema complexo dentro de um único objeto de interface. Isso reduz a curva de aprendizado necessária para alavancar com sucesso o subsistema. Também promove o desacoplamento do subsistema de seus potencialmente muitos clientes. Por outro lado, se o Facade for o único ponto de acesso para o subsistema, ele limitará os recursos e a flexibilidade que os "usuários avançados" podem precisar. Esse tipo de padrão de projeto vem sob padrão estrutural, pois esse padrão adiciona uma interface ao sistema existente para ocultar suas complexidades.
 Esse padrão envolve uma única classe que fornece métodos simplificados requeridos pelo cliente e chama representantes para métodos de classes de sistema existentes.
 
+### 2.2 Benefícios
+
+* Permite que os subsistemas sejam mais fáceis de serem utilizados;
+* Pode encapsular uma ou mais interfaces mal projetadas em uma mais concisa;
+* Reduz a complexidade de uma api, liberando acesso a métodos de alto nível encapsulando os demais.
+
 ### 2.2 É aplicavel em nosso projeto?
 Sim, é possível aplicar o _Facade_ no translate.me nos seguintes contextos:
 
@@ -68,16 +74,15 @@ Sim, é possível aplicar o _Facade_ no translate.me nos seguintes contextos:
 
 ## 3. Referências
 
-### Links de sites
+### 3.1 Links de sites
 * [DevMedia - Facade em Java](https://www.devmedia.com.br/padrao-de-projeto-facade-em-java/26476)
 * [DevMedia - Facade Aplicado](https://www.devmedia.com.br/o-padrao-facade-aplicado/12683)
 * [SourceMaking - Facade Design Pattern](https://sourcemaking.com/design_patterns/facade)
 * [DevMedia - Conheça o Pattern Proxy](https://www.devmedia.com.br/conheca-o-pattern-proxy-gof-gang-of-four/4066)
 * [SourceMaking - Proxy Design Patterns](https://sourcemaking.com/design_patterns/proxy)
 
-### Livros e artigos
+### 3.2 Livros e artigos
 
 [1] LISBÔA, Jonivan Coutinho; DE CARVALHO, Sérgio Teixeira; LOQUES FILHO, Orlando Gomes. Um Design Pattern para Configuração de Arquiteturas de Software. In: The 2nd. Latin America Conference on Progamming Languages of Patterns. 2002. <br>
 [2] GORLA, João Paulo Ferro; FOSCHINI, Ivan João. Arquitetura para desenvolvimento web baseado em jsf 2.0 utilizando padrões de projeto. Revista TIS, v. 2, n. 3, 2014. <br>
 [3] DE ALBUQUERQUE, Marcelo Torres; ROJAS, Alexandre; RIBEIRO, Paulo Cezar M. Utilizando Design Patterns GoF no apoio ao desenvolvimento de um Framework Java. Cadernos do IME-Série Informática, v. 30, p. 13-27, 2010.
-[4]
