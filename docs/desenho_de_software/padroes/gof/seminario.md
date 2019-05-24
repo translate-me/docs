@@ -29,6 +29,10 @@ Entre as aplicações mais relevantes do Proxy é possível citar:
 * Proxy funciona mesmo com o serviço ainda não estando pronto.
 * Melhora de desempenho, através do uso de cache e _lazy initialization_.
 
+#### Estrutura Mínima
+
+![](../../../assets/desenho/padroes/proxy_pattern.png)
+
 ### Exemplo em Java
 ![](../../../assets/desenho/padroes/DiagramaProxy.png)
 Veja o exemplo completo no [repositório](https://github.com/translate-me/exemplosGOF/tree/master/proxy).
