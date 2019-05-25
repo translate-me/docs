@@ -8,6 +8,7 @@
 | 23/05/2019 | 0.3 | Aplicabilidade do Proxy no projeto translate.me | Alexandre Miguel |
 | 23/05/2019 | 0.4 | Definição do padrão Facade | João Robson e Davi Alves |
 | 23/05/2019 | 0.5 | Aplicabilidade do Facade no projeto translate.me | Helena Goulart |
+| 24/05/2019 | 0.6 | Adicionando exemplo do facade ao documento | Luiz e Victor |
 
 
 ## 1. Proxy
@@ -65,7 +66,11 @@ Esse padrão envolve uma única classe que fornece métodos simplificados requer
 * Pode encapsular uma ou mais interfaces mal projetadas em uma mais concisa;
 * Reduz a complexidade de uma api, liberando acesso a métodos de alto nível encapsulando os demais.
 
-### 2.2 É aplicavel em nosso projeto?
+### 2.3 Exemplo em Java
+![](../../../assets/desenho/padroes/facade_class_diagram.png)
+Veja o exemplo completo no [repositório](https://github.com/translate-me/exemplosGOF/tree/master/facade).
+
+### 2.4 É aplicavel em nosso projeto?
 Sim, é possível aplicar o _Facade_ no translate.me nos seguintes contextos:
 
 * <b> Serviço de tradução de texto: </b> ao ser submetido, o texto do autor passa por várias etapas que, como cliente, ele não tem acesso. Logo, se o usário tivesse acesso à todo processo de fragmentação do texto, distribuição dos fragmentos para tradutores, revisão e alterações, seria um processo bastante complexo. Com a aplicação do _Facade_, ele tem uma entrada simples (o texto) e uma única saída (o texto traduzido);
