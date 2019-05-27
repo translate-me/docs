@@ -1,4 +1,4 @@
-# GOFs Vs. Emergentes
+# Padrões de projeto e aplicabilidade no translate.me
 
 ## Histórico de Revisão
 | Data | Versão | Descrição | Autor |
@@ -6,7 +6,7 @@
 | 26/05/2019 | 0.1 | Adicionada estrutura do documento | Luiz Guilherme |
 | 26/05/2019 | 0.2 | Adicionada explicação sobre HOCs | Luiz Guilherme |
 | 26/05/2019 | 0.3 | Adicionados exemplos de implementação | Luiz Guilherme |
-| 26/05/2019 | 0.4 | Adidionando tentativas falhas do Multiton e Observer | Gabriela Guedes e Letícia Meneses |
+| 26/05/2019 | 0.4 | Adicionando tentativas falhas do Multiton e Observer | Gabriela Guedes e Letícia Meneses |
 | 26/05/2019 | 0.5 | Adicionando descrição e análise do Composite | Renan Schadt e Rômulo Souza |
 | 26/05/2019 | 0.6 | Adicionando diagrama de classes do Composite | Renan Schadt e Rômulo Souza |
 | 27/05/2019 | 0.7 | Adicionando padrões em Django | Helena Goulart |
@@ -131,6 +131,11 @@ _"Modelos devem encapsular cada aspecto de um objeto, seguindo o padrão de proj
 | Observer  | Signals | Quando um objeto muda de estado, todos os demais são associados a ele são notificados e atualizados automaticamente  |
 | Template method | Visualização baseada em classes | Etapas de um algoritmo podem ser redefinidas por subclasses sem alterar a estrutura do algoritmo |
 
+### Padrão estrutural
+
+O _.serializer()_ é um método nativo do Django Rest que permitem que dados complexos, como _querysets_ e instâncias de modelo, sejam convertidos em tipos de dados Python nativos que podem ser facilmente renderizados em JSON, XML ou outros tipos de conteúdo.
+
+<b> Essa é basicamente a aplicação do padrão de projeto estrutural Adapter </b>:  converte uma interface de uma classe para outra interface que o código cliente espera encontrar. A entidade adaptadora permite que classes com interfaces incompatíveis trabalhem juntas.
 
 ## 4. Padrões não aplicaveis para o projeto
 
