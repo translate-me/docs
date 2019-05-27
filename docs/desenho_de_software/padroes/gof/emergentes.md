@@ -9,6 +9,7 @@
 | 26/05/2019 | 0.4 | Adidionando tentativas falhas do Multiton e Observer | Gabriela Guedes e Letícia Meneses |
 | 26/05/2019 | 0.5 | Adicionando descrição e análise do Composite | Renan Schadt e Rômulo Souza |
 | 26/05/2019 | 0.6 | Adicionando diagrama de classes do Composite | Renan Schadt e Rômulo Souza |
+| 27/05/2019 | 0.7 | Adicionando padrões em Django | Helena Goulart |
 
 ## 1. High-order Components
 ### 1.1 O que é?
@@ -106,16 +107,31 @@ O Composite é um padrão de design estrutural que permite atrelar objetos difer
 O uso do Composite, faz sentido quando o que se tem interesse em representar, pode ser mostrado através de uma estrutura de árvore. O Composite é usado quando se deseja tratar elementos simples e complexos da mesma maneira.
 
 ### 2.2 Aplicação
-Nossa aplicação de Composite considera que um texto contém fragmentos e estes podem conter textos, imagens, tabelas, entre outros. Apesar de que para o escopo da matéria, nós só levaremos em conta fragmentos de texto, a utilização do Composite nos permite adicionar novos tipos de fragmento futuramente, sem quebrar a implementação já existente. 
+Nossa aplicação de Composite considera que um texto contém fragmentos e estes podem conter textos, imagens, tabelas, entre outros. Apesar de que para o escopo da matéria, nós só levaremos em conta fragmentos de texto, a utilização do Composite nos permite adicionar novos tipos de fragmento futuramente, sem quebrar a implementação já existente.
 
 Usando a mesma interface para os vários tipos de fragmentos (Composite), é possível realizar operações sobre uma lista destes, como a operação para somar o valor total de tradução do texto.
 
 ### 2.3 Exemplo
 ![Class_Diagram_Composite](../../../assets/desenho/padroes/ClassDiagramComposite.png)
 
-## 3. Helena
+## 3. Padrões utilizados no Django por _default_
 
-<!-- Deixem isso por ultimo plis :) -->
+#### Documentação
+
+_"Modelos devem encapsular cada aspecto de um objeto, seguindo o padrão de projeto Active Record de Martin Fowler."_
+
+![ActiveRecord](../../../assets/desenho/padroes/from-activerecord-to-eventsourcing.jpg
+)
+
+#### Padrões comportamentais
+
+| GoF | Componente do Django | Explicação |
+|---|---|---|
+| Command  | Http Request | Encapsula uma solicitação em um objeto |
+| Observer  | Signals | Quando um objeto muda de estado, todos os demais são associados a ele são notificados e atualizados automaticamente  |
+| Template method | Visualização baseada em classes | Etapas de um algoritmo podem ser redefinidas por subclasses sem alterar a estrutura do algoritmo |
+
+
 ## 4. Padrões não aplicaveis para o projeto
 
 ### 4.1 Multiton
@@ -150,13 +166,15 @@ Essa implementação foge da definição do padrão Observer, pois estariamos ap
 ##### 4.2.3.2 Tentativa 2 - Atualizar os Fragmentos para inativo quando o pedido de tradução for cancelado
 A plataforma Django, junto com o SQL, já possui vários métodos internos que fazem esta função de remover os fragmentos relacionados ao texto por uma chave estrangeira.
 
-## 3. Referências
 
-### 3.1 Links de sites
+## 5. Referências
+
+### 5.1 Links de sites
 * [React and Redux - When and how to use it](https://blog.logrocket.com/react-redux-connect-when-and-how-to-use-it-f2a1edab2013)
 * [High-order Components](https://tylermcginnis.com/react-higher-order-components/)
 * [HOC Examples](https://medium.com/@franleplant/react-higher-order-components-in-depth-cf9032ee6c3e)
+* [Patterns In Django](https://subscription.packtpub.com/book/web_development/9781788831345/1/ch01lvl1sec13/what-is-a-pattern)
 
-### 3.2 Livros e artigos
+### 5.2 Livros e artigos
 
 [1] LISBÔA, Jonivan Coutinho; DE CARVALHO, Sérgio Teixeira; LOQUES FILHO, Orlando Gomes. Um Design Pattern para Configuração de Arquiteturas de Software. In: The 2nd. Latin America Conference on Progamming Languages of Patterns. 2002. <br>
