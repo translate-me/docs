@@ -105,6 +105,7 @@ O Composite é um padrão de design estrutural que permite atrelar objetos difer
 O uso do Composite, faz sentido quando o que se tem interesse em representar, pode ser mostrado através de uma estrutura de árvore. O Composite é usado quando se deseja tratar elementos simples e complexos da mesma maneira.
 
 ### 2.2 Estrutura
+![Class_Diagram_Composite](../../../assets/desenho/padroes/ClassDiagramComposite.png)
 
 ### 2.3 Aplicação
 Nossa aplicação de Composite, leva em conta que um texto, contém fragmentos e estes podem conter textos, imagens, tabelas, entre outros. 
