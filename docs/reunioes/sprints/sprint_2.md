@@ -2,7 +2,7 @@
 
 | Data da Reunião | Participantes | Meio | Local |
 | --- | --- | --- | --- |
-| **27/04/2019** | Alexandre Miguel <br> Gabriela Guedes <br> Letícia Meneses <br> Luiz Guilherme <br > João Robson <br> Rômulo Vinícius <br> Victor Hugo  | Presencial | FGA |
+| 27/04/2019 | Alexandre Miguel <br> Gabriela Guedes <br> Letícia Meneses <br> Luiz Guilherme <br > João Robson <br> Rômulo Vinícius <br> Victor Hugo  | Presencial | FGA |
 
   Reunião realizada para análise e principalmente planejamento das atividades da sprint a serem realizadas .
 
@@ -10,7 +10,7 @@
 
   | Data | Versão | Descrição | Autor |
   |---|---|---|---|
-  | **29/04/2019** | 1.0 | Transcrição da documentação da reunião realizada em 27/03/2019 | Luiz Guilherme |
+  | 29/04/2019 | 1.0 | Transcrição da documentação da reunião realizada em 27/03/2019 | Luiz Guilherme |
 
 ## Sprint Review
   Os seguintes tópicos foram levados em conta na reunião realizada.
