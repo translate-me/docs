@@ -25,13 +25,17 @@ Para todas os efeitos práticos, 'decorators' e HOCs fazem a mesma coisa, porém
 
 #### 1.3 Estrutura
 
-##### 1.3.1 Diagrama de Classes
+##### 1.3.1 Comparação - Diagrama de Classes Decorator
 
-![hoc_class_diagram](../../../assets/desenho/padroes/hoc.jpg)
+![decorator_class_diagram](../../../assets/desenho/padroes/decorator.jpg)
 
 ##### 1.3.2 Diagrama de Sequência
 
-![hoc_sequency_diagram](../../../assets/desenho/padroes/hoc_method.png)
+![hoc_sequency_diagram](../../../assets/desenho/padroes/hoc_sequency.png)
+
+##### 1.3.3 Diagramação com Classes
+
+![hoc_sequency_diagram](../../../assets/desenho/padroes/hoc_class.png)
 
 ### 1.4 Exemplo
 Um exemplo trivial seria este, que define uma função que implementa o HOC, que recebe como parâmetro um componente chamado OriginalTitle e retorna em um outro componente chamado EnhancedTitle, uma nova versão do componente, porém com alguns 'props' adicionados.
@@ -106,7 +110,7 @@ O Composite é um padrão de design estrutural que permite atrelar objetos difer
 O uso do Composite, faz sentido quando o que se tem interesse em representar, pode ser mostrado através de uma estrutura de árvore. O Composite é usado quando se deseja tratar elementos simples e complexos da mesma maneira.
 
 ### 2.2 Aplicação
-Nossa aplicação de Composite considera que um texto contém fragmentos e estes podem conter textos, imagens, tabelas, entre outros. Apesar de que para o escopo da matéria, nós só levaremos em conta fragmentos de texto, a utilização do Composite nos permite adicionar novos tipos de fragmento futuramente, sem quebrar a implementação já existente. 
+Nossa aplicação de Composite considera que um texto contém fragmentos e estes podem conter textos, imagens, tabelas, entre outros. Apesar de que para o escopo da matéria, nós só levaremos em conta fragmentos de texto, a utilização do Composite nos permite adicionar novos tipos de fragmento futuramente, sem quebrar a implementação já existente.
 
 Usando a mesma interface para os vários tipos de fragmentos (Composite), é possível realizar operações sobre uma lista destes, como a operação para somar o valor total de tradução do texto.
 
