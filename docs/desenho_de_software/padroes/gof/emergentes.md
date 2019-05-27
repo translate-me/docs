@@ -13,7 +13,7 @@
 
 Um High-order component (HOC) é um padrão de projeto emergente aplicável em React para reutilizar lógicas de componente. HOCs não são partes do comportamento padrão do React e ele surge da natureza composicional do React. De forma breve, um HOC é uma função que recebe um componente como entrada e retorna um novo componente, com novos atributos.
 
-Por muito tempo, o HOC foi o padrão mais popular para aprimorar e compor elementos em React e sua estrutura se assemelha com o padrão de um decorator, pois existe o encapsulamento do componente e o seu aprimoramento. 
+Por muito tempo, o HOC foi o padrão mais popular para aprimorar e compor elementos em React e sua estrutura se assemelha com o padrão de um decorator, pois existe o encapsulamento do componente e o seu aprimoramento.
 
 Para todas os efeitos práticos, 'decorators' e HOCs fazem a mesma coisa, porém quando você adiciona um decorator, a classe somente pode ser utilizada em sua forma decorada. O padrão HOC quando implementado, permite a utilização tanto do componente de ordem superior e de ordem inferior.
 
@@ -22,7 +22,14 @@ Para todas os efeitos práticos, 'decorators' e HOCs fazem a mesma coisa, porém
 * Outra característica do padrão é a criação de um buffer para lógica adicional. Por exemplo, se um componente acessa um servidor remoto, pode-se enfileirar estes dados em HOC e envia-lo como uma propriedade (prop).
 
 #### 1.3 Estrutura
-![](../../../assets/desenho/padroes/hoc.jpg)
+
+##### 1.3.1 Diagrama de Classes
+
+![hoc_class_diagram](../../../assets/desenho/padroes/hoc.jpg)
+
+##### 1.3.2 Diagrama de Sequência
+
+![hoc_sequency_diagram](../../../assets/desenho/padroes/hoc_method.png)
 
 ### 1.4 Exemplo
 Um exemplo trivial seria este, que define uma função que implementa o HOC, que recebe como parâmetro um componente chamado OriginalTitle e retorna em um outro componente chamado EnhancedTitle, uma nova versão do componente, porém com alguns 'props' adicionados.
@@ -95,7 +102,7 @@ export default connect(mapStateToProps)(TextEditor);
 <!-- Deixem isso por ultimo plis :) -->
 ## 4. Padrões não aplicaveis para o projeto
 
-### 4.1 Multiton 
+### 4.1 Multiton
 #### 4.1.1 O que é?
 O multiton consiste na utilização de um método para retornar um objeto. Esse método deve receber uma chave, e caso já exista um objeto com essa chave, ele é retornado, caso contrário, um novo objeto é criado.
 
