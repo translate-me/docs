@@ -10,6 +10,7 @@
 | 26/05/2019 | 0.5 | Adicionando descrição e análise do Composite | Renan Schadt e Rômulo Souza |
 | 26/05/2019 | 0.6 | Adicionando diagrama de classes do Composite | Renan Schadt e Rômulo Souza |
 | 27/05/2019 | 0.7 | Adicionando padrões em Django | Helena Goulart |
+| 27/05/2019 | 0.8 | Adicionando diagramas de HOC | Alexandre Miguel |
 
 ## 1. High-order Components
 ### 1.1 O que é?
@@ -34,9 +35,6 @@ Para todas os efeitos práticos, 'decorators' e HOCs fazem a mesma coisa, porém
 
 ![hoc_sequency_diagram](../../../assets/desenho/padroes/hoc_sequency.png)
 
-##### 1.3.3 Diagramação com Classes
-
-![hoc_sequency_diagram](../../../assets/desenho/padroes/hoc_class.png)
 
 ### 1.4 Exemplo
 Um exemplo trivial seria este, que define uma função que implementa o HOC, que recebe como parâmetro um componente chamado OriginalTitle e retorna em um outro componente chamado EnhancedTitle, uma nova versão do componente, porém com alguns 'props' adicionados.
