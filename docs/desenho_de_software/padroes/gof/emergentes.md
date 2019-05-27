@@ -1,4 +1,4 @@
-# GOFs Vs. Emergentes
+# Padrões de projeto e aplicabilidade no translate.me
 
 ## Histórico de Revisão
 | Data | Versão | Descrição | Autor |
@@ -6,9 +6,10 @@
 | 26/05/2019 | 0.1 | Adicionada estrutura do documento | Luiz Guilherme |
 | 26/05/2019 | 0.2 | Adicionada explicação sobre HOCs | Luiz Guilherme |
 | 26/05/2019 | 0.3 | Adicionados exemplos de implementação | Luiz Guilherme |
-| 26/05/2019 | 0.4 | Adidionando tentativas falhas do Multiton e Observer | Gabriela Guedes e Letícia Meneses |
+| 26/05/2019 | 0.4 | Adicionando tentativas falhas do Multiton e Observer | Gabriela Guedes e Letícia Meneses |
 | 26/05/2019 | 0.5 | Adicionando descrição e análise do Composite | Renan Schadt e Rômulo Souza |
 | 26/05/2019 | 0.6 | Adicionando diagrama de classes do Composite | Renan Schadt e Rômulo Souza |
+| 27/05/2019 | 0.7 | Adicionando padrões em Django | Helena Goulart |
 
 ## 1. High-order Components
 ### 1.1 O que é?
@@ -117,9 +118,29 @@ Usando a mesma interface para os vários tipos de fragmentos (Composite), é pos
 ### 2.3 Exemplo
 ![Class_Diagram_Composite](../../../assets/desenho/padroes/ClassDiagramComposite.png)
 
-## 3. Helena
+## 3. Padrões utilizados no Django por _default_
 
-<!-- Deixem isso por ultimo plis :) -->
+#### Documentação
+
+_"Modelos devem encapsular cada aspecto de um objeto, seguindo o padrão de projeto Active Record de Martin Fowler."_
+
+![ActiveRecord](../../../assets/desenho/padroes/from-activerecord-to-eventsourcing.jpg
+)
+
+#### Padrões comportamentais
+
+| GoF | Componente do Django | Explicação |
+|---|---|---|
+| Command  | Http Request | Encapsula uma solicitação em um objeto |
+| Observer  | Signals | Quando um objeto muda de estado, todos os demais são associados a ele são notificados e atualizados automaticamente  |
+| Template method | Visualização baseada em classes | Etapas de um algoritmo podem ser redefinidas por subclasses sem alterar a estrutura do algoritmo |
+
+### Padrão estrutural
+
+O _.serializer()_ é um método nativo do Django Rest que permitem que dados complexos, como _querysets_ e instâncias de modelo, sejam convertidos em tipos de dados Python nativos que podem ser facilmente renderizados em JSON, XML ou outros tipos de conteúdo.
+
+<b> Essa é basicamente a aplicação do padrão de projeto estrutural Adapter </b>:  converte uma interface de uma classe para outra interface que o código cliente espera encontrar. A entidade adaptadora permite que classes com interfaces incompatíveis trabalhem juntas.
+
 ## 4. Padrões não aplicaveis para o projeto
 
 ### 4.1 Multiton
@@ -154,13 +175,15 @@ Essa implementação foge da definição do padrão Observer, pois estariamos ap
 ##### 4.2.3.2 Tentativa 2 - Atualizar os Fragmentos para inativo quando o pedido de tradução for cancelado
 A plataforma Django, junto com o SQL, já possui vários métodos internos que fazem esta função de remover os fragmentos relacionados ao texto por uma chave estrangeira.
 
-## 3. Referências
 
-### 3.1 Links de sites
+## 5. Referências
+
+### 5.1 Links de sites
 * [React and Redux - When and how to use it](https://blog.logrocket.com/react-redux-connect-when-and-how-to-use-it-f2a1edab2013)
 * [High-order Components](https://tylermcginnis.com/react-higher-order-components/)
 * [HOC Examples](https://medium.com/@franleplant/react-higher-order-components-in-depth-cf9032ee6c3e)
+* [Patterns In Django](https://subscription.packtpub.com/book/web_development/9781788831345/1/ch01lvl1sec13/what-is-a-pattern)
 
-### 3.2 Livros e artigos
+### 5.2 Livros e artigos
 
 [1] LISBÔA, Jonivan Coutinho; DE CARVALHO, Sérgio Teixeira; LOQUES FILHO, Orlando Gomes. Um Design Pattern para Configuração de Arquiteturas de Software. In: The 2nd. Latin America Conference on Progamming Languages of Patterns. 2002. <br>
