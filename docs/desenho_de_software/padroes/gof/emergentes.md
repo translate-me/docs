@@ -7,6 +7,7 @@
 | 26/05/2019 | 0.2 | Adicionada explicação sobre HOCs | Luiz Guilherme |
 | 26/05/2019 | 0.3 | Adicionados exemplos de implementação | Luiz Guilherme |
 | 26/05/2019 | 0.4 | Adidionando tentativas falhas do Multiton e Observer | Gabriela Guedes e Letícia Meneses |
+| 26/05/2019 | 0.5 | Adicionando descrição e análise do Composite | Renan Schadt e Rômulo Souza |
 
 ## 1. High-order Components
 ### 1.1 O que é?
@@ -95,7 +96,20 @@ const mapStateToProps = function(state) {
 
 export default connect(mapStateToProps)(TextEditor);
 ```
+
 ## 2. Composite
+
+### 2.1 O que é?
+O Composite é um padrão de design estrutural que permite atrelar objetos diferentes através de uma mesma interface, para fazer alguma operação sobre todos ou trabalhar com estes individualmente.
+
+O uso do Composite, faz sentido quando o que se tem interesse em representar, pode ser mostrado através de uma estrutura de árvore. O Composite é usado quando se deseja tratar elementos simples e complexos da mesma maneira.
+
+### 2.2 Estrutura
+
+### 2.3 Aplicação
+Nossa aplicação de Composite, leva em conta que um texto, contém fragmentos e estes podem conter textos, imagens, tabelas, entre outros. 
+
+Usando a mesma interface para os vários tipos de fragmentos (Composite), é possível realizar operações sobre uma lista destes, como a operação para somar o valor total de tradução do texto.
 
 ## 3. Helena
 
