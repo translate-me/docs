@@ -5,7 +5,8 @@
 |---|---|---|---|
 | 27/05/2019 | 0.1 | Adicionando Mediator | Renan Schadt e Rômulo Souza |
 | 27/05/2019 | 0.2 | Adicionando Observer | Renan Schadt |
-| 27/05/2019 | 0.3 | Adição dos topicos 2.3 e 2.4 | Davi Alves e Luiz Guilherme |
+| 27/05/2019 | 0.3 | Adição dos tópicos 2.3 e 2.4 | Davi Alves e Luiz Guilherme |
+| 28/05/2019 | 0.4 | Adição do Command | Victor Hugo |
 
 ## 1. Introdução
 
@@ -71,7 +72,7 @@ O objetivo principal do _Visitor Pattern_ é abstrair a funcionalidade que pode 
 
 ### 2.3.2 Análise
 
-Foi verificado que a aplicação do padrão Visitor Pattern não reflete a complexidade para o nosso projeto pois não possuimos uma estrutura de objetos como muitas interfaces diferentes, não realizamos muitas operações distintas e não relacionadas e não ocorre a adição frequente de novas operações da classe.
+Foi verificado que a aplicação do padrão Visitor Pattern não reflete a complexidade para o nosso projeto pois não possuímos uma estrutura de objetos como muitas interfaces diferentes, não realizamos muitas operações distintas e não relacionadas e não ocorre a adição frequente de novas operações da classe.
 
 ### 2.3.3 Estrutura mínima
 
@@ -86,11 +87,27 @@ No padrão Objeto Nulo, criamos uma classe abstrata especificando várias opera�
 
 ### 2.4.2 Análise
 
-Foi verificado que o uso do padrão Null Object no projeto não é necessario pois não existem diversos fluxos alternativos em tratamentos de expressões condicionais. O que se assemelharia a utilização desse padrão seria melhor implementado utilizando o proxy, pois, referem-se a tratamentos que não envolvem nulidade.
+Foi verificado que o uso do padrão Null Object no projeto não é necessário pois não existem diversos fluxos alternativos em tratamentos de expressões condicionais. O que se assemelharia a utilização desse padrão seria melhor implementado utilizando o proxy, pois, referem-se a tratamentos que não envolvem nulidade.
 
 
 ### 2.4.3 Estrutura mínima
 ![](https://www.oodesign.com/images/design_patterns/behavioral/null_object_implementation_-_uml_class_diagram.gif)
+
+### 2.5 Command   
+#### 2.5.1 Definição  
+ 
+O padrão _command_ adiciona um nível de abstração para as ações executados pelas classes e adiciona um objeto que é responsável por invocar essas ações. Normalmente esse tipo de padrão funciona de seguinte forma:
+
+1. O cliente cria um objeto comando a ser executado e que possui uma lista de comandos.
+2. Esse objeto comando implementa sua própria interface específica para suas ações.
+
+Dessa forma temos um desacoplamento entre o invocador do método e seu receptor. E também, temos um melhor encapsulamento da aplicação.
+
+#### 2.5.2 Análise
+É possível usar esse padrão de projeto dentro do nosso escopo atual desde que não force seu uso dentro das próprias classes do django, ou seja, use ela apenas em um arquivo separado chamado utils e utilize apenas sua chamada dentro da view que você deseja utilizar daquele método.
+
+### 2.5.3 Estrutura mínima
+![](../../../assets/desenho/padroes/architecture_of_command_pattern.jpg)
 
 ## 3. Referências
 * [Guru Design Patterns - Mediator](https://refactoring.guru/design-patterns/mediator)
@@ -98,3 +115,8 @@ Foi verificado que o uso do padrão Null Object no projeto não é necessario po
 
 * [OO Design - Visitor Pattern](https://www.oodesign.com/visitor-pattern.html). <br>
 * [OO Design - Null Object](https://www.oodesign.com/null-object-pattern.html).
+
+* [Python Design Patterns - Command](https://www.tutorialspoint.com/python_design_patterns/python_design_patterns_command.htm)
+* [Command in Python](https://sourcemaking.com/design_patterns/command/python/1)
+* [Strategy and Command Design Patterns — Wizards and Sandwiches — Applications in Python](https://medium.com/@rrfd/strategy-and-command-design-patterns-wizards-and-sandwiches-applications-in-python-d1ee1c86e00f)
+* [DESIGN PATTERNS - COMMAND PATTERN](https://www.bogotobogo.com/DesignPatterns/command.php)
