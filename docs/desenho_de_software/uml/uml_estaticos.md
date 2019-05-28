@@ -6,6 +6,9 @@
 | 14/04/2019 | 0.1 | Adicionando diagrama de pacotes | Gabriela Guedes|
 | 03/05/2019 | 0.2 | Estruturando padrão do documento | Victor Hugo|
 | 05/05/2019 | 0.3 | Adicionando introdução e referências nos artefatos| Victor Hugo|
+| 20/05/2019 | 0.4 | Adicionando nova versão do diagrama de classe | Letícia Meneses, Rômulo Vinicius|
+| 27/05/2019 | 0.5 | Ajustes na segunda versão do diagrama de classe | Letícia Meneses|
+
 
 ## Introdução
 
@@ -16,8 +19,12 @@ Diagramas umls estáticos são diagramas que tratam da parte estrutural do proje
 
 ### Diagrama de Classes
 Diagrama de classe mostra as diferentes classes que existem na aplicação e como ela se relacionam. Além disso, este diagrama é considerado estático pois, mostram todos os métodos e atributos das classes bem como os relacionamentos estáticos entre elas, ou seja, quais classes conhecem quais classes ou quais classes são parte das outras classes. Esse tipo de diagrama não mostram as mensagens entre elas. Nesse diagrama os retângulos são a representação das classes e dentro dos retângulos menores existem atributos e métodos que são diferenciados com a utilização de "()" para diferenciar os tipos.
-### CD01
+### CD01 
+#### Versão 1.0
 ![diagrama_classes](../../assets/desenho/uml/diagrama_classes.png)
+
+#### Versão 2.0
+![diagrama_classes](../../assets/desenho/uml/diag_class_v2.png)
 
 ### Diagrama de Pacotes
 Diagrama de pacotes é básicamente o empacotamento das classes da aplicação. Apesar dos critérios de empacotamento ser subjetivo tendem a ser empacotados classes que tem relacionamento é ou modificação conjunta na aplicação. Pode ser usado para mostrar a arquitetura do sistema em questão. Nesse diagrama os retângulos em volta das classes representam o pacote, ou seja, conjunto de classes correlacionadas. Os retângulos menores são as classes pertecentes e as ligações representam a comunicação entre as classes.
