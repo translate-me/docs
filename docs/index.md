@@ -6,6 +6,21 @@ com a disciplina ofertada pela Universidade de Brasília - Faculdade do Gama
 ministrada pela da docente Milene Serrano. Para conferir a documentação completa
 da equipe, [clique aqui](https://translate-me.github.io/docs/).
 
+## Organização
+
+| Dinâmica | Arquivos |
+| --- | --- |
+| Dinâmica 1 | - [Definição de Tema](./def_tema) |
+| Dinâmica 2 | - [Modelagem de Metodologia](./metodologia) |
+| Dinâmica 3 | - [Diagramas UML Estáticos](./desenho_de_software/uml/uml_estaticos) |
+| Dinâmica 4 | - [Diagramas UML Dinâmicos]()|
+| Dinâmica 5 | - [Padrões GRASP](./desenho_de_software/padroes/grasp) <br> - [Padrões GoFs](./desenho_de_software/padroes/gof)|
+| Dinâmica 6 | - [Modelos de Arquitetura de Software](./arquitetura_de_software/modelos) <br> - [Padrões Arquiteturais](./arquitetura_de_software/padroes_arquiteturais) <br> - [Documento de Arquitetura de Software](./documentos/projeto/doc_de_arquitetura)|
+| Iniciaticas Extras | . |
+
+
+
+
 ## Equipe
 
 | Nome | Email | GitHub|
