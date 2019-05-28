@@ -106,7 +106,7 @@ Dessa forma temos um desacoplamento entre o invocador do método e seu receptor.
 #### 2.5.2 Análise
 É possível usar esse padrão de projeto dentro do nosso escopo atual desde que não force seu uso dentro das próprias classes do django, ou seja, use ela apenas em um arquivo separado chamado utils e utilize apenas sua chamada dentro da view que você deseja utilizar daquele método.
 
-### 2.5.3 Estrutura mínima
+#### 2.5.3 Estrutura mínima
 ![](../../../assets/desenho/padroes/architecture_of_command_pattern.jpg)
 
 ## 3. Referências
