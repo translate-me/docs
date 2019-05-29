@@ -5,6 +5,7 @@
 |---|---|---|---|
 | 27/05/2019 | 0.1 | Adicionando Mediator | Renan Schadt e Rômulo Souza |
 | 27/05/2019 | 0.2 | Adicionando Observer | Renan Schadt |
+| 27/05/2019 | 0.3 | Adição dos topicos 2.3 e 2.4 | Davi Alves e Luiz Guilherme |
 
 ## 1. Introdução
 
@@ -60,9 +61,41 @@ Após a análise da documentação do Django chegamos a conclusão que este fram
 #### 2.2.3 Estrutura Mínima
 ![](../../../assets/desenho/padroes/observer.png)
 
-### 2.3 Chain of Responsability
+### 2.3 Visitor Pattern
 
-#### 2.3.1 Definição
+### 2.3.1 Definição
+
+No _Visitor Pattern_, usamos uma classe de visitante que altera o algoritmo de execução de uma classe de elemento. Por este caminho, o algoritmo de execução do elemento pode variar como e quando o visitante varia. Esse padrão está na categoria de padrão de comportamento. Conforme o padrão, o objeto de elemento precisa aceitar o objeto de visitante para que o objeto de visitante manipule a operação no objeto de elemento.
+
+O objetivo principal do _Visitor Pattern_ é abstrair a funcionalidade que pode ser aplicada a uma hierarquia agregada de elementos de objetos. A abordagem incentiva a criação de classes de elementos leves - porque a funcionalidade de processamento é removida de sua lista de responsabilidades. Novas funcionalidades podem ser facilmente adicionadas à hierarquia de herança original, criando uma nova subclasse Visitante.
+
+### 2.3.2 Análise
+
+Foi verificado que a aplicação do padrão Visitor Pattern não reflete a complexidade para o nosso projeto pois não possuimos uma estrutura de objetos como muitas interfaces diferentes, não realizamos muitas operações distintas e não relacionadas e não ocorre a adição frequente de novas operações da classe.
+
+### 2.3.3 Estrutura mínima
+
+![](https://www.oodesign.com/images/behavioral/visitor-pattern.png)
+
+### 2.4 Null Object
+
+#### 2.4.1 Definição
+No padrão Objeto Nulo, um objeto nulo substitui a verificação da instância do objeto NULL. Em vez de colocar se verificar um valor nulo, o objeto nulo reflete uma relação de não fazer nada. Esse objeto Nulo também pode ser usado para fornecer um comportamento padrão caso os dados não estejam disponíveis.
+
+No padrão Objeto Nulo, criamos uma classe abstrata especificando várias operações a serem executadas, classes concretas estendendo essa classe e uma classe de objeto nulo fornecendo nada implementando dessa classe e serão usadas de maneira aparentemente inexistente onde precisamos verificar o valor nulo.
+
+#### 2.4.2 Análise
+
+Foi verificado que o uso do padrão Null Object no projeto não é necessario pois não existem diversos fluxos alternativos em tratamentos de expressões condicionais. O que se assemelharia a utilização desse padrão seria melhor implementado utilizando o proxy, pois, referem-se a tratamentos que não envolvem nulidade.
+
+
+#### 2.4.3 Estrutura mínima
+![](https://www.oodesign.com/images/design_patterns/behavioral/null_object_implementation_-_uml_class_diagram.gif)
+
+
+### 2.5 Chain of Responsability
+
+#### 2.5.1 Definição
 
 O Padrão Chain of Responsability é focado na delegação de funções para diferentes instâncias de uma mesma classe abstrata. Isto é, esse padrão configura a declaração de uma classe abstrata que é montada com métodos genéricos, bem como a funcionalidade de delegar a o funcionamento para uma outra instância de um elemento que herda dessa classe abstrata, seguindo uma ordem hierárquica.
 
@@ -76,24 +109,24 @@ Assim o padrão Chain of Responsability contém os seguintes elementos:
 
 3. Uma lógica externa, tida como *Sender* que faz a requisição para a cadeia implementada.
 
-#### 2.3.2 Análise
+#### 2.5.2 Análise
 
 O Padrão é uma boa saída para modularizar fluxos que seriam muito longos e acoplados no caso de uma cadeia de **if ... else if ... else** entretanto sua aplicação no projeto não se demonstrou viável a um primeiro momento, dado que os possívels fluxos para um dado estado não se encaixam em uma cadeia sequencial, tampouco se faz necesário pelas estruturas comparativas que existem no contexto da aplicação do projeto em Django.  
 Uma vantagem evidente em relação ao uso de uma cadeia de if é a possibilidade de duas saídas possíveis para uma etapa, conforme a instância de um objeto permite, como no caso do cancelamento da continuidade da hirarquia.   
 Um outro ponto positivo é a possibilidade da alteração da ordem de execução dos objetos sem mudanças extremas no fluxo, mantendo a conectividade entre os módulos (ou objetos).
 
 
-#### 2.3.3 Estrutura Mínima
+#### 2.5.3  Estrutura Mínima
 
-##### 2.3.3.1 Diagrama de Classes
+##### 2.5.3.1 Diagrama de Classes
 
 ![chain_diagram](../../../assets/desenho/padroes/gof_chain_of_responsability_class.jpg)
 
-##### 2.3.3.2 Diagrama de Sequência
+##### 2.5.3.2 Diagrama de Sequência
 
 ![chain_sequence](../../../assets/desenho/padroes/gof_chain_of_responsability_sequence.jpg)
 
-#### 2.3.4 Exemplo Conceitual
+#### 2.5.4 Exemplo Conceitual
 
 Um exemplo interessante que ilustra essa cadeia é o processo de autenticação por etapas em uma aplicação, de forma que um usuário primeiro tenha que possuir um nome cadastrado na aplicação, posteriormente possuir uma senha válida e, em alguns casos, ocorre uma etapa de veriicação com questões específicas, sendo que em cada uma dessas etapas é possível uma falha do usuário bem como a completudo e prosseguimento do fluxo. No exemplo, cada etapa atuaria como *Receiver* de uma mesma classe abstrata.
 
@@ -102,3 +135,5 @@ Um exemplo interessante que ilustra essa cadeia é o processo de autenticação 
 * [Guru Design Patterns - Observer](https://refactoring.guru/design-patterns/observer)
 * [Guru Design Patterns - Chain of Responsability](https://refactoring.guru/design-patterns/chain-of-responsibility)
 * [Chain of Responsability Implementation](https://www.tutorialspoint.com/design_pattern/chain_of_responsibility_pattern.htm)
+* [OO Design - Visitor Pattern](https://www.oodesign.com/visitor-pattern.html). <br>
+* [OO Design - Null Object](https://www.oodesign.com/null-object-pattern.html).
