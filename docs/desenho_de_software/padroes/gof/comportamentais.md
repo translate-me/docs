@@ -6,6 +6,7 @@
 | 27/05/2019 | 0.1 | Adicionando Mediator | Renan Schadt e Rômulo Souza |
 | 27/05/2019 | 0.2 | Adicionando Observer | Renan Schadt |
 | 27/05/2019 | 0.3 | Adição dos topicos 2.3 e 2.4 | Davi Alves e Luiz Guilherme |
+| 30/05/2019 | 0.4 | Inclusão do Iterator | Helena Goulart |
 
 ## 1. Introdução
 
@@ -14,9 +15,9 @@
 ### 2.1 Mediator
 
 #### 2.1.1 Definição
-Mediator é um padrão de design comportamental que impede a comunicação direta entre objetos, tem a função de evitar uma rede caótica de dependências, para fazê-lo o Mediator força os objetos a se comunicar indiretamente, usando de um objeto "mediador". 
+Mediator é um padrão de design comportamental que impede a comunicação direta entre objetos, tem a função de evitar uma rede caótica de dependências, para fazê-lo o Mediator força os objetos a se comunicar indiretamente, usando de um objeto "mediador".
 
-Ao se chamar um objeto Mediator ele redireciona as requisições para os componentes apropriados, como resultado os componentes dependem apenas do Mediator ao invés de estarem ligados a diversas outras classes. 
+Ao se chamar um objeto Mediator ele redireciona as requisições para os componentes apropriados, como resultado os componentes dependem apenas do Mediator ao invés de estarem ligados a diversas outras classes.
 
 Este padrão permite encapsular uma complexa rede de relações entre componentes dentro de um objeto, tornando o sistema mais legível e fácil de modificar.
 
@@ -92,9 +93,35 @@ Foi verificado que o uso do padrão Null Object no projeto não é necessario po
 ### 2.4.3 Estrutura mínima
 ![](https://www.oodesign.com/images/design_patterns/behavioral/null_object_implementation_-_uml_class_diagram.gif)
 
+## 2.5 Iterator
+
+### 2.5.1 Definição
+Trata-se de um meio de acessar sequencialmente os elementos de um objeto agregado sem expor sua representação subjacente. Desse modo, não é de importância se está sendo tratado com um _array_ ou com um _hash_.
+
+### 2.5.2 Análise
+É um padrão possível de ser utilizado no translate.me, como por exemplo para acessar uma lista de línguas estrangeiras que o tradutor domina, ou até mesmo uma lista de trechos já traduzidos pelo tradutor.
+
+### 2.5.3 Estrutura mínima
+
+![Iterator](../../../assets/desenho/padroes/iterator_pattern.jpg)
+
+## 2.6 Interpreter
+
+### 2.5.1 Definição
+Trata-se de um padrão no qual realiza a interpretação de um código, ou seja, é responsável por processar e interpretar parâmetros.
+
+### 2.5.2 Análise
+O interpreter pode ser utilizado no translate.me. Apesar de que seu uso é bastante comum em compiladores, também possui outras aplicações, tais como  montagem de calculadoras para serviços e preços. Contudo, não é o mais recomendado, uma vez que seria necessário forçar muito o seu uso.
+
+
+### 2.5.3 Estrutura mínima
+
+![](../../../assets/desenho/padroes/interpreter.png)
+
 ## 3. Referências
 * [Guru Design Patterns - Mediator](https://refactoring.guru/design-patterns/mediator)
 * [Guru Design Patterns - Observer](https://refactoring.guru/design-patterns/observer)
-
-* [OO Design - Visitor Pattern](https://www.oodesign.com/visitor-pattern.html). <br>
-* [OO Design - Null Object](https://www.oodesign.com/null-object-pattern.html).
+* [DevMedia - Iterator](https://www.devmedia.com.br/padrao-de-projeto-iterator-em-java/26733)
+* [Interpreter - Blog do Matheus](https://blog.matheuscastiglioni.com.br/interpreter-padroes-de-projeto-em-java/)
+* [OO Design - Visitor Pattern](https://www.oodesign.com/visitor-pattern.html) <br>
+* [OO Design - Null Object](https://www.oodesign.com/null-object-pattern.html)
