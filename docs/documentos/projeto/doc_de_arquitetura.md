@@ -14,6 +14,7 @@
 | 11/04/2019 | 0.9 | Adicionando finalidade do documento | João Robson |
 | 22/04/2019 | 0.9.1 | Revisando e Adicionando Descrições de Tópicos  | Alexandre Miguel |
 | 27/04/2019 | 1.0 | Adicionando informações do Banco de Dados  | Alexandre Miguel e Rômulo Souza |
+| 15/06/2019 | 1.1 | Adicionando segunda versão do diagrama de classes  | Letícia Meneses e Gabriela Guedes |
 
 
 ## Objetivo do Documento
@@ -75,9 +76,11 @@ Modelo de representação dos serviços implementados e as interações estabele
 Modelagens conforme padrão UML que representam os aspectos arquiteturais do sistema, como as classes utilizadas, as camadas e pacotes da aplicação e a visão da implementação de cada serviço.
 
 ### 4.1 Diagrama de Classes
-
+#### Versão 1.0
 ![diagrama_classes](../../assets/desenho/uml/diagrama_classes.png)
 
+#### Versão 2.0
+![diagrama_classes](../../assets/desenho/uml/diag_class_v2.png)
 ### 4.2. Visão Geral de Camadas e Pacotes
 
 ![diagrama_pacotes](../../assets/desenho/uml/diagrama_pacotes.png)
