@@ -2,8 +2,18 @@ site_name: Translate.me
 extra_css: [extra.css]
 nav:
   - Início: index.md
-  - Metodologia: metodologia.md
-  - Documentos:
+  - Dinâmica e Seminário I:
+  -  Design Sprint: def_tema.md
+  - Dinâmica e Seminário II: metodologia.md
+  - Dinâmica e Seminário III: 
+     UMLs estáticos: desenho_de_software/uml/uml_estaticos.md
+  - Dinâmica e Seminário IV:
+     UMLS dinâmicos: desenho_de_software/uml/uml_dinamicos.md
+  - Dinâmica e Seminário V: 
+     Parte A, GoFs: desenho_de_software/padroes/gof/seminarioParteA.md 
+     Parte B, GoFs emergentes: desenho_de_software/padroes/gof/seminarioParteB.md 
+
+  - Iniciativas extras:
     - Documentos de Projeto:
       - Documento de Visão: documentos/projeto/doc_de_visao.md
       - Documento de Arquitetura: documentos/projeto/doc_de_arquitetura.md
@@ -14,9 +24,7 @@ nav:
       - Política de Contribuição: documentos/gerencia/pol_contribuicao.md
       - Canvas: documentos/gerencia/canvas.md
       - Termo de Abertura do Projeto: documentos/gerencia/tap.md
-  - Definição do Tema: def_tema.md
-  - Requisitos:
-    - Elicitação:
+    - Elicitação de requisitos:
       - Rich Picture: requisitos/elicitacao/rich_picture.md
       - Mapa Mental: requisitos/elicitacao/mapa_mental.md
       - Brainstorming: requisitos/elicitacao/brainstorming.md
@@ -33,23 +41,16 @@ nav:
       - Backlog Geral: requisitos/modelagem/backlog_geral.md
       - NFR: requisitos/modelagem/nfr.md
     - Tabela de Requisitos: requisitos/tabela_requisitos.md
-  - Desenho de Software:
-    - UML:
-      - Estáticos: desenho_de_software/uml/uml_estaticos.md
-      - Dinâmicos: desenho_de_software/uml/uml_dinamicos.md
-    - Padrões de Projeto:
+  - Estudo de padrões de Projeto:
       - GRASP: desenho_de_software/padroes/grasp.md
-      - gof: desenho_de_software/gof/structural-gofs.md
       - GoFs:
         - Criacionais: desenho_de_software/padroes/gof/criacionais.md
         - Estruturais: desenho_de_software/padroes/gof/estruturais.md
         - Comportamentais: desenho_de_software/padroes/gof/comportamentais.md
-        - Seminário de GOFs: desenho_de_software/padroes/gof/seminario.md
-        - Seminário de GOFs e Emergentes: desenho_de_software/padroes/gof/emergentes.md
   - Arquitetura de Software:
     - Modelos: arquitetura_de_software/modelos.md
     - Padrões Arquiteturais: arquitetura_de_software/padroes_arquiteturais.md
-  - Reuniões:
+    - Reuniões:
     - Reunião de Sprint:
       - Sprint 0: reunioes/sprints/sprint_0.md
       - Sprint 1: reunioes/sprints/sprint_1.md
@@ -62,7 +63,7 @@ nav:
       - PC 2: reunioes/pontos_de_controle/pc_2.md
       - PC 3: reunioes/pontos_de_controle/pc_3.md
       - PC 4: reunioes/pontos_de_controle/pc_4.md
-
+  
 #######################################################################################
 
 theme:
