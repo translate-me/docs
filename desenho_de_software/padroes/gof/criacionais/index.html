@@ -1614,6 +1614,12 @@
 <td>Adicionando Singleton e Abstract Factory GOFs</td>
 <td>Helena Goulart</td>
 </tr>
+<tr>
+<td>28/06/2019</td>
+<td>0.4</td>
+<td>Arruma analise do Multiton</td>
+<td>Gabriela Guedes</td>
+</tr>
 </tbody>
 </table>
 <h2 id="1-introducao">1. Introdução</h2>
@@ -1647,7 +1653,7 @@
 <h3 id="221-definicao">2.2.1 Definição</h3>
 <p>O multiton consiste na utilização de um método para retornar um objeto. Esse método deve receber uma chave, e caso já exista um objeto com essa chave, ele é retornado, caso contrário, um novo objeto é criado. O multiton é considerado uma extensão do padrão de projeto singleton, onde o método de criação de objetos deve ser privado e que só permite a criação de uma instância para a classe, no caso do multiton, é utilizado um dicionário para agrupar todas as instancias geradas.</p>
 <h3 id="222-analise">2.2.2 Análise</h3>
-<p>É possivel a implementação do Multiton em nosso projeto, veja o exemplo de implementação em python:</p>
+<p>É possivel a implementação do Multiton em python, veja o exemplo abaixo:</p>
 <pre><code class="py">def multiton(cls):
    instances = {}
    def getinstance(id):
@@ -1673,6 +1679,7 @@ print(&quot;Should be True:&quot;)
 print(b is c)
 </code></pre>
 
+<p>Entretanto, não é possível aplica-lo em Django. Devido ao uso das serializers para a criação de uma nova instância da classe, não é possivel adapta-la para este padrão de projeto.</p>
 <h3 id="223-estrutura-minima">2.2.3 Estrutura Mínima</h3>
 <p><img alt="" src="../../../../assets/desenho/padroes/multiton.png" /></p>
 <ul>

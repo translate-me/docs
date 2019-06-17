@@ -1130,6 +1130,53 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#27-front-controller" title="2.7 Front Controller" class="md-nav__link">
+    2.7 Front Controller
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#271-definicao" title="2.7.1 Definição" class="md-nav__link">
+    2.7.1 Definição
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#funcionamento" title="Funcionamento" class="md-nav__link">
+    Funcionamento
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#272-analise" title="2.7.2 Análise" class="md-nav__link">
+    2.7.2 Análise
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#273-estrutura-minima" title="2.7.3 Estrutura mínima" class="md-nav__link">
+    2.7.3 Estrutura mínima
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#3-referencias" title="3. Referências" class="md-nav__link">
     3. Referências
   </a>
@@ -1743,6 +1790,53 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#27-front-controller" title="2.7 Front Controller" class="md-nav__link">
+    2.7 Front Controller
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#271-definicao" title="2.7.1 Definição" class="md-nav__link">
+    2.7.1 Definição
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#funcionamento" title="Funcionamento" class="md-nav__link">
+    Funcionamento
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#272-analise" title="2.7.2 Análise" class="md-nav__link">
+    2.7.2 Análise
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#273-estrutura-minima" title="2.7.3 Estrutura mínima" class="md-nav__link">
+    2.7.3 Estrutura mínima
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#3-referencias" title="3. Referências" class="md-nav__link">
     3. Referências
   </a>
@@ -1815,6 +1909,12 @@
 <td>0.3</td>
 <td>Inclusão da análise do Facade</td>
 <td>Helena Goulart</td>
+</tr>
+<tr>
+<td>28/05</td>
+<td>0.4</td>
+<td>Adiciona Front Controller</td>
+<td>Gabriela Guedes</td>
 </tr>
 </tbody>
 </table>
@@ -1901,6 +2001,24 @@ o uso de funcionalidades de outros subsistemas mais complexos;</li>
 <p>Pode ser utilizado no translate.me, inclusive é um padrão recomendado que o utilizem pois ele se encaixa com o escopo do projeto, uma vez que contempla a estrutura de editor de texto. Editores são compostos por elementos individuais, tais como palavras e letras, enquanto o texto é um elemento parte-todo, pois contém várias palavras dentro dele.  </p>
 <h3 id="264-estrutura-minima">2.6.4 Estrutura mínima</h3>
 <p><img alt="Composite" src="../../../../assets/desenho/padroes/Composite.jpg" /></p>
+<h2 id="27-front-controller">2.7 Front Controller</h2>
+<h3 id="271-definicao">2.7.1 Definição</h3>
+<p>O front controller é um padrão de projeto que se comporta como um controlador para todas as requisições web da aplicação. Sua funcionalidade se deve para evitar duplicação de código, uma vez que as solicitações de um site são muito similares com passos que devem ser seguidos, como checar a segurança e fornecer uma página de resposta. Ao utilizar o front controller, a duplicação do código será então diminuida, uma vez que todas as requisições serão feitas por esse objeto que será instanciado pela classe do front controller.</p>
+<p>Com o front controller, a aplicação possui um único ponto de entrada que trata de todas as requisições. Esse código e responsável por carregar as dependências, fazer o processamento da requisição e levar a resposta para o navegador, chamando a página correta de acordo com a requisição feita.</p>
+<h4 id="funcionamento">Funcionamento</h4>
+<p>O front controller é dividido em 2 partes:</p>
+<ul>
+<li>
+<p><strong>Manipulador Web:</strong> Trata as requisições da aplicação. Extrai as informações necessárias da URL e então decide as ações que serão tomadas, o manipulador delega essas ações para serem executadas por um objeto Comando.</p>
+</li>
+<li>
+<p><strong>Comando:</strong> Executa as ações e escolhe qual página utilizar para a resposta.</p>
+</li>
+</ul>
+<h3 id="272-analise">2.7.2 Análise</h3>
+<p>Este padrão não pode ser aplicado no projeto. O front-end do translate.me é feito com React JS, que não segue o padrão MVC, segue um padrão próprio,  onde não há a separação de View e Controller, todas as Views são "controller-views". Como esse padrão exige a separação de uma controller para fazer a manipulação das requisições e as views chamadas, não é possível utilizá-lo com este framework.</p>
+<h3 id="273-estrutura-minima">2.7.3 Estrutura mínima</h3>
+<p><img alt="" src="../../../../assets/desenho/padroes/front-controller.png" /></p>
 <h2 id="3-referencias">3. Referências</h2>
 <h3 id="links-de-sites">Links de sites</h3>
 <ul>
@@ -1909,6 +2027,7 @@ o uso de funcionalidades de outros subsistemas mais complexos;</li>
 <li><a href="https://www.devmedia.com.br/padrao-de-projeto-adapter-em-java/26467">DevMedia - Adapter</a>. <br></li>
 <li><a href="http://www.dsc.ufcg.edu.br/~jacques/cursos/map/html/pat/composite.htm">UFCG - Composite</a>.</li>
 <li><a href="https://sourcemaking.com/design_patterns/bridge/java/1">SourceMaking - Bridge Java</a></li>
+<li><a href="https://www.devmedia.com.br/padroes-de-projetos-introducao-aos-padroes-front-controller-e-command/30644">DevMedia - Front Controller</a></li>
 </ul>
 <h3 id="livros-e-artigos">Livros e artigos</h3>
 <p>[1] HUMMEL, Oliver; ATKINSON, Colin. The managed adapter pattern: Facilitating glue code generation for component reuse. In: International Conference on Software Reuse. Springer, Berlin, Heidelberg, 2009. p. 211-224.</p>
