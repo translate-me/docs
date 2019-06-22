@@ -6,6 +6,7 @@
 |21/05|0.1|Adicionar decorator, extension e facade| João Robson|
 | 23/05 | 0.2 | Inclusão do Adapter, Composite e Bridge | Helena Goulart |
 | 23/05 | 0.3 | Inclusão da análise do Facade | Helena Goulart |
+| 28/05 | 0.4 | Adiciona Front Controller | Gabriela Guedes|
 
 ## 1. Introdução  
 
@@ -132,6 +133,25 @@ Pode ser utilizado no translate.me, inclusive é um padrão recomendado que o ut
 
 ![Composite](../../../assets/desenho/padroes/Composite.jpg)
 
+## 2.7 Front Controller
+### 2.7.1 Definição
+O front controller é um padrão de projeto que se comporta como um controlador para todas as requisições web da aplicação. Sua funcionalidade se deve para evitar duplicação de código, uma vez que as solicitações de um site são muito similares com passos que devem ser seguidos, como checar a segurança e fornecer uma página de resposta. Ao utilizar o front controller, a duplicação do código será então diminuida, uma vez que todas as requisições serão feitas por esse objeto que será instanciado pela classe do front controller.
+
+Com o front controller, a aplicação possui um único ponto de entrada que trata de todas as requisições. Esse código e responsável por carregar as dependências, fazer o processamento da requisição e levar a resposta para o navegador, chamando a página correta de acordo com a requisição feita.
+
+#### Funcionamento
+O front controller é dividido em 2 partes:
+
+* __Manipulador Web:__ Trata as requisições da aplicação. Extrai as informações necessárias da URL e então decide as ações que serão tomadas, o manipulador delega essas ações para serem executadas por um objeto Comando.
+
+* __Comando:__ Executa as ações e escolhe qual página utilizar para a resposta.
+
+### 2.7.2 Análise
+Este padrão não pode ser aplicado no projeto. O front-end do translate.me é feito com React JS, que não segue o padrão MVC, segue um padrão próprio,  onde não há a separação de View e Controller, todas as Views são "controller-views". Como esse padrão exige a separação de uma controller para fazer a manipulação das requisições e as views chamadas, não é possível utilizá-lo com este framework.
+
+### 2.7.3 Estrutura mínima
+![](../../../assets/desenho/padroes/front-controller.png)
+
 ## 3. Referências
 
 ### Links de sites
@@ -141,6 +161,7 @@ Pode ser utilizado no translate.me, inclusive é um padrão recomendado que o ut
 * [DevMedia - Adapter](https://www.devmedia.com.br/padrao-de-projeto-adapter-em-java/26467). <br>
 * [UFCG - Composite](http://www.dsc.ufcg.edu.br/~jacques/cursos/map/html/pat/composite.htm).
 * [SourceMaking - Bridge Java](https://sourcemaking.com/design_patterns/bridge/java/1)
+* [DevMedia - Front Controller](https://www.devmedia.com.br/padroes-de-projetos-introducao-aos-padroes-front-controller-e-command/30644)
 
 ### Livros e artigos
 [1] HUMMEL, Oliver; ATKINSON, Colin. The managed adapter pattern: Facilitating glue code generation for component reuse. In: International Conference on Software Reuse. Springer, Berlin, Heidelberg, 2009. p. 211-224.
