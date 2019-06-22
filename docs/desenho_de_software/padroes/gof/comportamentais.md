@@ -5,13 +5,11 @@
 |---|---|---|---|
 | 27/05/2019 | 0.1 | Adicionando Mediator | Renan Schadt e Rômulo Souza |
 | 27/05/2019 | 0.2 | Adicionando Observer | Renan Schadt |
-<<<<<<< HEAD
 | 27/05/2019 | 0.3 | Adição dos tópicos 2.3 e 2.4 | Davi Alves e Luiz Guilherme |
 | 28/05/2019 | 0.4 | Adição do Command | Victor Hugo |
-=======
 | 27/05/2019 | 0.3 | Adição dos topicos 2.3 e 2.4 | Davi Alves e Luiz Guilherme |
 | 30/05/2019 | 0.4 | Inclusão do Iterator | Helena Goulart |
->>>>>>> c20290415c2ccb23ca943f58d55152f6142cf7f3
+
 
 ## 1. Introdução
 
@@ -114,7 +112,7 @@ Dessa forma temos um desacoplamento entre o invocador do método e seu receptor.
 
 #### 2.5.3 Estrutura mínima
 ![](../../../assets/desenho/padroes/architecture_of_command_pattern.jpg)
-=======
+
 
 ## 2.6 Iterator
 
@@ -140,7 +138,7 @@ O interpreter pode ser utilizado no translate.me. Apesar de que seu uso é basta
 ### 2.7.3 Estrutura mínima
 
 ![](../../../assets/desenho/padroes/interpreter.png)
-=======
+
 
 ### 2.8 Chain of Responsability
 
@@ -179,7 +177,7 @@ Um outro ponto positivo é a possibilidade da alteração da ordem de execução
 
 
 Um exemplo interessante que ilustra essa cadeia é o processo de autenticação por etapas em uma aplicação, de forma que um usuário primeiro tenha que possuir um nome cadastrado na aplicação, posteriormente possuir uma senha válida e, em alguns casos, ocorre uma etapa de veriicação com questões específicas, sendo que em cada uma dessas etapas é possível uma falha do usuário bem como a completudo e prosseguimento do fluxo. No exemplo, cada etapa atuaria como *Receiver* de uma mesma classe abstrata.
->>>>>>> c20290415c2ccb23ca943f58d55152f6142cf7f3
+
 
 ## 3. Referências
 * [Guru Design Patterns - Mediator](https://refactoring.guru/design-patterns/mediator)
@@ -190,11 +188,7 @@ Um exemplo interessante que ilustra essa cadeia é o processo de autenticação 
 * [Chain of Responsability Implementation](https://www.tutorialspoint.com/design_pattern/chain_of_responsibility_pattern.htm)
 * [OO Design - Visitor Pattern](https://www.oodesign.com/visitor-pattern.html). <br>
 * [OO Design - Null Object](https://www.oodesign.com/null-object-pattern.html).
-<<<<<<< HEAD
-
 * [Python Design Patterns - Command](https://www.tutorialspoint.com/python_design_patterns/python_design_patterns_command.htm)
 * [Command in Python](https://sourcemaking.com/design_patterns/command/python/1)
 * [Strategy and Command Design Patterns — Wizards and Sandwiches — Applications in Python](https://medium.com/@rrfd/strategy-and-command-design-patterns-wizards-and-sandwiches-applications-in-python-d1ee1c86e00f)
 * [DESIGN PATTERNS - COMMAND PATTERN](https://www.bogotobogo.com/DesignPatterns/command.php)
-=======
->>>>>>> c20290415c2ccb23ca943f58d55152f6142cf7f3
