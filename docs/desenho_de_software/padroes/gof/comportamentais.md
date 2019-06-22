@@ -114,28 +114,28 @@ Dessa forma temos um desacoplamento entre o invocador do método e seu receptor.
 ![](../../../assets/desenho/padroes/architecture_of_command_pattern.jpg)
 
 
-## 2.6 Iterator
+### 2.6 Iterator
 
-### 2.6.1 Definição
+#### 2.6.1 Definição
 Trata-se de um meio de acessar sequencialmente os elementos de um objeto agregado sem expor sua representação subjacente. Desse modo, não é de importância se está sendo tratado com um _array_ ou com um _hash_.
 
-### 2.6.2 Análise
+#### 2.6.2 Análise
 É um padrão possível de ser utilizado no translate.me, como por exemplo para acessar uma lista de línguas estrangeiras que o tradutor domina, ou até mesmo uma lista de trechos já traduzidos pelo tradutor.
 
-### 2.6.3 Estrutura mínima
+#### 2.6.3 Estrutura mínima
 
 ![Iterator](../../../assets/desenho/padroes/iterator_pattern.jpg)
 
-## 2.7 Interpreter
+### 2.7 Interpreter
 
-### 2.7.1 Definição
+#### 2.7.1 Definição
 Trata-se de um padrão no qual realiza a interpretação de um código, ou seja, é responsável por processar e interpretar parâmetros.
 
-### 2.7.2 Análise
+#### 2.7.2 Análise
 O interpreter pode ser utilizado no translate.me. Apesar de que seu uso é bastante comum em compiladores, também possui outras aplicações, tais como  montagem de calculadoras para serviços e preços. Contudo, não é o mais recomendado, uma vez que seria necessário forçar muito o seu uso.
 
 
-### 2.7.3 Estrutura mínima
+#### 2.7.3 Estrutura mínima
 
 ![](../../../assets/desenho/padroes/interpreter.png)
 
