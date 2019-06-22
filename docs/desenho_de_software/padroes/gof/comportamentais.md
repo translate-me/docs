@@ -78,20 +78,21 @@ Foi verificado que a aplicação do padrão Visitor Pattern não reflete a compl
 
 ![](https://www.oodesign.com/images/behavioral/visitor-pattern.png)
 
-## 2.4 Null Object
+### 2.4 Null Object
 
-### 2.4.1 Definição
+#### 2.4.1 Definição
 No padrão Objeto Nulo, um objeto nulo substitui a verificação da instância do objeto NULL. Em vez de colocar se verificar um valor nulo, o objeto nulo reflete uma relação de não fazer nada. Esse objeto Nulo também pode ser usado para fornecer um comportamento padrão caso os dados não estejam disponíveis.
 
 No padrão Objeto Nulo, criamos uma classe abstrata especificando várias operações a serem executadas, classes concretas estendendo essa classe e uma classe de objeto nulo fornecendo nada implementando dessa classe e serão usadas de maneira aparentemente inexistente onde precisamos verificar o valor nulo.
 
-### 2.4.2 Análise
+#### 2.4.2 Análise
 
 Foi verificado que o uso do padrão Null Object no projeto não é necessario pois não existem diversos fluxos alternativos em tratamentos de expressões condicionais. O que se assemelharia a utilização desse padrão seria melhor implementado utilizando o proxy, pois, referem-se a tratamentos que não envolvem nulidade.
 
 
-### 2.4.3 Estrutura mínima
+#### 2.4.3 Estrutura mínima
 ![](https://www.oodesign.com/images/design_patterns/behavioral/null_object_implementation_-_uml_class_diagram.gif)
+
 
 ## 2.5 Iterator
 
@@ -117,11 +118,52 @@ O interpreter pode ser utilizado no translate.me. Apesar de que seu uso é basta
 ### 2.5.3 Estrutura mínima
 
 ![](../../../assets/desenho/padroes/interpreter.png)
+=======
+
+### 2.6 Chain of Responsability
+
+#### 2.6.1 Definição
+
+O Padrão Chain of Responsability é focado na delegação de funções para diferentes instâncias de uma mesma classe abstrata. Isto é, esse padrão configura a declaração de uma classe abstrata que é montada com métodos genéricos, bem como a funcionalidade de delegar a o funcionamento para uma outra instância de um elemento que herda dessa classe abstrata, seguindo uma ordem hierárquica.
+
+A um primeiro momento, o conceito pode parecer complexo, mas é fundamental compreender que a implementação do padrão busca facilitar a execução de atividades sequências em um sistema, transformando comportamentos específicos em objetos que desempenham uma função específica. Assim, após crar uma classe abstrata com métodos base, incluindo um método que instancia um outro objeto do mesmo tipo dessa classe abstrata, é necessário implementar classes que herdam dessa primeira, visando tratar as requisições de forma linear, permitindo ainda que a requisição não prossiga na cadeia de objetos dependendo do contexto dos objetos que gerenciam.
+
+Assim o padrão Chain of Responsability contém os seguintes elementos:
+
+1. Uma interface *Handler* responsável por implementar a lógica básica das outras classes e a função de identificar a próxima instância, hierarquicamente;
+
+2. Classes que herdam da interface, tidas como *Receivers* e que implementam, suas lógicas próprias;
+
+3. Uma lógica externa, tida como *Sender* que faz a requisição para a cadeia implementada.
+
+#### 2.6.2 Análise
+
+O Padrão é uma boa saída para modularizar fluxos que seriam muito longos e acoplados no caso de uma cadeia de **if ... else if ... else** entretanto sua aplicação no projeto não se demonstrou viável a um primeiro momento, dado que os possívels fluxos para um dado estado não se encaixam em uma cadeia sequencial, tampouco se faz necesário pelas estruturas comparativas que existem no contexto da aplicação do projeto em Django.  
+Uma vantagem evidente em relação ao uso de uma cadeia de if é a possibilidade de duas saídas possíveis para uma etapa, conforme a instância de um objeto permite, como no caso do cancelamento da continuidade da hirarquia.   
+Um outro ponto positivo é a possibilidade da alteração da ordem de execução dos objetos sem mudanças extremas no fluxo, mantendo a conectividade entre os módulos (ou objetos).
+
+
+#### 2.6.3  Estrutura Mínima
+
+##### 2.6.3.1 Diagrama de Classes
+
+![chain_diagram](../../../assets/desenho/padroes/gof_chain_of_responsability_class.jpg)
+
+##### 2.6.3.2 Diagrama de Sequência
+
+![chain_sequence](../../../assets/desenho/padroes/gof_chain_of_responsability_sequence.jpg)
+
+#### 2.6.4 Exemplo Conceitual
+
+
+Um exemplo interessante que ilustra essa cadeia é o processo de autenticação por etapas em uma aplicação, de forma que um usuário primeiro tenha que possuir um nome cadastrado na aplicação, posteriormente possuir uma senha válida e, em alguns casos, ocorre uma etapa de veriicação com questões específicas, sendo que em cada uma dessas etapas é possível uma falha do usuário bem como a completudo e prosseguimento do fluxo. No exemplo, cada etapa atuaria como *Receiver* de uma mesma classe abstrata.
 
 ## 3. Referências
 * [Guru Design Patterns - Mediator](https://refactoring.guru/design-patterns/mediator)
 * [Guru Design Patterns - Observer](https://refactoring.guru/design-patterns/observer)
 * [DevMedia - Iterator](https://www.devmedia.com.br/padrao-de-projeto-iterator-em-java/26733)
 * [Interpreter - Blog do Matheus](https://blog.matheuscastiglioni.com.br/interpreter-padroes-de-projeto-em-java/)
-* [OO Design - Visitor Pattern](https://www.oodesign.com/visitor-pattern.html) <br>
-* [OO Design - Null Object](https://www.oodesign.com/null-object-pattern.html)
+* [Guru Design Patterns - Chain of Responsability](https://refactoring.guru/design-patterns/chain-of-responsibility)
+* [Chain of Responsability Implementation](https://www.tutorialspoint.com/design_pattern/chain_of_responsibility_pattern.htm)
+* [OO Design - Visitor Pattern](https://www.oodesign.com/visitor-pattern.html). <br>
+* [OO Design - Null Object](https://www.oodesign.com/null-object-pattern.html).

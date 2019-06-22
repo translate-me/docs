@@ -14,6 +14,7 @@
 | 11/04/2019 | 0.9 | Adicionando finalidade do documento | João Robson |
 | 22/04/2019 | 0.9.1 | Revisando e Adicionando Descrições de Tópicos  | Alexandre Miguel |
 | 27/04/2019 | 1.0 | Adicionando informações do Banco de Dados  | Alexandre Miguel e Rômulo Souza |
+| 15/06/2019 | 1.1 | Adicionando segunda versão do diagrama de classes  | Letícia Meneses e Gabriela Guedes |
 
 
 ## Objetivo do Documento
@@ -75,9 +76,11 @@ Modelo de representação dos serviços implementados e as interações estabele
 Modelagens conforme padrão UML que representam os aspectos arquiteturais do sistema, como as classes utilizadas, as camadas e pacotes da aplicação e a visão da implementação de cada serviço.
 
 ### 4.1 Diagrama de Classes
-
+#### Versão 1.0
 ![diagrama_classes](../../assets/desenho/uml/diagrama_classes.png)
 
+#### Versão 2.0
+![diagrama_classes](../../assets/desenho/uml/diag_class_v2.png)
 ### 4.2. Visão Geral de Camadas e Pacotes
 
 ![diagrama_pacotes](../../assets/desenho/uml/diagrama_pacotes.png)
@@ -150,6 +153,8 @@ Os seguintes itens conferem ao sistema aspectos de qualidade, bem como a descri�
 
 #### 8.1.2. Relacionamentos
 
+#### 8.1.2.1 Versão 1
+
 * **TRADUTOR -** ***detem*** **- CERTIFICACAO**  
 Um tradutor detêm nenhuma ou várias certificações, mas cada certificação é detida somente por um tradutor.  
 Cardinalidade: **1:n**
@@ -176,6 +181,16 @@ Cardinalidade: **1:n**
 
 ### 8.3. Diagrama Entidade - Relacionamento (DE-R)
 
-![translateme_der](../../assets/documentos/projeto/db_der.png)
+![translateme_der_1](../../assets/documentos/projeto/db_der1.png)
 
-### 8.4. Diagrama Lógico
+#### 8.3.1 Versão 2
+
+Adição do serviço de Línguas
+
+![translateme_der_2](../../assets/documentos/projeto/db_der2.png)
+
+#### 8.3.1 Versão 3
+
+Adição da entidade de Notificação e remoção do serviço de Línguas
+
+![translateme_der_3](../../assets/documentos/projeto/db_der3.png)
