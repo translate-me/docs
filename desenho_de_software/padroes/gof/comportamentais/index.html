@@ -1029,6 +1029,40 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#25-command" title="2.5 Command" class="md-nav__link">
+    2.5 Command
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#251-definicao" title="2.5.1 Definição" class="md-nav__link">
+    2.5.1 Definição
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#252-analise" title="2.5.2 Análise" class="md-nav__link">
+    2.5.2 Análise
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#253-estrutura-minima" title="2.5.3 Estrutura mínima" class="md-nav__link">
+    2.5.3 Estrutura mínima
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1245,30 +1279,6 @@
   <li class="md-nav__item">
     <a href="../../../../reunioes/sprints/sprint_5/" title="Sprint 5" class="md-nav__link">
       Sprint 5
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../../../reunioes/sprints/sprint_6/" title="Sprint 6" class="md-nav__link">
-      Sprint 6
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../../../reunioes/sprints/sprint_7/" title="Sprint 7" class="md-nav__link">
-      Sprint 7
     </a>
   </li>
 
@@ -1527,6 +1537,40 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#25-command" title="2.5 Command" class="md-nav__link">
+    2.5 Command
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#251-definicao" title="2.5.1 Definição" class="md-nav__link">
+    2.5.1 Definição
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#252-analise" title="2.5.2 Análise" class="md-nav__link">
+    2.5.2 Análise
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#253-estrutura-minima" title="2.5.3 Estrutura mínima" class="md-nav__link">
+    2.5.3 Estrutura mínima
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1583,8 +1627,14 @@
 <tr>
 <td>27/05/2019</td>
 <td>0.3</td>
-<td>Adição dos topicos 2.3 e 2.4</td>
+<td>Adição dos tópicos 2.3 e 2.4</td>
 <td>Davi Alves e Luiz Guilherme</td>
+</tr>
+<tr>
+<td>28/05/2019</td>
+<td>0.4</td>
+<td>Adição do Command</td>
+<td>Victor Hugo</td>
 </tr>
 </tbody>
 </table>
@@ -1639,7 +1689,7 @@
 <p>No <em>Visitor Pattern</em>, usamos uma classe de visitante que altera o algoritmo de execução de uma classe de elemento. Por este caminho, o algoritmo de execução do elemento pode variar como e quando o visitante varia. Esse padrão está na categoria de padrão de comportamento. Conforme o padrão, o objeto de elemento precisa aceitar o objeto de visitante para que o objeto de visitante manipule a operação no objeto de elemento.</p>
 <p>O objetivo principal do <em>Visitor Pattern</em> é abstrair a funcionalidade que pode ser aplicada a uma hierarquia agregada de elementos de objetos. A abordagem incentiva a criação de classes de elementos leves - porque a funcionalidade de processamento é removida de sua lista de responsabilidades. Novas funcionalidades podem ser facilmente adicionadas à hierarquia de herança original, criando uma nova subclasse Visitante.</p>
 <h3 id="232-analise">2.3.2 Análise</h3>
-<p>Foi verificado que a aplicação do padrão Visitor Pattern não reflete a complexidade para o nosso projeto pois não possuimos uma estrutura de objetos como muitas interfaces diferentes, não realizamos muitas operações distintas e não relacionadas e não ocorre a adição frequente de novas operações da classe.</p>
+<p>Foi verificado que a aplicação do padrão Visitor Pattern não reflete a complexidade para o nosso projeto pois não possuímos uma estrutura de objetos como muitas interfaces diferentes, não realizamos muitas operações distintas e não relacionadas e não ocorre a adição frequente de novas operações da classe.</p>
 <h3 id="233-estrutura-minima">2.3.3 Estrutura mínima</h3>
 <p><img alt="" src="https://www.oodesign.com/images/behavioral/visitor-pattern.png" /></p>
 <h2 id="24-null-object">2.4 Null Object</h2>
@@ -1647,9 +1697,21 @@
 <p>No padrão Objeto Nulo, um objeto nulo substitui a verificação da instância do objeto NULL. Em vez de colocar se verificar um valor nulo, o objeto nulo reflete uma relação de não fazer nada. Esse objeto Nulo também pode ser usado para fornecer um comportamento padrão caso os dados não estejam disponíveis.</p>
 <p>No padrão Objeto Nulo, criamos uma classe abstrata especificando várias operações a serem executadas, classes concretas estendendo essa classe e uma classe de objeto nulo fornecendo nada implementando dessa classe e serão usadas de maneira aparentemente inexistente onde precisamos verificar o valor nulo.</p>
 <h3 id="242-analise">2.4.2 Análise</h3>
-<p>Foi verificado que o uso do padrão Null Object no projeto não é necessario pois não existem diversos fluxos alternativos em tratamentos de expressões condicionais. O que se assemelharia a utilização desse padrão seria melhor implementado utilizando o proxy, pois, referem-se a tratamentos que não envolvem nulidade.</p>
+<p>Foi verificado que o uso do padrão Null Object no projeto não é necessário pois não existem diversos fluxos alternativos em tratamentos de expressões condicionais. O que se assemelharia a utilização desse padrão seria melhor implementado utilizando o proxy, pois, referem-se a tratamentos que não envolvem nulidade.</p>
 <h3 id="243-estrutura-minima">2.4.3 Estrutura mínima</h3>
 <p><img alt="" src="https://www.oodesign.com/images/design_patterns/behavioral/null_object_implementation_-_uml_class_diagram.gif" /></p>
+<h3 id="25-command">2.5 Command</h3>
+<h4 id="251-definicao">2.5.1 Definição</h4>
+<p>O padrão <em>command</em> adiciona um nível de abstração para as ações executados pelas classes e adiciona um objeto que é responsável por invocar essas ações. Normalmente esse tipo de padrão funciona de seguinte forma:</p>
+<ol>
+<li>O cliente cria um objeto comando a ser executado e que possui uma lista de comandos.</li>
+<li>Esse objeto comando implementa sua própria interface específica para suas ações.</li>
+</ol>
+<p>Dessa forma temos um desacoplamento entre o invocador do método e seu receptor. E também, temos um melhor encapsulamento da aplicação.</p>
+<h4 id="252-analise">2.5.2 Análise</h4>
+<p>É possível usar esse padrão de projeto dentro do nosso escopo atual desde que não force seu uso dentro das próprias classes do django, ou seja, use ela apenas em um arquivo separado chamado utils e utilize apenas sua chamada dentro da view que você deseja utilizar daquele método.</p>
+<h4 id="253-estrutura-minima">2.5.3 Estrutura mínima</h4>
+<p><img alt="" src="../../../../assets/desenho/padroes/architecture_of_command_pattern.jpg" /></p>
 <h2 id="3-referencias">3. Referências</h2>
 <ul>
 <li><a href="https://refactoring.guru/design-patterns/mediator">Guru Design Patterns - Mediator</a></li>
@@ -1659,7 +1721,15 @@
 <li>
 <p><a href="https://www.oodesign.com/visitor-pattern.html">OO Design - Visitor Pattern</a>. <br></p>
 </li>
-<li><a href="https://www.oodesign.com/null-object-pattern.html">OO Design - Null Object</a>.</li>
+<li>
+<p><a href="https://www.oodesign.com/null-object-pattern.html">OO Design - Null Object</a>.</p>
+</li>
+<li>
+<p><a href="https://www.tutorialspoint.com/python_design_patterns/python_design_patterns_command.htm">Python Design Patterns - Command</a></p>
+</li>
+<li><a href="https://sourcemaking.com/design_patterns/command/python/1">Command in Python</a></li>
+<li><a href="https://medium.com/@rrfd/strategy-and-command-design-patterns-wizards-and-sandwiches-applications-in-python-d1ee1c86e00f">Strategy and Command Design Patterns — Wizards and Sandwiches — Applications in Python</a></li>
+<li><a href="https://www.bogotobogo.com/DesignPatterns/command.php">DESIGN PATTERNS - COMMAND PATTERN</a></li>
 </ul>
                 
                   
