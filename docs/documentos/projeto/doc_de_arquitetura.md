@@ -153,6 +153,8 @@ Os seguintes itens conferem ao sistema aspectos de qualidade, bem como a descri�
 
 #### 8.1.2. Relacionamentos
 
+#### 8.1.2.1 Versão 1
+
 * **TRADUTOR -** ***detem*** **- CERTIFICACAO**  
 Um tradutor detêm nenhuma ou várias certificações, mas cada certificação é detida somente por um tradutor.  
 Cardinalidade: **1:n**
@@ -179,6 +181,16 @@ Cardinalidade: **1:n**
 
 ### 8.3. Diagrama Entidade - Relacionamento (DE-R)
 
-![translateme_der](../../assets/documentos/projeto/db_der.png)
+![translateme_der_1](../../assets/documentos/projeto/db_der1.png)
 
-### 8.4. Diagrama Lógico
+#### 8.3.1 Versão 2
+
+Adição do serviço de Línguas
+
+![translateme_der_2](../../assets/documentos/projeto/db_der2.png)
+
+#### 8.3.1 Versão 3
+
+Adição da entidade de Notificação e remoção do serviço de Línguas
+
+![translateme_der_3](../../assets/documentos/projeto/db_der3.png)
