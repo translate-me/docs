@@ -69,17 +69,17 @@ Após a análise da documentação do Django chegamos a conclusão que este fram
 
 ### 2.3 Visitor Pattern
 
-### 2.3.1 Definição
+#### 2.3.1 Definição
 
 No _Visitor Pattern_, usamos uma classe de visitante que altera o algoritmo de execução de uma classe de elemento. Por este caminho, o algoritmo de execução do elemento pode variar como e quando o visitante varia. Esse padrão está na categoria de padrão de comportamento. Conforme o padrão, o objeto de elemento precisa aceitar o objeto de visitante para que o objeto de visitante manipule a operação no objeto de elemento.
 
 O objetivo principal do _Visitor Pattern_ é abstrair a funcionalidade que pode ser aplicada a uma hierarquia agregada de elementos de objetos. A abordagem incentiva a criação de classes de elementos leves - porque a funcionalidade de processamento é removida de sua lista de responsabilidades. Novas funcionalidades podem ser facilmente adicionadas à hierarquia de herança original, criando uma nova subclasse Visitante.
 
-### 2.3.2 Análise
+#### 2.3.2 Análise
 
 Foi verificado que a aplicação do padrão Visitor Pattern não reflete a complexidade para o nosso projeto pois não possuímos uma estrutura de objetos como muitas interfaces diferentes, não realizamos muitas operações distintas e não relacionadas e não ocorre a adição frequente de novas operações da classe.
 
-### 2.3.3 Estrutura mínima
+#### 2.3.3 Estrutura mínima
 
 ![](https://www.oodesign.com/images/behavioral/visitor-pattern.png)
 
