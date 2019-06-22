@@ -14,7 +14,11 @@
 | 11/04/2019 | 0.9 | Adicionando finalidade do documento | João Robson |
 | 22/04/2019 | 0.9.1 | Revisando e Adicionando Descrições de Tópicos  | Alexandre Miguel |
 | 27/04/2019 | 1.0 | Adicionando informações do Banco de Dados  | Alexandre Miguel e Rômulo Souza |
-| 16/06/2019 | 1.1 | Adicionado subtopicos em visão geral de camadas e pacotes| Davi Alves |
+| 15/06/2019 | 1.1 | Adicionando segunda versão do diagrama de classes  | Letícia Meneses e Gabriela Guedes |
+| 16/06/2019 | 1.2 | Adicionado subtopicos em visão geral de camadas e pacotes| Davi Alves |
+
+
+>>>>>>> e2002509303068eb8f1897f00eb34d76bc21ca65
 
 
 ## Objetivo do Documento
@@ -76,9 +80,11 @@ Modelo de representação dos serviços implementados e as interações estabele
 Modelagens conforme padrão UML que representam os aspectos arquiteturais do sistema, como as classes utilizadas, as camadas e pacotes da aplicação e a visão da implementação de cada serviço.
 
 ### 4.1 Diagrama de Classes
-
+#### Versão 1.0
 ![diagrama_classes](../../assets/desenho/uml/diagrama_classes.png)
 
+#### Versão 2.0
+![diagrama_classes](../../assets/desenho/uml/diag_class_v2.png)
 ### 4.2. Visão Geral de Camadas e Pacotes
 
 ![diagrama_pacotes](../../assets/desenho/uml/diagrama_pacotes.png)
@@ -88,12 +94,12 @@ React(Front-End) - Biblioteca JavaScript que leva consigo outros 3 pacotes que s
 
 * Redux - Facilitador da comunicação entre componentes sem acoplá-los.
 * Telas - Telas propriamente ditas onde o usuario estará interagindo, ela depende do redux e dos componentes.
-* Componentes - Os componentes permitem que você divida sua interface em partes independentes e reutilizáveis, e que você pense em cada parte de forma isolada. 
+* Componentes - Os componentes permitem que você divida sua interface em partes independentes e reutilizáveis, e que você pense em cada parte de forma isolada.
 #### 4.2.2
 Django(Back-End) - Framework Web que segue o padrão arquitetural model-template-view que possui os pacotes:
 
 * Autenticação - Manipula contas de usuário, grupos, permissões e sessões de usuário.
-  
+
   * Login - Possui todas  as funções de autenticador de usuario e depende do cadastro.
   * Cadastro - Possui funções para criação de novos usuarios.
 * Tradução - Possui todas  as funções relacionadas a tradução que sera feita por um tipo especifico de usuario. Ela depende diretamente da autenticação e do pagamento.
@@ -172,6 +178,8 @@ Os seguintes itens conferem ao sistema aspectos de qualidade, bem como a descri�
 
 #### 8.1.2. Relacionamentos
 
+#### 8.1.2.1 Versão 1
+
 * **TRADUTOR -** ***detem*** **- CERTIFICACAO**  
 Um tradutor detêm nenhuma ou várias certificações, mas cada certificação é detida somente por um tradutor.  
 Cardinalidade: **1:n**
@@ -198,6 +206,16 @@ Cardinalidade: **1:n**
 
 ### 8.3. Diagrama Entidade - Relacionamento (DE-R)
 
-![translateme_der](../../assets/documentos/projeto/db_der.png)
+![translateme_der_1](../../assets/documentos/projeto/db_der1.png)
 
-### 8.4. Diagrama Lógico
+#### 8.3.1 Versão 2
+
+Adição do serviço de Línguas
+
+![translateme_der_2](../../assets/documentos/projeto/db_der2.png)
+
+#### 8.3.1 Versão 3
+
+Adição da entidade de Notificação e remoção do serviço de Línguas
+
+![translateme_der_3](../../assets/documentos/projeto/db_der3.png)
