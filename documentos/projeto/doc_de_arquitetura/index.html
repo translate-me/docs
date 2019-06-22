@@ -437,33 +437,6 @@
     4.2. Visão Geral de Camadas e Pacotes
   </a>
   
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#421" title="4.2.1" class="md-nav__link">
-    4.2.1
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#422" title="4.2.2" class="md-nav__link">
-    4.2.2
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#423" title="4.2.3" class="md-nav__link">
-    4.2.3
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
         
       </ul>
@@ -1375,6 +1348,30 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../reunioes/sprints/sprint_6/" title="Sprint 6" class="md-nav__link">
+      Sprint 6
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../reunioes/sprints/sprint_7/" title="Sprint 7" class="md-nav__link">
+      Sprint 7
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -1585,33 +1582,6 @@
   <a href="#42-visao-geral-de-camadas-e-pacotes" title="4.2. Visão Geral de Camadas e Pacotes" class="md-nav__link">
     4.2. Visão Geral de Camadas e Pacotes
   </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#421" title="4.2.1" class="md-nav__link">
-    4.2.1
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#422" title="4.2.2" class="md-nav__link">
-    4.2.2
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#423" title="4.2.3" class="md-nav__link">
-    4.2.3
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -1870,29 +1840,8 @@
 <td>Adicionando segunda versão do diagrama de classes</td>
 <td>Letícia Meneses e Gabriela Guedes</td>
 </tr>
-<tr>
-<td>16/06/2019</td>
-<td>1.2</td>
-<td>Adicionado subtopicos em visão geral de camadas e pacotes</td>
-<td>Davi Alves</td>
-</tr>
 </tbody>
 </table>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>e2002509303068eb8f1897f00eb34d76bc21ca65</p>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
 <h2 id="objetivo-do-documento">Objetivo do Documento</h2>
 <p>Este documento tem como objetivo descrever e caracterizar as decisões arquiteturais do projeto
 <strong>Translate.me</strong> . A caraterização será feita com enfoque no ambito do software, não levando em conta medições como de performace.</p>
@@ -1958,32 +1907,6 @@
 <p><img alt="diagrama_classes" src="../../../assets/desenho/uml/diag_class_v2.png" /></p>
 <h3 id="42-visao-geral-de-camadas-e-pacotes">4.2. Visão Geral de Camadas e Pacotes</h3>
 <p><img alt="diagrama_pacotes" src="../../../assets/desenho/uml/diagrama_pacotes.png" /></p>
-<h4 id="421">4.2.1</h4>
-<p>React(Front-End) - Biblioteca JavaScript que leva consigo outros 3 pacotes que são:</p>
-<ul>
-<li>Redux - Facilitador da comunicação entre componentes sem acoplá-los.</li>
-<li>Telas - Telas propriamente ditas onde o usuario estará interagindo, ela depende do redux e dos componentes.</li>
-<li>Componentes - Os componentes permitem que você divida sua interface em partes independentes e reutilizáveis, e que você pense em cada parte de forma isolada.</li>
-</ul>
-<h4 id="422">4.2.2</h4>
-<p>Django(Back-End) - Framework Web que segue o padrão arquitetural model-template-view que possui os pacotes:</p>
-<ul>
-<li>
-<p>Autenticação - Manipula contas de usuário, grupos, permissões e sessões de usuário.</p>
-</li>
-<li>
-<p>Login - Possui todas  as funções de autenticador de usuario e depende do cadastro.</p>
-</li>
-<li>Cadastro - Possui funções para criação de novos usuarios.</li>
-<li>Tradução - Possui todas  as funções relacionadas a tradução que sera feita por um tipo especifico de usuario. Ela depende diretamente da autenticação e do pagamento.</li>
-<li>Pagamento - Possui todas  as funções relacionadas ao pagamento que será efetuado e também recebido, dependente da autenticação.</li>
-<li>Chat - Dependente da tradução para comunicação dos usuarios, possui funções para troca de mensagens.</li>
-<li>Gamificação - Possui funções para melhoria de interação do usuario e depende apenas do pacote tradução.</li>
-</ul>
-<h4 id="423">4.2.3</h4>
-<ul>
-<li>Base de Dados - O pacote Base de dados inclui todas funções necessarias para suportar o armazenamento dos dados.</li>
-</ul>
 <hr />
 <h2 id="5-visao-de-implementacao">5. Visão de implementação</h2>
 <h2 id="_1"><img alt="visao_implementacao" src="https://i.imgur.com/oFSxr4I.png" /></h2>
