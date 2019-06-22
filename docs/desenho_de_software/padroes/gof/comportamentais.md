@@ -5,8 +5,11 @@
 |---|---|---|---|
 | 27/05/2019 | 0.1 | Adicionando Mediator | Renan Schadt e Rômulo Souza |
 | 27/05/2019 | 0.2 | Adicionando Observer | Renan Schadt |
+| 27/05/2019 | 0.3 | Adição dos tópicos 2.3 e 2.4 | Davi Alves e Luiz Guilherme |
+| 28/05/2019 | 0.4 | Adição do Command | Victor Hugo |
 | 27/05/2019 | 0.3 | Adição dos topicos 2.3 e 2.4 | Davi Alves e Luiz Guilherme |
 | 30/05/2019 | 0.4 | Inclusão do Iterator | Helena Goulart |
+
 
 ## 1. Introdução
 
@@ -64,17 +67,17 @@ Após a análise da documentação do Django chegamos a conclusão que este fram
 
 ### 2.3 Visitor Pattern
 
-### 2.3.1 Definição
+#### 2.3.1 Definição
 
 No _Visitor Pattern_, usamos uma classe de visitante que altera o algoritmo de execução de uma classe de elemento. Por este caminho, o algoritmo de execução do elemento pode variar como e quando o visitante varia. Esse padrão está na categoria de padrão de comportamento. Conforme o padrão, o objeto de elemento precisa aceitar o objeto de visitante para que o objeto de visitante manipule a operação no objeto de elemento.
 
 O objetivo principal do _Visitor Pattern_ é abstrair a funcionalidade que pode ser aplicada a uma hierarquia agregada de elementos de objetos. A abordagem incentiva a criação de classes de elementos leves - porque a funcionalidade de processamento é removida de sua lista de responsabilidades. Novas funcionalidades podem ser facilmente adicionadas à hierarquia de herança original, criando uma nova subclasse Visitante.
 
-### 2.3.2 Análise
+#### 2.3.2 Análise
 
-Foi verificado que a aplicação do padrão Visitor Pattern não reflete a complexidade para o nosso projeto pois não possuimos uma estrutura de objetos como muitas interfaces diferentes, não realizamos muitas operações distintas e não relacionadas e não ocorre a adição frequente de novas operações da classe.
+Foi verificado que a aplicação do padrão Visitor Pattern não reflete a complexidade para o nosso projeto pois não possuímos uma estrutura de objetos como muitas interfaces diferentes, não realizamos muitas operações distintas e não relacionadas e não ocorre a adição frequente de novas operações da classe.
 
-### 2.3.3 Estrutura mínima
+#### 2.3.3 Estrutura mínima
 
 ![](https://www.oodesign.com/images/behavioral/visitor-pattern.png)
 
@@ -87,42 +90,59 @@ No padrão Objeto Nulo, criamos uma classe abstrata especificando várias opera�
 
 #### 2.4.2 Análise
 
-Foi verificado que o uso do padrão Null Object no projeto não é necessario pois não existem diversos fluxos alternativos em tratamentos de expressões condicionais. O que se assemelharia a utilização desse padrão seria melhor implementado utilizando o proxy, pois, referem-se a tratamentos que não envolvem nulidade.
+Foi verificado que o uso do padrão Null Object no projeto não é necessário pois não existem diversos fluxos alternativos em tratamentos de expressões condicionais. O que se assemelharia a utilização desse padrão seria melhor implementado utilizando o proxy, pois, referem-se a tratamentos que não envolvem nulidade.
 
 
 #### 2.4.3 Estrutura mínima
 ![](https://www.oodesign.com/images/design_patterns/behavioral/null_object_implementation_-_uml_class_diagram.gif)
 
 
-## 2.5 Iterator
+### 2.5 Command   
+#### 2.5.1 Definição  
 
-### 2.5.1 Definição
+O padrão _command_ adiciona um nível de abstração para as ações executados pelas classes e adiciona um objeto que é responsável por invocar essas ações. Normalmente esse tipo de padrão funciona de seguinte forma:
+
+1. O cliente cria um objeto comando a ser executado e que possui uma lista de comandos.
+2. Esse objeto comando implementa sua própria interface específica para suas ações.
+
+Dessa forma temos um desacoplamento entre o invocador do método e seu receptor. E também, temos um melhor encapsulamento da aplicação.
+
+#### 2.5.2 Análise
+É possível usar esse padrão de projeto dentro do nosso escopo atual desde que não force seu uso dentro das próprias classes do django, ou seja, use ela apenas em um arquivo separado chamado utils e utilize apenas sua chamada dentro da view que você deseja utilizar daquele método.
+
+#### 2.5.3 Estrutura mínima
+![](../../../assets/desenho/padroes/architecture_of_command_pattern.jpg)
+
+
+### 2.6 Iterator
+
+#### 2.6.1 Definição
 Trata-se de um meio de acessar sequencialmente os elementos de um objeto agregado sem expor sua representação subjacente. Desse modo, não é de importância se está sendo tratado com um _array_ ou com um _hash_.
 
-### 2.5.2 Análise
+#### 2.6.2 Análise
 É um padrão possível de ser utilizado no translate.me, como por exemplo para acessar uma lista de línguas estrangeiras que o tradutor domina, ou até mesmo uma lista de trechos já traduzidos pelo tradutor.
 
-### 2.5.3 Estrutura mínima
+#### 2.6.3 Estrutura mínima
 
 ![Iterator](../../../assets/desenho/padroes/iterator_pattern.jpg)
 
-## 2.6 Interpreter
+### 2.7 Interpreter
 
-### 2.5.1 Definição
+#### 2.7.1 Definição
 Trata-se de um padrão no qual realiza a interpretação de um código, ou seja, é responsável por processar e interpretar parâmetros.
 
-### 2.5.2 Análise
+#### 2.7.2 Análise
 O interpreter pode ser utilizado no translate.me. Apesar de que seu uso é bastante comum em compiladores, também possui outras aplicações, tais como  montagem de calculadoras para serviços e preços. Contudo, não é o mais recomendado, uma vez que seria necessário forçar muito o seu uso.
 
 
-### 2.5.3 Estrutura mínima
+#### 2.7.3 Estrutura mínima
 
 ![](../../../assets/desenho/padroes/interpreter.png)
-=======
 
-### 2.6 Chain of Responsability
 
-#### 2.6.1 Definição
+### 2.8 Chain of Responsability
+
+#### 2.8.1 Definição
 
 O Padrão Chain of Responsability é focado na delegação de funções para diferentes instâncias de uma mesma classe abstrata. Isto é, esse padrão configura a declaração de uma classe abstrata que é montada com métodos genéricos, bem como a funcionalidade de delegar a o funcionamento para uma outra instância de um elemento que herda dessa classe abstrata, seguindo uma ordem hierárquica.
 
@@ -136,27 +156,28 @@ Assim o padrão Chain of Responsability contém os seguintes elementos:
 
 3. Uma lógica externa, tida como *Sender* que faz a requisição para a cadeia implementada.
 
-#### 2.6.2 Análise
+#### 2.8.2 Análise
 
 O Padrão é uma boa saída para modularizar fluxos que seriam muito longos e acoplados no caso de uma cadeia de **if ... else if ... else** entretanto sua aplicação no projeto não se demonstrou viável a um primeiro momento, dado que os possívels fluxos para um dado estado não se encaixam em uma cadeia sequencial, tampouco se faz necesário pelas estruturas comparativas que existem no contexto da aplicação do projeto em Django.  
 Uma vantagem evidente em relação ao uso de uma cadeia de if é a possibilidade de duas saídas possíveis para uma etapa, conforme a instância de um objeto permite, como no caso do cancelamento da continuidade da hirarquia.   
 Um outro ponto positivo é a possibilidade da alteração da ordem de execução dos objetos sem mudanças extremas no fluxo, mantendo a conectividade entre os módulos (ou objetos).
 
 
-#### 2.6.3  Estrutura Mínima
+#### 2.8.3  Estrutura Mínima
 
-##### 2.6.3.1 Diagrama de Classes
+##### 2.8.3.1 Diagrama de Classes
 
 ![chain_diagram](../../../assets/desenho/padroes/gof_chain_of_responsability_class.jpg)
 
-##### 2.6.3.2 Diagrama de Sequência
+##### 2.8.3.2 Diagrama de Sequência
 
 ![chain_sequence](../../../assets/desenho/padroes/gof_chain_of_responsability_sequence.jpg)
 
-#### 2.6.4 Exemplo Conceitual
+#### 2.8.4 Exemplo Conceitual
 
 
 Um exemplo interessante que ilustra essa cadeia é o processo de autenticação por etapas em uma aplicação, de forma que um usuário primeiro tenha que possuir um nome cadastrado na aplicação, posteriormente possuir uma senha válida e, em alguns casos, ocorre uma etapa de veriicação com questões específicas, sendo que em cada uma dessas etapas é possível uma falha do usuário bem como a completudo e prosseguimento do fluxo. No exemplo, cada etapa atuaria como *Receiver* de uma mesma classe abstrata.
+
 
 ## 3. Referências
 * [Guru Design Patterns - Mediator](https://refactoring.guru/design-patterns/mediator)
@@ -167,3 +188,7 @@ Um exemplo interessante que ilustra essa cadeia é o processo de autenticação 
 * [Chain of Responsability Implementation](https://www.tutorialspoint.com/design_pattern/chain_of_responsibility_pattern.htm)
 * [OO Design - Visitor Pattern](https://www.oodesign.com/visitor-pattern.html). <br>
 * [OO Design - Null Object](https://www.oodesign.com/null-object-pattern.html).
+* [Python Design Patterns - Command](https://www.tutorialspoint.com/python_design_patterns/python_design_patterns_command.htm)
+* [Command in Python](https://sourcemaking.com/design_patterns/command/python/1)
+* [Strategy and Command Design Patterns — Wizards and Sandwiches — Applications in Python](https://medium.com/@rrfd/strategy-and-command-design-patterns-wizards-and-sandwiches-applications-in-python-d1ee1c86e00f)
+* [DESIGN PATTERNS - COMMAND PATTERN](https://www.bogotobogo.com/DesignPatterns/command.php)
