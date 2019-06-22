@@ -45,6 +45,7 @@ nav:
         - Estruturais: desenho_de_software/padroes/gof/estruturais.md
         - Comportamentais: desenho_de_software/padroes/gof/comportamentais.md
         - Seminário de GOFs: desenho_de_software/padroes/gof/seminario.md
+        - Seminário de GOFs e Emergentes: desenho_de_software/padroes/gof/emergentes.md
   - Arquitetura de Software:
     - Modelos: arquitetura_de_software/modelos.md
     - Padrões Arquiteturais: arquitetura_de_software/padroes_arquiteturais.md

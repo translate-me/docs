@@ -6,7 +6,8 @@
 |---|---|---|---|
 | 20/05/2019 | 0.1 | Adicionando Multiton GOF | Gabriela Guedes |
 | 20/05/2019 | 0.2 | Adicionando Factory Method GOF | Renan Schadt |
-| 23/05/2019 | 0.3 | Adicionando Singleton e Abstract Factory GOFs | Helena Goulart | |
+| 23/05/2019 | 0.3 | Adicionando Singleton e Abstract Factory GOFs | Helena Goulart |
+| 28/06/2019 | 0.4 | Arruma analise do Multiton | Gabriela Guedes |
 
 ## 1. Introdução
 
@@ -45,7 +46,7 @@ Assim teremos uma solução elegante para criação de objetos de texto, dando p
 O multiton consiste na utilização de um método para retornar um objeto. Esse método deve receber uma chave, e caso já exista um objeto com essa chave, ele é retornado, caso contrário, um novo objeto é criado. O multiton é considerado uma extensão do padrão de projeto singleton, onde o método de criação de objetos deve ser privado e que só permite a criação de uma instância para a classe, no caso do multiton, é utilizado um dicionário para agrupar todas as instancias geradas.
 
 ### 2.2.2 Análise
-É possivel a implementação do Multiton em nosso projeto, veja o exemplo de implementação em python:
+É possivel a implementação do Multiton em python, veja o exemplo abaixo:
 
 ``` py
 def multiton(cls):
@@ -72,6 +73,8 @@ print(a is b)
 print("Should be True:")
 print(b is c)
 ```
+
+Entretanto, não é possível aplica-lo em Django. Devido ao uso das serializers para a criação de uma nova instância da classe, não é possivel adapta-la para este padrão de projeto.
 
 ### 2.2.3 Estrutura Mínima
 
