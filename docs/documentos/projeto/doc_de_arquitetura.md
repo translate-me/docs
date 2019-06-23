@@ -18,13 +18,11 @@
 | 16/06/2019 | 1.2 | Adicionado subtopicos em visão geral de camadas e pacotes| Davi Alves |
 
 
->>>>>>> e2002509303068eb8f1897f00eb34d76bc21ca65
-
-
 ## Objetivo do Documento
 Este documento tem como objetivo descrever e caracterizar as decisões arquiteturais do projeto
 **Translate.me** . A caraterização será feita com enfoque no ambito do software, não levando em conta medições como de performace.
 
+---
 
 ## 1. Introdução
 Este documento visa apresentar a arquitetura de software a ser aplicada no sistema do **Translate.me** , de forma que facilite a visualização dos requisitos e da estrutura para os envolvidos.
@@ -33,7 +31,6 @@ Este documento visa apresentar a arquitetura de software a ser aplicada no siste
 
 Este documento apresenta os aspectos arquiteturais do projeto, exibindo como se dará a integração entre os microsserviços que compõem o *Back-end* e o *Front-end* . Dessa forma, ele é composto não só de diagramas e abordagens abstratas, mas também de uma visão que trata das tecnologias envolvidas na elaboração do projeto e da forma na qual esses elementos serão incorporados para se obter os requisitos funcionais e não funcionais propostos.
 
----
 ### 1.2. Escopo
 Este documento de arquitetura se aplica ao **Translate.me** , aplicação desenvolvida na disciplina Arquitetura e Desenho de Software.
 
@@ -53,6 +50,12 @@ Este documento de arquitetura se aplica ao **Translate.me** , aplicação desenv
 [Lino](https://botlino.github.io/docs/doc-arquitetura) - Documentação de arquitetura do projeto de Bot em desenvolvimento na FGA
 
 [Design Patterns](https://refactoring.guru/design-patterns) - Padrões de Design aplicados ao desenvolvimento de software
+
+[ME-R e  DE-R](https://www.devmedia.com.br/modelo-entidade-relacionamento-mer-e-diagrama-entidade-relacionamento-der/14332) - Definição de Aspectos do Modelo Entidade - Relacionamento e Diagramação associada
+
+[Notação do Modelo Entidade-Relacionamento](https://www.lucidchart.com/pages/pt/simbolos-de-diagramas-entidade-relacionamento) - Notações utilizadas na descrição e diagramação do Modelo Entidade Relacionamento
+
+ELMASRI, R. e NAVATHE, S. B., Sistema de Banco de Dados, 4ª edição, 2005.
 
 ---
 
@@ -152,69 +155,54 @@ Os seguintes itens conferem ao sistema aspectos de qualidade, bem como a descri�
 
 #### 8.1.1. Entidades e Atributos
 
-##### Certificação
-
-* CERTIFICACAO (<span style="text-decoration:underline">idCertificacao</span> , idioma, escola, tipoCertificacao)
-
-##### Autenticação
-
-* AUTOR (<span style="text-decoration:underline">idAutor</span> , cpf, nome, apelido, email, senha)
-
-* TRADUTOR (<span style="text-decoration:underline">idAutor</span>, <span style="text-decoration:underline">idTradutor</span> , cpf, nome, apelido, email, senha, nivel, {lingua})
-
-##### Tradução
-
-* TEXTO (<span style="text-decoration:underline">idTexto</span> , contexto, linguaOrigem , linguaDestino)
-
-* FRAGMENTO (<span style="text-decoration:underline">idFragmento</span> , contexto, linguaOrigem , linguaDestino, conteudo, valor)
+| Serviço | Entidades e Atributos |
+| --- | --- |
+| **Certificação** | - CERTIFICACAO (<span style="text-decoration:underline">idCertificacao</span> , idioma, escola, tipoCertificacao) <br> |
+| **Autenticação** | - AUTOR (<span style="text-decoration:underline">idAutor</span> , cpf, nome, apelido, email, senha) <br> - TRADUTOR (<span style="text-decoration:underline">idAutor</span>, <span style="text-decoration:underline">idTradutor</span> , cpf, nome, apelido, email, senha, nivel, {lingua}) |  
+| **Tradução** | - TEXTO (<span style="text-decoration:underline">idTexto</span> , contexto, linguaOrigem , linguaDestino) <br> - FRAGMENTO (<span style="text-decoration:underline">idFragmento</span> , contexto, linguaOrigem , linguaDestino, conteudo, valor) |  
+| **Chat** | - CHAT (<span style="text-decoration:underline">idChat</span> , apelidoTradutor, apelidoAutor) <br> - FRAGMENTO (<span style="text-decoration:underline">idMessage</span> , conteudo, data) |  
 
 
-##### Chat
 
-* CHAT (<span style="text-decoration:underline">idChat</span> , apelidoTradutor, apelidoAutor)
 
-* FRAGMENTO (<span style="text-decoration:underline">idMessage</span> , conteudo, data)
 
 
 #### 8.1.2. Relacionamentos
 
 #### 8.1.2.1 Versão 1
 
-* **TRADUTOR -** ***detem*** **- CERTIFICACAO**  
-Um tradutor detêm nenhuma ou várias certificações, mas cada certificação é detida somente por um tradutor.  
-Cardinalidade: **1:n**
+| Entidade Ativa | Relacionamento | Entidade Passiva | Descrição | Cardinalidade |
+| --- | --- | --- | --- | --- |  
+| **TRADUTOR** | ***detem*** | **CERTIFICACAO** | Um tradutor detêm nenhuma ou várias certificações, mas cada certificação é detida somente por um tradutor.   | **1:n** |
+| **AUTOR** | ***participa***   | **CHAT** | Um autor participa de nenhum ou de vários chats, mas cada chat possui um único autor. | **1:n** |  
+| **AUTOR** | ***escreve***  | **CHAT** | Um autor escreve nenhuma ou várias mensagens, mas cada mensagem é escrita por somente um autor. | **1:n** |
+| **TRADUTOR** | ***traduz***  | **FRAGMENTO** | Um tradutor pode traduzir nenhum ou vários fragmentos, mas cada fragmento é traduzido por somente um tradutor. | **1:n** |  
+| **TEXTO** | ***contem*** | **FRAGMENTO**  | Um texto contém um ou vários fragmentos, e cada fragmento está contido em um único texto. | **1:n** |
+| **AUTOR** | ***possui*** | **TEXTO** | Um autor possui nenhum ou vários textos, mas cada texto é possuído por um único autor. | **1:n** |
 
-* **AUTOR -** ***participa*** **- CHAT**   
-Um autor participa de nenhum ou de vários chats, mas cada chat possui um único autor.  
-Cardinalidade: **1:n**
 
-* **AUTOR -** ***escreve*** **- CHAT**    
-Um autor escreve nenhuma ou várias mensagens, mas cada mensagem é escrita por somente um autor.
-Cardinalidade: **1:n**
 
-* **TRADUTOR -** ***traduz*** **- FRAGMENTO**    
-Um tradutor pode traduzir nenhum ou vários fragmentos, mas cada fragmento é traduzido por somente um tradutor.
-Cardinalidade: **1:n**
 
-* **TEXTO -** ***contem*** **- FRAGMENTO**    
-Um texto contém um ou vários fragmentos, e cada fragmento está contido em um único texto.
-Cardinalidade: **1:n**
+|  |  |  |  |  |
 
-* **AUTOR -** ***possui*** **- TEXTO**    
-Um autor possui nenhum ou vários textos, mas cada texto é possuído por um único autor.
-Cardinalidade: **1:n**
+
+
+
+
 
 ### 8.3. Diagrama Entidade - Relacionamento (DE-R)
 
+#### 8.3.1 Versão 1
+
 ![translateme_der_1](../../assets/documentos/projeto/db_der1.png)
 
-#### 8.3.1 Versão 2
+#### 8.3.2 Versão 2
 
 Adição do serviço de Línguas
 
 ![translateme_der_2](../../assets/documentos/projeto/db_der2.png)
 
-#### 8.3.1 Versão 3
+#### 8.3.3 Versão 3
 
 Adição da entidade de Notificação e remoção do serviço de Línguas
 
