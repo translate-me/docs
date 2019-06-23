@@ -16,10 +16,7 @@
 | 27/04/2019 | 1.0 | Adicionando informações do Banco de Dados  | Alexandre Miguel e Rômulo Souza |
 | 15/06/2019 | 1.1 | Adicionando segunda versão do diagrama de classes  | Letícia Meneses e Gabriela Guedes |
 | 16/06/2019 | 1.2 | Adicionado subtopicos em visão geral de camadas e pacotes| Davi Alves |
-
-
->>>>>>> e2002509303068eb8f1897f00eb34d76bc21ca65
-
+|23/06/2019|1.3|Adicionado nova versão do diagrama de micro serviços| Victor Hugo|
 
 ## Objetivo do Documento
 Este documento tem como objetivo descrever e caracterizar as decisões arquiteturais do projeto
@@ -60,8 +57,31 @@ Este documento de arquitetura se aplica ao **Translate.me** , aplicação desenv
 
 Modelo de representação dos serviços implementados e as interações estabelecidas entre esses serviços, bem como a natureza dessas interações.
 
-![arquitetura](https://i.ibb.co/zf99Pb7/architecture.png)
+### 2.1 Diagrama de arquitetura
 
+#### Versão 1   
+![arquitetura_1](https://i.ibb.co/zf99Pb7/architecture.png)
+
+#### versão 2   
+![arquitetura_2](../../assets/documentos/projeto/arquitetura_v2.png)
+__OBS:__ Foi visto a necessidade de mudar a arquitetura do projeto, pois descartamos a parte de chat dentro do escopo da disciplina
+ e para aumentar a reutilização de alguns do serviços para vários tipos de projeto foi necessário que o serviço de autenticação fosse
+ separado em dois micro serviços. Em que o serviço de profile é responsável pelos tipos de perfis que terão na aplicação e o authentication
+ é responsável pela parte de usuário, senha e token dentro das aplicações.  
+
+#### Papeis:
+
+* __React__: responsável pela parte do frontend da aplicação.
+
+* __Translate__: responsável pela parte de manipulação dos textos, fragmentos, traduções e revisões dentro da aplicação.
+
+* __Payment__: responsável pela parte de repasse do dinheiro da carteira virtual do autor do texto para o tradutor do texto. 
+
+* __Authentication__: responsável pela parte de autentificação dentro da aplicação bem como cadastro de usuário, senha e atribuição de token de autenticação
+para o usuário em questão.
+
+* __Profile__: responsável por cadastro dos tipos de perfis dentro da aplicação, sendo esses tradutor e autor.
+ 
 ---
 
 ## 3. Requisitos e Restrições Arquiteturais
