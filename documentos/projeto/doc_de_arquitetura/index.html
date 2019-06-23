@@ -388,6 +388,46 @@
     2. Representação Arquitetural
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-diagrama-de-arquitetura" title="2.1 Diagrama de arquitetura" class="md-nav__link">
+    2.1 Diagrama de arquitetura
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#versao-1" title="Versão 1" class="md-nav__link">
+    Versão 1
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#versao-2" title="versão 2" class="md-nav__link">
+    versão 2
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#papeis" title="Papeis:" class="md-nav__link">
+    Papeis:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1561,6 +1601,46 @@
     2. Representação Arquitetural
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-diagrama-de-arquitetura" title="2.1 Diagrama de arquitetura" class="md-nav__link">
+    2.1 Diagrama de arquitetura
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#versao-1" title="Versão 1" class="md-nav__link">
+    Versão 1
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#versao-2" title="versão 2" class="md-nav__link">
+    versão 2
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#papeis" title="Papeis:" class="md-nav__link">
+    Papeis:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1900,23 +1980,14 @@
 <td>Adicionado subtopicos em visão geral de camadas e pacotes</td>
 <td>Davi Alves</td>
 </tr>
+<tr>
+<td>23/06/2019</td>
+<td>1.3</td>
+<td>Adicionado nova versão do diagrama de micro serviços</td>
+<td>Victor Hugo</td>
+</tr>
 </tbody>
 </table>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>e2002509303068eb8f1897f00eb34d76bc21ca65</p>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
 <h2 id="objetivo-do-documento">Objetivo do Documento</h2>
 <p>Este documento tem como objetivo descrever e caracterizar as decisões arquiteturais do projeto
 <strong>Translate.me</strong> . A caraterização será feita com enfoque no ambito do software, não levando em conta medições como de performace.</p>
@@ -1939,7 +2010,34 @@
 <hr />
 <h2 id="2-representacao-arquitetural">2. Representação Arquitetural</h2>
 <p>Modelo de representação dos serviços implementados e as interações estabelecidas entre esses serviços, bem como a natureza dessas interações.</p>
-<p><img alt="arquitetura" src="https://i.ibb.co/zf99Pb7/architecture.png" /></p>
+<h3 id="21-diagrama-de-arquitetura">2.1 Diagrama de arquitetura</h3>
+<h4 id="versao-1">Versão 1</h4>
+<p><img alt="arquitetura_1" src="https://i.ibb.co/zf99Pb7/architecture.png" /></p>
+<h4 id="versao-2">versão 2</h4>
+<p><img alt="arquitetura_2" src="../../../assets/documentos/projeto/arquitetura_v2.png" />
+<strong>OBS:</strong> Foi visto a necessidade de mudar a arquitetura do projeto, pois descartamos a parte de chat dentro do escopo da disciplina
+ e para aumentar a reutilização de alguns do serviços para vários tipos de projeto foi necessário que o serviço de autenticação fosse
+ separado em dois micro serviços. Em que o serviço de profile é responsável pelos tipos de perfis que terão na aplicação e o authentication
+ é responsável pela parte de usuário, senha e token dentro das aplicações.  </p>
+<h4 id="papeis">Papeis:</h4>
+<ul>
+<li>
+<p><strong>React</strong>: responsável pela parte do frontend da aplicação.</p>
+</li>
+<li>
+<p><strong>Translate</strong>: responsável pela parte de manipulação dos textos, fragmentos, traduções e revisões dentro da aplicação.</p>
+</li>
+<li>
+<p><strong>Payment</strong>: responsável pela parte de repasse do dinheiro da carteira virtual do autor do texto para o tradutor do texto. </p>
+</li>
+<li>
+<p><strong>Authentication</strong>: responsável pela parte de autentificação dentro da aplicação bem como cadastro de usuário, senha e atribuição de token de autenticação
+para o usuário em questão.</p>
+</li>
+<li>
+<p><strong>Profile</strong>: responsável por cadastro dos tipos de perfis dentro da aplicação, sendo esses tradutor e autor.</p>
+</li>
+</ul>
 <hr />
 <h2 id="3-requisitos-e-restricoes-arquiteturais">3. Requisitos e Restrições Arquiteturais</h2>
 <table>
