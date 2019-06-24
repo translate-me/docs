@@ -20,6 +20,7 @@
 |23/06/2019 | 1.4 |Adicionado nova versão do diagrama de implementação e ajustando erros de ortografia| Victor Hugo|
 |23/06/2019 | 1.5 | Adicionando versões 2 e 3 do ME-R e DE-R na visão de dados | Alexandre Miguel|
 |23/06/2019 | 1.6 |Adicionado análise do GQM | Gabriela Guedes e Helena Goulart|
+|23/06/2019 | 1.7 | Adicionando a quarta versão do Diagrama Entidade-Relacionamento | Alexandre Miguel |
 
 ## Objetivo do Documento
 Este documento tem como objetivo descrever e caracterizar as decisões arquiteturais do projeto
@@ -232,10 +233,10 @@ O objetivo foi atingido, em virtude dos pontos citados nas metricas 1.0 e 1.1.
 
 #### Métrica 2.0: Apresentar detalhamento dos riscos do projeto
 
-Os riscos do projeto não haviam sido pontuados e detalhados pela equipe anteriormente, contudo foram feitos para o cumprimento desta metrica. Para acessar o documento que contém os riscos do projeto, basta clicar [aqui](../gerencia/riscos_projeto.md).
+Os riscos foram pontuados e detalhados pela equipe anteriormente no [Termo de Abertura do Projeto](../gerencia/tap.md), contudo foram detalhados novos riscos para incrementar cumprimento desta metrica. Para acessar o documento que contém outros riscos do projeto, basta clicar [aqui](../gerencia/riscos_projeto.md).
 
 **A métrica responde a pergunta: A equipe possui ciência dos riscos do projeto?**
-Parcialmente. Uma vez que o documento foi criado para cumprir parte da métrica, não foi apresentado para toda todos desde o início do desenvolvimento do projeto quais eram os riscos presentes. Entretanto, as reuniões semanais possibilitaram que a equipe conversasse sobre esses riscos mesmo que os problemas presentes e que poderiam surgir não fossem nomeados de riscos do projeto.
+Sim, uma vez que o documento foi criado para cumprir parte da métrica e que outros riscos foram pontuados no TAP. As reuniões semanais também possibilitaram que a equipe conversasse sobre esses riscos mesmo que os problemas presentes e que poderiam surgir não fossem nomeados de riscos do projeto.
 
 #### Métrica 2.1: Acompanhamento semanal dos riscos
 
@@ -287,12 +288,18 @@ O objetivo foi atingido, uma vez que os riscos foram analisados.
 | **Tradução** | - TEXTO (<span style="text-decoration:underline">idTexto</span> , contexto, totalFragmentos, fragmentosFinalizados, idIdiomaOrigem, idIdiomaDestino) <br> - FRAGMENTO (<span style="text-decoration:underline">idFragmento</span> , contexto, estado, numeroRevisoes, conteudo, conteudoTraduzido, valor) |  
 | **Chat** | - CHAT (<span style="text-decoration:underline">idChat</span> , apelidoTradutor, apelidoAutor) <br> - FRAGMENTO (<span style="text-decoration:underline">idMessage</span> , conteudo, data) |
 
+##### 8.1.1.3. Versão 4
 
+| Serviço | Entidades e Atributos |
+| --- | --- |
+| **Perfil** | - CERTIFICATE (<span style="text-decoration:underline">id</span> , image, document, username) <br>  - AUTHOR (<span style="text-decoration:underline">username</span>, name, birthdate) <br> - TRANSLATOR (<span style="text-decoration:underline">username</span>, cpf) <br> - LANGUAGE (<span style="text-decoration:underline">lang_id</span> , name) |
+| **Autenticação** | - USER (<span style="text-decoration:underline">id</span>, username, email, data_joined, is_active, is_staff) |  
+| **Tradução** | - TEXT (<span style="text-decoration:underline">id</span> , total_fragments, fragments_done, fragments_revision, fragments_doing, context, author, language, text_translate, level) <br> - TEXTFRAGMENT (<span style="text-decoration:underline">id</span>, body, price, state, total_reviews, position, fragment_translate, fragment_translator) <br> - CATEGORY (<span style="text-decoration:underline">category_id</span>, category_name, category_description) <br> - NOTIFICATION (<span style="text-decoration:underline">id</span>, target_username, message, is_seen)  <br> - REVIEW (<span style="text-decoration:underline">id</span>, review_username, comment, approve) |  
 
 
 #### 8.1.2. Relacionamentos
 
-#### 8.1.2.1 Versão 1
+##### 8.1.2.1 Versão 1
 
 | Entidade Ativa | Relacionamento | Entidade Passiva | Descrição | Cardinalidade |
 | --- | --- | --- | --- | --- |  
@@ -304,34 +311,66 @@ O objetivo foi atingido, uma vez que os riscos foram analisados.
 | **AUTOR** | ***possui*** | **TEXTO** | Um autor possui nenhum ou vários textos, mas cada texto é possuído por um único autor. | **1:n** |
 
 
+##### 8.1.2.2 Versão 2
+
+| Entidade Ativa | Relacionamento | Entidade Passiva | Descrição | Cardinalidade |
+| --- | --- | --- | --- | --- |  
+| **TRADUTOR** | ***detem*** | **CERTIFICACAO** | Um tradutor detêm nenhuma ou várias certificações, mas cada certificação é detida somente por um tradutor.   | **1:n** |
+| **AUTOR** | ***participa***   | **CHAT** | Um autor participa de nenhum ou de vários chats, mas cada chat possui um único autor. | **1:n** |  
+| **AUTOR** | ***escreve***  | **CHAT** | Um autor escreve nenhuma ou várias mensagens, mas cada mensagem é escrita por somente um autor. | **1:n** |
+| **TRADUTOR** | ***traduz***  | **FRAGMENTO** | Um tradutor pode traduzir nenhum ou vários fragmentos, mas cada fragmento é traduzido por somente um tradutor. | **1:n** |  
+| **TEXTO** | ***contem*** | **FRAGMENTO**  | Um texto contém um ou vários fragmentos, e cada fragmento está contido em um único texto. | **1:n** |
+| **AUTOR** | ***possui*** | **TEXTO** | Um autor possui nenhum ou vários textos, mas cada texto é possuído por um único autor. | **1:n** |
+
+##### 8.1.2.3 Versão 3
+
+| Entidade Ativa | Relacionamento | Entidade Passiva | Descrição | Cardinalidade |
+| --- | --- | --- | --- | --- |  
+| **TRADUTOR** | ***detem*** | **CERTIFICACAO** | Um tradutor detêm nenhuma ou várias certificações, mas cada certificação é detida somente por um tradutor.   | **1:n** |
+| **AUTOR** | ***participa***   | **CHAT** | Um autor participa de nenhum ou de vários chats, mas cada chat possui um único autor. | **1:n** |  
+| **AUTOR** | ***escreve***  | **CHAT** | Um autor escreve nenhuma ou várias mensagens, mas cada mensagem é escrita por somente um autor. | **1:n** |
+| **TRADUTOR** | ***traduz***  | **FRAGMENTO** | Um tradutor pode traduzir nenhum ou vários fragmentos, mas cada fragmento é traduzido por somente um tradutor. | **1:n** |  
+| **TEXTO** | ***contem*** | **FRAGMENTO**  | Um texto contém um ou vários fragmentos, e cada fragmento está contido em um único texto. | **1:n** |
+| **AUTOR** | ***possui*** | **TEXTO** | Um autor possui nenhum ou vários textos, mas cada texto é possuído por um único autor. | **1:n** |
 
 
-|  |  |  |  |  |
+##### 8.1.2.4 Versão 4
+
+| Entidade Ativa | Relacionamento | Entidade Passiva | Descrição | Cardinalidade |
+| --- | --- | --- | --- | --- |  
+| **TRANSLATOR** | ***detem*** | **CERTIFICATE** | Um tradutor detêm nenhuma, uma ou várias certificações, mas cada certificação é detida somente por um tradutor.   | **1:n** |
+| **TRANSLATOR** | ***traduz***  | **TEXTFRAGMENT** | Um tradutor pode traduzir nenhum, um ou vários fragmentos, mas cada fragmento é traduzido por somente um tradutor. | **1:n** |
+| **TRANSLATOR** | ***revisa***  | **TEXTFRAGMENT** | Um tradutor pode revisar um ou vários fragmentos, e cada fragmento é revisado por um ou vários tradutores. | **n:m** |
+| **TRANSLATOR** | ***fala***  | **LANGUAGE** | Um tradutor pode falar uma ou várias linguagens, e cada linguagem é falada por um ou vários tradutores. | **n:m** |      
+| **TEXT** | ***contem*** | **TEXTFRAGMENT**  | Um texto contém um ou vários fragmentos, e cada fragmento está contido em um único texto. | **1:n** |
+| **TEXT** | ***detem***  | **CATEGORY** | Um texto detém uma ou várias categorias, e cada categoria é detida por um ou vários textos. | **n:m** |
+| **TEXT** | ***apresenta***  | **LANGUAGE** | Um texto apresenta uma única linguagem de origem, mas cada linguagem de origem é apresentada por um ou vários textos. | **n:1** |
+| **TEXT** | ***apresenta***  | **LANGUAGE** | Um texto apresenta uma única linguagem de destino, mas cada linguagem de destino é apresentada por um ou vários textos. | **n:1** |
+| **AUTHOR** | ***possui*** | **TEXT** | Um autor possui nenhum, um ou vários textos, mas cada texto é possuído por um único autor. | **1:n** |
+| **NOTIFICATION** | ***referencia***   |  **AUTHOR** | Uma notificação referencia um único autor, mas cada autor pode ser referenciado por nenhuma, uma ou várias notificações. | **n:1** |
+| **NOTIFICATION** | ***refere***   |  **TEXT** | Uma notificação refere-se a um único texto, mas cada texto pode ser referenciado por nenhuma, uma ou várias notificações. | **n:1** |
+| **USER** | ***representa***  | **AUTHOR** | Um usuário representa um único autor na plataforma, e cada autor é representado por um único usuário. | **1:1** |
 
 
+### 8.2. Diagrama Entidade - Relacionamento (DE-R)
 
-
-
-
-### 8.3. Diagrama Entidade - Relacionamento (DE-R)
-
-#### 8.3.1 Versão 1
+#### 8.2.1 Versão 1
 
 ![translateme_der_1](../../assets/documentos/projeto/db_der1.png)
 
-#### 8.3.2 Versão 2
+#### 8.2.2 Versão 2
 
 Adição do serviço de Línguas
 
 ![translateme_der_2](../../assets/documentos/projeto/db_der2.png)
 
-#### 8.3.3 Versão 3
+#### 8.2.3 Versão 3
 
 Adição da entidade de Notificação e remoção do serviço de Línguas
 
 ![translateme_der_3](../../assets/documentos/projeto/db_der3.png)
 
-#### 8.3.4 Versão 4
+#### 8.2.4 Versão 4
 
 Remoção do serviço de chat, adição das entidades de categoria e revisão e modificação dos nomes de entidades e atributos para inglês, conforme implementado.
 
