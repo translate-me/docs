@@ -188,6 +188,8 @@ Os seguintes itens conferem ao sistema aspectos de qualidade, bem como a descri�
 
 #### 8.1.1. Entidades e Atributos
 
+##### 8.1.1.1. Versão 1
+
 | Serviço | Entidades e Atributos |
 | --- | --- |
 | **Certificação** | - CERTIFICACAO (<span style="text-decoration:underline">idCertificacao</span> , idioma, escola, tipoCertificacao) <br> |
@@ -196,6 +198,25 @@ Os seguintes itens conferem ao sistema aspectos de qualidade, bem como a descri�
 | **Chat** | - CHAT (<span style="text-decoration:underline">idChat</span> , apelidoTradutor, apelidoAutor) <br> - FRAGMENTO (<span style="text-decoration:underline">idMessage</span> , conteudo, data) |  
 
 
+##### 8.1.1.2. Versão 2
+
+| Serviço | Entidades e Atributos |
+| --- | --- |
+| **Perfil** | - CERTIFICACAO (<span style="text-decoration:underline">idCertificacao</span> , idioma, escola, tipoCertificacao) <br>  - AUTOR (<span style="text-decoration:underline">idAutor</span>, nome, apelido, dataNascimento) <br> - TRADUTOR (<span style="text-decoration:underline">idTradutor</span>, idAutor, cpf, nivel) |
+| **Autenticação** | - USUARIO (<span style="text-decoration:underline">idUsuario</span>, username, email, senha) |  
+| **Tradução** | - TEXTO (<span style="text-decoration:underline">idTexto</span> , contexto, totalFragmentos, fragmentosFinalizados) <br> - FRAGMENTO (<span style="text-decoration:underline">idFragmento</span> , contexto, estado, numeroRevisoes, conteudo, valor) |  
+| **Chat** | - CHAT (<span style="text-decoration:underline">idChat</span> , apelidoTradutor, apelidoAutor) <br> - FRAGMENTO (<span style="text-decoration:underline">idMessage</span> , conteudo, data) |
+| **Lingua** | - IDIOMA (<span style="text-decoration:underline">idIdioma</span> , nomeIdioma)  |    
+
+
+##### 8.1.1.3. Versão 3
+
+| Serviço | Entidades e Atributos |
+| --- | --- |
+| **Perfil** | - CERTIFICACAO (<span style="text-decoration:underline">idCertificacao</span> , idioma, escola, tipoCertificacao) <br>  - AUTOR (<span style="text-decoration:underline">idAutor</span>, nome, apelido, dataNascimento) <br> - TRADUTOR (<span style="text-decoration:underline">idTradutor</span>, idAutor, cpf, nivel) <br> - IDIOMA (<span style="text-decoration:underline">idIdioma</span> , nomeIdioma) |
+| **Autenticação** | - USUARIO (<span style="text-decoration:underline">idUsuario</span>, username, email, senha) |  
+| **Tradução** | - TEXTO (<span style="text-decoration:underline">idTexto</span> , contexto, totalFragmentos, fragmentosFinalizados, idIdiomaOrigem, idIdiomaDestino) <br> - FRAGMENTO (<span style="text-decoration:underline">idFragmento</span> , contexto, estado, numeroRevisoes, conteudo, conteudoTraduzido, valor) |  
+| **Chat** | - CHAT (<span style="text-decoration:underline">idChat</span> , apelidoTradutor, apelidoAutor) <br> - FRAGMENTO (<span style="text-decoration:underline">idMessage</span> , conteudo, data) |
 
 
 
