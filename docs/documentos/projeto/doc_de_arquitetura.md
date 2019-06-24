@@ -53,6 +53,11 @@ Este documento de arquitetura se aplica ao **Translate.me** , aplicação desenv
 
 [Design Patterns](https://refactoring.guru/design-patterns) - Padrões de Design aplicados ao desenvolvimento de software
 
+[Academia Brasileira de Ciências](http://www.abc.org.br/2019/04/15/universidades-publicas-respondem-por-mais-de-95-da-producao-cientifica-do-brasil/#)
+
+[UnB](https://noticias.unb.br/117-pesquisa/2267-impacto-da-producao-cientifica-da-unb-aumenta-mais-de-100-em-seis-anos)
+
+[American Journal Express](https://www.aje.com/br/services/translation/?gclid=Cj0KCQjw6cHoBRDdARIsADiTTzZqBOuLFXdYDU2oG5EDX1UaTY3INQwXxklQgy_k1loXJtpIVf_fm20aAiOUEALw_wcB)
 ---
 
 ## 2. Representação Arquitetural
@@ -151,13 +156,15 @@ __OBS__: Foi retirada a parte de chat da aplicação visto que por conta do temp
 Seção responsável pela estimativa em valores quantizados do desempenho dos módulos da arquitetura, bem como de sua performance em execução, conforme a análise qualitativa estabelecida no [Documento de Requisitos Não Funcionais](../../../requisitos/modelagem/nfr).
 
 ### 6.1. Volume   
-De forma geral, o sistema deve permitir que o fluxo de usuários de ambos os tipos tenham acesso, otimizando acessos de usuários autores para velocidade enquanto dispõe de uma quantidade maior de acessos a usuários tradutores, que representam maior tempo de atividade e em maior número de acesso aos sistemas, com uma escala 1 : 4 em termos de autores e tradutores. Assim, é possível montar a seguinte tabela de estimativas para volumes, traçando paralelos entre usuários tradutores e usuários autores.
+O sistema deve permitir que o fluxo de usuários de ambos os tipos tenham acesso a aplicação e suas funcionalidades. Os usuários autores somente usam a plataforma para submeter um novo texto ou acompanhar o status de um texto enviado, é um uso baixo e inconstante desta. Já os usuários tradutores, representam maior tempo de atividade e um acesso constante ao sistema. 
 
-| **-** | Autores | Tradutores | Total |
-| --- | --- | --- | --- |
-| **Número de Usuários** | 400 | 1600 | 2000|
-| **Número de Acessos Diários por usuário** | 1 - 5 | 7 - 15 | 8 - 20|
-| **Tempo de Sessão de Usuário** |15 - 50 minutos | 50 minutos - 1 hora e 20 minutos | 33 minutos - 1 hora |
+Para dimensionar o volume de utilização do software faremos uma estimativa mantendo como foco a produção acadêmica realizada na Universidade de Brasília, visto que nosso software inicialmente será direcionado ao público desta. De acordo com a própria UnB, utilizando dados do SciVal, um software desenvolvido pela editora científica Elsevier para a gestão estratégica da pesquisa, cerca de 2000 artigos foram adicionados a base científica Scopus no ano de 2016, considerando a crescente da produção científica vista nos anos de 2011 a 2016 na UnB, podemos estimar que a Universidade atualmente adiciona cerca de 2500 a 3000 artigos na Scopus anualmente.
+
+Através da análise dos prazos de plataformas concorrentes, consideramos que os tradutores levam em torno de duas semanas para traduzir e revisar um artigo contendo até 15 páginas. Na plataforma proposta os prazos se mantém, visto que não há alteração na produtividade dos tradutores. 
+
+Através dos dados acima referentes a produtividade dos tradutores e número de artigos produzidos pela UnB, podemos concluir que para manter a plataforma funcionando corretamente serão necessários no mínimo 200 tradutores. É possível chegar a esse resultado obtendo a média de artigos produzidos a cada duas semanas (=~100), multiplicado pelo número de envolvidos em cada tradução (2 - Tradutor e Revisor), reiterando que é possível obter essa estimativa pois a produtividade dos tradutores/revisores não muda na nossa plataforma, comparada as demais concorrentes.
+
+É possível fazer um escalonamento destes dados para englobar a produção científica em contexto nacional, de forma que seria necessária a busca por novos tradutores, para que seja possível atender a demanda crescente.
 
 ### 6.2. Performance
 
