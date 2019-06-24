@@ -375,3 +375,37 @@ Adição da entidade de Notificação e remoção do serviço de Línguas
 Remoção do serviço de chat, adição das entidades de categoria e revisão e modificação dos nomes de entidades e atributos para inglês, conforme implementado.
 
 ![translateme_der_4](../../assets/documentos/projeto/db_der4.png)
+
+## 9. Modelos/padrões arquiteturais
+
+### 9.1 Arquitetura Monolítica vs Distribuída
+
+Nesse projeto, optou-se por uma arquitetura baseada em microserviços, que segue uma estrutura distribuída.
+Esse modelo tem como base a organização do software em diversos sistemas independentes
+que se comunicam (no nosso caso, via protocolo HTTP) e formam um sistema maior.
+Além de permitir uma alta coesão e um baixo acoplamento, uma arquitetura distribuída
+facilita questões de infraestrutura, como facilidade de gerenciamento de múltiplos
+servidores, balanceamento de carga e torelância a falhas, por exemplo. Questões como
+manutenibilidade do código e mudança de versão de bibliotecas ou até da própia linguagem
+de algum serviço são facilidatas ao desacoplá-los em diversos componentes também.
+
+### 9.2 MVC
+
+O framework Django, utilizado no backend do projeto, se baseia em um modelo MVT
+(Model-View-Template), que é similar ao MVC, modificando a nomenclatura da camada
+de exibição de View para Template e a camada de controle para View. Nesse contexto,
+o Django provê um ORM (Object-relational mapping), que permite utilizar código de
+sistemas de tipos diferentes, nesse caso SQL e Python, como model, uma view (controller),
+que tem o papel de decidir como e qual dado será exibido, e os templates, que
+no caso do translate-me foi substituído pelo React.
+
+### 9.3 Cliente-servidor
+
+Mesmo utilizando uma arquitetura basead em microserviços, o projeto ainda conta
+com uma divisão clara entre seu backend e o frontend. Como trata-se de uma aplicação
+Web, mesmo com os recursos de SPA providos pelo React (e pelas bibliotecas/frameworks
+JS mais novos), a interface que é executada no browser ainda se trata de um cliente
+e todo o sistema por trás que recebe as requisições de um servidor, funcionando como
+um modelo cliente-servidor clássico. Além disso, alguns serviços específicos, como
+o de autenticação, tem o papel apenas de registrar os usuários em um banco independente
+e renovar/criar tokens de acesso para os mesmos, servido basicamente como um servidor.
