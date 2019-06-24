@@ -315,23 +315,35 @@ O objetivo foi atingido, uma vez que os riscos foram analisados.
 
 | Entidade Ativa | Relacionamento | Entidade Passiva | Descrição | Cardinalidade |
 | --- | --- | --- | --- | --- |  
-| **TRADUTOR** | ***detem*** | **CERTIFICACAO** | Um tradutor detêm nenhuma ou várias certificações, mas cada certificação é detida somente por um tradutor.   | **1:n** |
+| **TRADUTOR** | ***detem*** | **CERTIFICADO** | Um tradutor detêm nenhuma, uma ou várias certificações, mas cada certificação é detida somente por um tradutor.   | **1:n** |
+| **TRADUTOR** | ***traduz***  | **FRAGMENTO** | Um tradutor pode traduzir nenhum, um ou vários fragmentos, mas cada fragmento é traduzido por somente um tradutor. | **1:n** |
+| **TRADUTOR** | ***revisa***  | **FRAGMENTO** | Um tradutor pode revisar um ou vários fragmentos, e cada fragmento é revisado por um ou vários tradutores. | **n:m** |
+| **TRADUTOR** | ***fala***  | **IDIOMA** | Um tradutor pode falar uma ou várias linguagens, e cada linguagem é falada por um ou vários tradutores. | **n:m** |      
+| **TEXTO** | ***contem*** | **FRAGMENTO**  | Um texto contém um ou vários fragmentos, e cada fragmento está contido em um único texto. | **1:n** |
+| **TEXTO** | ***apresenta***  | **IDIOMA** | Um texto apresenta uma única idioma de origem, mas cada idioma de origem é apresentada por um ou vários textos. | **n:1** |
+| **TEXTO** | ***apresenta***  | **IDIOMA** | Um texto apresenta uma única idioma de destino, mas cada idioma de destino é apresentada por um ou vários textos. | **n:1** |
+| **AUTOR** | ***possui*** | **TEXTO** | Um autor possui nenhum, um ou vários textos, mas cada texto é possuído por um único autor. | **1:n** |
 | **AUTOR** | ***participa***   | **CHAT** | Um autor participa de nenhum ou de vários chats, mas cada chat possui um único autor. | **1:n** |  
 | **AUTOR** | ***escreve***  | **CHAT** | Um autor escreve nenhuma ou várias mensagens, mas cada mensagem é escrita por somente um autor. | **1:n** |
-| **TRADUTOR** | ***traduz***  | **FRAGMENTO** | Um tradutor pode traduzir nenhum ou vários fragmentos, mas cada fragmento é traduzido por somente um tradutor. | **1:n** |  
-| **TEXTO** | ***contem*** | **FRAGMENTO**  | Um texto contém um ou vários fragmentos, e cada fragmento está contido em um único texto. | **1:n** |
-| **AUTOR** | ***possui*** | **TEXTO** | Um autor possui nenhum ou vários textos, mas cada texto é possuído por um único autor. | **1:n** |
+| **NOTIFICAÇÃO** | ***refere***   |  **TEXTO** | Uma notificação refere-se a um único texto, mas cada texto pode ser referenciado por nenhuma, uma ou várias notificações. | **n:1** |
+| **USUÁRIO** | ***representa***  | **AUTOR** | Um usuário representa um único autor na plataforma, e cada autor é representado por um único usuário. | **1:1** |
 
 ##### 8.1.2.3 Versão 3
 
 | Entidade Ativa | Relacionamento | Entidade Passiva | Descrição | Cardinalidade |
 | --- | --- | --- | --- | --- |  
-| **TRADUTOR** | ***detem*** | **CERTIFICACAO** | Um tradutor detêm nenhuma ou várias certificações, mas cada certificação é detida somente por um tradutor.   | **1:n** |
+| **TRADUTOR** | ***detem*** | **CERTIFICADO** | Um tradutor detêm nenhuma, uma ou várias certificações, mas cada certificação é detida somente por um tradutor.   | **1:n** |
+| **TRADUTOR** | ***traduz***  | **FRAGMENTO** | Um tradutor pode traduzir nenhum, um ou vários fragmentos, mas cada fragmento é traduzido por somente um tradutor. | **1:n** |
+| **TRADUTOR** | ***revisa***  | **FRAGMENTO** | Um tradutor pode revisar um ou vários fragmentos, e cada fragmento é revisado por um ou vários tradutores. | **n:m** |
+| **TRADUTOR** | ***fala***  | **IDIOMA** | Um tradutor pode falar uma ou várias linguagens, e cada linguagem é falada por um ou vários tradutores. | **n:m** |      
+| **TEXTO** | ***contem*** | **FRAGMENTO**  | Um texto contém um ou vários fragmentos, e cada fragmento está contido em um único texto. | **1:n** |
+| **TEXTO** | ***apresenta***  | **IDIOMA** | Um texto apresenta uma única idioma de origem, mas cada idioma de origem é apresentada por um ou vários textos. | **n:1** |
+| **TEXTO** | ***apresenta***  | **IDIOMA** | Um texto apresenta uma única idioma de destino, mas cada idioma de destino é apresentada por um ou vários textos. | **n:1** |
+| **AUTOR** | ***possui*** | **TEXTO** | Um autor possui nenhum, um ou vários textos, mas cada texto é possuído por um único autor. | **1:n** |
 | **AUTOR** | ***participa***   | **CHAT** | Um autor participa de nenhum ou de vários chats, mas cada chat possui um único autor. | **1:n** |  
 | **AUTOR** | ***escreve***  | **CHAT** | Um autor escreve nenhuma ou várias mensagens, mas cada mensagem é escrita por somente um autor. | **1:n** |
-| **TRADUTOR** | ***traduz***  | **FRAGMENTO** | Um tradutor pode traduzir nenhum ou vários fragmentos, mas cada fragmento é traduzido por somente um tradutor. | **1:n** |  
-| **TEXTO** | ***contem*** | **FRAGMENTO**  | Um texto contém um ou vários fragmentos, e cada fragmento está contido em um único texto. | **1:n** |
-| **AUTOR** | ***possui*** | **TEXTO** | Um autor possui nenhum ou vários textos, mas cada texto é possuído por um único autor. | **1:n** |
+| **NOTIFICAÇÃO** | ***refere***   |  **TEXTO** | Uma notificação refere-se a um único texto, mas cada texto pode ser referenciado por nenhuma, uma ou várias notificações. | **n:1** |
+| **USUÁRIO** | ***representa***  | **AUTOR** | Um usuário representa um único autor na plataforma, e cada autor é representado por um único usuário. | **1:1** |
 
 
 ##### 8.1.2.4 Versão 4
