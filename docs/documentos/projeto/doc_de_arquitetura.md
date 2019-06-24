@@ -110,8 +110,10 @@ Django(Back-End) - Framework Web que segue o padrão arquitetural model-template
 
 * Base de Dados - O pacote Base de dados inclui todas funções necessarias para suportar o armazenamento dos dados.
 
-#### 4.3 Diagrama de Sequência
+### 4.3 Diagrama de Sequência
+O diagrama de sequência tem por finalidade demonstrar a sequência das mensagens entre objetos em uma interação.
 
+#### 4.3.1 Adiconar um Texto (Autor)
 ![sequence_diagram_author](../../assets/desenho/uml/sequence_diagram_author.png)
 
 ---
