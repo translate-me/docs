@@ -22,10 +22,11 @@
 |23/06/2019|1.6| Adicionado novo diagrama de pacotes e subtopicos em visão geral de camadas e pacotes| Davi Alves |
 |23/06/2019 | 1.7 | Adicionando versões 2 e 3 do ME-R e DE-R na visão de dados | Alexandre Miguel|
 |23/06/2019 | 1.8 | Adicionando a quarta versão do Diagrama Entidade-Relacionamento | Alexandre Miguel |
+|23/06/2019 | 1.9 | Adicionando diagrama de sequência do autor | Letícia Meneses |
 
 ## Objetivo do Documento
 Este documento tem como objetivo descrever e caracterizar as decisões arquiteturais do projeto
-**Translate.me** . A caraterização será feita com enfoque no âmbito do software, não levando em conta medições como de performance.
+**Translate.me** . A caraterização será feita com enfoque no âmbito do software, não levando em conta medições como de desempenho.
 
 ---
 
@@ -135,13 +136,13 @@ React - Biblioteca JavaScript que leva consigo outros 3 pacotes que são:
 
 * Redux - Facilitador da comunicação entre componentes sem acoplá-los.
 * Telas - Telas propriamente ditas onde o usuario estará interagindo, ela depende do redux e dos componentes.
-* Componentes - Os componentes permitem que você divida sua interface em partes independentes e reutilizáveis, e que você pense em cada parte de forma isolada. 
+* Componentes - Os componentes permitem que você divida sua interface em partes independentes e reutilizáveis, e que você pense em cada parte de forma isolada.
 
 #### 4.2.2 Camada Back-End
 Django - Framework Web que segue o padrão arquitetural model-template-view que possui os pacotes:
 
 * Autenticação - Manipula contas de usuário, grupos, permissões e sessões de usuário.
-  
+
   * Login - Possui todas  as funções de autenticador de usuario e depende do cadastro.
   * Cadastro - Possui funções para criação de novos usuarios.
 
@@ -154,12 +155,18 @@ Django - Framework Web que segue o padrão arquitetural model-template-view que 
 
   * Submissão - Possui todas funções para que o usuario possa submeter o seu texto para a tradução. Ela depende diretamente da autenticação.
   * Tradução - Possui todas  as funções relacionadas a tradução que sera feita por um tipo especifico de usuario. Ela depende diretamente da autenticação.
-  * Revisão - Possui todas as funções para que o revisor possa revisar e gerar os feedbacks de como estáo texto. 
+  * Revisão - Possui todas as funções para que o revisor possa revisar e gerar os feedbacks de como estáo texto.
   * Pagamento - Possui todas  as funções relacionadas ao pagamento que será efetuado e também recebido, dependente da autenticação.
   * Gamificação - Possui funções para melhoria de interação do usuario e depende apenas do pacote tradução.
 
 #### 4.2.3 Base de Dados
 Base de Dados - O pacote Base de dados inclui todas funções necessarias para suportar o armazenamento dos dados.
+
+### 4.3 Diagrama de Sequência
+O diagrama de sequência tem por finalidade demonstrar a sequência das mensagens entre objetos em uma interação.
+
+#### 4.3.1 Adiconar um Texto (Autor)
+![sequence_diagram_author](../../assets/desenho/uml/sequence_diagram_author.png)
 
 ---
 ## 5. Visão de implementação
@@ -175,24 +182,24 @@ Diagrama de implementação serve para dar uma visão de como seria implementado
 __OBS__: Foi retirada a parte de chat da aplicação visto que por conta do tempo e da complexidade que levaria para implementar esse micro serviço não daria para entregar no escopo da matéria.
 
 ---
-## 6. Dimensionamento e Performance
+## 6. Dimensionamento e Dessempenho
 
-Seção responsável pela estimativa em valores quantizados do desempenho dos módulos da arquitetura, bem como de sua performance em execução, conforme a análise qualitativa estabelecida no [Documento de Requisitos Não Funcionais](../../../requisitos/modelagem/nfr).
+Seção responsável pela estimativa em valores quantizados do desempenho dos módulos da arquitetura, bem como de sua desempenho em execução, conforme a análise qualitativa estabelecida no [Documento de Requisitos Não Funcionais](../../../requisitos/modelagem/nfr).
 
 ### 6.1. Volume   
-O sistema deve permitir que o fluxo de usuários de ambos os tipos tenham acesso a aplicação e suas funcionalidades. Os usuários autores somente usam a plataforma para submeter um novo texto ou acompanhar o status de um texto enviado, é um uso baixo e inconstante desta. Já os usuários tradutores, representam maior tempo de atividade e um acesso constante ao sistema. 
+O sistema deve permitir que o fluxo de usuários de ambos os tipos tenham acesso a aplicação e suas funcionalidades. Os usuários autores somente usam a plataforma para submeter um novo texto ou acompanhar o status de um texto enviado, é um uso baixo e inconstante desta. Já os usuários tradutores, representam maior tempo de atividade e um acesso constante ao sistema.
 
 Para dimensionar o volume de utilização do software faremos uma estimativa mantendo como foco a produção acadêmica realizada na Universidade de Brasília, visto que nosso software inicialmente será direcionado ao público desta. De acordo com a própria UnB, utilizando dados do SciVal, um software desenvolvido pela editora científica Elsevier para a gestão estratégica da pesquisa, cerca de 2000 artigos foram adicionados a base científica Scopus no ano de 2016, considerando a crescente da produção científica vista nos anos de 2011 a 2016 na UnB, podemos estimar que a Universidade atualmente adiciona cerca de 2500 a 3000 artigos na Scopus anualmente.
 
-Através da análise dos prazos de plataformas concorrentes, consideramos que os tradutores levam em torno de duas semanas para traduzir e revisar um artigo contendo até 15 páginas. Na plataforma proposta os prazos se mantém, visto que não há alteração na produtividade dos tradutores. 
+Através da análise dos prazos de plataformas concorrentes, consideramos que os tradutores levam em torno de duas semanas para traduzir e revisar um artigo contendo até 15 páginas. Na plataforma proposta os prazos se mantém, visto que não há alteração na produtividade dos tradutores.
 
 Através dos dados acima referentes a produtividade dos tradutores e número de artigos produzidos pela UnB, podemos concluir que para manter a plataforma funcionando corretamente serão necessários no mínimo 200 tradutores. É possível chegar a esse resultado obtendo a média de artigos produzidos a cada duas semanas (=~100), multiplicado pelo número de envolvidos em cada tradução (2 - Tradutor e Revisor), reiterando que é possível obter essa estimativa pois a produtividade dos tradutores/revisores não muda na nossa plataforma, comparada as demais concorrentes.
 
 É possível fazer um escalonamento destes dados para englobar a produção científica em contexto nacional, de forma que seria necessária a busca por novos tradutores, para que seja possível atender a demanda crescente.
 
-### 6.2. Performance
+### 6.2. Desempenho
 
-Para o correto funcionamento do sistema, a performance deve ser rápida e com a conclusão de funcionalidades como o *upload* de textos em até 1 minuto, para textos com mais de 200 páginas, bem como respostas eficientes da utilização de sistemas como a separação de fragmentos e o envio do texto para tradução.
+Para o correto funcionamento do sistema, o desempenho deve ser rápida e com a conclusão de funcionalidades como o *upload* de textos em até 1 minuto, para textos com mais de 200 páginas, bem como respostas eficientes da utilização de sistemas como a separação de fragmentos e o envio do texto para tradução.
 
 ---
 ## 7. Qualidade
