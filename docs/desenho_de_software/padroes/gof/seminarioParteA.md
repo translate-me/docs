@@ -44,7 +44,7 @@ Entre as aplicações mais relevantes do Proxy é possível citar:
 
 ![](../../../assets/desenho/padroes/proxy_pattern.png)
 
-### 1.4 Exemplo em Java
+#### 1.4 Exemplo em Java
 ![](../../../assets/desenho/padroes/DiagramaProxy.png)
 Veja o exemplo completo no [repositório](https://github.com/translate-me/exemplosGOF/tree/master/proxy).
 
