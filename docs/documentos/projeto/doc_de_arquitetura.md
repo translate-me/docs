@@ -16,11 +16,12 @@
 | 27/04/2019 | 1.0 | Adicionando informações do Banco de Dados  | Alexandre Miguel e Rômulo Souza |
 | 15/06/2019 | 1.1 | Adicionando segunda versão do diagrama de classes  | Letícia Meneses e Gabriela Guedes |
 | 16/06/2019 | 1.2 | Adicionado sub tópicos em visão geral de camadas e pacotes| Davi Alves |
-|23/06/2019 | 1.3 |Adicionado nova versão do diagrama de micro serviços| Victor Hugo|
-|23/06/2019 | 1.4 |Adicionado nova versão do diagrama de implementação e ajustando erros de ortografia| Victor Hugo|
-|23/06/2019 | 1.5 | Adicionando versões 2 e 3 do ME-R e DE-R na visão de dados | Alexandre Miguel|
-|23/06/2019 | 1.6 |Adicionado análise do GQM | Gabriela Guedes e Helena Goulart|
-|23/06/2019 | 1.7 | Adicionando a quarta versão do Diagrama Entidade-Relacionamento | Alexandre Miguel |
+|23/06/2019|1.3|Adicionado nova versão do diagrama de micro serviços| Victor Hugo|
+|23/06/2019|1.4|Adicionado nova versão do diagrama de implementação e ajustando erros de ortografia| Victor Hugo|
+|23/06/2019|1.5|Adicionado análise do GQM | Gabriela Guedes e Helena Goulart|
+|23/06/2019|1.6| Adicionado novo diagrama de pacotes e subtopicos em visão geral de camadas e pacotes| Davi Alves |
+|23/06/2019 | 1.7 | Adicionando versões 2 e 3 do ME-R e DE-R na visão de dados | Alexandre Miguel|
+|23/06/2019 | 1.8 | Adicionando a quarta versão do Diagrama Entidade-Relacionamento | Alexandre Miguel |
 
 ## Objetivo do Documento
 Este documento tem como objetivo descrever e caracterizar as decisões arquiteturais do projeto
@@ -55,6 +56,11 @@ Este documento de arquitetura se aplica ao **Translate.me** , aplicação desenv
 
 [Design Patterns](https://refactoring.guru/design-patterns) - Padrões de Design aplicados ao desenvolvimento de software
 
+[Academia Brasileira de Ciências](http://www.abc.org.br/2019/04/15/universidades-publicas-respondem-por-mais-de-95-da-producao-cientifica-do-brasil/#)
+
+[UnB](https://noticias.unb.br/117-pesquisa/2267-impacto-da-producao-cientifica-da-unb-aumenta-mais-de-100-em-seis-anos)
+
+[American Journal Express](https://www.aje.com/br/services/translation/?gclid=Cj0KCQjw6cHoBRDdARIsADiTTzZqBOuLFXdYDU2oG5EDX1UaTY3INQwXxklQgy_k1loXJtpIVf_fm20aAiOUEALw_wcB)
 [ME-R e  DE-R](https://www.devmedia.com.br/modelo-entidade-relacionamento-mer-e-diagrama-entidade-relacionamento-der/14332) - Definição de Aspectos do Modelo Entidade - Relacionamento e Diagramação associada
 
 [Notação do Modelo Entidade-Relacionamento](https://www.lucidchart.com/pages/pt/simbolos-de-diagramas-entidade-relacionamento) - Notações utilizadas na descrição e diagramação do Modelo Entidade Relacionamento
@@ -116,29 +122,44 @@ Modelagens conforme padrão UML que representam os aspectos arquiteturais do sis
 #### Versão 2.0
 ![diagrama_classes](../../assets/desenho/uml/diag_class_v2.png)
 ### 4.2. Visão Geral de Camadas e Pacotes
+#### Versão 1.0
+![diagrama_pacotes_old](../../assets/desenho/uml/diagrama_pacotes.png)
 
-![diagrama_pacotes](../../assets/desenho/uml/diagrama_pacotes.png)
+#### Versão 2.0
+![diagrama_pacotes](../../assets/desenho/uml/diagrama_pacotes_completo.png)
 
-#### 4.2.1
-React(Front-End) - Biblioteca JavaScript que leva consigo outros 3 pacotes que são:
+![diagrama_pacotes_expandido](../../assets/desenho/uml/diagrama_pacotes_expandido.png)
+
+#### 4.2.1 Camada UI
+React - Biblioteca JavaScript que leva consigo outros 3 pacotes que são:
 
 * Redux - Facilitador da comunicação entre componentes sem acoplá-los.
-* Telas - Telas propriamente ditas onde o usuário estará interagindo, ela depende do redux e dos componentes.
-* Componentes - Os componentes permitem que você divida sua interface em partes independentes e reutilizáveis, e que você pense em cada parte de forma isolada.
-#### 4.2.2
-Django(Back-End) - Framework Web que segue o padrão arquitetural model-template-view que possui os pacotes:
+* Telas - Telas propriamente ditas onde o usuario estará interagindo, ela depende do redux e dos componentes.
+* Componentes - Os componentes permitem que você divida sua interface em partes independentes e reutilizáveis, e que você pense em cada parte de forma isolada. 
+
+#### 4.2.2 Camada Back-End
+Django - Framework Web que segue o padrão arquitetural model-template-view que possui os pacotes:
 
 * Autenticação - Manipula contas de usuário, grupos, permissões e sessões de usuário.
+  
+  * Login - Possui todas  as funções de autenticador de usuario e depende do cadastro.
+  * Cadastro - Possui funções para criação de novos usuarios.
 
-  * Login - Possui todas  as funções de autenticador de usuário e depende do cadastro.
-  * Cadastro - Possui funções para criação de novos usuários.
-* Tradução - Possui todas  as funções relacionadas a tradução que sera feita por um tipo especifico de usuário. Ela depende diretamente da autenticação e do pagamento.
-* Pagamento - Possui todas  as funções relacionadas ao pagamento que será efetuado e também recebido, dependente da autenticação.
-* Chat - Dependente da tradução para comunicação dos usuários, possui funções para troca de mensagens.
-* Gamificação - Possui funções para melhoria de interação do usuário e depende apenas do pacote tradução.
-#### 4.2.3
+* Usuário - Possui uma generalização de tipos de usuário
+  * Autor - Responsavel por submeter o texto para tradução
+  * Tradutor - Responsavel por traduzir o texto submetido
+  * Revisor - Responsavel por revisar o texto que ja foi traduzido e ainda dar feedbaks para o autor.
 
-* Base de Dados - O pacote Base de dados inclui todas funções necessarias para suportar o armazenamento dos dados.
+* Serviços Translate-me
+
+  * Submissão - Possui todas funções para que o usuario possa submeter o seu texto para a tradução. Ela depende diretamente da autenticação.
+  * Tradução - Possui todas  as funções relacionadas a tradução que sera feita por um tipo especifico de usuario. Ela depende diretamente da autenticação.
+  * Revisão - Possui todas as funções para que o revisor possa revisar e gerar os feedbacks de como estáo texto. 
+  * Pagamento - Possui todas  as funções relacionadas ao pagamento que será efetuado e também recebido, dependente da autenticação.
+  * Gamificação - Possui funções para melhoria de interação do usuario e depende apenas do pacote tradução.
+
+#### 4.2.3 Base de Dados
+Base de Dados - O pacote Base de dados inclui todas funções necessarias para suportar o armazenamento dos dados.
 
 ---
 ## 5. Visão de implementação
@@ -159,13 +180,15 @@ __OBS__: Foi retirada a parte de chat da aplicação visto que por conta do temp
 Seção responsável pela estimativa em valores quantizados do desempenho dos módulos da arquitetura, bem como de sua performance em execução, conforme a análise qualitativa estabelecida no [Documento de Requisitos Não Funcionais](../../../requisitos/modelagem/nfr).
 
 ### 6.1. Volume   
-De forma geral, o sistema deve permitir que o fluxo de usuários de ambos os tipos tenham acesso, otimizando acessos de usuários autores para velocidade enquanto dispõe de uma quantidade maior de acessos a usuários tradutores, que representam maior tempo de atividade e em maior número de acesso aos sistemas, com uma escala 1 : 4 em termos de autores e tradutores. Assim, é possível montar a seguinte tabela de estimativas para volumes, traçando paralelos entre usuários tradutores e usuários autores.
+O sistema deve permitir que o fluxo de usuários de ambos os tipos tenham acesso a aplicação e suas funcionalidades. Os usuários autores somente usam a plataforma para submeter um novo texto ou acompanhar o status de um texto enviado, é um uso baixo e inconstante desta. Já os usuários tradutores, representam maior tempo de atividade e um acesso constante ao sistema. 
 
-| **-** | Autores | Tradutores | Total |
-| --- | --- | --- | --- |
-| **Número de Usuários** | 400 | 1600 | 2000|
-| **Número de Acessos Diários por usuário** | 1 - 5 | 7 - 15 | 8 - 20|
-| **Tempo de Sessão de Usuário** |15 - 50 minutos | 50 minutos - 1 hora e 20 minutos | 33 minutos - 1 hora |
+Para dimensionar o volume de utilização do software faremos uma estimativa mantendo como foco a produção acadêmica realizada na Universidade de Brasília, visto que nosso software inicialmente será direcionado ao público desta. De acordo com a própria UnB, utilizando dados do SciVal, um software desenvolvido pela editora científica Elsevier para a gestão estratégica da pesquisa, cerca de 2000 artigos foram adicionados a base científica Scopus no ano de 2016, considerando a crescente da produção científica vista nos anos de 2011 a 2016 na UnB, podemos estimar que a Universidade atualmente adiciona cerca de 2500 a 3000 artigos na Scopus anualmente.
+
+Através da análise dos prazos de plataformas concorrentes, consideramos que os tradutores levam em torno de duas semanas para traduzir e revisar um artigo contendo até 15 páginas. Na plataforma proposta os prazos se mantém, visto que não há alteração na produtividade dos tradutores. 
+
+Através dos dados acima referentes a produtividade dos tradutores e número de artigos produzidos pela UnB, podemos concluir que para manter a plataforma funcionando corretamente serão necessários no mínimo 200 tradutores. É possível chegar a esse resultado obtendo a média de artigos produzidos a cada duas semanas (=~100), multiplicado pelo número de envolvidos em cada tradução (2 - Tradutor e Revisor), reiterando que é possível obter essa estimativa pois a produtividade dos tradutores/revisores não muda na nossa plataforma, comparada as demais concorrentes.
+
+É possível fazer um escalonamento destes dados para englobar a produção científica em contexto nacional, de forma que seria necessária a busca por novos tradutores, para que seja possível atender a demanda crescente.
 
 ### 6.2. Performance
 
@@ -387,3 +410,37 @@ Adição da entidade de Notificação e remoção do serviço de Línguas
 Remoção do serviço de chat, adição das entidades de categoria e revisão e modificação dos nomes de entidades e atributos para inglês, conforme implementado.
 
 ![translateme_der_4](../../assets/documentos/projeto/db_der4.png)
+
+## 9. Modelos/padrões arquiteturais
+
+### 9.1 Arquitetura Monolítica vs Distribuída
+
+Nesse projeto, optou-se por uma arquitetura baseada em microserviços, que segue uma estrutura distribuída.
+Esse modelo tem como base a organização do software em diversos sistemas independentes
+que se comunicam (no nosso caso, via protocolo HTTP) e formam um sistema maior.
+Além de permitir uma alta coesão e um baixo acoplamento, uma arquitetura distribuída
+facilita questões de infraestrutura, como facilidade de gerenciamento de múltiplos
+servidores, balanceamento de carga e torelância a falhas, por exemplo. Questões como
+manutenibilidade do código e mudança de versão de bibliotecas ou até da própia linguagem
+de algum serviço são facilidatas ao desacoplá-los em diversos componentes também.
+
+### 9.2 MVC
+
+O framework Django, utilizado no backend do projeto, se baseia em um modelo MVT
+(Model-View-Template), que é similar ao MVC, modificando a nomenclatura da camada
+de exibição de View para Template e a camada de controle para View. Nesse contexto,
+o Django provê um ORM (Object-relational mapping), que permite utilizar código de
+sistemas de tipos diferentes, nesse caso SQL e Python, como model, uma view (controller),
+que tem o papel de decidir como e qual dado será exibido, e os templates, que
+no caso do translate-me foi substituído pelo React.
+
+### 9.3 Cliente-servidor
+
+Mesmo utilizando uma arquitetura basead em microserviços, o projeto ainda conta
+com uma divisão clara entre seu backend e o frontend. Como trata-se de uma aplicação
+Web, mesmo com os recursos de SPA providos pelo React (e pelas bibliotecas/frameworks
+JS mais novos), a interface que é executada no browser ainda se trata de um cliente
+e todo o sistema por trás que recebe as requisições de um servidor, funcionando como
+um modelo cliente-servidor clássico. Além disso, alguns serviços específicos, como
+o de autenticação, tem o papel apenas de registrar os usuários em um banco independente
+e renovar/criar tokens de acesso para os mesmos, servido basicamente como um servidor.
