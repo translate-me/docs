@@ -14,13 +14,16 @@
 | 11/04/2019 | 0.9 | Adicionando finalidade do documento | João Robson |
 | 22/04/2019 | 0.9.1 | Revisando e Adicionando Descrições de Tópicos  | Alexandre Miguel |
 | 27/04/2019 | 1.0 | Adicionando informações do Banco de Dados  | Alexandre Miguel e Rômulo Souza |
-| 16/06/2019 | 1.1 | Adicionado subtopicos em visão geral de camadas e pacotes| Davi Alves |
-| 23/06/2019 | 1.2| Adicionado novo diagrama de pacotes e subtopicos em visão geral de camadas e pacotes| Davi Alves |
-
+| 15/06/2019 | 1.1 | Adicionando segunda versão do diagrama de classes  | Letícia Meneses e Gabriela Guedes |
+| 16/06/2019 | 1.2 | Adicionado sub tópicos em visão geral de camadas e pacotes| Davi Alves |
+|23/06/2019|1.3|Adicionado nova versão do diagrama de micro serviços| Victor Hugo|
+|23/06/2019|1.4|Adicionado nova versão do diagrama de implementação e ajustando erros de ortografia| Victor Hugo|
+|23/06/2019|1.5|Adicionado análise do GQM | Gabriela Guedes e Helena Goulart|
+|23/06/2019|1.6| Adicionado novo diagrama de pacotes e subtopicos em visão geral de camadas e pacotes| Davi Alves |
 
 ## Objetivo do Documento
 Este documento tem como objetivo descrever e caracterizar as decisões arquiteturais do projeto
-**Translate.me** . A caraterização será feita com enfoque no ambito do software, não levando em conta medições como de performace.
+**Translate.me** . A caraterização será feita com enfoque no âmbito do software, não levando em conta medições como de performance.
 
 
 ## 1. Introdução
@@ -28,7 +31,7 @@ Este documento visa apresentar a arquitetura de software a ser aplicada no siste
 
 ### 1.1. Finalidade
 
-Este documento apresenta os aspectos arquiteturais do projeto, exibindo como se dará a integração entre os microsserviços que compõem o *Back-end* e o *Front-end* . Dessa forma, ele é composto não só de diagramas e abordagens abstratas, mas também de uma visão que trata das tecnologias envolvidas na elaboração do projeto e da forma na qual esses elementos serão incorporados para se obter os requisitos funcionais e não funcionais propostos.
+Este documento apresenta os aspectos arquiteturais do projeto, exibindo como se dará a integração entre os micros serviços que compõem o *Back-end* e o *Front-end* . Dessa forma, ele é composto não só de diagramas e abordagens abstratas, mas também de uma visão que trata das tecnologias envolvidas na elaboração do projeto e da forma na qual esses elementos serão incorporados para se obter os requisitos funcionais e não funcionais propostos.
 
 ---
 ### 1.2. Escopo
@@ -57,8 +60,31 @@ Este documento de arquitetura se aplica ao **Translate.me** , aplicação desenv
 
 Modelo de representação dos serviços implementados e as interações estabelecidas entre esses serviços, bem como a natureza dessas interações.
 
-![arquitetura](https://i.ibb.co/zf99Pb7/architecture.png)
+### 2.1 Diagrama de arquitetura
 
+#### Versão 1   
+![arquitetura_1](https://i.ibb.co/zf99Pb7/architecture.png)
+
+#### versão 2   
+![arquitetura_2](../../assets/documentos/projeto/arquitetura_v2.png)
+__OBS:__ Foi visto a necessidade de mudar a arquitetura do projeto, pois descartamos a parte de chat dentro do escopo da disciplina
+ e para aumentar a reutilização de alguns do serviços para vários tipos de projeto foi necessário que o serviço de autenticação fosse
+ separado em dois micro serviços. Em que o serviço de profile é responsável pelos tipos de perfis que terão na aplicação e o authentication
+ é responsável pela parte de usuário, senha e token dentro das aplicações.  
+
+#### Papeis:
+
+* __React__: responsável pela parte do frontend da aplicação.
+
+* __Translate__: responsável pela parte de manipulação dos textos, fragmentos, traduções e revisões dentro da aplicação.
+
+* __Payment__: responsável pela parte de repasse do dinheiro da carteira virtual do autor do texto para o tradutor do texto. 
+
+* __Authentication__: responsável pela parte de autentificação dentro da aplicação bem como cadastro de usuário, senha e atribuição de token de autenticação
+para o usuário em questão.
+
+* __Profile__: responsável por cadastro dos tipos de perfis dentro da aplicação, sendo esses tradutor e autor.
+ 
 ---
 
 ## 3. Requisitos e Restrições Arquiteturais
@@ -77,11 +103,16 @@ Modelo de representação dos serviços implementados e as interações estabele
 Modelagens conforme padrão UML que representam os aspectos arquiteturais do sistema, como as classes utilizadas, as camadas e pacotes da aplicação e a visão da implementação de cada serviço.
 
 ### 4.1 Diagrama de Classes
-
+#### Versão 1.0
 ![diagrama_classes](../../assets/desenho/uml/diagrama_classes.png)
 
+#### Versão 2.0
+![diagrama_classes](../../assets/desenho/uml/diag_class_v2.png)
 ### 4.2. Visão Geral de Camadas e Pacotes
+#### Versão 1.0
+![diagrama_pacotes_old](../../assets/desenho/uml/diagrama_pacotes.png)
 
+#### Versão 2.0
 ![diagrama_pacotes](../../assets/desenho/uml/diagrama_pacotes_completo.png)
 
 ![diagrama_pacotes_expandido](../../assets/desenho/uml/diagrama_pacotes_expandido.png)
@@ -115,13 +146,21 @@ Django - Framework Web que segue o padrão arquitetural model-template-view que 
   * Gamificação - Possui funções para melhoria de interação do usuario e depende apenas do pacote tradução.
 
 #### 4.2.3 Base de Dados
-
-* Base de Dados - O pacote Base de dados inclui todas funções necessarias para suportar o armazenamento dos dados.
+Base de Dados - O pacote Base de dados inclui todas funções necessarias para suportar o armazenamento dos dados.
 
 ---
 ## 5. Visão de implementação
+### 5.1 Diagrama de implementação
+Diagrama de implementação serve para dar uma visão de como seria implementado em hardware a arquitetura proposta. Visto que nela é possível ver a quantidade de servidores e/ou serviços por servidores
+ , máquinas pessoais e protocolos de comunicação. 
 
+#### Versão 1
 ![visao_implementacao](https://i.imgur.com/oFSxr4I.png)
+
+#### Versão 2
+![visao_implementacao_v2](../../assets/documentos/projeto/implementacao_v2.png)
+__OBS__: Foi retirada a parte de chat da aplicação visto que por conta do tempo e da complexidade que levaria para implementar esse micro serviço não daria para entregar no escopo da matéria.
+
 ---
 ## 6. Dimensionamento e Performance
 
@@ -147,10 +186,77 @@ Os seguintes itens conferem ao sistema aspectos de qualidade, bem como a descri�
 
 | Item | Solução | Descrição |
 | --- | --- | --- |
-| **Escalabilidade** | Arquietura de Microsserviços | Em prol de permitir que o sistema evolua sem grandes gargalos, o sistema de modularização aplicado pela arquitetura de microsserviços propicia alterações no funcionamento de um serviço sem alterações em grande escala nos demais serviços relacionados, permitindo modificações mais pontuais e uma integração facilitada do sistema. |
-| **Confiabilidade** | Manutenção Periódica e Modularização do Sistema | Pela modularização do sistema permitir menor impacto de um microsserviço no funcionamento de outro, a prática de manutenções periódicas permite a solução de problemas de forma pontual e sem impedir o funcionamento de demais serviços, ao contrário de abordagens monolíticas |
+| **Escalabilidade** | Arquitetura de Micros serviços | Em prol de permitir que o sistema evolua sem grandes gargalos, o sistema de modularização aplicado pela arquitetura de micros serviços propicia alterações no funcionamento de um serviço sem alterações em grande escala nos demais serviços relacionados, permitindo modificações mais pontuais e uma integração facilitada do sistema. |
+| **Confiabilidade** | Manutenção Periódica e Modularização do Sistema | Pela modularização do sistema permitir menor impacto de um micros serviço no funcionamento de outro, a prática de manutenções periódicas permite a solução de problemas de forma pontual e sem impedir o funcionamento de demais serviços, ao contrário de abordagens monolíticas |
 | **Segurança** | Encriptação de dados e Servidor Remoto | Para garantir a segurança de informações sensíveis, a abordagem utilizada será a encriptação de dados e utilização de Hashes, permitindo que informações puras não trafeguem por mais módulos da aplicação do que o necessário, armazenando-as no servidor remoto e acessando-as por meio das hashes.  |
-| **Portabilidade** | Arquitetura de Microsserviços | A Utilização da arquitetura de microsserviços permite o desenvolvimento do Backend da aplicação desacoplado do Frontend, permitindo então que esse Frontend seja adaptado para diferentes plataformas, com um funcionamento equivalente conforme o que foi implementado no Backend, contando ainda com a independência de funcionamento de cada serviço. |  
+| **Portabilidade** | Arquitetura de Micros serviços | A Utilização da arquitetura de micros serviços permite o desenvolvimento do Backend da aplicação desacoplado do Frontend, permitindo então que esse Frontend seja adaptado para diferentes plataformas, com um funcionamento equivalente conforme o que foi implementado no Backend, contando ainda com a independência de funcionamento de cada serviço. |  
+
+
+### 7.1 GQM
+A equipe do translate.me desenvolveu o GQM baseado no desenvolvimento do projeto e na ementa da disciplina Arquitetura e Desenho de Software. Este tópico baseia-se na análise do cumprimento das métricas estabelecidas pelo GQM. É importante ressalta que o grupo não se encontra na última _sprint_ do projeto, logo, é possível que os resultados se alterem até conclusão do transate.me.
+
+####Métrica 1.0:  Detalhamento dos padrões de projetos utilizados e suas limitações.
+Os padrões de projeto utilizados até a data deste documento foram:
+
+* O padrão Observer foi utilizado nas notificações para o usuário. A dificuldade ocorreu devido às limitações do banco de dados do Django;
+
+* O Composiite foi utilizado no banco de dados. Houve dificuldades na implementação do padrão, uma vez que não havia implementação na documentação do Django;
+
+* O Facade foi aplicado na parte de fragmentação do texto, e não apresentou muitas dificuldades uma vez que a definição do padrão de projeto Facade assemelha-se bastante ao translate.me; 
+
+* O Module foi aplicado em grande parte do projeto e com simples implementação;  
+
+* Os padrões Proxy e Adapter estão presentes no projeto por serem padrão do framework Django.
+
+**A métrica responde a pergunta: Quais padrões de projeto foram utilizados?** 
+
+Sim. Apesar de não ter uma documentação detalhando onde cada padrão foi aplicado, a equipe preocupou-se em aplicar os padrões de projeto no translate.me e os membros sabiam pontuar onde, como e porque cada padrão foi aplicado e listar as dificuldades encontradas.
+
+#### Métrica 1.1: Comparativo entre o padrão de projeto utilizado e o que foi definido que o grupo aplicará.
+
+Não foi estabelecido pela equipe quais padrões poderiam ser utilizados, contudo foi feita um estudo sobre cada padrão de projeto, incluindo a sua aplicabilidade no translate.me. Os seguintes padrões foram categorizados como aplicáveis:
+
+* Decorator
+* Facade
+* Bridge
+* Composite
+* Factory Method
+* Abstract Factory
+* Singleton
+* Mediator
+* Observer
+* Command
+* Iterator
+* Interpreter
+
+Conforme citado na metrica anterior, dos padrões de projeto aplicaveis, 3 foram utilizados no projeto. Outros 3 padrões de projeto foram aplicados, mesmo não tendo sido listados anteriormente.
+
+**A métrica responde a pergunta: A equipe aplicou os padrões de projeto que se propôs a utilizar?**
+
+A equipe não se comprometeu em aplicar padrões específicos, dessa forma, a lista de padrões aplicaveis foi parcialmente implementada.
+
+#### Objetivo de equipe 1.0 - Analisar o processo de desenvolvimento de software
+
+O objetivo foi atingido, em virtude dos pontos citados nas metricas 1.0 e 1.1.
+
+#### Métrica 2.0: Apresentar detalhamento dos riscos do projeto
+
+Os riscos foram pontuados e detalhados pela equipe anteriormente no [Termo de Abertura do Projeto](../gerencia/tap.md), contudo foram detalhados novos riscos para incrementar cumprimento desta metrica. Para acessar o documento que contém outros riscos do projeto, basta clicar [aqui](../gerencia/riscos_projeto.md). 
+
+**A métrica responde a pergunta: A equipe possui ciência dos riscos do projeto?**
+Sim, uma vez que o documento foi criado para cumprir parte da métrica e que outros riscos foram pontuados no TAP. As reuniões semanais também possibilitaram que a equipe conversasse sobre esses riscos mesmo que os problemas presentes e que poderiam surgir não fossem nomeados de riscos do projeto.
+
+#### Métrica 2.1: Acompanhamento semanal dos riscos
+
+Em toda reunião de sprint foi feito um levantamento do que foi positivo e negativo durante aquele periodo de trabalho e melhorias a serem feitas. Dessa forma, foi possivel acompanhar os riscos do projeto semanalmente.
+
+**A métrica responde a pergunta: Os riscos estão sob controle?**
+
+Sim. Tendo em vista que foi feito um acompanhamento semanal dos riscos, eles estavam sob controle.
+
+#### Objetivo de equipe 2.0 - Analisar os riscos do projeto
+
+O objetivo foi atingido, uma vez que os riscos foram analisados.
 
 ## 8. Banco de Dados
 
@@ -186,6 +292,8 @@ Os seguintes itens conferem ao sistema aspectos de qualidade, bem como a descri�
 
 #### 8.1.2. Relacionamentos
 
+#### 8.1.2.1 Versão 1
+
 * **TRADUTOR -** ***detem*** **- CERTIFICACAO**  
 Um tradutor detêm nenhuma ou várias certificações, mas cada certificação é detida somente por um tradutor.  
 Cardinalidade: **1:n**
@@ -212,6 +320,16 @@ Cardinalidade: **1:n**
 
 ### 8.3. Diagrama Entidade - Relacionamento (DE-R)
 
-![translateme_der](../../assets/documentos/projeto/db_der.png)
+![translateme_der_1](../../assets/documentos/projeto/db_der1.png)
 
-### 8.4. Diagrama Lógico
+#### 8.3.1 Versão 2
+
+Adição do serviço de Línguas
+
+![translateme_der_2](../../assets/documentos/projeto/db_der2.png)
+
+#### 8.3.1 Versão 3
+
+Adição da entidade de Notificação e remoção do serviço de Línguas
+
+![translateme_der_3](../../assets/documentos/projeto/db_der3.png)

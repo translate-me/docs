@@ -118,14 +118,14 @@ Usando a mesma interface para os vários tipos de fragmentos (Composite), é pos
 
 ## 3. Padrões utilizados no Django por _default_
 
-#### Documentação
+#### 3.1 Documentação
 
 _"Modelos devem encapsular cada aspecto de um objeto, seguindo o padrão de projeto Active Record de Martin Fowler."_
 
 ![ActiveRecord](../../../assets/desenho/padroes/from-activerecord-to-eventsourcing.jpg
 )
 
-#### Padrões comportamentais
+#### 3.2 Padrões comportamentais
 
 | GoF | Componente do Django | Explicação |
 |---|---|---|
@@ -133,7 +133,7 @@ _"Modelos devem encapsular cada aspecto de um objeto, seguindo o padrão de proj
 | Observer  | Signals | Quando um objeto muda de estado, todos os demais são associados a ele são notificados e atualizados automaticamente  |
 | Template method | Visualização baseada em classes | Etapas de um algoritmo podem ser redefinidas por subclasses sem alterar a estrutura do algoritmo |
 
-### Padrão estrutural
+#### 3.3 Padrão estrutural
 
 O _.serializer()_ é um método nativo do Django Rest que permitem que dados complexos, como _querysets_ e instâncias de modelo, sejam convertidos em tipos de dados Python nativos que podem ser facilmente renderizados em JSON, XML ou outros tipos de conteúdo.
 
@@ -159,7 +159,7 @@ O Django Rest contem a serializer que já faz a verificação dos campos com o b
 
 ![](../../../assets/desenho/padroes/observer.jpg)
 
-#### 4.2.2 Como tentamos implementar
+#### 4.2.2 Tentativa de implementação no projeto
 ##### 4.2.2.1 Tentativa 1 - Atualizar o Texto de acordo com os Fragmentos
 A ideia inicial era que de acordo com os estados do andamento dos fragmentos de tradução do texto, o estado do texto final fosse atualizado para que o autor soubesse do andamento do seu texto.
 

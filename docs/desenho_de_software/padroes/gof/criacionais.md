@@ -6,9 +6,14 @@
 |---|---|---|---|
 | 20/05/2019 | 0.1 | Adicionando Multiton GOF | Gabriela Guedes |
 | 20/05/2019 | 0.2 | Adicionando Factory Method GOF | Renan Schadt |
-| 23/05/2019 | 0.3 | Adicionando Singleton e Abstract Factory GOFs | Helena Goulart | |
+| 23/05/2019 | 0.3 | Adicionando Singleton e Abstract Factory GOFs | Helena Goulart |
+| 28/06/2019 | 0.4 | Arruma analise do Multiton | Gabriela Guedes |
+| 11/05/2019 | 0.5 | Adição dos topicos | Davi Alves e Luiz Guilherme |
+| 17/06/2019 | 0.6 | Unindo os documentos de GoFs criacionais em um só | Helena Goulart |
 
 ## 1. Introdução
+
+Um padrão de projeto é uma solução geral e reutilizável para um problema comum de software. Eles são modelos que podem ser reutilizados e personalizados para resolver um problema específico de design em muitas situações diferentes. Os padrões do tipo criacionais lidam na forma como os objetos e classes são criados para atenderem necessidades distintas.
 
 ## 2. GoFs Criacionais
 
@@ -45,7 +50,7 @@ Assim teremos uma solução elegante para criação de objetos de texto, dando p
 O multiton consiste na utilização de um método para retornar um objeto. Esse método deve receber uma chave, e caso já exista um objeto com essa chave, ele é retornado, caso contrário, um novo objeto é criado. O multiton é considerado uma extensão do padrão de projeto singleton, onde o método de criação de objetos deve ser privado e que só permite a criação de uma instância para a classe, no caso do multiton, é utilizado um dicionário para agrupar todas as instancias geradas.
 
 ### 2.2.2 Análise
-É possivel a implementação do Multiton em nosso projeto, veja o exemplo de implementação em python:
+É possivel a implementação do Multiton em python, veja o exemplo abaixo:
 
 ``` py
 def multiton(cls):
@@ -72,6 +77,8 @@ print(a is b)
 print("Should be True:")
 print(b is c)
 ```
+
+Entretanto, não é possível aplica-lo em Django. Devido ao uso das serializers para a criação de uma nova instância da classe, não é possivel adapta-la para este padrão de projeto.
 
 ### 2.2.3 Estrutura Mínima
 
@@ -117,9 +124,62 @@ O _Singleton_ pode ser utilizado no translate.me. Por ser recomendado quando é 
 
 ![](../../../assets/desenho/padroes/Singleton.png)
 
+## 2.5 Prototype
+
+### 2.5.1 Explicação
+Criar objetos com base em um modelo de um objeto existente por meio de clonagem, ou seja, ele é usado quando o tipo de objeto a ser criado é determinado por uma instância prototípica, que é clonada para produzir novos objetos.
+
+### 2.5.2 Quando deve ser usado
+* Quando a composição, criação e representação de objetos devem ser dissociadas de um sistema.
+* As classes a serem criadas são especificadas no tempo de execução.
+* Um número limitado de combinações de estados existe em um objeto.
+* Objetos ou estruturas de objeto são requeridos que são idênticos ou se assemelham a outros objetos ou estruturas de objetos existentes.
+* A criação inicial de cada objeto é uma operação custosa.
+
+### 2.5.3 Estrutura mínima
+
+![](https://circle.visual-paradigm.com/wp-content/uploads/2017/08/GoF-Design-Patterns-Creational-Patterns-Prototype.png)
+
+Exemplo de diagrama de classe UML para o desenho de padrão do modelo "Prototype"
+
+## 2.6 Object Pool
+
+### 2.6.1 Explicação
+O agrupamento de objetos pode oferecer um aumento de desempenho significativo em situações em que o custo de inicializar uma instância de classe é alto, a taxa de instanciação de uma classe é alta e o número de instâncias em uso a qualquer momento é baixo. O "object pool" é obtido em tempo previsível, o que torna esse padrão útil para sistemas em tempo real.
+
+### 2.6.2 Quando deve ser usado
+* A criação inicial de cada objeto é uma operação custosa.
+* A frequência de criação de outros objetos também é alta.
+* O número de objetos em uso é pequeno.
+
+
+### 2.6.3 Estrutura mínima
+
+![](https://www.oodesign.com/images/stories/objectpool%20implementation%20-%20uml%20class%20schema.gif)
+
+Exemplo de diagrama de classe UML para o desenho de padrão do modelo "Object Pool"
+
+## 2.7 Builder
+
+### 2.7.1 Explicação
+Permite a criação dinâmica de objetos com base em algoritmos facilmente intercambiáveis.Esse padrão permite que um objeto cliente construa um objeto complexo especificando apenas seu tipo e conteúdo, sendo protegido dos detalhes relacionados à representação de objetos.
+
+### 2.7.2 Quando deve ser usado
+
+* Algoritmos de criação de objetos devem ser desacoplados do sistema.
+* Várias representações de algoritmos de criação são necessárias.
+* A adição de nova funcionalidade de criação sem alterar o código principal é necessária.
+* O controle de tempo de execução sobre o processo de criação é necessário.
+
+### 2.7.3 Estrutura mínima
+![](https://circle.visual-paradigm.com/wp-content/uploads/2017/08/GoF-Design-Patterns-Creational-Patterns-Builder.png)
+
+Exemplo de diagrama de classe UML para o desenho de padrão do modelo "builder".
+
+
 ## 3. Referências
 
-### Links de sites
+### 3.1 Links de sites
 
 * [UFCG - Abstract Factory](http://www.dsc.ufcg.edu.br/~jacques/cursos/map/html/pat/abstractfactory.htm)  <br>
 * [DevMedia - Singleton](https://www.devmedia.com.br/padrao-de-projeto-singleton-em-java/26392). <br>
@@ -127,8 +187,14 @@ O _Singleton_ pode ser utilizado no translate.me. Por ser recomendado quando é 
 * [Stack Overflow](https://stackoverflow.com/questions/669932/how-to-create-a-class-that-doesnt-re-create-an-object-with-identical-input-para)
 * [Refactoring Guru - Factory Method](https://refactoring.guru/design-patterns/factory-method)
 * [Aula GoFs Criacionais - Milene Serrano](https://aprender.ead.unb.br/mod/resource/view.php?id=46112)
+* [Circle Visual - GOF](https://circle.visual-paradigm.com/category/uml-diagrams/gof-design/)
+* [O Design - Object Pool Pattern](https://www.oodesign.com/object-pool-pattern.html)
+* [Medium - Object Pool](https://medium.com/@sawomirkowalski/design-patterns-object-pool-e8269fd45e10)
+* [Circle Visual Paradigm - Builder](https://circle.visual-paradigm.com/builder/)
+* [O Design - Builder Pattern](https://www.oodesign.com/builder-pattern.html)
 
-### Livros e artigos
+
+### 3.2 Livros e artigos
 
 [1] NOBLE, James. GOF patterns for GUI Design. preprint of Macquarie University, Sydney Australia, 1997. <br>
 [2] ELLIS, Brian; STYLOS, Jeffrey; MYERS, Brad. The factory pattern in API design: A usability evaluation. In: Proceedings of the 29th international conference on Software Engineering. IEEE Computer Society, 2007. p. 302-312
