@@ -12,10 +12,11 @@ nav:
   - Dinâmica e Seminário V: 
     - Parte A, GoFs: desenho_de_software/padroes/gof/seminarioParteA.md
     - Parte B, GoFs emergentes: desenho_de_software/padroes/gof/seminarioParteB.md
+  - Dinâmica e Seminário VI: 
+    - Documento de Arquitetura: documentos/projeto/doc_de_arquitetura.md
   - Iniciativas extras:
     - Documentos de Projeto:
       - Documento de Visão: documentos/projeto/doc_de_visao.md
-      - Documento de Arquitetura: documentos/projeto/doc_de_arquitetura.md
       - Benchmarking: documentos/projeto/benchmarking.md
       - Identidade Visual: documentos/projeto/identidade_visual.md
     - Documentos de Gerência:
@@ -23,6 +24,7 @@ nav:
       - Política de Contribuição: documentos/gerencia/pol_contribuicao.md
       - Canvas: documentos/gerencia/canvas.md
       - Termo de Abertura do Projeto: documentos/gerencia/tap.md
+      - Riscos: documentos/gerencia/riscos_projeto.md
     - Elicitação de requisitos:
       - Rich Picture: requisitos/elicitacao/rich_picture.md
       - Mapa Mental: requisitos/elicitacao/mapa_mental.md
