@@ -1486,6 +1486,30 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../reunioes/sprints/sprint_6/" title="Sprint 6" class="md-nav__link">
+      Sprint 6
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../reunioes/sprints/sprint_7/" title="Sprint 7" class="md-nav__link">
+      Sprint 7
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -2116,7 +2140,15 @@ aprendizado necessária para compreeder esse pedaço do sistema.</p>
 o uso de funcionalidades de outros subsistemas mais complexos;</li>
 </ul>
 <h4 id="232-analise">2.3.2 Análise</h4>
-<p>Pode ser utilizado no translate.me, mas não é o mais recomendado, uma vez que é comumente utilizado em projetos complexos e com o escopo maior, o que não é o caso do projeto em questão.</p>
+<p>Sim, é possível aplicar o Facade no translate.me nos seguintes contextos:</p>
+<ul>
+<li>
+<p>Serviço de tradução de texto: ao ser submetido, o texto do autor passa por várias etapas que, como cliente, ele não tem acesso. Logo, se o usário tivesse acesso à todo processo de fragmentação do texto, distribuição dos fragmentos para tradutores, revisão e alterações, seria um processo bastante complexo. Com a aplicação do Facade, ele tem uma entrada simples (o texto) e uma única saída (o texto traduzido);</p>
+</li>
+<li>
+<p>Serviço de pagamento pela tradução: uma vez que o translate.me recebe o texto realiza o processo de fragmentação, distribuição, tradução e revisão, o pagamento pelo serviço é atribuído a cada tradutor de acordo com a quantidade de palavras interpretadas. Esse cálculo exige que percorra por toda o processo de submissão do texto, porém o usuário autor enxerga apenas um valor a ser pago pelo serviço. O que ele não tem contato é que esse valor é dividido entre vários tradutores, que por sua vez também possuem acesso a somente um dado: o valor pago pelo serviço de tradução de uma quantidade 'x' de palavras.</p>
+</li>
+</ul>
 <h4 id="233-estrutura-minima">2.3.3 Estrutura mínima</h4>
 <p><img alt="facade" src="https://sourcemaking.com/files/v2/content/patterns/Facade1.png" /></p>
 <h3 id="24-adapter">2.4 Adapter</h3>
