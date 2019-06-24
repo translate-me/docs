@@ -16,11 +16,12 @@
 | 27/04/2019 | 1.0 | Adicionando informações do Banco de Dados  | Alexandre Miguel e Rômulo Souza |
 | 15/06/2019 | 1.1 | Adicionando segunda versão do diagrama de classes  | Letícia Meneses e Gabriela Guedes |
 | 16/06/2019 | 1.2 | Adicionado sub tópicos em visão geral de camadas e pacotes| Davi Alves |
-|23/06/2019 | 1.3 |Adicionado nova versão do diagrama de micro serviços| Victor Hugo|
-|23/06/2019 | 1.4 |Adicionado nova versão do diagrama de implementação e ajustando erros de ortografia| Victor Hugo|
-|23/06/2019 | 1.5 | Adicionando versões 2 e 3 do ME-R e DE-R na visão de dados | Alexandre Miguel|
-|23/06/2019 | 1.6 |Adicionado análise do GQM | Gabriela Guedes e Helena Goulart|
-|23/06/2019 | 1.7 | Adicionando a quarta versão do Diagrama Entidade-Relacionamento | Alexandre Miguel |
+|23/06/2019|1.3|Adicionado nova versão do diagrama de micro serviços| Victor Hugo|
+|23/06/2019|1.4|Adicionado nova versão do diagrama de implementação e ajustando erros de ortografia| Victor Hugo|
+|23/06/2019|1.5|Adicionado análise do GQM | Gabriela Guedes e Helena Goulart|
+|23/06/2019|1.6| Adicionado novo diagrama de pacotes e subtopicos em visão geral de camadas e pacotes| Davi Alves |
+|23/06/2019 | 1.7 | Adicionando versões 2 e 3 do ME-R e DE-R na visão de dados | Alexandre Miguel|
+|23/06/2019 | 1.8 | Adicionando a quarta versão do Diagrama Entidade-Relacionamento | Alexandre Miguel |
 
 ## Objetivo do Documento
 Este documento tem como objetivo descrever e caracterizar as decisões arquiteturais do projeto
@@ -116,29 +117,44 @@ Modelagens conforme padrão UML que representam os aspectos arquiteturais do sis
 #### Versão 2.0
 ![diagrama_classes](../../assets/desenho/uml/diag_class_v2.png)
 ### 4.2. Visão Geral de Camadas e Pacotes
+#### Versão 1.0
+![diagrama_pacotes_old](../../assets/desenho/uml/diagrama_pacotes.png)
 
-![diagrama_pacotes](../../assets/desenho/uml/diagrama_pacotes.png)
+#### Versão 2.0
+![diagrama_pacotes](../../assets/desenho/uml/diagrama_pacotes_completo.png)
 
-#### 4.2.1
-React(Front-End) - Biblioteca JavaScript que leva consigo outros 3 pacotes que são:
+![diagrama_pacotes_expandido](../../assets/desenho/uml/diagrama_pacotes_expandido.png)
+
+#### 4.2.1 Camada UI
+React - Biblioteca JavaScript que leva consigo outros 3 pacotes que são:
 
 * Redux - Facilitador da comunicação entre componentes sem acoplá-los.
-* Telas - Telas propriamente ditas onde o usuário estará interagindo, ela depende do redux e dos componentes.
-* Componentes - Os componentes permitem que você divida sua interface em partes independentes e reutilizáveis, e que você pense em cada parte de forma isolada.
-#### 4.2.2
-Django(Back-End) - Framework Web que segue o padrão arquitetural model-template-view que possui os pacotes:
+* Telas - Telas propriamente ditas onde o usuario estará interagindo, ela depende do redux e dos componentes.
+* Componentes - Os componentes permitem que você divida sua interface em partes independentes e reutilizáveis, e que você pense em cada parte de forma isolada. 
+
+#### 4.2.2 Camada Back-End
+Django - Framework Web que segue o padrão arquitetural model-template-view que possui os pacotes:
 
 * Autenticação - Manipula contas de usuário, grupos, permissões e sessões de usuário.
+  
+  * Login - Possui todas  as funções de autenticador de usuario e depende do cadastro.
+  * Cadastro - Possui funções para criação de novos usuarios.
 
-  * Login - Possui todas  as funções de autenticador de usuário e depende do cadastro.
-  * Cadastro - Possui funções para criação de novos usuários.
-* Tradução - Possui todas  as funções relacionadas a tradução que sera feita por um tipo especifico de usuário. Ela depende diretamente da autenticação e do pagamento.
-* Pagamento - Possui todas  as funções relacionadas ao pagamento que será efetuado e também recebido, dependente da autenticação.
-* Chat - Dependente da tradução para comunicação dos usuários, possui funções para troca de mensagens.
-* Gamificação - Possui funções para melhoria de interação do usuário e depende apenas do pacote tradução.
-#### 4.2.3
+* Usuário - Possui uma generalização de tipos de usuário
+  * Autor - Responsavel por submeter o texto para tradução
+  * Tradutor - Responsavel por traduzir o texto submetido
+  * Revisor - Responsavel por revisar o texto que ja foi traduzido e ainda dar feedbaks para o autor.
 
-* Base de Dados - O pacote Base de dados inclui todas funções necessarias para suportar o armazenamento dos dados.
+* Serviços Translate-me
+
+  * Submissão - Possui todas funções para que o usuario possa submeter o seu texto para a tradução. Ela depende diretamente da autenticação.
+  * Tradução - Possui todas  as funções relacionadas a tradução que sera feita por um tipo especifico de usuario. Ela depende diretamente da autenticação.
+  * Revisão - Possui todas as funções para que o revisor possa revisar e gerar os feedbacks de como estáo texto. 
+  * Pagamento - Possui todas  as funções relacionadas ao pagamento que será efetuado e também recebido, dependente da autenticação.
+  * Gamificação - Possui funções para melhoria de interação do usuario e depende apenas do pacote tradução.
+
+#### 4.2.3 Base de Dados
+Base de Dados - O pacote Base de dados inclui todas funções necessarias para suportar o armazenamento dos dados.
 
 ---
 ## 5. Visão de implementação
