@@ -89,7 +89,13 @@ Deve ser usado nas seguintes situações:
 o uso de funcionalidades de outros subsistemas mais complexos;
 
 #### 2.3.2 Análise
-Pode ser utilizado no translate.me, mas não é o mais recomendado, uma vez que é comumente utilizado em projetos complexos e com o escopo maior, o que não é o caso do projeto em questão.
+
+
+Sim, é possível aplicar o Facade no translate.me nos seguintes contextos:
+
+* Serviço de tradução de texto: ao ser submetido, o texto do autor passa por várias etapas que, como cliente, ele não tem acesso. Logo, se o usário tivesse acesso à todo processo de fragmentação do texto, distribuição dos fragmentos para tradutores, revisão e alterações, seria um processo bastante complexo. Com a aplicação do Facade, ele tem uma entrada simples (o texto) e uma única saída (o texto traduzido);
+
+* Serviço de pagamento pela tradução: uma vez que o translate.me recebe o texto realiza o processo de fragmentação, distribuição, tradução e revisão, o pagamento pelo serviço é atribuído a cada tradutor de acordo com a quantidade de palavras interpretadas. Esse cálculo exige que percorra por toda o processo de submissão do texto, porém o usuário autor enxerga apenas um valor a ser pago pelo serviço. O que ele não tem contato é que esse valor é dividido entre vários tradutores, que por sua vez também possuem acesso a somente um dado: o valor pago pelo serviço de tradução de uma quantidade 'x' de palavras.
 
 #### 2.3.3 Estrutura mínima
 
