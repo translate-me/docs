@@ -225,10 +225,10 @@ O objetivo foi atingido, em virtude dos pontos citados nas metricas 1.0 e 1.1.
 
 #### Métrica 2.0: Apresentar detalhamento dos riscos do projeto
 
-Os riscos do projeto não haviam sido pontuados e detalhados pela equipe anteriormente, contudo foram feitos para o cumprimento desta metrica. Para acessar o documento que contém os riscos do projeto, basta clicar [aqui](../gerencia/riscos_projeto.md). 
+Os riscos foram pontuados e detalhados pela equipe anteriormente no [Termo de Abertura do Projeto](../gerencia/tap.md), contudo foram detalhados novos riscos para incrementar cumprimento desta metrica. Para acessar o documento que contém outros riscos do projeto, basta clicar [aqui](../gerencia/riscos_projeto.md). 
 
 **A métrica responde a pergunta: A equipe possui ciência dos riscos do projeto?**
-Parcialmente. Uma vez que o documento foi criado para cumprir parte da métrica, não foi apresentado para toda todos desde o início do desenvolvimento do projeto quais eram os riscos presentes. Entretanto, as reuniões semanais possibilitaram que a equipe conversasse sobre esses riscos mesmo que os problemas presentes e que poderiam surgir não fossem nomeados de riscos do projeto.
+Sim, uma vez que o documento foi criado para cumprir parte da métrica e que outros riscos foram pontuados no TAP. As reuniões semanais também possibilitaram que a equipe conversasse sobre esses riscos mesmo que os problemas presentes e que poderiam surgir não fossem nomeados de riscos do projeto.
 
 #### Métrica 2.1: Acompanhamento semanal dos riscos
 
