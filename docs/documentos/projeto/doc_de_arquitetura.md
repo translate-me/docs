@@ -26,7 +26,7 @@
 
 ## Objetivo do Documento
 Este documento tem como objetivo descrever e caracterizar as decisões arquiteturais do projeto
-**Translate.me** . A caraterização será feita com enfoque no âmbito do software, não levando em conta medições como de performance.
+**Translate.me** . A caraterização será feita com enfoque no âmbito do software, não levando em conta medições como de desempenho.
 
 ---
 
@@ -182,9 +182,9 @@ Diagrama de implementação serve para dar uma visão de como seria implementado
 __OBS__: Foi retirada a parte de chat da aplicação visto que por conta do tempo e da complexidade que levaria para implementar esse micro serviço não daria para entregar no escopo da matéria.
 
 ---
-## 6. Dimensionamento e Performance
+## 6. Dimensionamento e Dessempenho
 
-Seção responsável pela estimativa em valores quantizados do desempenho dos módulos da arquitetura, bem como de sua performance em execução, conforme a análise qualitativa estabelecida no [Documento de Requisitos Não Funcionais](../../../requisitos/modelagem/nfr).
+Seção responsável pela estimativa em valores quantizados do desempenho dos módulos da arquitetura, bem como de sua desempenho em execução, conforme a análise qualitativa estabelecida no [Documento de Requisitos Não Funcionais](../../../requisitos/modelagem/nfr).
 
 ### 6.1. Volume   
 O sistema deve permitir que o fluxo de usuários de ambos os tipos tenham acesso a aplicação e suas funcionalidades. Os usuários autores somente usam a plataforma para submeter um novo texto ou acompanhar o status de um texto enviado, é um uso baixo e inconstante desta. Já os usuários tradutores, representam maior tempo de atividade e um acesso constante ao sistema.
@@ -197,9 +197,9 @@ Através dos dados acima referentes a produtividade dos tradutores e número de 
 
 É possível fazer um escalonamento destes dados para englobar a produção científica em contexto nacional, de forma que seria necessária a busca por novos tradutores, para que seja possível atender a demanda crescente.
 
-### 6.2. Performance
+### 6.2. Desempenho
 
-Para o correto funcionamento do sistema, a performance deve ser rápida e com a conclusão de funcionalidades como o *upload* de textos em até 1 minuto, para textos com mais de 200 páginas, bem como respostas eficientes da utilização de sistemas como a separação de fragmentos e o envio do texto para tradução.
+Para o correto funcionamento do sistema, o desempenho deve ser rápida e com a conclusão de funcionalidades como o *upload* de textos em até 1 minuto, para textos com mais de 200 páginas, bem como respostas eficientes da utilização de sistemas como a separação de fragmentos e o envio do texto para tradução.
 
 ---
 ## 7. Qualidade
@@ -345,23 +345,35 @@ O objetivo foi atingido, uma vez que os riscos foram analisados.
 
 | Entidade Ativa | Relacionamento | Entidade Passiva | Descrição | Cardinalidade |
 | --- | --- | --- | --- | --- |  
-| **TRADUTOR** | ***detem*** | **CERTIFICACAO** | Um tradutor detêm nenhuma ou várias certificações, mas cada certificação é detida somente por um tradutor.   | **1:n** |
+| **TRADUTOR** | ***detem*** | **CERTIFICADO** | Um tradutor detêm nenhuma, uma ou várias certificações, mas cada certificação é detida somente por um tradutor.   | **1:n** |
+| **TRADUTOR** | ***traduz***  | **FRAGMENTO** | Um tradutor pode traduzir nenhum, um ou vários fragmentos, mas cada fragmento é traduzido por somente um tradutor. | **1:n** |
+| **TRADUTOR** | ***revisa***  | **FRAGMENTO** | Um tradutor pode revisar um ou vários fragmentos, e cada fragmento é revisado por um ou vários tradutores. | **n:m** |
+| **TRADUTOR** | ***fala***  | **IDIOMA** | Um tradutor pode falar uma ou várias linguagens, e cada linguagem é falada por um ou vários tradutores. | **n:m** |      
+| **TEXTO** | ***contem*** | **FRAGMENTO**  | Um texto contém um ou vários fragmentos, e cada fragmento está contido em um único texto. | **1:n** |
+| **TEXTO** | ***apresenta***  | **IDIOMA** | Um texto apresenta uma única idioma de origem, mas cada idioma de origem é apresentada por um ou vários textos. | **n:1** |
+| **TEXTO** | ***apresenta***  | **IDIOMA** | Um texto apresenta uma única idioma de destino, mas cada idioma de destino é apresentada por um ou vários textos. | **n:1** |
+| **AUTOR** | ***possui*** | **TEXTO** | Um autor possui nenhum, um ou vários textos, mas cada texto é possuído por um único autor. | **1:n** |
 | **AUTOR** | ***participa***   | **CHAT** | Um autor participa de nenhum ou de vários chats, mas cada chat possui um único autor. | **1:n** |  
 | **AUTOR** | ***escreve***  | **CHAT** | Um autor escreve nenhuma ou várias mensagens, mas cada mensagem é escrita por somente um autor. | **1:n** |
-| **TRADUTOR** | ***traduz***  | **FRAGMENTO** | Um tradutor pode traduzir nenhum ou vários fragmentos, mas cada fragmento é traduzido por somente um tradutor. | **1:n** |  
-| **TEXTO** | ***contem*** | **FRAGMENTO**  | Um texto contém um ou vários fragmentos, e cada fragmento está contido em um único texto. | **1:n** |
-| **AUTOR** | ***possui*** | **TEXTO** | Um autor possui nenhum ou vários textos, mas cada texto é possuído por um único autor. | **1:n** |
+| **NOTIFICAÇÃO** | ***refere***   |  **TEXTO** | Uma notificação refere-se a um único texto, mas cada texto pode ser referenciado por nenhuma, uma ou várias notificações. | **n:1** |
+| **USUÁRIO** | ***representa***  | **AUTOR** | Um usuário representa um único autor na plataforma, e cada autor é representado por um único usuário. | **1:1** |
 
 ##### 8.1.2.3 Versão 3
 
 | Entidade Ativa | Relacionamento | Entidade Passiva | Descrição | Cardinalidade |
 | --- | --- | --- | --- | --- |  
-| **TRADUTOR** | ***detem*** | **CERTIFICACAO** | Um tradutor detêm nenhuma ou várias certificações, mas cada certificação é detida somente por um tradutor.   | **1:n** |
+| **TRADUTOR** | ***detem*** | **CERTIFICADO** | Um tradutor detêm nenhuma, uma ou várias certificações, mas cada certificação é detida somente por um tradutor.   | **1:n** |
+| **TRADUTOR** | ***traduz***  | **FRAGMENTO** | Um tradutor pode traduzir nenhum, um ou vários fragmentos, mas cada fragmento é traduzido por somente um tradutor. | **1:n** |
+| **TRADUTOR** | ***revisa***  | **FRAGMENTO** | Um tradutor pode revisar um ou vários fragmentos, e cada fragmento é revisado por um ou vários tradutores. | **n:m** |
+| **TRADUTOR** | ***fala***  | **IDIOMA** | Um tradutor pode falar uma ou várias linguagens, e cada linguagem é falada por um ou vários tradutores. | **n:m** |      
+| **TEXTO** | ***contem*** | **FRAGMENTO**  | Um texto contém um ou vários fragmentos, e cada fragmento está contido em um único texto. | **1:n** |
+| **TEXTO** | ***apresenta***  | **IDIOMA** | Um texto apresenta uma única idioma de origem, mas cada idioma de origem é apresentada por um ou vários textos. | **n:1** |
+| **TEXTO** | ***apresenta***  | **IDIOMA** | Um texto apresenta uma única idioma de destino, mas cada idioma de destino é apresentada por um ou vários textos. | **n:1** |
+| **AUTOR** | ***possui*** | **TEXTO** | Um autor possui nenhum, um ou vários textos, mas cada texto é possuído por um único autor. | **1:n** |
 | **AUTOR** | ***participa***   | **CHAT** | Um autor participa de nenhum ou de vários chats, mas cada chat possui um único autor. | **1:n** |  
 | **AUTOR** | ***escreve***  | **CHAT** | Um autor escreve nenhuma ou várias mensagens, mas cada mensagem é escrita por somente um autor. | **1:n** |
-| **TRADUTOR** | ***traduz***  | **FRAGMENTO** | Um tradutor pode traduzir nenhum ou vários fragmentos, mas cada fragmento é traduzido por somente um tradutor. | **1:n** |  
-| **TEXTO** | ***contem*** | **FRAGMENTO**  | Um texto contém um ou vários fragmentos, e cada fragmento está contido em um único texto. | **1:n** |
-| **AUTOR** | ***possui*** | **TEXTO** | Um autor possui nenhum ou vários textos, mas cada texto é possuído por um único autor. | **1:n** |
+| **NOTIFICAÇÃO** | ***refere***   |  **TEXTO** | Uma notificação refere-se a um único texto, mas cada texto pode ser referenciado por nenhuma, uma ou várias notificações. | **n:1** |
+| **USUÁRIO** | ***representa***  | **AUTOR** | Um usuário representa um único autor na plataforma, e cada autor é representado por um único usuário. | **1:1** |
 
 
 ##### 8.1.2.4 Versão 4
