@@ -26,7 +26,7 @@
 
 ## Objetivo do Documento
 Este documento tem como objetivo descrever e caracterizar as decisões arquiteturais do projeto
-**Translate.me** . A caraterização será feita com enfoque no âmbito do software, não levando em conta medições como de performance.
+**Translate.me** . A caraterização será feita com enfoque no âmbito do software, não levando em conta medições como de desempenho.
 
 ---
 
@@ -182,9 +182,9 @@ Diagrama de implementação serve para dar uma visão de como seria implementado
 __OBS__: Foi retirada a parte de chat da aplicação visto que por conta do tempo e da complexidade que levaria para implementar esse micro serviço não daria para entregar no escopo da matéria.
 
 ---
-## 6. Dimensionamento e Performance
+## 6. Dimensionamento e Dessempenho
 
-Seção responsável pela estimativa em valores quantizados do desempenho dos módulos da arquitetura, bem como de sua performance em execução, conforme a análise qualitativa estabelecida no [Documento de Requisitos Não Funcionais](../../../requisitos/modelagem/nfr).
+Seção responsável pela estimativa em valores quantizados do desempenho dos módulos da arquitetura, bem como de sua desempenho em execução, conforme a análise qualitativa estabelecida no [Documento de Requisitos Não Funcionais](../../../requisitos/modelagem/nfr).
 
 ### 6.1. Volume   
 O sistema deve permitir que o fluxo de usuários de ambos os tipos tenham acesso a aplicação e suas funcionalidades. Os usuários autores somente usam a plataforma para submeter um novo texto ou acompanhar o status de um texto enviado, é um uso baixo e inconstante desta. Já os usuários tradutores, representam maior tempo de atividade e um acesso constante ao sistema.
@@ -197,9 +197,9 @@ Através dos dados acima referentes a produtividade dos tradutores e número de 
 
 É possível fazer um escalonamento destes dados para englobar a produção científica em contexto nacional, de forma que seria necessária a busca por novos tradutores, para que seja possível atender a demanda crescente.
 
-### 6.2. Performance
+### 6.2. Desempenho
 
-Para o correto funcionamento do sistema, a performance deve ser rápida e com a conclusão de funcionalidades como o *upload* de textos em até 1 minuto, para textos com mais de 200 páginas, bem como respostas eficientes da utilização de sistemas como a separação de fragmentos e o envio do texto para tradução.
+Para o correto funcionamento do sistema, o desempenho deve ser rápida e com a conclusão de funcionalidades como o *upload* de textos em até 1 minuto, para textos com mais de 200 páginas, bem como respostas eficientes da utilização de sistemas como a separação de fragmentos e o envio do texto para tradução.
 
 ---
 ## 7. Qualidade
