@@ -15,6 +15,7 @@
 | 22/04/2019 | 0.9.1 | Revisando e Adicionando Descrições de Tópicos  | Alexandre Miguel |
 | 27/04/2019 | 1.0 | Adicionando informações do Banco de Dados  | Alexandre Miguel e Rômulo Souza |
 | 16/06/2019 | 1.1 | Adicionado subtopicos em visão geral de camadas e pacotes| Davi Alves |
+| 23/06/2019 | 1.2| Adicionado novo diagrama de pacotes e subtopicos em visão geral de camadas e pacotes| Davi Alves |
 
 
 ## Objetivo do Documento
@@ -81,26 +82,39 @@ Modelagens conforme padrão UML que representam os aspectos arquiteturais do sis
 
 ### 4.2. Visão Geral de Camadas e Pacotes
 
-![diagrama_pacotes](../../assets/desenho/uml/diagrama_pacotes.png)
+![diagrama_pacotes](../../assets/desenho/uml/diagrama_pacotes_completo.png)
 
-#### 4.2.1
-React(Front-End) - Biblioteca JavaScript que leva consigo outros 3 pacotes que são:
+![diagrama_pacotes_expandido](../../assets/desenho/uml/diagrama_pacotes_expandido.png)
+
+#### 4.2.1 Camada UI
+React - Biblioteca JavaScript que leva consigo outros 3 pacotes que são:
 
 * Redux - Facilitador da comunicação entre componentes sem acoplá-los.
 * Telas - Telas propriamente ditas onde o usuario estará interagindo, ela depende do redux e dos componentes.
 * Componentes - Os componentes permitem que você divida sua interface em partes independentes e reutilizáveis, e que você pense em cada parte de forma isolada. 
-#### 4.2.2
-Django(Back-End) - Framework Web que segue o padrão arquitetural model-template-view que possui os pacotes:
+
+#### 4.2.2 Camada Back-End
+Django - Framework Web que segue o padrão arquitetural model-template-view que possui os pacotes:
 
 * Autenticação - Manipula contas de usuário, grupos, permissões e sessões de usuário.
   
   * Login - Possui todas  as funções de autenticador de usuario e depende do cadastro.
   * Cadastro - Possui funções para criação de novos usuarios.
-* Tradução - Possui todas  as funções relacionadas a tradução que sera feita por um tipo especifico de usuario. Ela depende diretamente da autenticação e do pagamento.
-* Pagamento - Possui todas  as funções relacionadas ao pagamento que será efetuado e também recebido, dependente da autenticação.
-* Chat - Dependente da tradução para comunicação dos usuarios, possui funções para troca de mensagens.
-* Gamificação - Possui funções para melhoria de interação do usuario e depende apenas do pacote tradução.
-#### 4.2.3
+
+* Usuário - Possui uma generalização de tipos de usuário
+  * Autor - Responsavel por submeter o texto para tradução
+  * Tradutor - Responsavel por traduzir o texto submetido
+  * Revisor - Responsavel por revisar o texto que ja foi traduzido e ainda dar feedbaks para o autor.
+
+* Serviços Translate-me
+
+  * Submissão - Possui todas funções para que o usuario possa submeter o seu texto para a tradução. Ela depende diretamente da autenticação.
+  * Tradução - Possui todas  as funções relacionadas a tradução que sera feita por um tipo especifico de usuario. Ela depende diretamente da autenticação.
+  * Revisão - Possui todas as funções para que o revisor possa revisar e gerar os feedbacks de como estáo texto. 
+  * Pagamento - Possui todas  as funções relacionadas ao pagamento que será efetuado e também recebido, dependente da autenticação.
+  * Gamificação - Possui funções para melhoria de interação do usuario e depende apenas do pacote tradução.
+
+#### 4.2.3 Base de Dados
 
 * Base de Dados - O pacote Base de dados inclui todas funções necessarias para suportar o armazenamento dos dados.
 
