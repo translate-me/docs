@@ -181,10 +181,15 @@ A equipe do translate.me desenvolveu o GQM baseado no desenvolvimento do projeto
 
 ####Métrica 1.0:  Detalhamento dos padrões de projetos utilizados e suas limitações.
 Os padrões de projeto utilizados até a data deste documento foram:
-* O padrão Observer foi utilizado nas notificações para o usuário. A dificuldade ocorreu devido às limitações do banco de dados do Django. 
-* O Composiite foi utilizado no banco de dados. Houve dificuldades na implementação do padrão, uma vez que não havia implementação na documentação do Django.
-* O Facade foi aplicado na parte de fragmentação do texto, e não apresentou muitas dificuldades uma vez que a definição do padrão de projeto Facade assemelha-se bastante ao translate.me;
-* O Module foi aplicado em grande parte do projeto e com simples implementação;
+
+* O padrão Observer foi utilizado nas notificações para o usuário. A dificuldade ocorreu devido às limitações do banco de dados do Django;
+
+* O Composiite foi utilizado no banco de dados. Houve dificuldades na implementação do padrão, uma vez que não havia implementação na documentação do Django;
+
+* O Facade foi aplicado na parte de fragmentação do texto, e não apresentou muitas dificuldades uma vez que a definição do padrão de projeto Facade assemelha-se bastante ao translate.me; 
+
+* O Module foi aplicado em grande parte do projeto e com simples implementação;  
+
 * Os padrões Proxy e Adapter estão presentes no projeto por serem padrão do framework Django.
 
 **A métrica responde a pergunta: Quais padrões de projeto foram utilizados?** 
@@ -220,7 +225,7 @@ O objetivo foi atingido, em virtude dos pontos citados nas metricas 1.0 e 1.1.
 
 #### Métrica 2.0: Apresentar detalhamento dos riscos do projeto
 
-Os riscos do projeto não haviam sido pontuados e detalhados pela equipe anteriormente, contudo foram feitos para o cumprimento desta metrica. Para acessar o documento que contém os riscos do projeto, basta clicar [aqui](). 
+Os riscos do projeto não haviam sido pontuados e detalhados pela equipe anteriormente, contudo foram feitos para o cumprimento desta metrica. Para acessar o documento que contém os riscos do projeto, basta clicar [aqui](../gerencia/riscos_projeto.md). 
 
 **A métrica responde a pergunta: A equipe possui ciência dos riscos do projeto?**
 Parcialmente. Uma vez que o documento foi criado para cumprir parte da métrica, não foi apresentado para toda todos desde o início do desenvolvimento do projeto quais eram os riscos presentes. Entretanto, as reuniões semanais possibilitaram que a equipe conversasse sobre esses riscos mesmo que os problemas presentes e que poderiam surgir não fossem nomeados de riscos do projeto.

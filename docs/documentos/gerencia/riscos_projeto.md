@@ -19,5 +19,5 @@ Este documento tem a finalidade de listar e apontar os riscos encontrados no pro
 
 ## 3. Referências
 
-ROVAI, Ricardo Leonaldo. Modelo estruturado para gestão de riscos em projetos: estudo de múltiplos casos. 2005. Tese de Doutorado. Universidade de São Paulo.
-FONTOURA, Lisandra M.; PRICE, Roberto T.; PHIL, D. Usando gqm para gerenciar riscos em projetos de software. JF de Castro, editor, v. 18, p. 39-54, 2004.
+[1] ROVAI, Ricardo Leonaldo. Modelo estruturado para gestão de riscos em projetos: estudo de múltiplos casos. 2005. Tese de Doutorado. Universidade de São Paulo.
+[2] FONTOURA, Lisandra M.; PRICE, Roberto T.; PHIL, D. Usando gqm para gerenciar riscos em projetos de software. JF de Castro, editor, v. 18, p. 39-54, 2004.
