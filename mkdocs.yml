@@ -2,11 +2,21 @@ site_name: Translate.me
 extra_css: [extra.css]
 nav:
   - Início: index.md
-  - Metodologia: metodologia.md
-  - Documentos:
+  - Dinâmica e Seminário I:
+    -  Design Sprint: def_tema.md
+  - Dinâmica e Seminário II: metodologia.md
+  - Dinâmica e Seminário III: 
+    - UMLs estáticos: desenho_de_software/uml/uml_estaticos.md
+  - Dinâmica e Seminário IV:
+    - UMLs dinâmicos: desenho_de_software/uml/uml_dinamicos.md
+  - Dinâmica e Seminário V: 
+    - Parte A, GoFs: desenho_de_software/padroes/gof/seminarioParteA.md
+    - Parte B, GoFs emergentes: desenho_de_software/padroes/gof/seminarioParteB.md
+  - Dinâmica e Seminário VI: 
+    - Documento de Arquitetura: documentos/projeto/doc_de_arquitetura.md
+  - Iniciativas extras:
     - Documentos de Projeto:
       - Documento de Visão: documentos/projeto/doc_de_visao.md
-      - Documento de Arquitetura: documentos/projeto/doc_de_arquitetura.md
       - Benchmarking: documentos/projeto/benchmarking.md
       - Identidade Visual: documentos/projeto/identidade_visual.md
     - Documentos de Gerência:
@@ -14,9 +24,8 @@ nav:
       - Política de Contribuição: documentos/gerencia/pol_contribuicao.md
       - Canvas: documentos/gerencia/canvas.md
       - Termo de Abertura do Projeto: documentos/gerencia/tap.md
-  - Definição do Tema: def_tema.md
-  - Requisitos:
-    - Elicitação:
+      - Riscos: documentos/gerencia/riscos_projeto.md
+    - Elicitação de requisitos:
       - Rich Picture: requisitos/elicitacao/rich_picture.md
       - Mapa Mental: requisitos/elicitacao/mapa_mental.md
       - Brainstorming: requisitos/elicitacao/brainstorming.md
@@ -32,38 +41,31 @@ nav:
         - Joao Backlog: requisitos/modelagem/backlogs_individuais/joao_backlog.md
       - Backlog Geral: requisitos/modelagem/backlog_geral.md
       - NFR: requisitos/modelagem/nfr.md
-    - Tabela de Requisitos: requisitos/tabela_requisitos.md
-  - Desenho de Software:
-    - UML:
-      - Estáticos: desenho_de_software/uml/uml_estaticos.md
-      - Dinâmicos: desenho_de_software/uml/uml_dinamicos.md
-    - Padrões de Projeto:
+      - Tabela de Requisitos: requisitos/tabela_requisitos.md
+    - Estudo - padrões de Projeto:
       - GRASP: desenho_de_software/padroes/grasp.md
-      - gof: desenho_de_software/gof/structural-gofs.md
       - GoFs:
         - Criacionais: desenho_de_software/padroes/gof/criacionais.md
         - Estruturais: desenho_de_software/padroes/gof/estruturais.md
         - Comportamentais: desenho_de_software/padroes/gof/comportamentais.md
-        - Seminário de GOFs: desenho_de_software/padroes/gof/seminario.md
-        - Seminário de GOFs e Emergentes: desenho_de_software/padroes/gof/emergentes.md
-  - Arquitetura de Software:
-    - Modelos: arquitetura_de_software/modelos.md
-    - Padrões Arquiteturais: arquitetura_de_software/padroes_arquiteturais.md
-  - Reuniões:
-    - Reunião de Sprint:
-      - Sprint 0: reunioes/sprints/sprint_0.md
-      - Sprint 1: reunioes/sprints/sprint_1.md
-      - Sprint 2: reunioes/sprints/sprint_2.md
-      - Sprint 3: reunioes/sprints/sprint_3.md
-      - Sprint 4: reunioes/sprints/sprint_4.md
-      - Sprint 5: reunioes/sprints/sprint_5.md
-      - Sprint 6: reunioes/sprints/sprint_6.md
-      - Sprint 7: reunioes/sprints/sprint_7.md
-    - Pontos de Controle:
-      - PC 1: reunioes/pontos_de_controle/pc_1.md
-      - PC 2: reunioes/pontos_de_controle/pc_2.md
-      - PC 3: reunioes/pontos_de_controle/pc_3.md
-      - PC 4: reunioes/pontos_de_controle/pc_4.md
+    - Arquitetura de Software:
+      - Modelos: arquitetura_de_software/modelos.md
+      - Padrões Arquiteturais: arquitetura_de_software/padroes_arquiteturais.md
+    - Reuniões:
+      - Reunião de Sprint:
+        - Sprint 0: reunioes/sprints/sprint_0.md
+        - Sprint 1: reunioes/sprints/sprint_1.md
+        - Sprint 2: reunioes/sprints/sprint_2.md
+        - Sprint 3: reunioes/sprints/sprint_3.md
+        - Sprint 4: reunioes/sprints/sprint_4.md
+        - Sprint 5: reunioes/sprints/sprint_5.md
+        - Sprint 6: reunioes/sprints/sprint_6.md
+        - Sprint 7: reunioes/sprints/sprint_7.md
+      - Pontos de Controle:
+        - PC 1: reunioes/pontos_de_controle/pc_1.md
+        - PC 2: reunioes/pontos_de_controle/pc_2.md
+        - PC 3: reunioes/pontos_de_controle/pc_3.md
+        - PC 4: reunioes/pontos_de_controle/pc_4.md
 
 #######################################################################################
 
