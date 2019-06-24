@@ -18,6 +18,7 @@
 | 16/06/2019 | 1.2 | Adicionado sub tópicos em visão geral de camadas e pacotes| Davi Alves |
 |23/06/2019|1.3|Adicionado nova versão do diagrama de micro serviços| Victor Hugo|
 |23/06/2019|1.4|Adicionado nova versão do diagrama de implementação e ajustando erros de ortografia| Victor Hugo|
+|23/06/2019|1.5|Adicionado análise do GQM | Gabriela Guedes e Helena Goulart|
 
 ## Objetivo do Documento
 Este documento tem como objetivo descrever e caracterizar as decisões arquiteturais do projeto
@@ -173,6 +174,68 @@ Os seguintes itens conferem ao sistema aspectos de qualidade, bem como a descri�
 | **Confiabilidade** | Manutenção Periódica e Modularização do Sistema | Pela modularização do sistema permitir menor impacto de um micros serviço no funcionamento de outro, a prática de manutenções periódicas permite a solução de problemas de forma pontual e sem impedir o funcionamento de demais serviços, ao contrário de abordagens monolíticas |
 | **Segurança** | Encriptação de dados e Servidor Remoto | Para garantir a segurança de informações sensíveis, a abordagem utilizada será a encriptação de dados e utilização de Hashes, permitindo que informações puras não trafeguem por mais módulos da aplicação do que o necessário, armazenando-as no servidor remoto e acessando-as por meio das hashes.  |
 | **Portabilidade** | Arquitetura de Micros serviços | A Utilização da arquitetura de micros serviços permite o desenvolvimento do Backend da aplicação desacoplado do Frontend, permitindo então que esse Frontend seja adaptado para diferentes plataformas, com um funcionamento equivalente conforme o que foi implementado no Backend, contando ainda com a independência de funcionamento de cada serviço. |  
+
+
+### 7.1 GQM
+A equipe do translate.me desenvolveu o GQM baseado no desenvolvimento do projeto e na ementa da disciplina Arquitetura e Desenho de Software. Este tópico baseia-se na análise do cumprimento das métricas estabelecidas pelo GQM. É importante ressalta que o grupo não se encontra na última _sprint_ do projeto, logo, é possível que os resultados se alterem até conclusão do transate.me.
+
+####Métrica 1.0:  Detalhamento dos padrões de projetos utilizados e suas limitações.
+Os padrões de projeto utilizados até a data deste documento foram:
+* O padrão Observer foi utilizado nas notificações para o usuário. A dificuldade ocorreu devido às limitações do banco de dados do Django. 
+* O Composiite foi utilizado no banco de dados. Houve dificuldades na implementação do padrão, uma vez que não havia implementação na documentação do Django.
+* O Facade foi aplicado na parte de fragmentação do texto, e não apresentou muitas dificuldades uma vez que a definição do padrão de projeto Facade assemelha-se bastante ao translate.me;
+* O Module foi aplicado em grande parte do projeto e com simples implementação;
+* Os padrões Proxy e Adapter estão presentes no projeto por serem padrão do framework Django.
+
+**A métrica responde a pergunta: Quais padrões de projeto foram utilizados?** 
+
+Sim. Apesar de não ter uma documentação detalhando onde cada padrão foi aplicado, a equipe preocupou-se em aplicar os padrões de projeto no translate.me e os membros sabiam pontuar onde, como e porque cada padrão foi aplicado e listar as dificuldades encontradas.
+
+#### Métrica 1.1: Comparativo entre o padrão de projeto utilizado e o que foi definido que o grupo aplicará.
+
+Não foi estabelecido pela equipe quais padrões poderiam ser utilizados, contudo foi feita um estudo sobre cada padrão de projeto, incluindo a sua aplicabilidade no translate.me. Os seguintes padrões foram categorizados como aplicáveis:
+
+* Decorator
+* Facade
+* Bridge
+* Composite
+* Factory Method
+* Abstract Factory
+* Singleton
+* Mediator
+* Observer
+* Command
+* Iterator
+* Interpreter
+
+Conforme citado na metrica anterior, dos padrões de projeto aplicaveis, 3 foram utilizados no projeto. Outros 3 padrões de projeto foram aplicados, mesmo não tendo sido listados anteriormente.
+
+**A métrica responde a pergunta: A equipe aplicou os padrões de projeto que se propôs a utilizar?**
+
+A equipe não se comprometeu em aplicar padrões específicos, dessa forma, a lista de padrões aplicaveis foi parcialmente implementada.
+
+#### Objetivo de equipe 1.0 - Analisar o processo de desenvolvimento de software
+
+O objetivo foi atingido, em virtude dos pontos citados nas metricas 1.0 e 1.1.
+
+#### Métrica 2.0: Apresentar detalhamento dos riscos do projeto
+
+Os riscos do projeto não haviam sido pontuados e detalhados pela equipe anteriormente, contudo foram feitos para o cumprimento desta metrica. Para acessar o documento que contém os riscos do projeto, basta clicar [aqui](). 
+
+**A métrica responde a pergunta: A equipe possui ciência dos riscos do projeto?**
+Parcialmente. Uma vez que o documento foi criado para cumprir parte da métrica, não foi apresentado para toda todos desde o início do desenvolvimento do projeto quais eram os riscos presentes. Entretanto, as reuniões semanais possibilitaram que a equipe conversasse sobre esses riscos mesmo que os problemas presentes e que poderiam surgir não fossem nomeados de riscos do projeto.
+
+#### Métrica 2.1: Acompanhamento semanal dos riscos
+
+Em toda reunião de sprint foi feito um levantamento do que foi positivo e negativo durante aquele periodo de trabalho e melhorias a serem feitas. Dessa forma, foi possivel acompanhar os riscos do projeto semanalmente.
+
+**A métrica responde a pergunta: Os riscos estão sob controle?**
+
+Sim. Tendo em vista que foi feito um acompanhamento semanal dos riscos, eles estavam sob controle.
+
+#### Objetivo de equipe 2.0 - Analisar os riscos do projeto
+
+O objetivo foi atingido, uma vez que os riscos foram analisados.
 
 ## 8. Banco de Dados
 
