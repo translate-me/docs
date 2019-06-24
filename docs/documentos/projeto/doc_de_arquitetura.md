@@ -16,9 +16,10 @@
 | 27/04/2019 | 1.0 | Adicionando informações do Banco de Dados  | Alexandre Miguel e Rômulo Souza |
 | 15/06/2019 | 1.1 | Adicionando segunda versão do diagrama de classes  | Letícia Meneses e Gabriela Guedes |
 | 16/06/2019 | 1.2 | Adicionado sub tópicos em visão geral de camadas e pacotes| Davi Alves |
-|23/06/2019|1.3|Adicionado nova versão do diagrama de micro serviços| Victor Hugo|
-|23/06/2019|1.4|Adicionado nova versão do diagrama de implementação e ajustando erros de ortografia| Victor Hugo|
-|23/06/2019|1.5|Adicionado análise do GQM | Gabriela Guedes e Helena Goulart|
+|23/06/2019 | 1.3 |Adicionado nova versão do diagrama de micro serviços| Victor Hugo|
+|23/06/2019 | 1.4 |Adicionado nova versão do diagrama de implementação e ajustando erros de ortografia| Victor Hugo|
+|23/06/2019 | 1.5 | Adicionando versões 2 e 3 do ME-R e DE-R na visão de dados | Alexandre Miguel|
+|23/06/2019 | 1.6 |Adicionado análise do GQM | Gabriela Guedes e Helena Goulart|
 
 ## Objetivo do Documento
 Este documento tem como objetivo descrever e caracterizar as decisões arquiteturais do projeto
@@ -192,13 +193,13 @@ Os padrões de projeto utilizados até a data deste documento foram:
 
 * O Composiite foi utilizado no banco de dados. Houve dificuldades na implementação do padrão, uma vez que não havia implementação na documentação do Django;
 
-* O Facade foi aplicado na parte de fragmentação do texto, e não apresentou muitas dificuldades uma vez que a definição do padrão de projeto Facade assemelha-se bastante ao translate.me; 
+* O Facade foi aplicado na parte de fragmentação do texto, e não apresentou muitas dificuldades uma vez que a definição do padrão de projeto Facade assemelha-se bastante ao translate.me;
 
 * O Module foi aplicado em grande parte do projeto e com simples implementação;  
 
 * Os padrões Proxy e Adapter estão presentes no projeto por serem padrão do framework Django.
 
-**A métrica responde a pergunta: Quais padrões de projeto foram utilizados?** 
+**A métrica responde a pergunta: Quais padrões de projeto foram utilizados?**
 
 Sim. Apesar de não ter uma documentação detalhando onde cada padrão foi aplicado, a equipe preocupou-se em aplicar os padrões de projeto no translate.me e os membros sabiam pontuar onde, como e porque cada padrão foi aplicado e listar as dificuldades encontradas.
 
@@ -231,7 +232,7 @@ O objetivo foi atingido, em virtude dos pontos citados nas metricas 1.0 e 1.1.
 
 #### Métrica 2.0: Apresentar detalhamento dos riscos do projeto
 
-Os riscos do projeto não haviam sido pontuados e detalhados pela equipe anteriormente, contudo foram feitos para o cumprimento desta metrica. Para acessar o documento que contém os riscos do projeto, basta clicar [aqui](../gerencia/riscos_projeto.md). 
+Os riscos do projeto não haviam sido pontuados e detalhados pela equipe anteriormente, contudo foram feitos para o cumprimento desta metrica. Para acessar o documento que contém os riscos do projeto, basta clicar [aqui](../gerencia/riscos_projeto.md).
 
 **A métrica responde a pergunta: A equipe possui ciência dos riscos do projeto?**
 Parcialmente. Uma vez que o documento foi criado para cumprir parte da métrica, não foi apresentado para toda todos desde o início do desenvolvimento do projeto quais eram os riscos presentes. Entretanto, as reuniões semanais possibilitaram que a equipe conversasse sobre esses riscos mesmo que os problemas presentes e que poderiam surgir não fossem nomeados de riscos do projeto.
@@ -248,7 +249,7 @@ Sim. Tendo em vista que foi feito um acompanhamento semanal dos riscos, eles est
 
 O objetivo foi atingido, uma vez que os riscos foram analisados.
 
-## 8. Banco de Dados
+## 8. Visão de Dados
 
 ### 8.1. Modelo Entidade - Relacionamento (ME-R)
 
@@ -329,3 +330,9 @@ Adição do serviço de Línguas
 Adição da entidade de Notificação e remoção do serviço de Línguas
 
 ![translateme_der_3](../../assets/documentos/projeto/db_der3.png)
+
+#### 8.3.4 Versão 4
+
+Remoção do serviço de chat, adição das entidades de categoria e revisão e modificação dos nomes de entidades e atributos para inglês, conforme implementado.
+
+![translateme_der_4](../../assets/documentos/projeto/db_der4.png)
