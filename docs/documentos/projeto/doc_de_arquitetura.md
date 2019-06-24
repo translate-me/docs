@@ -110,6 +110,10 @@ Django(Back-End) - Framework Web que segue o padrão arquitetural model-template
 
 * Base de Dados - O pacote Base de dados inclui todas funções necessarias para suportar o armazenamento dos dados.
 
+#### 4.3 Diagrama de Sequência
+
+![sequence_diagram_author](../../assets/desenho/uml/sequence_diagram_author.png)
+
 ---
 ## 5. Visão de implementação
 
