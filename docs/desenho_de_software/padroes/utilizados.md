@@ -17,6 +17,18 @@ O Padrão **Composite** foi implementado para a criação dos tipos de elementos
 
 ### Observer
 
+Dada a necessidade de criação de Notificações de acordo com a transição de estados, foi utilizada a implementação de um padrão **Observer** que identifica a transição de estados de tradução do texto, permitindo comportamentos diferentes para a criação de notificações de acordo com o usuário alvo daquela notificação (como Autores, Tradutores e Revisores). Em uma primeira versão, o padrão foi aplicado individualmente e, em uma versão posterior, seu funcionamento foi associado ao funcionamento do padrão State.
+
+#### Estrutura Padrão
+
+##### Diagrama de Sequência
+
+![observer_sequence_diagram](../../assets/desenho/padroes/observer-sequence-diagram.png)
+
+#### Estrutura Adaptada
+
+![observer_sequence_diagram_real](../../assets/desenho/padroes/observer-sequence-diagram-real.png)
+
 ### State
 
 
@@ -25,3 +37,7 @@ O Padrão **Composite** foi implementado para a criação dos tipos de elementos
 
 
 ## Padrões Implementados pelo Django REST Framework
+
+## Referências
+
+- [Padrão Observer](https://refactoring.guru/design-patterns/composite)
