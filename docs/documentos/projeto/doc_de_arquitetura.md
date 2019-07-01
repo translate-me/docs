@@ -23,6 +23,7 @@
 | 23/06/2019 | 1.7 | Adicionando versões 2 e 3 do ME-R e DE-R na visão de dados | Alexandre Miguel|
 | 23/06/2019 | 1.8 | Adicionando a quarta versão do Diagrama Entidade-Relacionamento | Alexandre Miguel |
 | 23/06/2019 | 1.9 | Adicionando diagrama de sequência do autor | Letícia Meneses |
+| 30/06/2019 | 2.0 | Adicionando versão 3 do diagramade classes e de sequenciaas de padrões aplicados | Letícia Meneses |
 
 ## Objetivo do Documento
 Este documento tem como objetivo descrever e caracterizar as decisões arquiteturais do projeto
@@ -122,6 +123,10 @@ Modelagens conforme padrão UML que representam os aspectos arquiteturais do sis
 
 #### Versão 2.0
 ![diagrama_classes](../../assets/desenho/uml/diag_class_v2.png)
+
+#### Versão 3.0
+![diagrama_classes](../../assets/desenho/uml/class_diagram_v3.png)
+
 ### 4.2. Visão Geral de Camadas e Pacotes
 #### Versão 1.0
 ![diagrama_pacotes_old](../../assets/desenho/uml/diagrama_pacotes.png)
@@ -168,6 +173,13 @@ O diagrama de sequência tem por finalidade demonstrar a sequência das mensagen
 #### 4.3.1 Adiconar um Texto (Autor)
 ![sequence_diagram_author](../../assets/desenho/uml/sequence_diagram_author.png)
 
+#### 4.3.2 Adicionar um Texto - Visão do Padrão **Iterator**
+
+![sequence_diagram_iterator](../../assets/desenho/uml/iterayor_sequence_diaagram.png)
+
+#### 4.3.3 Adicionar um Texto - Visão do Padrão **Composite**
+
+![sequence_diagram_composite](../../assets/desenho/uml/composite_sequence_diagram.jpg)
 ---
 ## 5. Visão de implementação
 ### 5.1 Diagrama de implementação
