@@ -6,6 +6,7 @@
 | 30/06/2019 | 0.1 | Adicionando definição dos padrões utilizados pelo framework | Alexandre Miguel |
 | 01/07/2019 | 0.2 | Adicionando tópicos composite e state | Rômulo Souza |
 | 01/07/2019 | 0.3 | Adicionando tópico iterator e adapter | Rômulo Souza |
+| 01/07/2019 | 0.4 | Adicionando referências | Rômulo Souza |
 
 ## Padrões Implementados pelo Grupo
 
@@ -57,3 +58,8 @@ O padrão **State** foi implementado para facilitar as mudanças de estados dos 
 ### Adapter
 
 A serializer do Django REST Framework pode ser considerada como um exemplo do padrão **Adapter**. A serializer transforma um objeto do tipo JSON em um objeto do tipo Model do django, e vice-versa, permitindo a comunicação com o banco de dados através de diferentes interfaces.
+
+## Referências
+
+* [Guru Design Patterns](https://refactoring.guru/design-patterns/)
+* RAVINDRAN, A. Django Design Patters and Best Practices. Livery Place, 35 Livery Street, Birmingham B3 2PB - UK: Packt Publishing Ltd., 2015.
