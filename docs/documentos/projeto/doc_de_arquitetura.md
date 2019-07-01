@@ -24,6 +24,7 @@
 | 23/06/2019 | 1.8 | Adicionando a quarta versão do Diagrama Entidade-Relacionamento | Alexandre Miguel |
 | 23/06/2019 | 1.9 | Adicionando diagrama de sequência do autor | Letícia Meneses |
 | 30/06/2019 | 2.0 | Adicionando versão 3 do diagramade classes e de sequenciaas de padrões aplicados | Letícia Meneses |
+| 01/07/2019 | 2.1 | Adicionando versão 5 do ME-R e DE-R | Rômulo Souza |
 
 ## Objetivo do Documento
 Este documento tem como objetivo descrever e caracterizar as decisões arquiteturais do projeto
@@ -333,13 +334,21 @@ O objetivo foi atingido, uma vez que os riscos foram analisados.
 | **Tradução** | - TEXTO (<span style="text-decoration:underline">idTexto</span> , contexto, totalFragmentos, fragmentosFinalizados, idIdiomaOrigem, idIdiomaDestino) <br> - FRAGMENTO (<span style="text-decoration:underline">idFragmento</span> , contexto, estado, numeroRevisoes, conteudo, conteudoTraduzido, valor) |  
 | **Chat** | - CHAT (<span style="text-decoration:underline">idChat</span> , apelidoTradutor, apelidoAutor) <br> - FRAGMENTO (<span style="text-decoration:underline">idMessage</span> , conteudo, data) |
 
-##### 8.1.1.3. Versão 4
+##### 8.1.1.4. Versão 4
 
 | Serviço | Entidades e Atributos |
 | --- | --- |
 | **Perfil** | - CERTIFICATE (<span style="text-decoration:underline">id</span> , image, document, username) <br>  - AUTHOR (<span style="text-decoration:underline">username</span>, name, birthdate) <br> - TRANSLATOR (<span style="text-decoration:underline">username</span>, cpf) <br> - LANGUAGE (<span style="text-decoration:underline">lang_id</span> , name) |
 | **Autenticação** | - USER (<span style="text-decoration:underline">id</span>, username, email, data_joined, is_active, is_staff) |  
 | **Tradução** | - TEXT (<span style="text-decoration:underline">id</span> , total_fragments, fragments_done, fragments_revision, fragments_doing, context, author, language, text_translate, level) <br> - TEXTFRAGMENT (<span style="text-decoration:underline">id</span>, body, price, state, total_reviews, position, fragment_translate, fragment_translator) <br> - CATEGORY (<span style="text-decoration:underline">category_id</span>, category_name, category_description) <br> - NOTIFICATION (<span style="text-decoration:underline">id</span>, target_username, message, is_seen)  <br> - REVIEW (<span style="text-decoration:underline">id</span>, review_username, comment, approve) |  
+
+##### 8.1.1.5. Versão 5
+
+| Serviço | Entidades e Atributos |
+| --- | --- |
+| **Perfil** | - CERTIFICATE (<span style="text-decoration:underline">id</span> , image, document, username) <br>  - AUTHOR (<span style="text-decoration:underline">username</span>, name, birthdate) <br> - TRANSLATOR (<span style="text-decoration:underline">username</span>, cpf) <br> - LANGUAGE (<span style="text-decoration:underline">lang_id</span> , name) |
+| **Autenticação** | - USER (<span style="text-decoration:underline">id</span>, username, email, data_joined, is_active, is_staff) |  
+| **Tradução** | - TEXT (<span style="text-decoration:underline">id</span> , total_fragments, fragments_done, context, author, language, text_translate, level, price, deadline, title) <br> - TEXTFRAGMENT (<span style="text-decoration:underline">id</span>, body, price, state, total_reviews, position, translate_fragment, fragment_translator) <br> - CATEGORY (<span style="text-decoration:underline">category_id</span>, category_name, category_description) <br> - NOTIFICATION (<span style="text-decoration:underline">id</span>, target_username, message, is_seen)  <br> - REVIEW (<span style="text-decoration:underline">id</span>, review_username, comment, approve) |  
 
 
 #### 8.1.2. Relacionamentos
@@ -408,7 +417,6 @@ O objetivo foi atingido, uma vez que os riscos foram analisados.
 | **NOTIFICATION** | ***refere***   |  **TEXT** | Uma notificação refere-se a um único texto, mas cada texto pode ser referenciado por nenhuma, uma ou várias notificações. | **n:1** |
 | **USER** | ***representa***  | **AUTHOR** | Um usuário representa um único autor na plataforma, e cada autor é representado por um único usuário. | **1:1** |
 
-
 ### 8.2. Diagrama Entidade - Relacionamento (DE-R)
 
 #### 8.2.1 Versão 1
@@ -432,6 +440,12 @@ Adição da entidade de Notificação e remoção do serviço de Línguas
 Remoção do serviço de chat, adição das entidades de categoria e revisão e modificação dos nomes de entidades e atributos para inglês, conforme implementado.
 
 ![translateme_der_4](../../assets/documentos/projeto/db_der4.png)
+
+#### 8.2.5 Versão 5
+
+Remoção da entidade associativa, adição de atributos em texto (price, deadline, title), alteração do atributo fragment_translate para translated_fragment, em TEXTFRAGMENT, para que o fique de acordo com a implementação feita no código
+
+![translateme_der_5](../../assets/documentos/projeto/db_der5.png)
 
 ## 9. Modelos/padrões arquiteturais
 
