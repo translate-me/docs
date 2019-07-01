@@ -11,7 +11,7 @@
 
 | Data da Reunião | Participantes | Meio | Local |
 | :---: | :---: | :---: | :---: |
-| 03/06/2019 | Alexandre Miguel <br> Rômulo Souza <br> Davi Alves <br> Gabriela Guedes <br> Helena Goulart <br> Letícia Meneses <br> Renan Schadt <br> Luiz Guilherme | Hangouts | - |
+| 27/05/2019 | Alexandre Miguel <br> Rômulo Souza <br> Davi Alves <br> Gabriela Guedes <br> Helena Goulart <br> Letícia Meneses <br> Renan Schadt <br> Luiz Guilherme | Hangouts | - |
 
 
 ## Introdução
@@ -84,16 +84,12 @@ Dado o contexto de refatoração, a atuação de cada integrante da equipe no de
 
 ## Review
 
-| Data da Reunião | Participantes | Meio | Local |
-| :---: | :---: | :---: | :---: |
-| 10/06/2019 | Alexandre Miguel <br> Rômulo Souza <br> Davi Alves <br> Gabriela Guedes <br> Helena Goulart <br> Letícia Meneses <br> Renan Schadt <br> Luiz Guilherme | Hangouts | - |
-
 ### O que cada um fez
 
 #### Luiz
 
 - Fez a issue, mas faltou resolver o bug e retirar o breakpoint
-- Pegou issue da Helena para fazer mas não completou
+- Pegou issue da Helena para fazer e não terminou
 
 #### Victor
 
@@ -105,7 +101,7 @@ Dado o contexto de refatoração, a atuação de cada integrante da equipe no de
 
 #### Renan
 
-- Issue incompleta
+- Fez a história e faltou umas coisas
 
 #### Gabi
 
@@ -113,7 +109,7 @@ Dado o contexto de refatoração, a atuação de cada integrante da equipe no de
 
 #### Davi
 
-- Finalizando issue, faltando apenas a imagem do usuário
+- Finalizando issue e faltando imagem do usuário
 
 #### Helena
 
@@ -122,7 +118,7 @@ Dado o contexto de refatoração, a atuação de cada integrante da equipe no de
 
 #### Alexandre
 
-- Implementou GoF Observer
+- GoF
 - Finalizando issue hoje
 
 ### Pontos Positivos
