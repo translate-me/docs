@@ -121,11 +121,11 @@ Dada a necessidade de criação de Notificações de acordo com a transição de
 
 ##### 3.1.1. Estrutura Padrão
 
-![observer_sequence_diagram](../../assets/desenho/padroes/observer-sequence-diagram.png)
+![observer_sequence_diagram](../../assets/desenho/padroes/observer.png)
 
 #### 3.1.2. Estrutura Implementada
 
-![observer_sequence_diagram_real](../../assets/desenho/padroes/observer-sequence-diagram-real.png)
+![class_diagram_observer](../../assets/desenho/padroes/class_diagram_observer.png)
 
 
 #### 3.2. Sequência
@@ -140,6 +140,22 @@ Dada a necessidade de criação de Notificações de acordo com a transição de
 
 #### 3.3. Código Implementado
 
+##### 3.3.1 Código Interface ***Observer***
+
+![code_observer_1](../../assets/desenho/padroes/code_observer_1.jpg)
+
+##### 3.3.2 Código Interface ***ConcreteObserverAuthor***
+
+![code_observer_2](../../assets/desenho/padroes/code_observer_2.jpg)
+
+##### 3.3.3 Código Interface ***ConcreteObserverTranslator***
+
+![code_observer_3](../../assets/desenho/padroes/code_observer_3.jpg)
+
+##### 3.3.4 Código Interface ***ConcreteObserverRevisor***
+
+![code_observer_4](../../assets/desenho/padroes/code_observer_4.jpg)
+
 ### 4. State
 
 O padrão **State** foi implementado para facilitar as mudanças de estados dos fragmentos. O fragmento possui um método que instancia as classes concretas do **State**, e chama o método de mudança de estado dentro destas, para o fragmento. Quando é chamado o método de mudança de estado, em cada classe concreta do **State**, há a referência do estado anterior e qual o próximo estado que o fragmento deve ir, além de chamar as notificações correspondentes à mudança de estado para os usuários.
@@ -148,11 +164,11 @@ O padrão **State** foi implementado para facilitar as mudanças de estados dos 
 
 ##### 4.1.1. Estrutura Padrão
 
-![state_sequence_diagram](../../assets/desenho/padroes/)
+![state_sequence_diagram](../../assets/desenho/padroes/class_diagram_state_original.png)
 
-#### 4.1.2. Estrutura Implementada
+##### 4.1.2. Estrutura Implementada
 
-![state_sequence_diagram_real](../../assets/desenho/padroes/)
+![class_diagram_state_real](../../assets/desenho/padroes/class_diagram_state.png)
 
 
 #### 4.2. Sequência
@@ -168,12 +184,14 @@ O padrão **State** foi implementado para facilitar as mudanças de estados dos 
 #### 4.3. Código Implementado
 
 
-#### State Class:
+##### 4.3.1 Classe Abstrata ***StateInterface*** e Classes Concretas
+
 ![state_1](../../assets/desenho/padroes/state_1.png)
 
 ![state_2](../../assets/desenho/padroes/state_2.png)
 
-#### change_state method in fragment:
+##### 4.3.2. Função ***change_state*** na Classe ***TextFragment***
+
 ![change_state](../../assets/desenho/padroes/change_state.png)
 
 ### 5. Front Controller
@@ -193,11 +211,11 @@ O padrão **State** foi implementado para facilitar as mudanças de estados dos 
 
 ##### 5.2.1. Diagrama de Sequência Padrão
 
-![observer_sequence_diagram](../../assets/desenho/padroes/observer-sequence-diagram.png)
+![observer_sequence_diagram](../../assets/desenho/padroes/)
 
 #### 5.2.2. Diagrama de Sequência Adaptado
 
-![observer_sequence_diagram_real](../../assets/desenho/padroes/observer-sequence-diagram-real.png)
+![observer_sequence_diagram_real](../../assets/desenho/padroes/)
 
 #### 5.3. Código Implementado
 
