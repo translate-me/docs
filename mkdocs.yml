@@ -5,14 +5,14 @@ nav:
   - Dinâmica e Seminário I:
     -  Design Sprint: def_tema.md
   - Dinâmica e Seminário II: metodologia.md
-  - Dinâmica e Seminário III: 
+  - Dinâmica e Seminário III:
     - UMLs estáticos: desenho_de_software/uml/uml_estaticos.md
   - Dinâmica e Seminário IV:
     - UMLs dinâmicos: desenho_de_software/uml/uml_dinamicos.md
-  - Dinâmica e Seminário V: 
+  - Dinâmica e Seminário V:
     - Parte A, GoFs: desenho_de_software/padroes/gof/seminarioParteA.md
     - Parte B, GoFs emergentes: desenho_de_software/padroes/gof/seminarioParteB.md
-  - Dinâmica e Seminário VI: 
+  - Dinâmica e Seminário VI:
     - Documento de Arquitetura: documentos/projeto/doc_de_arquitetura.md
   - Iniciativas extras:
     - Documentos de Projeto:
@@ -42,12 +42,13 @@ nav:
       - Backlog Geral: requisitos/modelagem/backlog_geral.md
       - NFR: requisitos/modelagem/nfr.md
       - Tabela de Requisitos: requisitos/tabela_requisitos.md
-    - Estudo - padrões de Projeto:
+    - Padrões de Projeto:
       - GRASP: desenho_de_software/padroes/grasp.md
       - GoFs:
         - Criacionais: desenho_de_software/padroes/gof/criacionais.md
         - Estruturais: desenho_de_software/padroes/gof/estruturais.md
         - Comportamentais: desenho_de_software/padroes/gof/comportamentais.md
+      - Padrões Utilizados: desenho_de_software/padroes/utilizados.md
     - Arquitetura de Software:
       - Modelos: arquitetura_de_software/modelos.md
       - Padrões Arquiteturais: arquitetura_de_software/padroes_arquiteturais.md
@@ -61,6 +62,7 @@ nav:
         - Sprint 5: reunioes/sprints/sprint_5.md
         - Sprint 6: reunioes/sprints/sprint_6.md
         - Sprint 7: reunioes/sprints/sprint_7.md
+        - Sprint 9: reunioes/sprints/sprint_9.md
       - Pontos de Controle:
         - PC 1: reunioes/pontos_de_controle/pc_1.md
         - PC 2: reunioes/pontos_de_controle/pc_2.md
