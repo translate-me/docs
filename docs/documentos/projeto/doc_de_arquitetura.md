@@ -16,13 +16,13 @@
 | 27/04/2019 | 1.0 | Adicionando informações do Banco de Dados  | Alexandre Miguel e Rômulo Souza |
 | 15/06/2019 | 1.1 | Adicionando segunda versão do diagrama de classes  | Letícia Meneses e Gabriela Guedes |
 | 16/06/2019 | 1.2 | Adicionado sub tópicos em visão geral de camadas e pacotes| Davi Alves |
-|23/06/2019|1.3|Adicionado nova versão do diagrama de micro serviços| Victor Hugo|
-|23/06/2019|1.4|Adicionado nova versão do diagrama de implementação e ajustando erros de ortografia| Victor Hugo|
-|23/06/2019|1.5|Adicionado análise do GQM | Gabriela Guedes e Helena Goulart|
-|23/06/2019|1.6| Adicionado novo diagrama de pacotes e subtopicos em visão geral de camadas e pacotes| Davi Alves |
-|23/06/2019 | 1.7 | Adicionando versões 2 e 3 do ME-R e DE-R na visão de dados | Alexandre Miguel|
-|23/06/2019 | 1.8 | Adicionando a quarta versão do Diagrama Entidade-Relacionamento | Alexandre Miguel |
-|23/06/2019 | 1.9 | Adicionando diagrama de sequência do autor | Letícia Meneses |
+| 23/06/2019 | 1.3 |Adicionado nova versão do diagrama de micro serviços| Victor Hugo|
+| 23/06/2019 | 1.4 |Adicionado nova versão do diagrama de implementação e ajustando erros de ortografia| Victor Hugo|
+| 23/06/2019 | 1.5 |Adicionado análise do GQM | Gabriela Guedes e Helena Goulart|
+| 23/06/2019 | 1.6 | Adicionado novo diagrama de pacotes e subtopicos em visão geral de camadas e pacotes| Davi Alves |
+| 23/06/2019 | 1.7 | Adicionando versões 2 e 3 do ME-R e DE-R na visão de dados | Alexandre Miguel|
+| 23/06/2019 | 1.8 | Adicionando a quarta versão do Diagrama Entidade-Relacionamento | Alexandre Miguel |
+| 23/06/2019 | 1.9 | Adicionando diagrama de sequência do autor | Letícia Meneses |
 
 ## Objetivo do Documento
 Este documento tem como objetivo descrever e caracterizar as decisões arquiteturais do projeto
@@ -182,7 +182,7 @@ Diagrama de implementação serve para dar uma visão de como seria implementado
 __OBS__: Foi retirada a parte de chat da aplicação visto que por conta do tempo e da complexidade que levaria para implementar esse micro serviço não daria para entregar no escopo da matéria.
 
 ---
-## 6. Dimensionamento e Dessempenho
+## 6. Dimensionamento e Desempenho
 
 Seção responsável pela estimativa em valores quantizados do desempenho dos módulos da arquitetura, bem como de sua desempenho em execução, conforme a análise qualitativa estabelecida no [Documento de Requisitos Não Funcionais](../../../requisitos/modelagem/nfr).
 
@@ -215,14 +215,14 @@ Os seguintes itens conferem ao sistema aspectos de qualidade, bem como a descri�
 
 
 ### 7.1 GQM
-A equipe do translate.me desenvolveu o GQM baseado no desenvolvimento do projeto e na ementa da disciplina Arquitetura e Desenho de Software. Este tópico baseia-se na análise do cumprimento das métricas estabelecidas pelo GQM. É importante ressalta que o grupo não se encontra na última _sprint_ do projeto, logo, é possível que os resultados se alterem até conclusão do transate.me.
+A equipe do translate.me desenvolveu o GQM baseado no desenvolvimento do projeto e na ementa da disciplina Arquitetura e Desenho de Software. Este tópico baseia-se na análise do cumprimento das métricas estabelecidas pelo GQM. É importante ressalta que o grupo não se encontra na última _sprint_ do projeto, logo, é possível que os resultados se alterem até conclusão do translate.me.
 
 ####Métrica 1.0:  Detalhamento dos padrões de projetos utilizados e suas limitações.
 Os padrões de projeto utilizados até a data deste documento foram:
 
 * O padrão Observer foi utilizado nas notificações para o usuário. A dificuldade ocorreu devido às limitações do banco de dados do Django;
 
-* O Composiite foi utilizado no banco de dados. Houve dificuldades na implementação do padrão, uma vez que não havia implementação na documentação do Django;
+* O Composite foi utilizado no banco de dados. Houve dificuldades na implementação do padrão, uma vez que não havia implementação na documentação do Django;
 
 * O Facade foi aplicado na parte de fragmentação do texto, e não apresentou muitas dificuldades uma vez que a definição do padrão de projeto Facade assemelha-se bastante ao translate.me;
 
@@ -345,23 +345,35 @@ O objetivo foi atingido, uma vez que os riscos foram analisados.
 
 | Entidade Ativa | Relacionamento | Entidade Passiva | Descrição | Cardinalidade |
 | --- | --- | --- | --- | --- |  
-| **TRADUTOR** | ***detem*** | **CERTIFICACAO** | Um tradutor detêm nenhuma ou várias certificações, mas cada certificação é detida somente por um tradutor.   | **1:n** |
+| **TRADUTOR** | ***detem*** | **CERTIFICADO** | Um tradutor detêm nenhuma, uma ou várias certificações, mas cada certificação é detida somente por um tradutor.   | **1:n** |
+| **TRADUTOR** | ***traduz***  | **FRAGMENTO** | Um tradutor pode traduzir nenhum, um ou vários fragmentos, mas cada fragmento é traduzido por somente um tradutor. | **1:n** |
+| **TRADUTOR** | ***revisa***  | **FRAGMENTO** | Um tradutor pode revisar um ou vários fragmentos, e cada fragmento é revisado por um ou vários tradutores. | **n:m** |
+| **TRADUTOR** | ***fala***  | **IDIOMA** | Um tradutor pode falar uma ou várias linguagens, e cada linguagem é falada por um ou vários tradutores. | **n:m** |      
+| **TEXTO** | ***contem*** | **FRAGMENTO**  | Um texto contém um ou vários fragmentos, e cada fragmento está contido em um único texto. | **1:n** |
+| **TEXTO** | ***apresenta***  | **IDIOMA** | Um texto apresenta uma única idioma de origem, mas cada idioma de origem é apresentada por um ou vários textos. | **n:1** |
+| **TEXTO** | ***apresenta***  | **IDIOMA** | Um texto apresenta uma única idioma de destino, mas cada idioma de destino é apresentada por um ou vários textos. | **n:1** |
+| **AUTOR** | ***possui*** | **TEXTO** | Um autor possui nenhum, um ou vários textos, mas cada texto é possuído por um único autor. | **1:n** |
 | **AUTOR** | ***participa***   | **CHAT** | Um autor participa de nenhum ou de vários chats, mas cada chat possui um único autor. | **1:n** |  
 | **AUTOR** | ***escreve***  | **CHAT** | Um autor escreve nenhuma ou várias mensagens, mas cada mensagem é escrita por somente um autor. | **1:n** |
-| **TRADUTOR** | ***traduz***  | **FRAGMENTO** | Um tradutor pode traduzir nenhum ou vários fragmentos, mas cada fragmento é traduzido por somente um tradutor. | **1:n** |  
-| **TEXTO** | ***contem*** | **FRAGMENTO**  | Um texto contém um ou vários fragmentos, e cada fragmento está contido em um único texto. | **1:n** |
-| **AUTOR** | ***possui*** | **TEXTO** | Um autor possui nenhum ou vários textos, mas cada texto é possuído por um único autor. | **1:n** |
+| **NOTIFICAÇÃO** | ***refere***   |  **TEXTO** | Uma notificação refere-se a um único texto, mas cada texto pode ser referenciado por nenhuma, uma ou várias notificações. | **n:1** |
+| **USUÁRIO** | ***representa***  | **AUTOR** | Um usuário representa um único autor na plataforma, e cada autor é representado por um único usuário. | **1:1** |
 
 ##### 8.1.2.3 Versão 3
 
 | Entidade Ativa | Relacionamento | Entidade Passiva | Descrição | Cardinalidade |
 | --- | --- | --- | --- | --- |  
-| **TRADUTOR** | ***detem*** | **CERTIFICACAO** | Um tradutor detêm nenhuma ou várias certificações, mas cada certificação é detida somente por um tradutor.   | **1:n** |
+| **TRADUTOR** | ***detem*** | **CERTIFICADO** | Um tradutor detêm nenhuma, uma ou várias certificações, mas cada certificação é detida somente por um tradutor.   | **1:n** |
+| **TRADUTOR** | ***traduz***  | **FRAGMENTO** | Um tradutor pode traduzir nenhum, um ou vários fragmentos, mas cada fragmento é traduzido por somente um tradutor. | **1:n** |
+| **TRADUTOR** | ***revisa***  | **FRAGMENTO** | Um tradutor pode revisar um ou vários fragmentos, e cada fragmento é revisado por um ou vários tradutores. | **n:m** |
+| **TRADUTOR** | ***fala***  | **IDIOMA** | Um tradutor pode falar uma ou várias linguagens, e cada linguagem é falada por um ou vários tradutores. | **n:m** |      
+| **TEXTO** | ***contem*** | **FRAGMENTO**  | Um texto contém um ou vários fragmentos, e cada fragmento está contido em um único texto. | **1:n** |
+| **TEXTO** | ***apresenta***  | **IDIOMA** | Um texto apresenta uma única idioma de origem, mas cada idioma de origem é apresentada por um ou vários textos. | **n:1** |
+| **TEXTO** | ***apresenta***  | **IDIOMA** | Um texto apresenta uma única idioma de destino, mas cada idioma de destino é apresentada por um ou vários textos. | **n:1** |
+| **AUTOR** | ***possui*** | **TEXTO** | Um autor possui nenhum, um ou vários textos, mas cada texto é possuído por um único autor. | **1:n** |
 | **AUTOR** | ***participa***   | **CHAT** | Um autor participa de nenhum ou de vários chats, mas cada chat possui um único autor. | **1:n** |  
 | **AUTOR** | ***escreve***  | **CHAT** | Um autor escreve nenhuma ou várias mensagens, mas cada mensagem é escrita por somente um autor. | **1:n** |
-| **TRADUTOR** | ***traduz***  | **FRAGMENTO** | Um tradutor pode traduzir nenhum ou vários fragmentos, mas cada fragmento é traduzido por somente um tradutor. | **1:n** |  
-| **TEXTO** | ***contem*** | **FRAGMENTO**  | Um texto contém um ou vários fragmentos, e cada fragmento está contido em um único texto. | **1:n** |
-| **AUTOR** | ***possui*** | **TEXTO** | Um autor possui nenhum ou vários textos, mas cada texto é possuído por um único autor. | **1:n** |
+| **NOTIFICAÇÃO** | ***refere***   |  **TEXTO** | Uma notificação refere-se a um único texto, mas cada texto pode ser referenciado por nenhuma, uma ou várias notificações. | **n:1** |
+| **USUÁRIO** | ***representa***  | **AUTOR** | Um usuário representa um único autor na plataforma, e cada autor é representado por um único usuário. | **1:1** |
 
 
 ##### 8.1.2.4 Versão 4
