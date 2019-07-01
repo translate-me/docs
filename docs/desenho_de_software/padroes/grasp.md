@@ -3,8 +3,10 @@
 ## Histórico de Revisão:
 | Data | Versão | Descrição | Autor |
 |:---:|:---:|:---:|:---:|
-|05/05/2019|0.1| Adicionando o template, introdução e tópico **controlador** | Rômulo Souza |
-|05/05/2019|0.2| Adicionando tópicos **criador**, **baixo acoplamento**, **polimorfismo**, **fabricação pura** e **referências** | Rômulo Souza |
+| 05/05/2019 | 0.1 | Adicionando o template, introdução e tópico **controlador** | Rômulo Souza |
+| 05/05/2019 | 0.2 | Adicionando tópicos **criador**, **baixo acoplamento**, **polimorfismo**, **fabricação pura** e **referências** | Rômulo Souza |
+| 20/05/2019 | 1.0 | Adicionando tópicos **indereção**, **especialista na informação**, **variações protegidas** e **fabricação pura** | Letícia Menezes e Renan Schadt |
+
 
 ## 1. Introdução
 
@@ -42,7 +44,19 @@ Ao realizar a análise dos requisitos para a utilização do creator, vê-se que
 
 ### 2.3. Indireção
 
+#### 2.3.1 Definição
+Esse princípio visa o desacoplamento entre entidades, aderindo a objetos intermediários a responsabilidade de mediador entre elas. Um exemplo conhecido para esse padrão é visto no padrão MVC, em que a Controller faz a comunicação entre Models e Views.
+
+#### 2.3.2 Análise
+A aplicabilidade do padrão Indireção no projeto é possível visto que há relações diretas entre as entidades, tanto suas models quando as views. Criar um objeto intermediário aumentaria o desacoplamento do projeto, fazendo a comunicação entre elas.
+
 ### 2.4. Especialista na Informação
+
+#### 2.4.1. Definição
+É responsável por atribuir responsabilidade de uma determinada operação a uma classe que possui informações necessárias para realizar esta. Através deste GRASP é possível determinar quais métodos serão implementados em cada classe.
+
+#### 2.4.2 Análise
+A aplicação do especialista na informação é viável para identificarmos a localização de cada método dentro da aplicação. 
 
 ### 2.5. Alta Coesão
 
@@ -77,13 +91,18 @@ O polimorfismo pode ser aplicado na linguagem escolhida para o backend (python).
 ### 2.8. Fabricação Pura
 
 #### 2.8.1 Definição
-
 O padrão Fabricação Pura é representado por uma classe que não apresenta um conceito bem definido no domínio do problema. Pode ser exemplificado como uma classe que realiza um papel similar à prestação de serviços. O uso desse padrão auxilia no baixo acoplamento e na alta coesão do sistema, além de facilitar a manutenção e a reutilização do código.
 
 #### 2.8.2 Análise
-
+O grupo utiliza deste GRASP na aplicação de alguns padrões de projeto, como o Composite.
 
 ### 2.9. Variações Protegidas
+
+#### 2.9.1. Definição
+A variação protegida é uma forma de indireção. A diferença é que neste caso o principal objetivo é proteger o sistema de variações em outros elementos (objetos, sistemas) isolando o foco dessa instabilidade com uma interface e usando polimorfismo para criar várias implementações desta.
+
+#### 2.9.2. Análise
+A aplicação deste GRASP não é possível dentro do framework escolhido pelo grupo (Django).
 
 ## 3. Referências
 

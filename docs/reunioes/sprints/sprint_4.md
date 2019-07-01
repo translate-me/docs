@@ -1,4 +1,4 @@
-# Reunião da Sprint 4
+# Sprint 4
 
 ## Histórico de Revisão
 
@@ -12,7 +12,7 @@
 | --- | --- | --- | --- |
 | 06/05/2019 | Alexandre Miguel <br> Gabriela Guedes <br> Helena Goulart <br> Luiz Guilherme <br> Victor <br> | Online | Hangouts |
 
-  ### Novos Papéis da Sprint
+### Novos Papéis da Sprint
 
   * **Scrum Master:** Helena Goulart
   * **Product Owner:** Gabriela Guedes
@@ -64,14 +64,14 @@ Analisando os pontos citados acima, concluiu-se que as duplas que possuem maior 
 
 - Dupla 4: Refatoração de UMLs estáticos + fazer 1 _issue_ de código
 
-Dupla 5: Refatoração de UMLs dinâmicos + fazer 1 _issue_ de código
+- Dupla 5: Refatoração de UMLs dinâmicos + fazer 1 _issue_ de código
 
 ## Duplas de pareamento
 
 A Scrum entrou em contato com todos os membros da equipe para entender como estavam os afazeres da semana. Logo, as duplas foram definidas baseadas na disponibilidade de um membro auxiliar e cobrir o outro quando este estivesse muito atarefado. Os mencionados da coluna da esquerda são os menos atarefados da semana, e os mencionados na coluna da direita são os mais atarefados.
 
 | Número da dupla |Dupla | Pontos |
-| --- | --- |
+| --- | --- | --- |
 | 1 | Gabriela e Renan |  7 |
 | 2 | Helena e Alexandre | 5  |
 | 3 | Luiz e Davi |  7 |
@@ -88,7 +88,7 @@ Esta é uma _sprint_ mais curta, com duração do dia 07/05 até o dia 11/05.
 
 | Data da Reunião | Participantes | Meio | Local |
 | --- | --- | --- | --- |
-| 11/05/2019 | Alexandre Miguel <br> Davi Alves <br> Gabriela Guedes <br> Helena Goulart <br> João Robson <br > Letícia Meneses <br> Luiz Guilherme <br> Renan Shadt <br> Rômulo Vinícius <br> | Online | Hangouts |
+| 11/05/2019 | Alexandre Miguel <br> Davi Alves <br> Gabriela Guedes <br> Helena Goulart <br> João Robson <br > Letícia Meneses <br> Luiz Guilherme <br> Renan Shadt <br> Rômulo Vinícius <br> | Presencial | FGA |
 
 ## Pontos pendentes a serem discutidos
 
@@ -116,7 +116,7 @@ Para acessar os slides que guiaram esta reunião, basta [clicar aqui](https://do
 
 ## Revisando a semana
 
-<b> O que foi bom?
+<b> O que foi bom?</b>
 - Houve uma conversa aberta e séria sobre a participação da equipe e dinâmica do grupo;
 - Reorganizaçãod da _sprint_: agora vai ser de segunda a segunda, sem a reunião no sábado, com um  um ponto de controle opcional durante
 a _sprint_, caso a equipe julgue necessário;
@@ -124,12 +124,12 @@ a _sprint_, caso a equipe julgue necessário;
 - A Helena foi boa _scrum_, se preocupou com os relacionamentos da equipe e com os membros da mesma;
 - As duplas de pareamento foram boas escolhas.
 
-<b> O que foi ruim?
+<b> O que foi ruim?</b>
 - Tempo curto de sprint deixou dívidas técnicas;
 - A equipe não conseguiu produzir muito essa _sprint_ por causa das atividades da UnB + tempo curto de _sprint_;
 - Arquitetura não está bem definida e aplicada.
 
- <b> Como melhorar?
+ <b> Como melhorar?</b>
 - Tempo de _sprint_ já foi revisado e reorganizado;
 - Planejar melhor a quantidade de pontos distribuídos quando houver _sprint_ curta ou equipe atolada de demais disciplinas da UnB;
 - Arquiteto atuando ativamente para com a equipe, tirando dúvidas;

@@ -82,6 +82,8 @@ A finalidade deste documento é definir e priorizar as tarefas a serem feitas du
 | US58 | Gamificação | Cliente | Visualizar as badges dos envolvidos na tradução do meu texto | Comprovar a qualidade dos envolvidos | Could | RF25 |                               
 | US59 | Pedido de Tradução | Desenvolvedor | Contar o número de palavras contido em um texto | Cobrar do usuário um valor justo  | Must | RF45 |
 | US60 | Tradução em Andamento | Desenvolvedor | Contar o número de palavras contido em um fragmento de um texto | Pagar um valor justo aos tradutores/revisores | Must | RF45 |
+| US61 | Perfil | Usuário | Acessar minha tela de perfil | Modificar minhas informações pessoais | Must | - |
+| US62 | Notificação | Desenvolvedor | Implementar sistema de notificação | Comunicar usuário acerca de alterações ou informações relevantes | Must | - |
 
 ## Referências
 
