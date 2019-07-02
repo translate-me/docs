@@ -44,11 +44,13 @@ nav:
       - Tabela de Requisitos: requisitos/tabela_requisitos.md
     - Padrões de Projeto:
       - GRASP: desenho_de_software/padroes/grasp.md
+      - gof: desenho_de_software/gof/structural-gofs.md
       - GoFs:
         - Criacionais: desenho_de_software/padroes/gof/criacionais.md
         - Estruturais: desenho_de_software/padroes/gof/estruturais.md
         - Comportamentais: desenho_de_software/padroes/gof/comportamentais.md
       - Padrões Utilizados: desenho_de_software/padroes/utilizados.md
+      - Padrões Utilizados no React: desenho_de_software/padroes/react.md
     - Arquitetura de Software:
       - Modelos: arquitetura_de_software/modelos.md
       - Padrões Arquiteturais: arquitetura_de_software/padroes_arquiteturais.md
