@@ -2388,6 +2388,12 @@
 <td align="center">Adicionando Diagramas refatorados e descrições de Observer e State</td>
 <td align="center">Alexandre Miguel e Letícia Meneses</td>
 </tr>
+<tr>
+<td align="center">01/07/2019</td>
+<td align="center">0.8</td>
+<td align="center">Adicionando Descrição e Estrutura do padrão Front Controller</td>
+<td align="center">Letícia Meneses</td>
+</tr>
 </tbody>
 </table>
 <h2 id="padroes-implementados-pelo-grupo">Padrões Implementados pelo Grupo</h2>
@@ -2496,11 +2502,15 @@
 <h4 id="44-codigo-implementado">4.4. Código Implementado</h4>
 <h5 id="441-classe-abstrata-stateinterface-e-classes-concretas">4.4.1 Classe Abstrata <strong><em>StateInterface</em></strong> e Classes Concretas</h5>
 <p><img alt="state_1" src="../../../assets/desenho/padroes/state_1.png" /></p>
-<p><img alt="state_2" src="../../../assets/desenho/padroes/state_2.png" /></p>
+<p><img alt="state_2" src="../../../assets/desenho/padroes/state_2.png" />
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+https://hangouts.google.com/call/BGkNzqjT-yxA8nFgR9NpAEEE</p>
 <h5 id="442-funcao-change_state-na-classe-textfragment">4.4.2. Função <strong><em>change_state</em></strong> na Classe <strong><em>TextFragment</em></strong></h5>
 <p><img alt="change_state" src="../../../assets/desenho/padroes/change_state.png" /></p>
 <h3 id="5-front-controller">5. Front Controller</h3>
+<p>O padrão <strong>Front Controller</strong> foi implementado no projeto com a finalidade de tratar as solicitações feitas pelo site, em que um Manipulador (objeto) recebe requisições do servidor. Recolhendo as informações necessárias da **URL, é capaz de definir qual ação será feita e passa a tarefa a um Comando(objeto) de executar a ação. No projeto A implementação do padrão herda de uma APIView e os métodos GET ou POST foram sobrescritos.</p>
 <h4 id="51-estrutura">5.1. Estrutura</h4>
+<p>A estrutura do <strong>Front Controller</strong> dispõe de objetos <strong>Manipulador</strong> e <strong>Comando</strong>, o Comando escolhe qual url usar para o <em>response</em> e o Manipulador qual o <em>Comando</em> correto para executar.</p>
 <h5 id="511-estrutura-padrao">5.1.1. Estrutura Padrão</h5>
 <p><img alt="state_sequence_diagram" src="../../../assets/desenho/padroes/class_diagram_front_controller.png" /></p>
 <h4 id="52-sequencia">5.2. Sequência</h4>
