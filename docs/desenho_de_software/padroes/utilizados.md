@@ -11,6 +11,8 @@
 | 01/07/2019 | 0.6 | Adicionando Sequência e Estrutura | Alexandre Miguel e Rômulo Souza |
 | 01/07/2019 | 0.7 | Adicionando Diagramas refatorados e descrições de Observer e State | Alexandre Miguel e Letícia Meneses |
 | 01/07/2019 | 0.8 | Adicionando Diagramas de Estado, Sequência e descrições do State | Alexandre Miguel |
+| 01/07/2019 | 0.9 | Adicionando Descrição e Estrutura do padrão Front Controller | Letícia Meneses |
+
 
 ## Padrões Implementados pelo Grupo
 
@@ -227,15 +229,18 @@ A Alteração da sequência estabelecida em relação ao modelo padrão se dá p
 ![state_1](../../assets/desenho/padroes/state_1.png)
 
 ![state_2](../../assets/desenho/padroes/state_2.png)
+<<<<<<< HEAD
+https://hangouts.google.com/call/BGkNzqjT-yxA8nFgR9NpAEEE
+
 
 ##### 4.4.2. Função ***change_state*** na Classe ***TextFragment***
 
 ![change_state](../../assets/desenho/padroes/change_state.png)
 
 ### 5. Front Controller
-
+O padrão **Front Controller** foi implementado no projeto com a finalidade de tratar as solicitações feitas pelo site, em que um Manipulador (objeto) recebe requisições do servidor. Recolhendo as informações necessárias da **URL, é capaz de definir qual ação será feita e passa a tarefa a um Comando(objeto) de executar a ação. No projeto A implementação do padrão herda de uma APIView e os métodos GET ou POST foram sobrescritos.
 #### 5.1. Estrutura
-
+A estrutura do **Front Controller** dispõe de objetos **Manipulador** e **Comando**, o Comando escolhe qual url usar para o _response_ e o Manipulador qual o _Comando_ correto para executar.
 ##### 5.1.1. Estrutura Padrão
 
 ![state_sequence_diagram](../../assets/desenho/padroes/class_diagram_front_controller.png)
