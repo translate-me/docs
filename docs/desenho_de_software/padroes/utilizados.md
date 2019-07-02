@@ -119,26 +119,40 @@ Dada a necessidade de criação de Notificações de acordo com a transição de
 
 #### 3.1. Estrutura
 
+A Estrutura do padrao Observer presume uma classe cujas alterações são identificadas por uma série de classes que implementam uma classe abstrata. Assim, a estrutura padrão está disposta a seguir, por meio de um exemplo de estrutura obtido dos arquivos de referência.
+
 ##### 3.1.1. Estrutura Padrão
+
+Exemplo padrão da estrutura do padrão Observer, conforme estudado e referenciado no arquivo [Padrões GoFs Comportamentais](../gof/comportamentais).
 
 ![observer_sequence_diagram](../../assets/desenho/padroes/observer.png)
 
 #### 3.1.2. Estrutura Implementada
+
+É possível notar, pela estrutura implementada, que essa se mantém fiel à estrutura mínima, com a classe abstrata ***Observer*** sendo implementada pelas classes ***ConcreteObserverAuthor***, ***ConcreteObserverTranslator*** e ***ConcreteObserverRevisor*** que são notificadas pela transição do atributo _state_ da classe ***TextFragment***. Cada Observer, por sua vez, herda a função **notify** que ontém o id do Fragmento que as instancia, o estado atual desse fragmento e o próximo estado, sendo dados suficiente para que cada Observer crie uma notificação conforme o contexto da transição e referenciando o usuário necessário.
 
 ![class_diagram_observer](../../assets/desenho/padroes/class_diagram_observer.png)
 
 
 #### 3.2. Sequência
 
+O Diagrama de sequência, para esse padrão, permite visualizar não só seu funcionamento mas também como ocorreu sua integração com o padrao ***State*** cujo detalhamento ocorrerá no próximo tópico do Documento.
+
 ##### 3.2.1. Diagrama de Sequência Padrão
+
+Com o diagrama padrão, ou de estrutura mínima referenciado, é possível perceber que a criação dos objetos Observers ocorrem pelo cliente, de forma que esses objetos são adicionados a um vetor ou outra estrutura de dado que permita uma iteração para a notificação desses elementos.
 
 ![observer_sequence_diagram](../../assets/desenho/padroes/observer-sequence-diagram.png)
 
 #### 3.2.2. Diagrama de Sequência Adaptado
 
+Para a adaptação ao Django REST Framework bem como ao uso das extensões da classe generics, foi necessário que o próprio subject, ou no caso a instância da classe TextFragment, criasse a lista de observers através da função **notify_observers**, que instancia esses elementos e ativa, de maneira iterada, a função **notify** de cada um desses elementos, que por sua vez cria uma notificação conforme a necessidade da transição de estados e o usuário cuja notificação se destina.
+
 ![observer_sequence_diagram_real](../../assets/desenho/padroes/observer-sequence-diagram-real.png)
 
 #### 3.3. Código Implementado
+
+O Código implementado demonstra o que foi referenciado, como as chamadas de funções que levam à notificação dos observers para uso do padrão.
 
 ##### 3.3.1 Código Interface ***Observer***
 
@@ -156,11 +170,17 @@ Dada a necessidade de criação de Notificações de acordo com a transição de
 
 ![code_observer_4](../../assets/desenho/padroes/code_observer_4.jpg)
 
+##### 3.3.5 Código de Chamada dos Observers na ***TextFragment***
+
+![code_observer_5](../../assets/desenho/padroes/code_observer_5.jpg)
+
 ### 4. State
 
 O padrão **State** foi implementado para facilitar as mudanças de estados dos fragmentos. O fragmento possui um método que instancia as classes concretas do **State**, e chama o método de mudança de estado dentro destas, para o fragmento. Quando é chamado o método de mudança de estado, em cada classe concreta do **State**, há a referência do estado anterior e qual o próximo estado que o fragmento deve ir, além de chamar as notificações correspondentes à mudança de estado para os usuários.
 
 #### 4.1. Estrutura
+
+A Estrutura padrão do método State faz denota
 
 ##### 4.1.1. Estrutura Padrão
 
@@ -200,24 +220,19 @@ O padrão **State** foi implementado para facilitar as mudanças de estados dos 
 
 ##### 5.1.1. Estrutura Padrão
 
-![state_sequence_diagram](../../assets/desenho/padroes/)
-
-#### 5.1.2. Estrutura Implementada
-
-![state_sequence_diagram_real](../../assets/desenho/padroes/)
+![state_sequence_diagram](../../assets/desenho/padroes/class_diagram_front_controller.png)
 
 
 #### 5.2. Sequência
 
 ##### 5.2.1. Diagrama de Sequência Padrão
 
-![observer_sequence_diagram](../../assets/desenho/padroes/)
+![sequence_front_controller](../../assets/desenho/padroes/sequence_front_controller.jpg)
 
-#### 5.2.2. Diagrama de Sequência Adaptado
-
-![observer_sequence_diagram_real](../../assets/desenho/padroes/)
 
 #### 5.3. Código Implementado
+
+![code_front_controller](../../assets/desenho/padroes/code_front_controller.jpg)
 
 
 ## Padrões Implementados pelo Django REST Framework
@@ -231,4 +246,5 @@ A serializer do Django REST Framework pode ser considerada como um exemplo do pa
 * [Padrão Observer](https://refactoring.guru/design-patterns/composite)
 * [Guru Design Patterns](https://refactoring.guru/design-patterns/)
 * [Padrão Iterator](https://reactiveprogramming.io/books/design-patterns/en/catalog/iterator)
+* [Documentação em Java de Front Controller](https://www.oracle.com/technetwork/java/frontcontroller-135648.html)
 * RAVINDRAN, A. Django Design Patters and Best Practices. Livery Place, 35 Livery Street, Birmingham B3 2PB - UK: Packt Publishing Ltd., 2015.
