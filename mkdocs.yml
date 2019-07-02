@@ -52,7 +52,6 @@ nav:
       - Padrões Utilizados: desenho_de_software/padroes/utilizados.md
       - Padrões Utilizados no React: desenho_de_software/padroes/react.md
     - Arquitetura de Software:
-      - Modelos: arquitetura_de_software/modelos.md
       - Padrões Arquiteturais: arquitetura_de_software/padroes_arquiteturais.md
     - Reuniões:
       - Reunião de Sprint:
@@ -71,6 +70,9 @@ nav:
         - PC 2: reunioes/pontos_de_controle/pc_2.md
         - PC 3: reunioes/pontos_de_controle/pc_3.md
         - PC 4: reunioes/pontos_de_controle/pc_4.md
+    - Entrega Final :
+      - Apresentação Final: entrega_final/apresentacao.md
+    
 
 #######################################################################################
 
