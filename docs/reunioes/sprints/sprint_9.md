@@ -4,141 +4,88 @@
 
   | Data | Versão | Descrição | Autor |
   |---|---|---|---|
-  | 27/05/2019 | 1.0 | Transcrição do planejamento da sprint | Alexandre Miguel |
+  | 24/06/2019 | 1.0 | Transcrição do planejamento da sprint | Gabriela Guedes|
+  | 30/06/2019 | 2.0 | Transcrição da review da sprint | Gabriela Guedes|
 
 
-## Registro
+## Sprint Planning
 
 | Data da Reunião | Participantes | Meio | Local |
 | :---: | :---: | :---: | :---: |
-| 27/05/2019 | Alexandre Miguel <br> Rômulo Souza <br> Davi Alves <br> Gabriela Guedes <br> Helena Goulart <br> Letícia Meneses <br> Renan Schadt <br> Luiz Guilherme | Hangouts | - |
+| 24/06/2019  | Gabriela Guedes <br> Letícia Meneses <br> Victor Hugo <br> Rômulo Vinícius <br> Alexandre Miguel <br> Davi Alves <br> Luiz Guilherme <br> Helena Goulart <br> João Robson <br> Renan Schadt | Online | Hangouts |
 
 
 ## Introdução
 
-A Reunião teve o viés de resolver demandas existentes para a implentação em código do projeto, bem como de refletir acerca das considerações da dinâmica recente (Seminário de Padrões Emergentes).
+A Reunião teve o viés de resolver demandas existentes para a implentação em código do projeto para a última semana de projeto.
 
 ### Novos Papéis
 
 A troca de papéis foi definida conforme a seguinte tabela:
 
-| Papel | Sprint 7 |
+| Papel | Sprint 9 |
 |:---: | :---: |
-| Scrum Master | Alexandre Miguel |
-| Product Owner ( *PO* ) | Rômulo Souza |
-| Arquiteto | Victor Hugo |
+| Scrum Master | Gabriela Guedes |
+| Product Owner ( *PO* ) | Helena Goulart |
+| Arquiteta | Letícia Meneses |
 
 ### Planejamento da Sprint
+A equipe foi dividida em equipes de *frontend* e *backend*. Cada integrante da equipe ficou responsável para uma atividade. Os integrantes foram escolhidos para cada tarefa de acordo com o conhecimento que cada um possui.
 
-O Planejamento seguiu os seguintes tópicos, sendo discutidos pelos membros participantes para consenso geral.
+#### *Frontend*
 
-#### Semana Sem Pareamentos
+- Criação e estilo das telas faltantes - **Gabriela Guedes,  Renan Schadt e Helena Goulart**
+- Implementação e documentação dos padrões de projeto (no front) - **João Robson**
+- Conexão com o backend para consumir API - **Davi Alves**
+- Integração dos fluxos existentes na aplicação - **Luiz Guilherme**
 
-Tema foi apresentado como uma forma de otimizar o volume de produtos de software gerado, finalizando uma etapa de nivelamento de conhecimentos para priorizar o desenvolvimento do projeto.
+#### *Backend*
+- Integrar endpoints faltantes - **Letícia Meneses, Victor Hugo**
+- Fazer o Swagger - **Letícia Meneses**
+- Estabilizar o backend - **Alexandre Miguel**
+- Aplicar padrões de projeto - **Alexandre Miguel, Rômulo Vinícius e Victor Hugo**
 
+## Sprint Review
 
-#### Issues de Código
+| Data da Reunião | Participantes | Meio | Local |
+| :---: | :---: | :---: | :---: |
+| 30/06/2019  | Gabriela Guedes <br> Letícia Meneses <br> Victor Hugo <br> Rômulo Vinícius <br> Alexandre Miguel <br> Davi Alves <br> Luiz Guilherme <br> Helena Goulart <br> João Robson <br> Renan Schadt | Online | Hangouts |
 
-Issues da semana foram decididas como voltadas para código, de Frontend e Backend, para posterior desenvolvimento do produto nos padrões determinados.
+### O que foi feito
 
-#### GoFs
+#### *Backend*
+- Contador de palavras - **Letícia Meneses**
+- Swagger - **Letícia Meneses**
+- Diagrama - **Letícia Meneses**
+- Estabilizar o *backend* - **Alexandre Miguel**
+- Aplicar o padrão de projeto State - **Alexandre Miguel e Rômulo Vinícius**
+- Aplicar o Front Controller - **Victor Hugo**
+- Implementar a Carteira - **Victor Hugo**
+- Profile - **Victor Hugo**
 
-Finalização de issues de documentação de modelos de GoFs, dado que várias issues se tornaram dívidas técnicas e devem ser resolvidas ainda nessa sprint.
-
-#### Refatoração do Backend
-
-Para garantir a unicidade do código e compreensão do desenvolvimento por pessoas externas ao projeto, foi determinado que o serviço de tradução seria refatorado  pelo integrante Victor Hugo para conformidade com os serviços de perfil e autenticação. Assim, o foco maior do desenvolvimento será para adiantamento do desenvolvimento do Frontend, enquanto o desenvolvimento de Backend será reduzido durante o período de refatoração.
-
-#### Tabela de Atuação da Sprint
-
-Dado o contexto de refatoração, a atuação de cada integrante da equipe no desenvolimento durante a sprint seguirá a seguinte tabela:
-
-| Integrante | Área de Atuação | Tecnologia |
-| :---: | :---: | :---: |
-| Gabriela Guedes | Frontend | React |
-| Davi Alves | Frontend | React |
-| Helena Goulart | Frontend | React |
-| Renan Schadt | Frontend | React |
-| Luiz Guilherme | Frontend | React |
-| João Robson | Backend / Frontend | Django / React |
-| Victor Hugo | Backend | Django |
-| Rômulo Souza | Backend | Django |
-| Letícia Meneses | Backend | Django |
-| Alexandre Miguel | Backend | Django |
-
-#### Issues e Responsáveis
-
-| Issue | Contexto | Integrante Responsável |
-| :--- | :---: | :---: |
-| US61 - Acessar Página de Perfil | Frontend | Davi Alves |
-| US35 - Tela Inicial do Tradutor | Frontend | |
-| US40 - Revisar Tradução | Frontend | |
-| US31 - Finalizar Tradução | Frontend | Helena Goulart |
-| US08 - Adicionar Informações Para Submeter Texto | Frontend | |
-| US18 - Acompanhar Estado da Tradução | Frontend | J |
-| US10 - Adicionar Breakpoints | Frontend | Luiz Guilherme |
-| US23 - Implementar Registros de Revisão | Backend | Rômulo Souza |
-| US06 - Submeter Certificado de Língua | Backend | Letícia Meneses |
-| US62 - Implementar Fluxo de Notificação | Backend | Alexandre Miguel |
-| Refatoração do Serviço de Tradução | Backend | Victor Hugo |
-
-## Review
-
-### O que cada um fez
-
-#### Luiz
-
-- Fez a issue, mas faltou resolver o bug e retirar o breakpoint
-- Pegou issue da Helena para fazer e não terminou
-
-#### Victor
-
-- Refatorou o Translate-me
-
-#### Rômulo
-
-- Implementou o composite e filter na nova refatoração
-
-#### Renan
-
-- Fez a história e faltou umas coisas
-
-#### Gabi
-
-- Terminou a história e deu PR
-
-#### Davi
-
-- Finalizando issue e faltando imagem do usuário
-
-#### Helena
-
-- Padronizou o front
-- Resolveu dívidas técnicas
-
-#### Alexandre
-
-- GoF
-- Finalizando issue hoje
+#### *Frontend*
+- Tela de pagamento - **Gabriela Guedes**
+- Homepage do tradutor - **Gabriela Guedes**
+- Estabilizar o fluxo da aplicação - **Gabriela Guedes e Luiz Guilherme**
+- Página de como funciona o projeto - **Gabriela Guedes**
+- Página de quem somos nós - **Helena Goulart**
+- Esquematizou a apresentação - **Helena Goulart**
+- Tela de Revisão - **Helena Goulart**
+- Tela de recebimento e avaliação do texto traduzido - **Renan Schadt**
+- Homepage do autor - **Renan Schadt**
+- Correção de erros na tela de cadastro - **Renan Schadt**
 
 ### Pontos Positivos
-
-- Distribuição de Issues Individuais
-- Dupla Scrum e PO
-- Fim dos Pareamentos
-- Flexibilização de Entregas
-- Pareamento de Sábado
-- Diminuição de Débitos Técnicos
-- Alinhamento de Visão (Back e Front)
-
+- A equipe foi muito produtiva
+- Foi possivel implementar muitas telas no frontend
+- backend conseguiu ser completado de acordo com o escopo refatorado
+- foi possivel a implementação de novos padrões de projeto
 
 ### Pontos Negativos
-
-- Identidade Visual Não Sendo Seguido
-- Frontend Aceitando PR do Backend
-- Dialogar melhor resoluções do projeto
+- A equipe atrasou o projeto, fazendo com que fosse necessário um esforço muito maior nessa ultima sprint
+- A equipe estava com muitas provas e entregas de outras matérias e por isso a dedicação maior foi somente no final de semana
 
 
-### Como Melhorar
 
-- Setorizar Avaliação de PRs
+
+
