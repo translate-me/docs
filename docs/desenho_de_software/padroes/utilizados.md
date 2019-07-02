@@ -9,6 +9,7 @@
 | 01/07/2019 | 0.4 | Adicionando referências | Rômulo Souza |
 | 01/07/2019 | 0.5 | Reestruturando a documentação | Alexandre Miguel |
 | 01/07/2019 | 0.6 | Adicionando Sequência e Estrutura | Alexandre Miguel e Rômulo Souza |
+| 01/07/2019 | 0.7 | Adicionando Diagramas refatorados e descrições de Observer e State | Alexandre Miguel |
 
 ## Padrões Implementados pelo Grupo
 
