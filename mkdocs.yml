@@ -4,7 +4,8 @@ nav:
   - Início: index.md
   - Dinâmica e Seminário I:
     -  Design Sprint: def_tema.md
-  - Dinâmica e Seminário II: metodologia.md
+  - Dinâmica e Seminário II:
+    - Metodologia: metodologia.md
   - Dinâmica e Seminário III: 
     - UMLs estáticos: desenho_de_software/uml/uml_estaticos.md
   - Dinâmica e Seminário IV:
@@ -49,7 +50,6 @@ nav:
         - Estruturais: desenho_de_software/padroes/gof/estruturais.md
         - Comportamentais: desenho_de_software/padroes/gof/comportamentais.md
     - Arquitetura de Software:
-      - Modelos: arquitetura_de_software/modelos.md
       - Padrões Arquiteturais: arquitetura_de_software/padroes_arquiteturais.md
     - Reuniões:
       - Reunião de Sprint:
@@ -66,6 +66,8 @@ nav:
         - PC 2: reunioes/pontos_de_controle/pc_2.md
         - PC 3: reunioes/pontos_de_controle/pc_3.md
         - PC 4: reunioes/pontos_de_controle/pc_4.md
+    - Entrega final:
+	- Apresentação: apresentacao.md
 
 #######################################################################################
 
